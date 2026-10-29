@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f8f5ed">
+<meta name="description" content="Skapa och skriv ut din egen telefonlista med viktiga svenska nummer och familjens egna kontakter.">
+<title>Viktiga nummer – HemmaRedo</title>
+<link rel="icon" href="assets/icon-192.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#172d26;--green:#1c503a;--cream:#f8f5ed;--border:#e1e3d6;--muted:#617468}
+*{box-sizing:border-box}body{margin:0;font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink)}button,input,textarea{font:inherit}button{cursor:pointer}a{color:var(--green)}.site-nav{max-width:1210px;margin:auto;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:800;font-size:22px;letter-spacing:-.06em;color:var(--ink);text-decoration:none}.back{font-size:13px;font-weight:700;text-decoration:none}.page{max-width:1120px;margin:auto;padding:40px 20px 95px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;color:#568062}.intro h1{font:700 clamp(38px,8vw,64px)/1.06 Fraunces,Georgia,serif;letter-spacing:-.06em;max-width:620px;margin:18px 0}.intro p{color:var(--muted);line-height:1.7;max-width:640px}.layout{display:grid;gap:24px;margin-top:35px}.editor{display:grid;gap:20px}.panel{border:1px solid var(--border);border-radius:21px;background:#fffdf7;padding:23px}.panel h2{font:700 27px/1.2 Fraunces,Georgia,serif;margin:0 0 10px}.public-row{display:flex;align-items:center;gap:18px;border-top:1px solid var(--border);padding:13px 0}.public-row strong{font-size:24px;min-width:90px;color:var(--green);white-space:nowrap}.public-row span{font-size:13px;line-height:1.4;color:#566759}.note{color:#657567;font-size:12px;line-height:1.55}.entry{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end;padding:13px 0;border-top:1px solid var(--border)}label{display:block;font-size:12px;font-weight:750;color:#345241;min-width:0}label span{display:block;margin-bottom:6px}input,textarea{border:1px solid #cfd8cb;background:#fff;border-radius:9px;padding:11px 10px;width:100%;min-height:43px;color:#203d2c;outline-color:#c68b51}input::placeholder,textarea::placeholder{color:#99a79c}textarea{resize:vertical}.remove{height:43px;width:35px;border:0;background:#f0eee6;color:#624d48;border-radius:9px;font-size:22px}.extra-fields{display:grid;gap:13px;margin-top:17px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:0;border-radius:99px;padding:13px 21px;font-weight:800;font-size:14px}.primary{background:var(--green);color:white}.secondary{background:#e6eee4;color:#26573e}.btn:disabled{opacity:.5;cursor:not-allowed}.actions{display:grid;gap:10px}.small{font-size:12px;line-height:1.65;color:#637468}.privacy{background:#e5eee5;padding:16px;border-radius:12px;font-size:12px;line-height:1.6;color:#435f4b}.preview-heading{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#758579;font-weight:800;margin:0 0 12px}.sheet{background:#fff;box-shadow:0 16px 38px #24402e18;border:1px solid #e3e6de;border-radius:14px;padding:31px 27px;max-width:650px;margin:auto}.sheet-header{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:2px solid #2a5b42;padding-bottom:14px}.sheet-brand{font-size:19px;font-weight:800;color:#214d36;letter-spacing:-.06em}.sheet-header small{font-size:10px;color:#65756a}.sheet h2{font:700 34px/1.1 Fraunces,Georgia,serif;margin:23px 0 7px}.sheet-sub{font-size:12px;color:#68776b;margin:0 0 21px}.sheet h3{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#2b5c42;margin:20px 0 9px}.sheet-numbers{display:grid;grid-template-columns:1fr 1fr;gap:9px}.sheet-number{background:#eaf0e8;border-radius:10px;padding:11px}.sheet-number strong{display:block;font-size:24px;color:#25523a}.sheet-number span{font-size:10px;line-height:1.4;display:block;color:#51685a}.sheet-warning{font-size:10px;color:#70553e;margin:12px 0}.sheet-contacts{border-top:1px solid #dee3d9}.sheet-contact{display:grid;grid-template-columns:1fr 1fr;gap:16px;border-bottom:1px solid #dee3d9;min-height:37px;align-items:center;padding:7px 3px;font-size:12px}.sheet-contact strong{font-size:14px;color:#213e2d}.sheet-meeting{margin-top:17px;background:#f2f4ed;border-radius:9px;padding:13px;font-size:12px;min-height:65px;white-space:pre-wrap;overflow-wrap:anywhere}.sheet-meeting strong{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px;color:#52715c}.sheet-footer{border-top:1px solid #dae3d7;margin-top:22px;padding-top:11px;color:#68766c;font-size:10px;line-height:1.5}.sheet-footer p{margin:0 0 8px}.sheet-footer small{font-size:9px}button:focus-visible,a:focus-visible{outline:3px solid #c9945b;outline-offset:3px}
+@media(max-width:440px){.entry{grid-template-columns:1fr 1fr auto;gap:5px}.entry input{padding:10px 7px;font-size:12px}.remove{width:29px}.sheet{padding:21px 17px}.sheet-numbers{gap:6px}.sheet-number{padding:9px}.sheet-number strong{font-size:20px}.sheet h2{font-size:30px}}
+@media(min-width:950px){.layout{grid-template-columns:minmax(0,1fr) minmax(0,.92fr);align-items:start}.preview-col{position:sticky;top:18px}.sheet{padding:30px 25px}}
+@page{size:A4 portrait;margin:12mm}
+@media print{html,body{background:#fff!important;width:100%;margin:0!important;padding:0!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.site-nav,.intro,.editor,.preview-heading,.privacy,.actions,.back{display:none!important}.page,.layout,.preview-col{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important}.sheet{border:0;box-shadow:none;border-radius:0;padding:0!important;max-width:none;width:100%;margin:0}.sheet h2{font-size:32px}.sheet-number{background:#eaf0e8!important}.sheet-meeting{background:#f2f4ed!important}.sheet-contact{min-height:35px}.sheet-footer{margin-top:12px}a[href]:after{content:none!important}}
+</style>
+</head>
+<body>
+<header class="site-nav"><a href="./#home" class="brand">⌂ HemmaRedo.</a><a href="./#guides" class="back">← Till Tips & länkar</a></header>
+<main class="page">
+<section class="intro"><div class="eyebrow">DIN UTSKRIVBARA TELEFONLISTA</div><h1>Viktiga nummer. Alltid nära.</h1><p>När mobilen är urladdad eller nätet inte fungerar är det skönt att ha viktiga nummer på papper. Fyll i dina egna kontakter och skriv ut ett blad att lägga i krislådan.</p></section>
+<div class="layout">
+<section class="editor">
+<div class="panel"><h2>Viktiga samhällsnummer</h2><div class="public-row"><strong>112</strong><span>Akut nödsituation – ambulans, polis eller räddningstjänst</span></div><div class="public-row"><strong>113 13</strong><span>Information om allvarliga olyckor och kriser</span></div><div class="public-row"><strong>114 14</strong><span>Polisen – ärenden som inte är akuta</span></div><div class="public-row"><strong>1177</strong><span>Sjukvårdsrådgivning när det inte är akut</span></div><p class="note">Ring endast 112 vid akuta nödsituationer. Källa: <a href="https://www.krisinformation.se/din-beredskap/skydd-och-hjalp/viktiga-telefonnummer/" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p></div>
+<div class="panel"><h2>Dina egna kontakter</h2><p class="note">Lägg till exempelvis mormor, grannen eller familjens kontaktperson. Du kan också lämna rader tomma och fylla i för hand.</p><div id="entries"></div><button id="add" class="btn secondary" type="button">+ Lägg till kontakt</button><div class="extra-fields"><label><span>Hushåll eller familjenamn (frivilligt)</span><input id="household" maxlength="90" autocomplete="off" placeholder="Till exempel Familjen Andersson"></label><label><span>Mötesplats eller viktig adress (frivilligt)</span><textarea id="meeting" rows="2" maxlength="160" placeholder="Till exempel vid bibliotekets entré"></textarea></label></div></div>
+<div class="actions"><button class="btn primary" id="print" type="button">▤ Skriv ut / spara som PDF</button><p class="small">Välj ”Spara som PDF” i webbläsarens utskriftsruta om du vill skapa en PDF-fil.</p><div class="privacy">🔒 Dina egna nummer skickas inte till HemmaRedo och sparas inte i webbplatsens lagring. De finns endast i formuläret medan sidan är öppen.</div></div>
+</section>
+<aside class="preview-col"><p class="preview-heading">Så här kommer utskriften att se ut</p><article class="sheet" aria-label="Utskriftsförhandsvisning"><div class="sheet-header"><span class="sheet-brand">⌂ HemmaRedo.</span><small>Skriv ut och sätt upp hemma</small></div><h2>Viktiga nummer</h2><p class="sheet-sub" id="print-household">En lista för när mobilen eller internet inte fungerar</p><h3>Viktiga samhällsnummer</h3><div class="sheet-numbers"><div class="sheet-number"><strong>112</strong><span>Akuta nödsituationer</span></div><div class="sheet-number"><strong>113 13</strong><span>Information vid kris</span></div><div class="sheet-number"><strong>114 14</strong><span>Polisen, inte akut</span></div><div class="sheet-number"><strong>1177</strong><span>Sjukvårdsrådgivning</span></div></div><p class="sheet-warning">112 – endast vid akut fara.</p><h3>Familj, vänner och viktiga kontakter</h3><div class="sheet-contacts" id="print-entries"></div><div class="sheet-meeting"><strong>Mötesplats eller viktig adress</strong><span id="print-meeting"></span></div><footer class="sheet-footer"><p>Förvara listan där den är lätt att hitta, exempelvis på kylskåpet eller i krislådan. Kontrollera numren regelbundet.</p><small>Källa: Krisinformation.se · HemmaRedo</small></footer></article></aside>
+</div>
+</main>
+<script>
+(function(){
+'use strict';
+var entries=document.getElementById('entries'),printEntries=document.getElementById('print-entries');
+var people=[{id:1,name:'',phone:''},{id:2,name:'',phone:''},{id:3,name:'',phone:''}];
+var nextId=4;
+function make(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;}
+function field(labelText,id,type,value,placeholder){
+ var label=make('label'),span=make('span','',labelText),input=make('input');
+ input.type=type;input.id=id;input.value=value;input.placeholder=placeholder;input.autocomplete='off';input.maxLength=type==='tel'?35:70;
+ label.appendChild(span);label.appendChild(input);return label;
+}
+function renderRows(){
+ entries.textContent='';
+ people.forEach(function(person,i){
+   var row=make('div','entry');
+   var name=field('Namn eller relation '+(i+1),'name-'+person.id,'text',person.name,'Till exempel Mormor');
+   var phone=field('Telefonnummer','phone-'+person.id,'tel',person.phone,'070-123 45 67');
+   name.querySelector('input').addEventListener('input',function(e){person.name=e.target.value;renderPrint();});
+   phone.querySelector('input').addEventListener('input',function(e){person.phone=e.target.value;renderPrint();});
+   var remove=make('button','remove','×');remove.type='button';remove.setAttribute('aria-label','Ta bort kontakt');
+   remove.addEventListener('click',function(){people=people.filter(function(x){return x.id!==person.id;});renderRows();renderPrint();});
+   row.appendChild(name);row.appendChild(phone);row.appendChild(remove);entries.appendChild(row);
+ });
+ document.getElementById('add').disabled=people.length>=8;
+}
+function renderPrint(){
+ printEntries.textContent='';
+ var filled=people.filter(function(x){return x.name.trim()||x.phone.trim();});
+ var count=Math.max(3,8-filled.length);
+ filled.concat(Array.from({length:count},function(){return {name:'',phone:''};})).slice(0,10).forEach(function(x){
+   var row=make('div','sheet-contact'),name=make('span','',x.name),phone=make('strong','',x.phone);
+   row.appendChild(name);row.appendChild(phone);printEntries.appendChild(row);
+ });
+ document.getElementById('print-household').textContent=document.getElementById('household').value||'En lista för när mobilen eller internet inte fungerar';
+ document.getElementById('print-meeting').textContent=document.getElementById('meeting').value;
+}
+document.getElementById('add').addEventListener('click',function(){if(people.length>=8)return;people.push({id:nextId++,name:'',phone:''});renderRows();renderPrint();});
+document.getElementById('household').addEventListener('input',renderPrint);
+document.getElementById('meeting').addEventListener('input',renderPrint);
+document.getElementById('print').addEventListener('click',function(){renderPrint();window.print();});
+renderRows();renderPrint();
+})();
+</script>
+</body>
+</html>

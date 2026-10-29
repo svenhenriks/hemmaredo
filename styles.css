@@ -19,3 +19,220 @@
 .print-note{display:none}
 
 .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+/* HemmaRedo 0.4 — How it works. Mobile-first, matching the illustrated identity. */
+.how-page{overflow:hidden}
+.how-hero{position:relative;background:#f8f5ed;display:flex;flex-direction:column;min-height:760px}
+.how-hero-copy{position:relative;z-index:2;padding:58px 25px 0;max-width:600px}
+.how-hero h1{font-size:clamp(43px,11vw,64px);line-height:1.045;letter-spacing:-.045em;max-width:530px;margin:0 0 20px}
+.how-hero-copy>p{color:#4e6356;line-height:1.65;font-size:16px;max-width:450px;margin:0 0 23px}
+.how-main-action{width:100%;max-width:365px;min-height:59px}
+.how-footnote{display:block;font-size:12px;color:#647568;margin-top:12px;font-weight:650;max-width:365px;text-align:center}
+.how-hero-art{height:350px;flex:1;min-height:325px;margin-top:-6px;background:url('assets/hemmaredo-landskap.webp') center 62%/cover no-repeat;mask-image:linear-gradient(to bottom,transparent 0%,#000 26%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 26%)}
+.how-section{padding:67px 21px;max-width:1130px;margin:auto}
+.how-section-heading{max-width:580px;margin-bottom:28px}
+.how-section h2,.how-closing h2{font-size:clamp(34px,8vw,49px);line-height:1.1;letter-spacing:-.035em;margin:0 0 12px}
+.how-section-heading p,.how-preview-copy>p{color:#627368;font-size:15px;line-height:1.7}
+.how-steps-grid{display:grid;gap:13px}
+.how-step{background:#fffdf7;border:1px solid #e8e3d6;border-radius:19px;padding:25px 22px 27px;min-height:215px}
+.how-step-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:27px}
+.how-number{font-family:Georgia,serif;font-size:29px;color:#9aab98}
+.how-step-icon{display:grid;place-items:center;width:46px;height:46px;background:#e8eee5;border-radius:50%;color:#28583d}
+.how-step-icon .ic{width:24px;height:24px}
+.how-step:nth-child(2) .how-step-icon{background:#f6e5cf;color:#94643c}
+.how-step:nth-child(3) .how-step-icon{background:#deebe5;color:#346c57}
+.how-step h3{font-family:Fraunces,Georgia,serif;font-size:22px;line-height:1.2;letter-spacing:-.025em;margin:0 0 10px}
+.how-step p{font-size:14px;color:#627368;line-height:1.7;margin:0}
+.how-preview{max-width:none;background:#e8eee5;display:grid;gap:25px;padding:65px max(21px,calc((100vw - 1088px)/2))}
+.how-preview-copy{align-self:center}
+.how-preview-copy .how-preview-note{display:flex;gap:9px;font-size:12px;margin-top:25px;max-width:470px}
+.how-preview-note .ic{width:20px;height:20px;flex:none;color:#446950}
+.how-mock-plan{background:#fffdf7;border:1px solid #dce5d9;border-radius:24px;box-shadow:0 19px 35px #23462f1c;overflow:hidden;transform:rotate(-1deg);max-width:480px;width:100%;margin:auto}
+.how-mock-header{display:flex;justify-content:space-between;padding:18px 22px;border-bottom:1px solid #ecebe1;color:#23533d;font-size:16px;font-weight:800;letter-spacing:-.035em}
+.how-mock-dots{color:#b8ccb8;letter-spacing:4px;font-size:9px}
+.how-mock-content{padding:22px}
+.how-mock-ring{height:115px;width:115px;border-radius:50%;background:conic-gradient(#2d6045 67%,#e3e9df 0);display:grid;place-items:center;margin:0 auto 23px}
+.how-mock-ring>span{height:96px;width:96px;background:#fffdf7;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:#24553c}
+.how-mock-ring small{font-size:10px;font-weight:500;color:#758476}
+.how-mock-tasks{display:grid;gap:10px}
+.how-mock-tasks>div{display:flex;align-items:center;gap:10px;background:#f5f6ef;border-radius:11px;padding:13px 12px;font-size:12px;font-weight:700}
+.how-check-done,.how-check-empty{width:21px;height:21px;flex:none;border-radius:7px;display:grid;place-items:center}
+.how-check-done{background:#376d4d;color:#fff}.how-check-empty{border:2px solid #bfcdbf}
+.how-faq{padding-top:75px;padding-bottom:75px}
+.how-faq-item{border-bottom:1px solid #dde2d6}
+.how-faq-item summary{display:flex;justify-content:space-between;align-items:center;gap:15px;list-style:none;cursor:pointer;padding:21px 0;font-size:15px;font-weight:750}
+.how-faq-item summary::-webkit-details-marker{display:none}
+.how-faq-item summary .ic{flex:none;color:#55705c;transition:transform .2s}
+.how-faq-item[open] summary .ic{transform:rotate(180deg)}
+.how-faq-item p{color:#5b6d60;line-height:1.7;font-size:14px;max-width:650px;margin:0 0 23px}
+.how-source-link{display:inline-flex;align-items:center;gap:8px;margin-top:26px;color:#25543c;font-weight:800;font-size:13px}
+.how-source-link .ic{width:16px;height:16px}
+.how-closing{background:#244d39;color:#fffdf7;padding:67px 22px 76px;text-align:center}
+.how-closing-content{max-width:620px;margin:auto}
+.how-closing .eyebrow{color:#c5d9be;justify-content:center}
+.how-closing h2{color:#fffdf7}
+.how-closing p{color:#d2e1d5;margin:0 auto 24px;line-height:1.65}
+.how-closing .btn-primary{background:#fff8e8;color:#254b37;min-width:205px}
+.how-closing .btn-primary:hover{background:#f1e7cf}
+@media(min-width:700px){.how-hero{min-height:660px;display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch}.how-hero-copy{padding:115px 30px 90px max(35px,calc((100vw - 1100px)/2));min-width:0}.how-hero h1{font-size:clamp(54px,5.5vw,77px)}.how-hero-art{height:auto;min-height:660px;margin:0;mask-image:linear-gradient(to right,transparent,#000 25%);-webkit-mask-image:linear-gradient(to right,transparent,#000 25%);background-position:65% center}.how-steps-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.how-preview{grid-template-columns:1fr 1fr;gap:40px;padding-top:85px;padding-bottom:85px}.how-mock-plan{margin:0}.how-faq{max-width:830px}}
+@media(max-width:380px){.how-hero-copy{padding-left:20px;padding-right:20px}.how-hero h1{font-size:40px}.how-hero{min-height:720px}.how-hero-art{min-height:290px}}
+@media(prefers-reduced-motion:reduce){.how-mock-plan{transform:none}}
+
+/* 0.4.1: Desktop hero sizing fix. The padded text column previously collapsed
+   because its intrinsic width competed with the illustration grid column. */
+@media (min-width:700px){
+  .how-hero{display:block;min-height:660px;isolation:isolate}
+  .how-hero-copy{
+    display:block;
+    width:57%;
+    max-width:none;
+    min-width:0;
+    padding:100px 32px 85px clamp(32px,6vw,100px);
+  }
+  .how-hero-copy h1{max-width:600px;font-size:clamp(48px,4.8vw,76px);overflow-wrap:normal}
+  .how-hero-copy>p{width:100%;max-width:480px;font-size:17px}
+  .how-hero-art{
+    position:absolute;z-index:-1;inset:0 0 0 auto;
+    width:55%;height:100%;min-height:0;
+    background-position:center 64%;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 22%);
+    mask-image:linear-gradient(to right,transparent 0%,#000 22%);
+  }
+}
+@media (min-width:700px) and (max-width:1050px){
+  .how-hero-copy{width:61%;padding-left:35px;padding-right:25px}
+  .how-hero-copy h1{font-size:clamp(44px,5.2vw,61px)}
+  .how-hero-art{width:52%}
+}
+@media (min-width:1051px){
+  .how-hero-copy{padding-left:max(45px,calc((100vw - 1100px)/2))}
+}
+
+/* Resources library – mobile-first */
+.resources-page{overflow:hidden}
+.resources-hero{position:relative;min-height:460px;background:#f6f2e8;isolation:isolate;display:flex;flex-direction:column}
+.resources-hero-copy{position:relative;z-index:2;padding:63px 24px 35px;max-width:590px}
+.resources-hero h1{font-size:clamp(43px,10vw,66px);line-height:1.06;margin:0 0 20px}
+.resources-hero-copy>p{font-size:15px;line-height:1.7;color:#4a6556;max-width:490px}
+.resources-hero-art{height:220px;flex:1;background:url('assets/hemmaredo-landskap.webp') center 60%/cover no-repeat;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 35%);mask-image:linear-gradient(to bottom,transparent,#000 35%)}
+.resources-section{max-width:1100px;padding:63px 21px;margin:auto}
+.resources-section-head{max-width:635px;margin-bottom:28px}
+.resources-section-head h2,.resources-bottom h2{font-size:clamp(32px,7.8vw,46px);line-height:1.12;margin:0 0 13px}
+.resources-section-head p{font-size:15px;color:#627367;line-height:1.7}
+.resources-official-grid{display:grid;gap:12px}
+.resource-card{background:#fffdf7;border:1px solid #e4e5d9;border-radius:19px;padding:24px 22px;display:flex;flex-direction:column}
+.resource-icon{background:#e8eee6;color:#28583c;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none}
+.resource-icon .ic{width:24px;height:24px}
+.resource-card h3{font-family:var(--serif);font-size:21px;margin:20px 0 10px}
+.resource-card p{font-size:13px;color:#5a6d60;line-height:1.65;flex:1}
+.resources-link{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:#225239;text-decoration:underline;text-underline-offset:4px;align-self:flex-start;margin-top:8px}
+.resources-link .ic{width:16px;height:16px}
+.resources-podcast-section{max-width:none;background:#e8eee5;padding-left:max(21px,calc((100vw - 1100px)/2));padding-right:max(21px,calc((100vw - 1100px)/2))}
+.resources-podcasts{display:grid;gap:12px}
+.resources-podcast{background:#fffdf7;border:1px solid #dbe4d9;border-radius:19px;padding:22px;display:grid;gap:15px}
+.resources-podcast-label{display:flex;gap:9px;align-items:center;color:#53765c;font-size:10px;font-weight:800;letter-spacing:.1em}
+.resources-podcast-label span:first-child{width:34px;height:34px;background:#e6efdf;border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:17px;letter-spacing:0}
+.resources-podcast h3{font-family:var(--serif);font-size:24px;line-height:1.18;margin:0 0 10px}
+.resources-podcast p,.resource-featured p{font-size:13px;line-height:1.65;color:#5e7264;margin-bottom:12px}
+.resource-featured{margin-top:17px;background:#f8eddb;border-radius:19px;padding:25px;border:1px solid #eddbc3}
+.resource-featured h3{font-family:var(--serif);font-size:24px;margin:2px 0 11px}
+.resource-video{background:#fffdf7;border:1px solid #e6e3d8;border-radius:19px;overflow:hidden;display:grid}
+.resource-video-art{min-height:180px;background:linear-gradient(180deg,#e2eae0,#c8d9c7);display:grid;place-items:center;color:#305b40}
+.resource-video-art .ic{width:75px;height:75px;stroke-width:1.1}
+.resource-video-copy{padding:25px}
+.resource-video-copy h3{font-family:var(--serif);font-size:25px;margin:0 0 11px}
+.resource-video-copy p{font-size:14px;line-height:1.7;color:#607265}
+.resources-caveat{margin-top:26px;display:flex;gap:14px;background:#eff1e9;border-radius:17px;padding:18px}
+.resources-caveat strong{font-size:13px}.resources-caveat p{font-size:12px;color:#5c7060;line-height:1.7;margin:5px 0 0}
+.resources-bottom{text-align:center;background:#244d39;padding:67px 22px 75px;color:#fffdf7}
+.resources-bottom h2{color:#fffdf7}.resources-bottom p{color:#d4e3d5;margin-bottom:25px}.resources-bottom .btn-primary{background:#fff7e8;color:#25503b}
+@media(min-width:720px){.resources-hero{min-height:505px;display:block}.resources-hero-copy{padding:100px 40px 85px max(40px,calc((100vw - 1100px)/2));width:62%;max-width:none}.resources-hero h1{font-size:clamp(46px,5vw,72px);max-width:650px}.resources-hero-art{position:absolute;right:0;top:0;bottom:0;width:51%;height:100%;-webkit-mask-image:linear-gradient(to right,transparent,#000 25%);mask-image:linear-gradient(to right,transparent,#000 25%)}.resources-official-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.resources-podcasts{grid-template-columns:repeat(3,minmax(0,1fr))}.resource-video{grid-template-columns:1fr 1.4fr}.resource-video-art{min-height:260px}.resource-video-copy{padding:35px;align-self:center}}
+
+/* HemmaRedo 0.4.2 — unique editorial hero, full-bleed desktop & media imagery */
+.resources-hero{
+  position:relative;min-height:580px;
+  background:#eee1cc url('assets/tips-links-hero.svg') center center/cover no-repeat;
+  display:flex;align-items:flex-start;isolation:isolate;
+}
+.resources-hero:after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(250,247,239,.94) 0%,rgba(250,247,239,.88) 35%,rgba(250,247,239,.32) 70%,transparent 100%);
+  z-index:-1;
+}
+.resources-hero-copy{padding:65px 24px 45px;max-width:580px;z-index:2}
+.resources-hero-copy h1{max-width:600px}
+.resources-hero-art{display:none}
+.resources-podcast{overflow:hidden;padding:0;display:flex;flex-direction:column;gap:0}
+.resources-podcast-cover{
+  position:relative;overflow:hidden;width:100%;aspect-ratio:1/1;
+  background:linear-gradient(135deg,#2b523e,#82987b);color:#fff7e6;
+}
+.resources-podcast-cover img{position:relative;z-index:2;width:100%;height:100%;display:block;object-fit:cover}
+.resources-podcast-cover img[hidden]{display:none}
+.resources-cover-fallback{position:absolute;inset:0;z-index:1;display:grid;place-items:center;text-align:center;padding:25px;font-family:var(--serif);font-size:28px;line-height:1.2}
+.resources-podcast-copy{padding:21px 22px 25px;display:flex;flex-direction:column;flex:1}
+.resources-podcast-label{margin-bottom:14px}
+.resources-podcast h3{font-size:23px}
+.resources-podcast-copy p{flex:1}
+.resource-video-art{position:relative;display:block;min-height:0;aspect-ratio:16/9;background:#25392d;color:#fff}
+.resource-video-art img{width:100%;height:100%;object-fit:cover;display:block}
+.resource-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#183d2eec;color:#fff;width:68px;height:68px;display:grid;place-items:center;border-radius:50%;font-size:27px;padding-left:5px;box-shadow:0 8px 28px #172a2660}
+.resource-video-art:hover .resource-play{background:#2c7651}
+@media(min-width:720px){
+  .resources-hero{min-height:580px;display:flex;align-items:center;background-position:center 52%}
+  .resources-hero:after{background:linear-gradient(90deg,rgba(250,247,239,.94) 0%,rgba(250,247,239,.76) 26%,rgba(250,247,239,.14) 52%,transparent 68%)}
+  .resources-hero-copy{width:54%;padding:80px 45px 80px max(42px,calc((100vw - 1100px)/2))}
+  .resources-hero h1{font-size:clamp(50px,5vw,76px)}
+  .resources-hero-art{display:none}
+  .resources-podcasts{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .resource-video-art{aspect-ratio:auto;min-height:295px}
+}
+@media(min-width:720px) and (max-width:1040px){
+  .resources-hero-copy{width:61%;padding-left:36px}
+  .resources-hero h1{font-size:clamp(46px,5vw,64px)}
+}
+
+/* HemmaRedo Checklista 2.0 */
+.checklist-intro{background:#e8eee5;border-radius:14px;padding:13px 15px;display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.65;color:#355d46;max-width:810px;margin:17px 0 0}
+.checklist-intro .ic{flex:none;margin-top:2px}
+.task-row{align-items:flex-start}
+.task-copy label{cursor:pointer}
+.task-detail{margin-top:11px;border-radius:11px;border:1px solid #e2e6db;background:#f7f8f1;overflow:hidden}
+.task-detail summary{display:flex;align-items:center;gap:8px;padding:11px 12px;cursor:pointer;list-style:none;font-size:12px;font-weight:800;color:#28593e}
+.task-detail summary::-webkit-details-marker{display:none}
+.task-detail summary .ic:last-child{margin-left:auto;transition:transform .15s}
+.task-detail[open] summary .ic:last-child{transform:rotate(180deg)}
+.task-detail-body{border-top:1px solid #e0e6db;padding:15px 14px 17px}
+.task-detail-body>p{font-size:13px;line-height:1.65;margin:0 0 14px;color:#4b6555}
+.task-detail-body h4{font-size:13px;margin:0 0 9px;font-weight:800;color:#294d39}
+.task-detail-body ul{padding-left:20px;margin:0 0 16px;display:grid;gap:7px}
+.task-detail-body li{font-size:12px;line-height:1.55;color:#405a49}
+.task-tip,.task-warning{display:flex;align-items:flex-start;gap:8px;border-radius:10px;padding:11px;margin-bottom:9px}
+.task-tip{background:#e5f0e5}.task-warning{background:#fbf0de}
+.task-tip .ic,.task-warning .ic{width:17px;height:17px;flex:none;margin-top:2px}
+.task-tip p,.task-warning p{font-size:12px;line-height:1.6;margin:0;color:#385c45}
+.task-warning p{color:#79583e}
+.task-detail-body>a{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;font-weight:800}
+.task-detail-body>a .ic{width:14px;height:14px}
+@media print{.task-detail{border:none;background:transparent}.task-detail summary{display:none}.task-detail-body{display:block;border:none;padding:7px 0}.task-detail-body ul{margin-bottom:8px}}
+
+/* Transparent privacy information, without unnecessary consent banners */
+.privacy-page{max-width:880px}
+.privacy-sub{font-size:13px;color:#657468;margin:10px 0 29px}
+.privacy-sections{display:grid;gap:14px;margin:24px 0 20px}
+.privacy-section{background:#fffdf7;border:1px solid #e5e4d9;border-radius:16px;padding:23px}
+.privacy-section h2{font-size:clamp(21px,5.5vw,26px);letter-spacing:-.025em;margin:0 0 10px}
+.privacy-section p{font-size:14px;line-height:1.75;color:#586c5f;margin:0}
+.privacy-delete{margin-top:18px;border-color:#c6b3a5;color:#7c4033}
+@media(min-width:720px){.privacy-sections{gap:17px}.privacy-section{padding:30px 33px}}
+
+/* Printable contact sheet links */
+.menu-panel .menu-page-link{display:flex;align-items:center;gap:12px;padding:12px;border:0;background:transparent;text-align:left;border-radius:11px;font-weight:600;color:var(--ink);text-decoration:none;font-size:15px}
+.menu-panel .menu-page-link:hover{background:var(--sage)}
+.menu-panel .menu-page-link .ic{width:19px;height:19px}
+.resources-contact-feature{margin-top:21px;border-radius:18px;background:#e7eee4;border:1px solid #d9e5d9;padding:20px;display:grid;gap:14px}
+.resources-contact-feature strong{font-size:18px;color:#1d4c35}
+.resources-contact-feature p{color:#526b57;font-size:13px;line-height:1.6;margin:7px 0 0}
+.resources-contact-feature .btn-outline{justify-self:start}
+.task-phone-link{display:inline-flex;margin-top:9px;font-size:12px;font-weight:800}
+@media(min-width:700px){.resources-contact-feature{grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:23px 26px}}

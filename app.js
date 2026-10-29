@@ -109,6 +109,176 @@
     }
   };
 
+
+  const howCopy = {
+    sv: {
+      kicker:'ENKELT ATT KOMMA IGÅNG',heading:'Lite förberedelse. Mer trygghet.',lead:'Du behöver inte vara expert på krisberedskap. HemmaRedo hjälper dig att komma igång med det viktigaste, ett litet steg i taget.',
+      topButton:'Skapa min plan',small:'Gratis · Cirka 3 minuter · Inget konto',
+      howTitle:'Så enkelt fungerar det',howLead:'Tre steg från första frågan till en plan som passar just ditt hem.',
+      s1:'Berätta lite om ditt hem',d1:'Hur många bor hos er? Bor ni i lägenhet eller hus? Har ni husdjur? Du svarar bara på det som är relevant.',
+      s2:'Se vad ni redan har',d2:'Ficklampor, vatten, radio, värme och mat. Kryssa i det som finns hemma. Du behöver inte köpa allt på en gång.',
+      s3:'Få er egen plan',d3:'Vi sammanställer en personlig checklista. Bocka av, skriv ut och kom tillbaka när du vill.',
+      previewLabel:'ETT EXEMPEL',previewTitle:'Din plan tar form.',previewLead:'Här ser du ungefär hur en färdig plan kan se ut. Det riktiga resultatet anpassas efter dina svar.',
+      previewItem1:'Vatten för hushållet',previewItem2:'Mat utan el',previewItem3:'Viktig information via P4',previewNote:'Framstegsmätaren visar hur många punkter du markerat som klara. Den är ingen garanti för säkerhet.',
+      faqTitle:'Bra att veta',q1:'Kostar det något?',a1:'Nej. HemmaRedo är gratis att använda, utan konto.',q2:'Vad händer med mina svar?',a2:'De sparas lokalt i din webbläsare på den enhet du använder. De synkroniseras inte mellan enheter och kan försvinna om du rensar webbläsardata.',
+      q3:'Är HemmaRedo en myndighetstjänst?',a3:'Nej. Det är ett oberoende planeringsstöd. För officiella rekommendationer och information vid en kris hänvisar vi till Krisinformation.se.',
+      q4:'Måste jag göra allt direkt?',a4:'Nej. Börja med det viktigaste för ditt hushåll. Du kan återkomma till checklistan när som helst på samma enhet.',
+      closingTitle:'Redo att ta första steget?',closingLead:'Det behöver inte vara svårt att vara lite mer förberedd.',closingButton:'Kom igång',
+      official:'Läs officiella råd på Krisinformation.se'
+    },
+    en: {
+      kicker:'AN EASY PLACE TO START',heading:'A little preparation. More peace of mind.',lead:'You do not need to be an emergency preparedness expert. HemmaRedo helps you start with what matters, one small step at a time.',
+      topButton:'Create my plan',small:'Free · About 3 minutes · No account',
+      howTitle:'How it works',howLead:'Three simple steps from the first question to a plan that fits your home.',
+      s1:'Tell us about your home',d1:'How many people live there? A flat or a house? Any pets? Answer only what is relevant to you.',
+      s2:'See what you already have',d2:'Flashlights, water, a radio, heating and food. Tick what you have. You do not need to buy everything at once.',
+      s3:'Get your own plan',d3:'We put together a personal checklist. Tick items off, print it and return whenever you want.',
+      previewLabel:'AN EXAMPLE',previewTitle:'Your plan comes together.',previewLead:'Here is an example of a finished plan. Your real plan will be based on your answers.',
+      previewItem1:'Water for the household',previewItem2:'Food without electricity',previewItem3:'Important information via P4',previewNote:'The progress meter shows how many items you have marked complete. It is not a measure of safety.',
+      faqTitle:'Good to know',q1:'Does it cost anything?',a1:'No. HemmaRedo is free to use, without an account.',q2:'What happens to my answers?',a2:'They are stored locally in your browser on this device. They do not sync between devices and may disappear if you clear your browser data.',
+      q3:'Is HemmaRedo a government service?',a3:'No. It is an independent planning tool. For official guidance and emergency updates, refer to Krisinformation.se.',
+      q4:'Do I need to do everything right away?',a4:'No. Start with what matters most for your household. You can return to your checklist on the same device.',
+      closingTitle:'Ready to take the first step?',closingLead:'Being a little more prepared does not have to be difficult.',closingButton:'Get started',
+      official:'Read official advice at Krisinformation.se'
+    }
+  };
+
+
+  const resourceCopy={
+    sv:{eyebrow:'UTVALDA RESURSER',title:'Tips, kunskap & inspiration.',intro:'Nyfiken på hur du kan bli bättre förberedd? Här hittar du officiella råd, poddar och filmer som gör det enklare att börja. Ta det i din egen takt.',official:'Börja med säkra källor',officialLead:'När något händer är det myndigheternas aktuella information du ska följa.',listen:'För dig som gillar att lyssna',listenLead:'Olika perspektiv på hemberedskap, vardagslösningar och att ta hand om varandra.',watch:'Se & lär',watchLead:'En utvald föreläsning att börja med. Vi fyller på med fler granskade filmer framöver.',featured:'BRA STÄLLE ATT BÖRJA',featuredTitle:'Ett avsnitt om grunderna',featuredText:'Avsnitt 126, Hemberedskap 1a, går igenom bland annat värme, vatten, mat och hur man kommer igång.',sourceTitle:'Krisinformation.se',sourceDesc:'Officiell krisinformation och råd om hemberedskap.',numbersTitle:'Viktiga telefonnummer',numbersDesc:'När ska du ringa 112, 113 13 eller 1177?',radioTitle:'Sveriges Radio P4',radioDesc:'Beredskapskanal för viktig information.',pod1:'I väntan på katastrofen',pod1Desc:'Kalle Zackari Wahlström och Patrick Sellman samtalar om praktisk beredskap, småbruk och vardagsliv – med humor och nyfikenhet.',pod2:'Vardagsprepping',pod2Desc:'Intervjuer och vardagsnära råd för att bygga upp sin hemberedskap stegvis.',pod3:'Hemberedskap',pod3Desc:'Anette Staaf och Niklas Larsson diskuterar beredskap, säkerhet och erfarenheter från verkliga händelser.',videoTitle:'MSB Live: Hemberedskap',videoDesc:'En frågestund där myndighetens kriskommunikatörer svarar på vanliga frågor om hemberedskap.',read:'Besök webbplatsen',listenAction:'Lyssna på podden',episode:'Lyssna på avsnittet',watchAction:'Se filmen',independent:'Om innehållet',disclaimer:'Poddar och videor är tips för vidare lärande, inte officiella råd från HemmaRedo. Uppgifter och rekommendationer från externa skapare kan skilja sig från myndigheternas. Vid en pågående kris: följ officiell information.',ctaTitle:'Från inspiration till handling.',ctaText:'När du känner dig redo kan du skapa din egen lilla plan – helt gratis.',ctaButton:'Skapa min plan',typePodcast:'PODD',typeVideo:'VIDEO',typeOfficial:'OFFICIELL KÄLLA'},
+    en:{eyebrow:'SELECTED RESOURCES',title:'Advice, knowledge & inspiration.',intro:'Want to feel better prepared? Here are official sources, podcasts and videos to help you get started, at your own pace.',official:'Start with trusted sources',officialLead:'During an emergency, follow the authorities’ current guidance.',listen:'For those who like listening',listenLead:'Different perspectives on household preparedness, practical solutions and supporting others.',watch:'Watch & learn',watchLead:'A selected talk to start with. More reviewed videos may be added later.',featured:'A GOOD STARTING POINT',featuredTitle:'An episode about the basics',featuredText:'Episode 126, Hemberedskap 1a, covers warmth, water, food and getting started.',sourceTitle:'Krisinformation.se',sourceDesc:'Official Swedish crisis information and preparedness advice.',numbersTitle:'Important phone numbers',numbersDesc:'When should you call 112, 113 13 or 1177?',radioTitle:'Swedish Radio P4',radioDesc:'Preparedness broadcaster for important public information.',pod1:'I väntan på katastrofen',pod1Desc:'Kalle Zackari Wahlström and Patrick Sellman discuss practical preparedness, small-scale living and everyday life, with humour.',pod2:'Vardagsprepping',pod2Desc:'Interviews and practical advice for building household preparedness step by step.',pod3:'Hemberedskap',pod3Desc:'Anette Staaf and Niklas Larsson discuss preparedness, safety and lessons from real events.',videoTitle:'MSB Live: Hemberedskap',videoDesc:'A Q&A where emergency communicators answer common questions about household preparedness. In Swedish.',read:'Open website',listenAction:'Listen to podcast',episode:'Listen to episode',watchAction:'Watch video',independent:'About these recommendations',disclaimer:'Podcasts and videos are suggestions for further learning, not official HemmaRedo advice. Independent creators may give guidance that differs from public authorities. During an emergency, follow official information.',ctaTitle:'Turn inspiration into action.',ctaText:'When you are ready, create a simple plan for your household – for free.',ctaButton:'Create my plan',typePodcast:'PODCAST',typeVideo:'VIDEO',typeOfficial:'OFFICIAL SOURCE'}
+  };
+
+
+  // Curated examples are suggestions, not an automatic shopping list.
+  // Task IDs remain unchanged to preserve existing saved progress.
+  const checklistDetails = {
+    sv:{
+      open:'Läs mer och se exempel',close:'Dölj detaljer',examples:'Exempel på lösningar',check:'Bra att kontrollera',caution:'Tänk på',read:'Fördjupa dig hos Krisinformation.se',
+      intro:'Öppna en punkt för konkreta exempel och tips. Bocka av när du har en fungerande lösning – du behöver inte köpa allt som nämns.',
+      details:{
+        'water-store':{
+          intro:'Vatten behövs för att dricka, laga mat och sköta viss hygien. Börja med dricksvattnet och planera för hela hushållet.',
+          examples:['Rena, livsmedelsgodkända dunkar med lock och gärna tappkran','Förvara mörkt och så svalt som möjligt. En ogenomskinlig dunk hjälper till att stänga ute ljus, men materialet och renligheten är viktigast.','Flaskvatten och extra kärl för att hämta nödvatten'],
+          check:'Ett enkelt HemmaRedo-tips: byt vattnet vid midsommar och jul. Använd gärna det gamla vattnet till växterna, rengör dunkarna vid behov och fyll på med nytt dricksvatten. Märk dunken med påfyllningsdatum. Två byten per år är vår minnesregel, inte ett myndighetskrav.',
+          caution:'Vatten från naturen kan innehålla mikroorganismer eller kemiska föroreningar. Vanlig filtrering eller kokning löser inte alla risker.'
+        },
+        'food-week':{
+          intro:'Utgå från sådant ni faktiskt äter. Välj mat som håller länge och som går att äta direkt eller tillaga med lite vatten.',
+          examples:['Konserver: bönor, linser, tomater, fisk eller färdiga maträtter','Knäckebröd, havregryn, nötter och jordnötssmör','Ris, pasta, couscous och andra torrvaror','Mat för små barn, allergier och särskilda kostbehov','Manuell konservöppnare'],
+          check:'Kontrollera hållbarhet och rotera förrådet: använd det äldsta först och fyll på.',
+          caution:'Planera också för mat utan kyl och frys. Följ livsmedelssäkerhetsråd vid strömavbrott.'
+        },
+        'cook-power':{
+          intro:'Det går att äta mycket utan uppvärmning, men ett säkert alternativ för matlagning ger flexibilitet.',
+          examples:['Stormkök eller campingkök med lämpligt bränsle','Grill utomhus där det är tillåtet','Termos för att behålla varmt vatten','Enkla rätter som kräver kort tillagning'],
+          check:'Prova utrustningen i lugn och ro och se över bränsle och tillbehör.',
+          caution:'Använd aldrig grill eller bränsledrivna friluftskök inomhus. Brand- och kolmonoxidfara. Följ alltid utrustningens instruktioner.'
+        },
+        warmth:{
+          intro:'Vid strömavbrott kan inomhustemperaturen sjunka. Förbered ett säkert sätt att hålla värmen.',
+          examples:['Varma underställ, mössor, sockor och sovsäckar','Fleecefiltar och extra täcken','Ett rum där familjen kan samlas','Vedkamin med torr ved, om bostaden har en godkänd sådan'],
+          check:'Undersök hur just din bostad värms och vad som fungerar utan el.',
+          caution:'Försök inte värma bostaden med grill eller olämpliga brännare. Tänk på ventilation, brandvarnare och kolmonoxidrisk.'
+        },
+        torch:{
+          intro:'När det blir mörkt behöver du kunna orientera dig, laga mat och hjälpa andra utan takbelysning.',
+          examples:['Ficklampa för allmän användning','Pannlampa som lämnar händerna fria','Batteridriven lykta för ett rum','Reservbatterier eller en plan för laddning'],
+          check:'Testa lamporna, placera dem lättåtkomligt och se att alla vet var de finns.',
+          caution:'Levande ljus ökar brandrisken. Batteridriven belysning är ofta ett tryggare förstahandsval.'
+        },
+        radio:{
+          intro:'P4 är Sveriges beredskapskanal. En radio som fungerar utan elnät och internet är ett viktigt komplement till mobilen.',
+          examples:['Batteridriven FM-radio','Vev- eller solcellsradio med FM-mottagning','Reservbatterier till radion','En anteckning om vilken P4-frekvens som gäller lokalt'],
+          check:'Prova att du faktiskt får in P4 där du bor.',
+          caution:'En mobilapp som strömmar radio kräver fungerande uppkoppling och är inte samma reservlösning.'
+        },
+        power:{
+          intro:'En laddad telefon kan underlätta kontakten med andra, även om mobilnätet inte alltid fungerar.',
+          examples:['Powerbank med tillhörande kabel','Extra laddkablar som passar familjens enheter','Billaddare om du har bil och kan använda den säkert','Laddningsbara lampor med passande anslutning'],
+          check:'Ladda och funktionstesta powerbanks regelbundet. Förvara kablarna tillsammans.',
+          caution:'Följ batteriernas säkerhetsanvisningar och låt dem inte ligga i extrem värme.'
+        },
+        aid:{
+          intro:'Första hjälpen kan behövas även när vård och transporter är ansträngda.',
+          examples:['Plåster, kompresser, elastisk binda och sårtvätt','Engångshandskar och enklare förbandsmaterial','Nödvändiga receptfria produkter som passar hushållet','Personliga läkemedel enligt ordination'],
+          check:'Kontrollera utgångsdatum och lär dig använda förbandsmaterialet.',
+          caution:'Ändra inte medicinering eller lagerhållning av receptläkemedel utan att följa vårdens och apotekets råd.'
+        },
+        hygiene:{
+          intro:'Om vatten eller avlopp inte fungerar behöver ni en enkel plan för toalett, händer och avfall.',
+          examples:['Handsprit, tvål och våtservetter','Toalettpapper, mensskydd och blöjor vid behov','Kraftiga avfallspåsar och förslutningsbara kärl','Engångshandskar och rengöringsmedel'],
+          check:'Tänk igenom var sakerna förvaras och hur avfall ska hanteras hygieniskt.',
+          caution:'Följ kommunens anvisningar vid avloppsstörningar. Använd inte toaletten om det kan orsaka översvämning.'
+        },
+        contacts:{
+          intro:'När telefonen är urladdad eller internet ligger nere är en papperslista användbar.',
+          examples:['Familj och nära anhöriga','Grannar och personer som behöver extra stöd','Försäkringsbolag och viktiga servicekontakter','112 för nödsituationer, 113 13 för krisinformation och 1177 för sjukvårdsrådgivning'],
+          check:'Lägg en kopia i krislådan och uppdatera när nummer ändras.',
+          caution:'Förvara personliga kontaktuppgifter så att obehöriga inte kommer åt dem.'
+        },
+        meetup:{
+          intro:'Bestäm i förväg hur hushållet hittar varandra när vanliga kontaktvägar inte fungerar.',
+          examples:['En överenskommen mötesplats nära hemmet','En alternativ mötesplats längre bort','En kontaktperson utanför närområdet','En enkel papperskarta och nödvändiga adresser'],
+          check:'Prata igenom planen med barn och andra i hushållet.',
+          caution:'Följ alltid myndigheternas instruktioner vid utrymning eller annan akut händelse.'
+        },
+        'pet-supplies':{
+          intro:'Djur behöver också mat, vatten, trygghet och ibland särskilda temperaturförhållanden.',
+          examples:['Foder som djuret redan är vant vid','Extra dricksvatten och matskålar','Koppel, sele, transportbur eller annan säker transportlösning','Eventuella mediciner och kontaktuppgifter till veterinär'],
+          check:'Fundera på hur djuren får mat, värme och tillsyn vid strömavbrott eller utrymning.',
+          caution:'Behoven skiljer sig mellan arter. Exempelvis kan akvarier vara beroende av el och smådjur vara temperaturkänsliga.'
+        },
+        'medical-extra':{
+          intro:'Kartlägg i förväg vilka hjälpmedel eller läkemedel som är viktiga för vardagen.',
+          examples:['En enkel, privat lista över viktiga behov','Reservrutiner för utrustning','Kontaktvägar till vård och apotek'],
+          check:'Prata med vården om personligt lämplig beredskap.',
+          caution:'HemmaRedo ger inte individuella medicinska råd. Skriv inte känsliga medicinska uppgifter i tjänsten.'
+        },
+        'electric-extra':{
+          intro:'Vissa hjälpmedel måste fungera även om strömmen går. En reservplan behöver utgå från utrustningens krav.',
+          examples:['Dokumenterade el- och batteribehov','Kontakt med leverantör och vård om reservlösningar','Plan för säker plats att vistas på om reservkraft saknas'],
+          check:'Ta reda på hur länge utrustningen fungerar utan el.',
+          caution:'Anslut aldrig livsviktig utrustning till en oprövad eller olämplig strömkälla.'
+        },
+        'mobility-extra':{
+          intro:'En krisplan bör fungera även om hiss, transport eller andra hjälpmedel inte finns tillgängliga.',
+          examples:['En överenskommelse med personer som kan hjälpa','Tillgängliga vägar och alternativa mötesplatser','Lättåtkomliga viktiga hjälpmedel'],
+          check:'Gå igenom planen i din egen miljö och med dem som ska hjälpa till.',
+          caution:'Anpassa alltid planen till individuella förutsättningar.'
+        },
+        'kids-extra':{
+          intro:'Barn kan behöva både praktiska saker och extra tydlighet för att känna sig trygga.',
+          examples:['Barnmat, blöjor och hygienartiklar där det behövs','Varma kläder och extra filtar','Favoritbok, gosedjur eller enkel aktivitet utan el','En tydlig och lugn plan för hur familjen håller ihop'],
+          check:'Låt barnen vara delaktiga på ett sätt som passar deras ålder.',
+          caution:'Välj information som lugnar och förklarar utan att skrämma.'
+        }
+      }
+    },
+    en:{
+      open:'Read more and see examples',close:'Hide details',examples:'Examples of solutions',check:'Worth checking',caution:'Keep in mind',read:'Read official guidance',
+      intro:'Open an item for practical examples and guidance. Mark it complete when you have a working solution – you do not need to buy every example.',
+      details:{
+        'water-store':{intro:'Plan for drinking water and other essential uses for everyone in the household.',examples:['Clean, sealed food-grade water containers','Store water in a cool, dark place. Opaque containers can reduce light exposure, but cleanliness and food-safe materials matter most.','Bottled water and extra containers for collecting emergency water'],check:'A simple HemmaRedo tip: refresh the water at Midsummer and Christmas. Use the old water for plants, clean containers if needed and refill with fresh drinking water. Label each container with the filling date. Twice a year is our simple reminder, not an official requirement.',caution:'Boiling and filtering do not remove every type of contamination.'},
+        'food-week':{intro:'Start with foods your household actually eats, including options that need little water or cooking.',examples:['Canned beans, fish, vegetables and ready meals','Crispbread, oats, nuts and nut butter','Rice, pasta and other dry foods','Foods for children, allergies or special diets','Manual can opener'],check:'Check dates and rotate supplies regularly.',caution:'Plan for food safety when refrigeration stops.'},
+        'cook-power':{intro:'Plan an alternative way to prepare food when electricity is unavailable.',examples:['Camping stove and suitable fuel','Outdoor grill where permitted','Thermos for hot water','Meals needing minimal cooking'],check:'Test equipment and inspect fuel before an emergency.',caution:'Never use grills or fuel-burning camping stoves indoors. Carbon monoxide and fire risk.'},
+        warmth:{intro:'Have a safe plan for staying warm during a power outage.',examples:['Warm layers, hats, socks and sleeping bags','Blankets and extra duvets','One room to gather in','Approved wood-burning stove and dry wood if available'],check:'Identify which heating systems work without electricity.',caution:'Never use grills or unsuitable burners for indoor heating.'},
+        torch:{intro:'Reliable lighting helps you move safely when the power is out.',examples:['Flashlight','Headlamp for hands-free work','Battery-powered lantern','Spare batteries or charging plan'],check:'Test lights and keep them where everyone can find them.',caution:'Candles are a fire hazard; battery-powered lighting is often safer.'},
+        radio:{intro:'Swedish Radio P4 is a preparedness broadcaster. Keep a radio independent of mains power and internet.',examples:['Battery-powered FM radio','Crank or solar FM radio','Spare batteries','Note your local P4 frequency'],check:'Test P4 reception at home.',caution:'Streaming radio on a phone relies on connectivity.'},
+        power:{intro:'A charged phone can help you stay in touch when networks are available.',examples:['Charged power bank','Compatible charging cables','Suitable vehicle charger','Rechargeable lights'],check:'Charge and test batteries regularly.',caution:'Follow battery safety guidance.'},
+        aid:{intro:'Basic first-aid supplies and medicines need planning.',examples:['Dressings, plasters, bandages and gloves','Basic first-aid supplies','Necessary medicines according to medical advice'],check:'Check expiry dates and learn how to use the supplies.',caution:'Follow medical and pharmacy guidance for prescription medicines.'},
+        hygiene:{intro:'Plan for hygiene and sanitation if running water or sewage stops working.',examples:['Soap, hand sanitiser and wipes','Toilet paper, menstrual supplies and nappies','Waste bags and sealable containers'],check:'Plan safe waste handling.',caution:'Follow local municipal instructions during sewage disruptions.'},
+        contacts:{intro:'A paper contact list works even when your phone is unavailable.',examples:['Family and neighbours','Essential service contacts','112 emergency, 113 13 crisis information and 1177 healthcare advice'],check:'Keep a current paper copy.',caution:'Store private contact details securely.'},
+        meetup:{intro:'Agree how everyone will reconnect if mobile or internet networks fail.',examples:['Primary meeting point','Alternative meeting point','Contact outside your local area','Paper map and addresses'],check:'Discuss the plan with everyone in the household.',caution:'Follow official evacuation instructions.'},
+        'pet-supplies':{intro:'Pets need their own food, water, shelter and transport plan.',examples:['Familiar pet food and extra water','Leads, carriers and bowls','Any veterinary medicines and contacts'],check:'Plan for power cuts and evacuation.',caution:'Species have different needs, including temperature and electricity.'},
+        'medical-extra':{intro:'Plan for critical medical aids and medicines.',examples:['Private list of essential needs','Backup procedures','Medical and pharmacy contacts'],check:'Discuss appropriate preparations with healthcare professionals.',caution:'Do not enter sensitive medical details in HemmaRedo.'},
+        'electric-extra':{intro:'Some essential equipment depends on electricity.',examples:['Document power requirements','Ask suppliers about backup options','Plan a safe alternative location'],check:'Find out how long equipment can run without power.',caution:'Never connect critical equipment to untested power supplies.'},
+        'mobility-extra':{intro:'Plan for situations where lifts or transport are unavailable.',examples:['People who can help','Accessible routes and meeting places','Essential mobility aids'],check:'Review the plan in your actual environment.',caution:'Adapt to individual needs.'},
+        'kids-extra':{intro:'Children may need extra practical supplies and reassurance.',examples:['Age-appropriate food and hygiene supplies','Warm clothes and blankets','Comfort objects and offline activities','A simple family plan'],check:'Involve children in an age-appropriate way.',caution:'Use calm, clear explanations.'}
+      }
+    }
+  };
+
   const groupMeta = [
     {id:'water',icon:'droplet',color:'',name:{sv:'Vatten',en:'Water'}},
     {id:'food',icon:'utensils',color:'green',name:{sv:'Mat & tillagning',en:'Food & cooking'}},
@@ -188,13 +358,13 @@
   function navMarkup(home=false){
     const tr=L();return `<header class="site-header">
       <a href="#home" class="brand" aria-label="HemmaRedo – ${tr.start}">${icon('home')}<span>HemmaRedo.</span></a>
-      <nav class="desktop-links" aria-label="${tr.menu}"><a href="#quiz/0">${tr.how}</a><a href="#plan">${tr.yourPlan}</a><a href="#guides">${tr.guides}</a><a href="#help">${tr.help}</a></nav>
+      <nav class="desktop-links" aria-label="${tr.menu}"><a href="#how">${tr.how}</a><a href="#plan">${tr.yourPlan}</a><a href="#guides">${tr.guides}</a><a href="contacts.html">${lang==='sv'?'Telefonlista':'Phone list'}</a><a href="#help">${tr.help}</a></nav>
       <div class="top-actions"><label class="visually-hidden" for="lang-select">${tr.chooseLang}</label><select id="lang-select" class="lang-select" aria-label="${tr.chooseLang}"><option value="sv" ${lang==='sv'?'selected':''}>SV</option><option value="en" ${lang==='en'?'selected':''}>EN</option></select><button type="button" class="menu-button" data-action="menu" aria-label="${tr.menu}" aria-expanded="${menuOpen?'true':'false'}">${icon(menuOpen?'x':'menu')}</button></div>
-      ${menuOpen?`<nav class="menu-panel" aria-label="${tr.menu}"><button data-route="home">${icon('home')}${tr.start}</button><button data-route="quiz/0">${icon('clipboard')}${tr.how}</button><button data-route="plan">${icon('check')}${tr.yourPlan}</button><button data-route="guides">${icon('info')}${tr.guides}</button><button data-route="help">${icon('heart')}${tr.help}</button></nav>`:''}
+      ${menuOpen?`<nav class="menu-panel" aria-label="${tr.menu}"><button data-route="home">${icon('home')}${tr.start}</button><button data-route="how">${icon('clipboard')}${tr.how}</button><button data-route="plan">${icon('check')}${tr.yourPlan}</button><button data-route="guides">${icon('info')}${tr.guides}</button><a href="contacts.html" class="menu-page-link">${icon('phone')}${lang==='sv'?'Telefonlista':'Phone list'}</a><button data-route="help">${icon('heart')}${tr.help}</button></nav>`:''}
     </header>`;
   }
   function banner(){return active==='friend'?`<div class="friend-banner">${icon('users','ic-sm')} ${L().friendMode} <button type="button" data-action="own">${L().backToMine}</button></div>`:'';}
-  function footer(){return `<footer class="footer"><div class="footer-inner"><a class="brand" href="#home">${icon('home')}<span>HemmaRedo.</span></a><div class="footer-links"><a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a><a href="#guides">${L().guides}</a><a href="#help">${L().help}</a></div><p>${L().footer} ${L().offline}</p></div></footer>`;}
+  function footer(){return `<footer class="footer"><div class="footer-inner"><a class="brand" href="#home">${icon('home')}<span>HemmaRedo.</span></a><div class="footer-links"><a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a><a href="#guides">${L().guides}</a><a href="#help">${L().help}</a><a href="contacts.html">${lang==='sv'?'Telefonlista':'Phone list'}</a><a href="#privacy">${lang==='sv'?'Integritet & lagring':'Privacy & storage'}</a></div><p>${L().footer} ${L().offline}</p></div></footer>`;}
   function home(){
     const tr=L(),has=p().finished;return `<div class="home-surface">${navMarkup(true)}${banner()}<main class="home-main"><h1>${tr.headline}</h1><p class="hero-intro">${tr.intro}</p><div class="hero-btn-wrap">${action(has?tr.resume:tr.getStarted,'primary',has?'resume':'begin','arrow','hero-button')}<p class="hero-note">${tr.noLogin}</p></div></main></div>
     <section class="home-after"><div class="trust-strip"><div class="trust-item">${icon('leaf')}<span>${tr.simple}</span></div><div class="trust-item">${icon('shield')}<span>${tr.authorities}</span></div><div class="trust-item">${icon('home')}<span>${tr.tailored}</span></div><div class="trust-item">${icon('users')}<span>${tr.neighbors}</span></div></div>
@@ -216,17 +386,125 @@
   function summaryArt(){const tr=L(), pr=p();return `<div class="summary-art"><div class="summary-art-content"><strong>${tr.tailoredFor}</strong><p>${pr.adults} ${tr.adultsCount} · ${pr.children} ${tr.childrenCount} · ${pr.pets} ${tr.petsCount}</p></div></div>`;}
   function badge(task){const group=groupMeta.find(g=>g.id===task.group);return `<span class="icon-badge ${group?.color||''}">${icon(task.ic)}</span>`;}
   function result(){const tr=L(),c=calc(),pr=p();const priority=c.all.filter(x=>!done(x)).slice(0,3);return `${navMarkup()}${banner()}<main class="content-shell"><span class="eyebrow">${icon('leaf','ic-sm')}${tr.resultsLabel}</span><h1>${c.pct===100?tr.allDoneHeading:tr.resultsHeading}</h1><p class="lede">${tr.resultText}</p><div class="summary-grid"><article class="card summary-card"><div class="meter-flex">${progressRing(c.pct)}<p class="meter-desc"><strong>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</strong><br>${tr.progressDisclaimer}</p></div>${action(tr.viewPersonal,'primary','view-plan','arrow')}</article><article class="card">${summaryArt()}<div class="water-note" style="margin-top:13px"><span class="icon-badge">${icon('droplet')}</span><div><strong>${tr.waterVolume}: ${n((pr.adults+pr.children)*21)}–${n((pr.adults+pr.children)*35)} ${tr.liters}</strong><small>${tr.waterExtra}</small></div></div></article></div><div style="margin-top:29px" class="tiny-head">${icon('clipboard','ic-sm')}${tr.prioritized}</div><div class="priority-grid">${priority.length?priority.map(task=>`<button type="button" class="priority-card" data-priority="${task.group}">${badge(task)}<span><strong>${task.title}</strong><p>${task.desc}</p></span>${icon('arrow','priority-arrow ic-sm')}</button>`).join(''):`<div class="empty-state"><p>${tr.allSet}</p></div>`}</div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.strongerDesc}</p>${action(tr.helpBtn,'outline','help','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p></main>${footer()}`;}
-  function taskRow(task){return `<div class="task-row ${done(task)?'done':''}"><input type="checkbox" id="task-${task.id}" data-task="${task.id}" ${done(task)?'checked':''}><label for="task-${task.id}" class="task-copy"><strong>${task.title}</strong><p>${task.desc}</p><a href="${task.href}" target="_blank" rel="noopener noreferrer">${L().source} ↗</a></label></div>`;}
-  function plan(){const tr=L(),c=calc(),pr=p();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('check','ic-sm')}${tr.personal}</div><h1>${tr.personal}</h1><p class="lede">${tr.planDesc}</p><div class="card" style="margin-top:23px"><div class="plan-overview"><div><h3>${tr.little}</h3><p>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</p><button type="button" class="btn-quiet" style="padding-left:0;font-size:12px" data-action="edit">${tr.editAnswers}${icon('arrow','ic-sm')}</button></div>${progressRing(c.pct)}</div><div class="full-progress"><span style="width:${c.pct}%"></span></div><p class="source-note" style="margin-bottom:0">${tr.progressDisclaimer}</p></div><div class="plan-list">${groupMeta.map(g=>{const ts=c.all.filter(task=>task.group===g.id);const finished=ts.filter(done).length;const isOpen=expanded.has(g.id);return `<section class="plan-group" id="group-${g.id}"><button type="button" class="group-head" data-group="${g.id}" aria-expanded="${isOpen}"><span class="icon-badge ${g.color}">${icon(g.icon)}</span><span class="group-label"><strong>${name(g.name)}</strong><small>${finished} ${tr.outOf} ${ts.length} ${tr.stepsDone}</small></span>${icon('chevron','ic-sm')}</button><div class="group-content" ${isOpen?'':'hidden'}>${ts.map(taskRow).join('')}</div></section>`}).join('')}</div><div class="plan-actions">${action(tr.print,'primary','print','printer')}${action(tr.share,'outline','share','share')}${action(tr.newPlan,'outline','reset','back')}</div><div class="safe-note">${icon('info')}<span><strong>${tr.important}.</strong> ${tr.importantDesc}</span></div><div class="safe-note">${icon('printer')}<span>${tr.printHint}</span></div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.helpLead}</p>${action(tr.helpStart,'outline','friend','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p><div class="print-note">${tr.printDate}: ${new Date().toLocaleDateString(lang==='sv'?'sv-SE':'en-GB')} · HemmaRedo · ${pr.adults} ${tr.adultsCount}, ${pr.children} ${tr.childrenCount}, ${pr.pets} ${tr.petsCount}</div></main>${footer()}`;}
+
+  function taskRow(task){
+    const info=checklistDetails[lang],detail=info.details[task.id];
+    const expl=detail?`<details class="task-detail"><summary>${icon('info','ic-sm')}<span>${info.open}</span>${icon('chevron','ic-sm')}</summary>
+      <div class="task-detail-body"><p>${detail.intro}</p><h4>${info.examples}</h4><ul>${detail.examples.map(item=>`<li>${item}</li>`).join('')}</ul>
+      <div class="task-tip">${icon('check','ic-sm')}<p><strong>${info.check}:</strong> ${detail.check}</p></div>
+      <div class="task-warning">${icon('info','ic-sm')}<p><strong>${info.caution}:</strong> ${detail.caution}</p></div>
+      <a href="${task.href}" target="_blank" rel="noopener noreferrer">${info.read} ${icon('external','ic-sm')}</a>${task.id==='contacts'?'<a href="contacts.html" class="task-phone-link">'+(lang==='sv'?'Skapa utskrivbar telefonlista':'Create printable contact list')+' ↗</a>':''}</div></details>`:`<a href="${task.href}" target="_blank" rel="noopener noreferrer">${L().source} ↗</a>`;
+    return `<div class="task-row ${done(task)?'done':''}"><input type="checkbox" aria-label="${escapeHTML(task.title)}" id="task-${task.id}" data-task="${task.id}" ${done(task)?'checked':''}><div class="task-copy"><label for="task-${task.id}"><strong>${task.title}</strong></label><p>${task.desc}</p>${expl}</div></div>`;
+  }
+  function plan(){const tr=L(),c=calc(),pr=p();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('check','ic-sm')}${tr.personal}</div><h1>${tr.personal}</h1><p class="lede">${tr.planDesc}</p><p class="checklist-intro">${icon('lightbulb','ic-sm')}${checklistDetails[lang].intro}</p><div class="card" style="margin-top:23px"><div class="plan-overview"><div><h3>${tr.little}</h3><p>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</p><button type="button" class="btn-quiet" style="padding-left:0;font-size:12px" data-action="edit">${tr.editAnswers}${icon('arrow','ic-sm')}</button></div>${progressRing(c.pct)}</div><div class="full-progress"><span style="width:${c.pct}%"></span></div><p class="source-note" style="margin-bottom:0">${tr.progressDisclaimer}</p></div><div class="plan-list">${groupMeta.map(g=>{const ts=c.all.filter(task=>task.group===g.id);const finished=ts.filter(done).length;const isOpen=expanded.has(g.id);return `<section class="plan-group" id="group-${g.id}"><button type="button" class="group-head" data-group="${g.id}" aria-expanded="${isOpen}"><span class="icon-badge ${g.color}">${icon(g.icon)}</span><span class="group-label"><strong>${name(g.name)}</strong><small>${finished} ${tr.outOf} ${ts.length} ${tr.stepsDone}</small></span>${icon('chevron','ic-sm')}</button><div class="group-content" ${isOpen?'':'hidden'}>${ts.map(taskRow).join('')}</div></section>`}).join('')}</div><div class="plan-actions">${action(tr.print,'primary','print','printer')}${action(tr.share,'outline','share','share')}${action(tr.newPlan,'outline','reset','back')}</div><div class="safe-note">${icon('info')}<span><strong>${tr.important}.</strong> ${tr.importantDesc}</span></div><div class="safe-note">${icon('printer')}<span>${tr.printHint}</span></div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.helpLead}</p>${action(tr.helpStart,'outline','friend','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p><div class="print-note">${tr.printDate}: ${new Date().toLocaleDateString(lang==='sv'?'sv-SE':'en-GB')} · HemmaRedo · ${pr.adults} ${tr.adultsCount}, ${pr.children} ${tr.childrenCount}, ${pr.pets} ${tr.petsCount}</div></main>${footer()}`;}
   function help(){const tr=L();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('users','ic-sm')}${tr.helpEyebrow}</div><h1>${tr.helpTitle}</h1><p class="lede">${tr.helpLead}</p><div class="help-hero"><div class="help-visual"></div><div class="help-body"><h2>${tr.help}</h2><p>${tr.helpSeparate}</p>${action(tr.helpStart,'primary','friend','arrow')}</div></div><div class="guide-grid"><article class="guide-card">${icon('heart')}<h3>${tr.helpCard1}</h3><p>${tr.helpText1}</p></article><article class="guide-card">${icon('droplet')}<h3>${tr.helpCard2}</h3><p>${tr.helpText2}</p></article><article class="guide-card">${icon('users')}<h3>${tr.helpCard3}</h3><p>${tr.helpText3}</p></article></div></main>${footer()}`;}
-  function guides(){const tr=L();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('shield','ic-sm')}${tr.madeFor}</div><h1>${tr.useful}</h1><p class="lede">${tr.usefulDesc}</p><div class="guide-grid"><article class="guide-card">${icon('shield')}<h3>${tr.officialTitle}</h3><p>${tr.officialDesc}</p><a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article><article class="guide-card">${icon('phone')}<h3>${tr.numberTitle}</h3><p>${tr.numberDesc}</p><a href="${NUMBERS}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article><article class="guide-card">${icon('radio')}<h3>${tr.radioTitle}</h3><p>${tr.radioDesc}</p><a href="${RADIO}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article></div><div class="privacy-box">${icon('lock')}<div><h3>${tr.privacy}</h3><p>${tr.privacyText}</p><p style="margin-top:8px">${tr.noAccount}</p></div></div><div class="safe-note">${icon('info')}<span>${tr.importantDesc}</span></div><div class="safe-note">${icon('download')}<span>${tr.saveToHome} ${tr.offline}</span></div></main>${footer()}`;}
+
+  function howItWorks(){
+    const tr=howCopy[lang];
+    const cards=[
+      {number:'01',iconName:'home',title:tr.s1,desc:tr.d1},
+      {number:'02',iconName:'clipboard',title:tr.s2,desc:tr.d2},
+      {number:'03',iconName:'check',title:tr.s3,desc:tr.d3}
+    ];
+    return `${navMarkup()}${banner()}<main class="how-page">
+      <section class="how-hero">
+        <div class="how-hero-copy"><div class="eyebrow">${icon('leaf','ic-sm')}${tr.kicker}</div>
+          <h1>${tr.heading}</h1><p>${tr.lead}</p>
+          ${action(tr.topButton,'primary','begin','arrow','how-main-action')}
+          <span class="how-footnote">${tr.small}</span>
+        </div>
+        <div class="how-hero-art" role="img" aria-label="${lang==='sv'?'Illustrerad stuga vid en stilla sjö':'Illustrated cottage beside a peaceful lake'}"></div>
+      </section>
+      <section class="how-section how-steps">
+        <div class="how-section-heading"><div class="eyebrow">${icon('sun','ic-sm')}01 — 03</div><h2>${tr.howTitle}</h2><p>${tr.howLead}</p></div>
+        <div class="how-steps-grid">${cards.map(card=>`<article class="how-step"><div class="how-step-top"><span class="how-number">${card.number}</span><span class="how-step-icon">${icon(card.iconName)}</span></div><h3>${card.title}</h3><p>${card.desc}</p></article>`).join('')}</div>
+      </section>
+      <section class="how-section how-preview">
+        <div class="how-preview-copy"><div class="eyebrow">${icon('leaf','ic-sm')}${tr.previewLabel}</div><h2>${tr.previewTitle}</h2><p>${tr.previewLead}</p><p class="how-preview-note">${icon('info','ic-sm')}${tr.previewNote}</p></div>
+        <div class="how-mock-plan" aria-label="${tr.previewLabel}">
+          <div class="how-mock-header"><span>HemmaRedo.</span><span class="how-mock-dots">● ● ●</span></div>
+          <div class="how-mock-content"><div class="how-mock-ring"><span>2/3<small>${lang==='sv'?'exempel':'example'}</small></span></div><div class="how-mock-tasks">
+            <div><span class="how-check-done">${icon('check','ic-sm')}</span>${tr.previewItem1}</div>
+            <div><span class="how-check-done">${icon('check','ic-sm')}</span>${tr.previewItem2}</div>
+            <div><span class="how-check-empty"></span>${tr.previewItem3}</div>
+          </div></div>
+        </div>
+      </section>
+      <section class="how-section how-faq"><div class="how-section-heading"><div class="eyebrow">${icon('heart','ic-sm')}FAQ</div><h2>${tr.faqTitle}</h2></div>
+      ${[1,2,3,4].map(i=>`<details class="how-faq-item"><summary>${tr['q'+i]}${icon('chevron','ic-sm')}</summary><p>${tr['a'+i]}</p></details>`).join('')}
+      <a class="how-source-link" href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">${tr.official}${icon('external','ic-sm')}</a></section>
+      <section class="how-closing"><div class="how-closing-content"><div class="eyebrow">${icon('heart','ic-sm')}HemmaRedo</div><h2>${tr.closingTitle}</h2><p>${tr.closingLead}</p>${action(tr.closingButton,'primary','begin','arrow')}</div></section>
+    </main>${footer()}`;
+  }
+
+
+  function guides(){
+    const tr=resourceCopy[lang];
+    const link=(url,label)=>`<a class="resources-link" href="${url}" target="_blank" rel="noopener noreferrer">${label} ${icon('external','ic-sm')}</a>`;
+    const officialCards=[
+      {iconName:'shield',title:tr.sourceTitle,desc:tr.sourceDesc,url:OFFICIAL},
+      {iconName:'phone',title:tr.numbersTitle,desc:tr.numbersDesc,url:NUMBERS},
+      {iconName:'radio',title:tr.radioTitle,desc:tr.radioDesc,url:RADIO}
+    ];
+    const podcasts=[
+      {num:'01',name:tr.pod1,desc:tr.pod1Desc,url:'https://shows.acast.com/katastrofen',cover:'https://i.scdn.co/image/ab6765630000ba8af8fe4e13ef3d42f5036e5016'},
+      {num:'02',name:tr.pod2,desc:tr.pod2Desc,url:'https://podcasts.apple.com/se/podcast/vardagsprepping/id1511607040',cover:'https://i.scdn.co/image/ab6765630000ba8a7def9e9af809133e4318352a'},
+      {num:'03',name:tr.pod3,desc:tr.pod3Desc,url:'https://www.hemberedskap.se/',cover:'https://images.podfollow.com/1292484355.jpg'}
+    ];
+    return `${navMarkup()}${banner()}<main class="resources-page">
+      <section class="resources-hero"><div class="resources-hero-copy"><div class="eyebrow">${icon('leaf','ic-sm')}${tr.eyebrow}</div><h1>${tr.title}</h1><p>${tr.intro}</p></div><div class="resources-hero-art" aria-hidden="true"></div></section>
+      <section class="resources-section"><div class="resources-section-head"><div class="eyebrow">${icon('shield','ic-sm')}${tr.typeOfficial}</div><h2>${tr.official}</h2><p>${tr.officialLead}</p></div><div class="resources-official-grid">
+        ${officialCards.map(card=>`<article class="resource-card resource-official"><span class="resource-icon">${icon(card.iconName)}</span><h3>${card.title}</h3><p>${card.desc}</p>${link(card.url,tr.read)}</article>`).join('')}
+      </div><div class="resources-contact-feature"><div><strong>${lang==='sv'?'Skriv ut viktiga telefonnummer':'Print important phone numbers'}</strong><p>${lang==='sv'?'Färdig A4-lista med myndighetsnummer. Fyll på med mormor, grannen och familjens viktiga kontakter.':'A ready-to-print A4 sheet with official numbers and your own contacts.'}</p></div><a href="contacts.html" class="btn-outline">${icon('printer','ic-sm')}${lang==='sv'?'Skapa telefonlista':'Create phone list'}</a></div></section>
+      <section class="resources-section resources-podcast-section"><div class="resources-section-head"><div class="eyebrow">${icon('radio','ic-sm')}${tr.typePodcast}</div><h2>${tr.listen}</h2><p>${tr.listenLead}</p></div>
+       <div class="resources-podcasts">
+        ${podcasts.map(card=>`<article class="resources-podcast"><div class="resources-podcast-cover"><img src="${card.cover}" alt="${lang==='sv'?'Omslag för':'Cover for'} ${escapeHTML(card.name)}" loading="lazy" decoding="async" onerror="this.hidden=true"><span class="resources-cover-fallback">${escapeHTML(card.name)}</span></div><div class="resources-podcast-copy"><div class="resources-podcast-label"><span>${card.num}</span><span>${tr.typePodcast}</span></div><h3>${card.name}</h3><p>${card.desc}</p>${link(card.url,tr.listenAction)}</div></article>`).join('')}
+       </div>
+       <aside class="resource-featured"><span class="eyebrow">${icon('sun','ic-sm')}${tr.featured}</span><h3>${tr.featuredTitle}</h3><p>${tr.featuredText}</p>${link('https://shows.acast.com/katastrofen/episodes/126-hemberedskap-1a',tr.episode)}</aside>
+      </section>
+      <section class="resources-section"><div class="resources-section-head"><div class="eyebrow">${icon('sun','ic-sm')}${tr.typeVideo}</div><h2>${tr.watch}</h2><p>${tr.watchLead}</p></div>
+      <article class="resource-video"><a class="resource-video-art" href="https://www.youtube.com/watch?v=6DfsNGTqJlw" target="_blank" rel="noopener noreferrer" aria-label="${tr.watchAction}: ${tr.videoTitle}"><img src="https://i.ytimg.com/vi/6DfsNGTqJlw/hqdefault.jpg" alt="${tr.videoTitle}" loading="lazy" decoding="async"><span class="resource-play" aria-hidden="true">▶</span></a><div class="resource-video-copy"><span class="eyebrow">${tr.typeVideo}</span><h3>${tr.videoTitle}</h3><p>${tr.videoDesc}</p>${link('https://www.youtube.com/watch?v=6DfsNGTqJlw',tr.watchAction)}</div></article>
+      <div class="resources-caveat"><div class="resource-icon">${icon('info')}</div><div><strong>${tr.independent}</strong><p>${tr.disclaimer}</p></div></div>
+      </section>
+      <section class="resources-bottom"><h2>${tr.ctaTitle}</h2><p>${tr.ctaText}</p>${action(tr.ctaButton,'primary','begin','arrow')}</section>
+    </main>${footer()}`;
+  }
+
+  const privacyCopy = {
+    sv:{
+      title:'Integritet & lagring',lead:'HemmaRedo ska vara enkelt att använda utan konto – och utan onödig spårning.',sub:'Så fungerar informationen i den här prototypen.',
+      section1:'Vad sparas i din webbläsare?',body1:'Vi använder webbläsarens lokala lagring (localStorage) för dina svar om hushållet, checklistans markeringar, språkval och en separat plan om du hjälper en vän. Uppgifterna stannar normalt i den här webbläsaren och skickas inte till vår egen server för att lagra en profil. Om du använder en annan enhet finns inte dina sparade svar där.',
+      section2:'Behöver du godkänna cookies?',body2:'Vi använder inte egna analys- eller annonscookies i prototypen. Lagringen används för att de funktioner du valt ska fungera, till exempel för att din plan ska finnas kvar när du återkommer. Därför visar vi ingen samtyckesbanner för icke-nödvändiga cookies. Om vi lägger till statistik eller annan icke-nödvändig lagring behöver vi ompröva detta och vid behov be om samtycke innan den aktiveras.',
+      section3:'Externa tjänster',body3:'Webbplatsen laddar typsnitt från Google Fonts. Sidan Tips & länkar kan ladda omslagsbilder från externa bildservrar och en videominiatyr från YouTube. När sådana resurser laddas kan din webbläsare kontakta dessa leverantörer och dela tekniska anslutningsuppgifter, till exempel IP-adress. När du väljer en extern länk gäller den webbplatsens egen integritetspolicy.',
+      section4:'Radera dina sparade uppgifter',body4:'Du kan radera HemmaRedos lokalt sparade hushållsplan, vänplan och språkval här. Detta kan inte ångras. Om du rensar webbläsarens webbplatsdata kan uppgifterna också försvinna.',
+      clear:'Radera mina sparade uppgifter',confirm:'Vill du radera din plan, vänplan och språkval från den här webbläsaren? Det går inte att ångra.',section5:'Vem ansvarar?',body5:'HemmaRedo är en oberoende prototyp och inte en myndighetstjänst. Den här texten beskriver den nuvarande tekniska lösningen, men är inte en komplett juridisk integritetspolicy inför offentlig lansering.',
+      close:'Till startsidan'
+    },
+    en:{
+      title:'Privacy & local storage',lead:'HemmaRedo should work without an account or unnecessary tracking.',sub:'How this prototype handles information.',
+      section1:'What is stored in your browser?',body1:'We use localStorage to remember household answers, checked tasks, language preference and a separate plan if you help a friend. These details normally remain in this browser and are not sent to our server to create a profile. They do not automatically appear on other devices.',
+      section2:'Do you need to accept cookies?',body2:'The prototype does not use its own advertising or analytics cookies. Local storage supports features you request, such as keeping your plan between visits. Therefore we do not show a non-essential cookie consent banner. If we add analytics or other non-essential storage, we must reassess this and ask for consent when required before activation.',
+      section3:'Third-party services',body3:'The site loads fonts from Google Fonts. The Advice & links page can load podcast artwork from external image servers and a video thumbnail from YouTube. Loading these resources can send technical connection information such as your IP address to their providers. External websites have their own privacy policies.',
+      section4:'Delete locally saved details',body4:'You can remove your saved household plan, friend plan and language preference from this browser. This cannot be undone. Clearing browser site data can also remove them.',
+      clear:'Delete my saved details',confirm:'Delete your household plan, friend plan and language preference from this browser? This cannot be undone.',section5:'Who is responsible?',body5:'HemmaRedo is an independent prototype, not a government service. This page describes the current technical implementation but is not a complete legal privacy policy for a public launch.',
+      close:'Back to home'
+    }
+  };
+  function privacyPage(){
+    const t=privacyCopy[lang];
+    const blocks=[[t.section1,t.body1],[t.section2,t.body2],[t.section3,t.body3],[t.section4,t.body4],[t.section5,t.body5]];
+    return `${navMarkup()}${banner()}<main class="content-shell privacy-page"><div class="eyebrow">${icon('lock','ic-sm')}HemmaRedo</div><h1>${t.title}</h1><p class="lede">${t.lead}</p><p class="privacy-sub">${t.sub}</p>
+      <div class="privacy-sections">${blocks.map((b,i)=>`<section class="privacy-section"><h2>${b[0]}</h2><p>${b[1]}</p>${i===3?'<button type="button" class="btn-outline privacy-delete" data-action="clear-storage">'+t.clear+'</button>':''}</section>`).join('')}</div>
+      ${action(t.close,'quiet','home','back')}</main>${footer()}`;
+  }
+
   function render(){document.documentElement.lang=lang;document.title='HemmaRedo – '+(lang==='sv'?'Ett tryggare hem börjar här':'A safer home starts here');
-    root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():guides();
+    root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():route==='how'?howItWorks():route==='privacy'?privacyPage():guides();
     if(toastText)root.insertAdjacentHTML('beforeend',`<div role="status" class="toast">${escapeHTML(toastText)}</div>`);
   }
   function showHash(){menuOpen=false;const hash=decodeURIComponent(location.hash.replace(/^#\/?/,''));const match=/^quiz(?:\/(\d))?$/.exec(hash);
     if(match){route='quiz';step=Math.max(0,Math.min(4,Number(match[1]||0)));}
-    else route=['home','result','plan','help','guides'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
+    else route=['home','result','plan','help','how','guides','privacy'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
   }
   function navigate(to){const hash='#'+to;if(location.hash===hash)showHash();else location.hash=hash;}
   function toast(msg){toastText=msg;clearTimeout(toastTimer);render();toastTimer=setTimeout(()=>{toastText='';render();},2700);}
@@ -267,6 +545,13 @@
       case 'own':ownMode();break;
       case 'reset':reset();break;
       case 'print':for(const g of groupMeta)expanded.add(g.id);render();requestAnimationFrame(()=>window.print());break;
+      case 'clear-storage':
+        if(confirm(privacyCopy[lang].confirm)){
+          Object.values(STORAGE).forEach(key=>{try{localStorage.removeItem(key);}catch{}});
+          own=fresh();friend=fresh();active='own';lang='sv';menuOpen=false;expanded.clear();expanded.add('water');expanded.add('food');navigate('home');render();
+        }
+        break;
+      case 'home':navigate('home');break;
       case 'share':share();break;
     }
   });
