@@ -225,3 +225,14 @@
 .privacy-section p{font-size:14px;line-height:1.75;color:#586c5f;margin:0}
 .privacy-delete{margin-top:18px;border-color:#c6b3a5;color:#7c4033}
 @media(min-width:720px){.privacy-sections{gap:17px}.privacy-section{padding:30px 33px}}
+
+/* Printable contact sheet links */
+.menu-panel .menu-page-link{display:flex;align-items:center;gap:12px;padding:12px;border:0;background:transparent;text-align:left;border-radius:11px;font-weight:600;color:var(--ink);text-decoration:none;font-size:15px}
+.menu-panel .menu-page-link:hover{background:var(--sage)}
+.menu-panel .menu-page-link .ic{width:19px;height:19px}
+.resources-contact-feature{margin-top:21px;border-radius:18px;background:#e7eee4;border:1px solid #d9e5d9;padding:20px;display:grid;gap:14px}
+.resources-contact-feature strong{font-size:18px;color:#1d4c35}
+.resources-contact-feature p{color:#526b57;font-size:13px;line-height:1.6;margin:7px 0 0}
+.resources-contact-feature .btn-outline{justify-self:start}
+.task-phone-link{display:inline-flex;margin-top:9px;font-size:12px;font-weight:800}
+@media(min-width:700px){.resources-contact-feature{grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:23px 26px}}
