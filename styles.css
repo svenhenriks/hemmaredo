@@ -107,3 +107,43 @@
 @media (min-width:1051px){
   .how-hero-copy{padding-left:max(45px,calc((100vw - 1100px)/2))}
 }
+
+/* Resources library – mobile-first */
+.resources-page{overflow:hidden}
+.resources-hero{position:relative;min-height:460px;background:#f6f2e8;isolation:isolate;display:flex;flex-direction:column}
+.resources-hero-copy{position:relative;z-index:2;padding:63px 24px 35px;max-width:590px}
+.resources-hero h1{font-size:clamp(43px,10vw,66px);line-height:1.06;margin:0 0 20px}
+.resources-hero-copy>p{font-size:15px;line-height:1.7;color:#4a6556;max-width:490px}
+.resources-hero-art{height:220px;flex:1;background:url('assets/hemmaredo-landskap.webp') center 60%/cover no-repeat;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 35%);mask-image:linear-gradient(to bottom,transparent,#000 35%)}
+.resources-section{max-width:1100px;padding:63px 21px;margin:auto}
+.resources-section-head{max-width:635px;margin-bottom:28px}
+.resources-section-head h2,.resources-bottom h2{font-size:clamp(32px,7.8vw,46px);line-height:1.12;margin:0 0 13px}
+.resources-section-head p{font-size:15px;color:#627367;line-height:1.7}
+.resources-official-grid{display:grid;gap:12px}
+.resource-card{background:#fffdf7;border:1px solid #e4e5d9;border-radius:19px;padding:24px 22px;display:flex;flex-direction:column}
+.resource-icon{background:#e8eee6;color:#28583c;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none}
+.resource-icon .ic{width:24px;height:24px}
+.resource-card h3{font-family:var(--serif);font-size:21px;margin:20px 0 10px}
+.resource-card p{font-size:13px;color:#5a6d60;line-height:1.65;flex:1}
+.resources-link{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:#225239;text-decoration:underline;text-underline-offset:4px;align-self:flex-start;margin-top:8px}
+.resources-link .ic{width:16px;height:16px}
+.resources-podcast-section{max-width:none;background:#e8eee5;padding-left:max(21px,calc((100vw - 1100px)/2));padding-right:max(21px,calc((100vw - 1100px)/2))}
+.resources-podcasts{display:grid;gap:12px}
+.resources-podcast{background:#fffdf7;border:1px solid #dbe4d9;border-radius:19px;padding:22px;display:grid;gap:15px}
+.resources-podcast-label{display:flex;gap:9px;align-items:center;color:#53765c;font-size:10px;font-weight:800;letter-spacing:.1em}
+.resources-podcast-label span:first-child{width:34px;height:34px;background:#e6efdf;border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:17px;letter-spacing:0}
+.resources-podcast h3{font-family:var(--serif);font-size:24px;line-height:1.18;margin:0 0 10px}
+.resources-podcast p,.resource-featured p{font-size:13px;line-height:1.65;color:#5e7264;margin-bottom:12px}
+.resource-featured{margin-top:17px;background:#f8eddb;border-radius:19px;padding:25px;border:1px solid #eddbc3}
+.resource-featured h3{font-family:var(--serif);font-size:24px;margin:2px 0 11px}
+.resource-video{background:#fffdf7;border:1px solid #e6e3d8;border-radius:19px;overflow:hidden;display:grid}
+.resource-video-art{min-height:180px;background:linear-gradient(180deg,#e2eae0,#c8d9c7);display:grid;place-items:center;color:#305b40}
+.resource-video-art .ic{width:75px;height:75px;stroke-width:1.1}
+.resource-video-copy{padding:25px}
+.resource-video-copy h3{font-family:var(--serif);font-size:25px;margin:0 0 11px}
+.resource-video-copy p{font-size:14px;line-height:1.7;color:#607265}
+.resources-caveat{margin-top:26px;display:flex;gap:14px;background:#eff1e9;border-radius:17px;padding:18px}
+.resources-caveat strong{font-size:13px}.resources-caveat p{font-size:12px;color:#5c7060;line-height:1.7;margin:5px 0 0}
+.resources-bottom{text-align:center;background:#244d39;padding:67px 22px 75px;color:#fffdf7}
+.resources-bottom h2{color:#fffdf7}.resources-bottom p{color:#d4e3d5;margin-bottom:25px}.resources-bottom .btn-primary{background:#fff7e8;color:#25503b}
+@media(min-width:720px){.resources-hero{min-height:505px;display:block}.resources-hero-copy{padding:100px 40px 85px max(40px,calc((100vw - 1100px)/2));width:62%;max-width:none}.resources-hero h1{font-size:clamp(46px,5vw,72px);max-width:650px}.resources-hero-art{position:absolute;right:0;top:0;bottom:0;width:51%;height:100%;-webkit-mask-image:linear-gradient(to right,transparent,#000 25%);mask-image:linear-gradient(to right,transparent,#000 25%)}.resources-official-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.resources-podcasts{grid-template-columns:repeat(3,minmax(0,1fr))}.resource-video{grid-template-columns:1fr 1.4fr}.resource-video-art{min-height:260px}.resource-video-copy{padding:35px;align-self:center}}
