@@ -143,6 +143,12 @@
     }
   };
 
+
+  const resourceCopy={
+    sv:{eyebrow:'UTVALDA RESURSER',title:'Tips, kunskap & inspiration.',intro:'Nyfiken på hur du kan bli bättre förberedd? Här hittar du officiella råd, poddar och filmer som gör det enklare att börja. Ta det i din egen takt.',official:'Börja med säkra källor',officialLead:'När något händer är det myndigheternas aktuella information du ska följa.',listen:'För dig som gillar att lyssna',listenLead:'Olika perspektiv på hemberedskap, vardagslösningar och att ta hand om varandra.',watch:'Se & lär',watchLead:'En utvald föreläsning att börja med. Vi fyller på med fler granskade filmer framöver.',featured:'BRA STÄLLE ATT BÖRJA',featuredTitle:'Ett avsnitt om grunderna',featuredText:'Avsnitt 126, Hemberedskap 1a, går igenom bland annat värme, vatten, mat och hur man kommer igång.',sourceTitle:'Krisinformation.se',sourceDesc:'Officiell krisinformation och råd om hemberedskap.',numbersTitle:'Viktiga telefonnummer',numbersDesc:'När ska du ringa 112, 113 13 eller 1177?',radioTitle:'Sveriges Radio P4',radioDesc:'Beredskapskanal för viktig information.',pod1:'I väntan på katastrofen',pod1Desc:'Kalle Zackari Wahlström och Patrick Sellman samtalar om praktisk beredskap, småbruk och vardagsliv – med humor och nyfikenhet.',pod2:'Vardagsprepping',pod2Desc:'Intervjuer och vardagsnära råd för att bygga upp sin hemberedskap stegvis.',pod3:'Hemberedskap',pod3Desc:'Anette Staaf och Niklas Larsson diskuterar beredskap, säkerhet och erfarenheter från verkliga händelser.',videoTitle:'MSB Live: Hemberedskap',videoDesc:'En frågestund där myndighetens kriskommunikatörer svarar på vanliga frågor om hemberedskap.',read:'Besök webbplatsen',listenAction:'Lyssna på podden',episode:'Lyssna på avsnittet',watchAction:'Se filmen',independent:'Om innehållet',disclaimer:'Poddar och videor är tips för vidare lärande, inte officiella råd från HemmaRedo. Uppgifter och rekommendationer från externa skapare kan skilja sig från myndigheternas. Vid en pågående kris: följ officiell information.',ctaTitle:'Från inspiration till handling.',ctaText:'När du känner dig redo kan du skapa din egen lilla plan – helt gratis.',ctaButton:'Skapa min plan',typePodcast:'PODD',typeVideo:'VIDEO',typeOfficial:'OFFICIELL KÄLLA'},
+    en:{eyebrow:'SELECTED RESOURCES',title:'Advice, knowledge & inspiration.',intro:'Want to feel better prepared? Here are official sources, podcasts and videos to help you get started, at your own pace.',official:'Start with trusted sources',officialLead:'During an emergency, follow the authorities’ current guidance.',listen:'For those who like listening',listenLead:'Different perspectives on household preparedness, practical solutions and supporting others.',watch:'Watch & learn',watchLead:'A selected talk to start with. More reviewed videos may be added later.',featured:'A GOOD STARTING POINT',featuredTitle:'An episode about the basics',featuredText:'Episode 126, Hemberedskap 1a, covers warmth, water, food and getting started.',sourceTitle:'Krisinformation.se',sourceDesc:'Official Swedish crisis information and preparedness advice.',numbersTitle:'Important phone numbers',numbersDesc:'When should you call 112, 113 13 or 1177?',radioTitle:'Swedish Radio P4',radioDesc:'Preparedness broadcaster for important public information.',pod1:'I väntan på katastrofen',pod1Desc:'Kalle Zackari Wahlström and Patrick Sellman discuss practical preparedness, small-scale living and everyday life, with humour.',pod2:'Vardagsprepping',pod2Desc:'Interviews and practical advice for building household preparedness step by step.',pod3:'Hemberedskap',pod3Desc:'Anette Staaf and Niklas Larsson discuss preparedness, safety and lessons from real events.',videoTitle:'MSB Live: Hemberedskap',videoDesc:'A Q&A where emergency communicators answer common questions about household preparedness. In Swedish.',read:'Open website',listenAction:'Listen to podcast',episode:'Listen to episode',watchAction:'Watch video',independent:'About these recommendations',disclaimer:'Podcasts and videos are suggestions for further learning, not official HemmaRedo advice. Independent creators may give guidance that differs from public authorities. During an emergency, follow official information.',ctaTitle:'Turn inspiration into action.',ctaText:'When you are ready, create a simple plan for your household – for free.',ctaButton:'Create my plan',typePodcast:'PODCAST',typeVideo:'VIDEO',typeOfficial:'OFFICIAL SOURCE'}
+  };
+
   const groupMeta = [
     {id:'water',icon:'droplet',color:'',name:{sv:'Vatten',en:'Water'}},
     {id:'food',icon:'utensils',color:'green',name:{sv:'Mat & tillagning',en:'Food & cooking'}},
@@ -292,7 +298,38 @@
     </main>${footer()}`;
   }
 
-  function guides(){const tr=L();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('shield','ic-sm')}${tr.madeFor}</div><h1>${tr.useful}</h1><p class="lede">${tr.usefulDesc}</p><div class="guide-grid"><article class="guide-card">${icon('shield')}<h3>${tr.officialTitle}</h3><p>${tr.officialDesc}</p><a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article><article class="guide-card">${icon('phone')}<h3>${tr.numberTitle}</h3><p>${tr.numberDesc}</p><a href="${NUMBERS}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article><article class="guide-card">${icon('radio')}<h3>${tr.radioTitle}</h3><p>${tr.radioDesc}</p><a href="${RADIO}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article></div><div class="privacy-box">${icon('lock')}<div><h3>${tr.privacy}</h3><p>${tr.privacyText}</p><p style="margin-top:8px">${tr.noAccount}</p></div></div><div class="safe-note">${icon('info')}<span>${tr.importantDesc}</span></div><div class="safe-note">${icon('download')}<span>${tr.saveToHome} ${tr.offline}</span></div></main>${footer()}`;}
+
+  function guides(){
+    const tr=resourceCopy[lang];
+    const link=(url,label)=>`<a class="resources-link" href="${url}" target="_blank" rel="noopener noreferrer">${label} ${icon('external','ic-sm')}</a>`;
+    const officialCards=[
+      {iconName:'shield',title:tr.sourceTitle,desc:tr.sourceDesc,url:OFFICIAL},
+      {iconName:'phone',title:tr.numbersTitle,desc:tr.numbersDesc,url:NUMBERS},
+      {iconName:'radio',title:tr.radioTitle,desc:tr.radioDesc,url:RADIO}
+    ];
+    const podcasts=[
+      {num:'01',name:tr.pod1,desc:tr.pod1Desc,url:'https://shows.acast.com/katastrofen'},
+      {num:'02',name:tr.pod2,desc:tr.pod2Desc,url:'https://podcasts.apple.com/se/podcast/vardagsprepping/id1511607040'},
+      {num:'03',name:tr.pod3,desc:tr.pod3Desc,url:'https://www.hemberedskap.se/'}
+    ];
+    return `${navMarkup()}${banner()}<main class="resources-page">
+      <section class="resources-hero"><div class="resources-hero-copy"><div class="eyebrow">${icon('leaf','ic-sm')}${tr.eyebrow}</div><h1>${tr.title}</h1><p>${tr.intro}</p></div><div class="resources-hero-art" aria-hidden="true"></div></section>
+      <section class="resources-section"><div class="resources-section-head"><div class="eyebrow">${icon('shield','ic-sm')}${tr.typeOfficial}</div><h2>${tr.official}</h2><p>${tr.officialLead}</p></div><div class="resources-official-grid">
+        ${officialCards.map(card=>`<article class="resource-card resource-official"><span class="resource-icon">${icon(card.iconName)}</span><h3>${card.title}</h3><p>${card.desc}</p>${link(card.url,tr.read)}</article>`).join('')}
+      </div></section>
+      <section class="resources-section resources-podcast-section"><div class="resources-section-head"><div class="eyebrow">${icon('radio','ic-sm')}${tr.typePodcast}</div><h2>${tr.listen}</h2><p>${tr.listenLead}</p></div>
+       <div class="resources-podcasts">
+        ${podcasts.map(card=>`<article class="resources-podcast"><div class="resources-podcast-label"><span>${card.num}</span><span>${tr.typePodcast}</span></div><div class="resources-podcast-copy"><h3>${card.name}</h3><p>${card.desc}</p>${link(card.url,tr.listenAction)}</div></article>`).join('')}
+       </div>
+       <aside class="resource-featured"><span class="eyebrow">${icon('sun','ic-sm')}${tr.featured}</span><h3>${tr.featuredTitle}</h3><p>${tr.featuredText}</p>${link('https://shows.acast.com/katastrofen/episodes/126-hemberedskap-1a',tr.episode)}</aside>
+      </section>
+      <section class="resources-section"><div class="resources-section-head"><div class="eyebrow">${icon('sun','ic-sm')}${tr.typeVideo}</div><h2>${tr.watch}</h2><p>${tr.watchLead}</p></div>
+      <article class="resource-video"><div class="resource-video-art">${icon('radio')}</div><div class="resource-video-copy"><span class="eyebrow">${tr.typeVideo}</span><h3>${tr.videoTitle}</h3><p>${tr.videoDesc}</p>${link('https://www.youtube.com/watch?v=6DfsNGTqJlw',tr.watchAction)}</div></article>
+      <div class="resources-caveat"><div class="resource-icon">${icon('info')}</div><div><strong>${tr.independent}</strong><p>${tr.disclaimer}</p></div></div>
+      </section>
+      <section class="resources-bottom"><h2>${tr.ctaTitle}</h2><p>${tr.ctaText}</p>${action(tr.ctaButton,'primary','begin','arrow')}</section>
+    </main>${footer()}`;
+  }
   function render(){document.documentElement.lang=lang;document.title='HemmaRedo – '+(lang==='sv'?'Ett tryggare hem börjar här':'A safer home starts here');
     root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():route==='how'?howItWorks():guides();
     if(toastText)root.insertAdjacentHTML('beforeend',`<div role="status" class="toast">${escapeHTML(toastText)}</div>`);
