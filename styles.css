@@ -77,3 +77,33 @@
 @media(min-width:700px){.how-hero{min-height:660px;display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch}.how-hero-copy{padding:115px 30px 90px max(35px,calc((100vw - 1100px)/2));min-width:0}.how-hero h1{font-size:clamp(54px,5.5vw,77px)}.how-hero-art{height:auto;min-height:660px;margin:0;mask-image:linear-gradient(to right,transparent,#000 25%);-webkit-mask-image:linear-gradient(to right,transparent,#000 25%);background-position:65% center}.how-steps-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.how-preview{grid-template-columns:1fr 1fr;gap:40px;padding-top:85px;padding-bottom:85px}.how-mock-plan{margin:0}.how-faq{max-width:830px}}
 @media(max-width:380px){.how-hero-copy{padding-left:20px;padding-right:20px}.how-hero h1{font-size:40px}.how-hero{min-height:720px}.how-hero-art{min-height:290px}}
 @media(prefers-reduced-motion:reduce){.how-mock-plan{transform:none}}
+
+/* 0.4.1: Desktop hero sizing fix. The padded text column previously collapsed
+   because its intrinsic width competed with the illustration grid column. */
+@media (min-width:700px){
+  .how-hero{display:block;min-height:660px;isolation:isolate}
+  .how-hero-copy{
+    display:block;
+    width:57%;
+    max-width:none;
+    min-width:0;
+    padding:100px 32px 85px clamp(32px,6vw,100px);
+  }
+  .how-hero-copy h1{max-width:600px;font-size:clamp(48px,4.8vw,76px);overflow-wrap:normal}
+  .how-hero-copy>p{width:100%;max-width:480px;font-size:17px}
+  .how-hero-art{
+    position:absolute;z-index:-1;inset:0 0 0 auto;
+    width:55%;height:100%;min-height:0;
+    background-position:center 64%;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 22%);
+    mask-image:linear-gradient(to right,transparent 0%,#000 22%);
+  }
+}
+@media (min-width:700px) and (max-width:1050px){
+  .how-hero-copy{width:61%;padding-left:35px;padding-right:25px}
+  .how-hero-copy h1{font-size:clamp(44px,5.2vw,61px)}
+  .how-hero-art{width:52%}
+}
+@media (min-width:1051px){
+  .how-hero-copy{padding-left:max(45px,calc((100vw - 1100px)/2))}
+}
