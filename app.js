@@ -567,20 +567,20 @@
   const privacyCopy = {
     sv:{
       title:'Integritet & lagring',lead:'HemmaRedo ska vara enkelt att använda utan konto – och utan onödig spårning.',sub:'Så fungerar informationen i den här prototypen.',
-      section1:'Vad sparas i din webbläsare?',body1:'Vi använder webbläsarens lokala lagring (localStorage) för dina svar om hushållet, checklistans markeringar, språkval och en separat plan om du hjälper en vän. Uppgifterna stannar normalt i den här webbläsaren och skickas inte till vår egen server för att lagra en profil. Om du använder en annan enhet finns inte dina sparade svar där.',
+      section1:'Vad sparas i din webbläsare?',body1:'Vi använder webbläsarens lokala lagring (localStorage) för dina svar om hushållet, checklistans markeringar, utrustningsval och inköpslista, språkval och en separat plan om du hjälper en vän. Uppgifterna stannar normalt i den här webbläsaren och skickas inte till vår egen server för att lagra en profil. Om du använder en annan enhet finns inte dina sparade svar där.',
       section2:'Behöver du godkänna cookies?',body2:'Vi använder inte egna analys- eller annonscookies i prototypen. Lagringen används för att de funktioner du valt ska fungera, till exempel för att din plan ska finnas kvar när du återkommer. Därför visar vi ingen samtyckesbanner för icke-nödvändiga cookies. Om vi lägger till statistik eller annan icke-nödvändig lagring behöver vi ompröva detta och vid behov be om samtycke innan den aktiveras.',
       section3:'Externa tjänster',body3:'Webbplatsen laddar typsnitt från Google Fonts. Sidan Tips & länkar kan ladda omslagsbilder från externa bildservrar och en videominiatyr från YouTube. När sådana resurser laddas kan din webbläsare kontakta dessa leverantörer och dela tekniska anslutningsuppgifter, till exempel IP-adress. När du väljer en extern länk gäller den webbplatsens egen integritetspolicy.',
-      section4:'Radera dina sparade uppgifter',body4:'Du kan radera HemmaRedos lokalt sparade hushållsplan, vänplan och språkval här. Detta kan inte ångras. Om du rensar webbläsarens webbplatsdata kan uppgifterna också försvinna.',
-      clear:'Radera mina sparade uppgifter',confirm:'Vill du radera din plan, vänplan och språkval från den här webbläsaren? Det går inte att ångra.',section5:'Vem ansvarar?',body5:'HemmaRedo är en oberoende prototyp och inte en myndighetstjänst. Den här texten beskriver den nuvarande tekniska lösningen, men är inte en komplett juridisk integritetspolicy inför offentlig lansering.',
+      section4:'Radera dina sparade uppgifter',body4:'Du kan radera HemmaRedos lokalt sparade hushållsplan, vänplan och språkval och utrustningsval här. Detta kan inte ångras. Om du rensar webbläsarens webbplatsdata kan uppgifterna också försvinna.',
+      clear:'Radera mina sparade uppgifter',confirm:'Vill du radera din plan, vänplan, språkval och inköpslista från den här webbläsaren? Det går inte att ångra.',section5:'Vem ansvarar?',body5:'HemmaRedo är en oberoende prototyp och inte en myndighetstjänst. Den här texten beskriver den nuvarande tekniska lösningen, men är inte en komplett juridisk integritetspolicy inför offentlig lansering.',
       close:'Till startsidan'
     },
     en:{
       title:'Privacy & local storage',lead:'HemmaRedo should work without an account or unnecessary tracking.',sub:'How this prototype handles information.',
-      section1:'What is stored in your browser?',body1:'We use localStorage to remember household answers, checked tasks, language preference and a separate plan if you help a friend. These details normally remain in this browser and are not sent to our server to create a profile. They do not automatically appear on other devices.',
+      section1:'What is stored in your browser?',body1:'We use localStorage to remember household answers, checked tasks, equipment choices and your shopping list, language preference and a separate plan if you help a friend. These details normally remain in this browser and are not sent to our server to create a profile. They do not automatically appear on other devices.',
       section2:'Do you need to accept cookies?',body2:'The prototype does not use its own advertising or analytics cookies. Local storage supports features you request, such as keeping your plan between visits. Therefore we do not show a non-essential cookie consent banner. If we add analytics or other non-essential storage, we must reassess this and ask for consent when required before activation.',
       section3:'Third-party services',body3:'The site loads fonts from Google Fonts. The Advice & links page can load podcast artwork from external image servers and a video thumbnail from YouTube. Loading these resources can send technical connection information such as your IP address to their providers. External websites have their own privacy policies.',
-      section4:'Delete locally saved details',body4:'You can remove your saved household plan, friend plan and language preference from this browser. This cannot be undone. Clearing browser site data can also remove them.',
-      clear:'Delete my saved details',confirm:'Delete your household plan, friend plan and language preference from this browser? This cannot be undone.',section5:'Who is responsible?',body5:'HemmaRedo is an independent prototype, not a government service. This page describes the current technical implementation but is not a complete legal privacy policy for a public launch.',
+      section4:'Delete locally saved details',body4:'You can remove your saved household plan, friend plan and language preference and equipment choices from this browser. This cannot be undone. Clearing browser site data can also remove them.',
+      clear:'Delete my saved details',confirm:'Delete your household plan, friend plan, language preference and shopping list from this browser? This cannot be undone.',section5:'Who is responsible?',body5:'HemmaRedo is an independent prototype, not a government service. This page describes the current technical implementation but is not a complete legal privacy policy for a public launch.',
       close:'Back to home'
     }
   };
@@ -658,7 +658,7 @@
       case 'print':for(const g of groupMeta)expanded.add(g.id);render();requestAnimationFrame(()=>window.print());break;
       case 'clear-storage':
         if(confirm(privacyCopy[lang].confirm)){
-          Object.values(STORAGE).forEach(key=>{try{localStorage.removeItem(key);}catch{}});
+          [...Object.values(STORAGE),EQUIPMENT_STORAGE].forEach(key=>{try{localStorage.removeItem(key);}catch{}});equipmentChoices={};
           own=fresh();friend=fresh();active='own';lang='sv';menuOpen=false;expanded.clear();expanded.add('water');expanded.add('food');navigate('home');render();
         }
         break;
