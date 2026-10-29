@@ -236,3 +236,15 @@
 .resources-contact-feature .btn-outline{justify-self:start}
 .task-phone-link{display:inline-flex;margin-top:9px;font-size:12px;font-weight:800}
 @media(min-width:700px){.resources-contact-feature{grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:23px 26px}}
+
+/* Click-to-call quick numbers on advice & links */
+.resources-quick-numbers{margin-top:28px;padding:23px;border-radius:18px;background:#f5f8f0;border:1px solid #dce7da}
+.resources-quick-heading h3{font-size:clamp(21px,3vw,28px);margin:0 0 5px;color:#244d35}
+.resources-quick-heading p,.resources-phone-emergency{font-size:12px;line-height:1.6;color:#637566;margin:0}
+.resources-phone-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:16px 0}
+.resources-phone-dial{display:flex;align-items:center;gap:13px;border-radius:13px;background:white;border:1px solid #dbe5db;padding:15px 16px;text-decoration:none;color:#294d39;transition:background .15s,border-color .15s}
+.resources-phone-dial:hover,.resources-phone-dial:focus-visible{background:#e7f2e8;border-color:#94b59d}
+.resources-phone-dial-num{font-weight:800;font-size:23px;min-width:78px;white-space:nowrap}
+.resources-phone-dial-desc{font-size:12px;line-height:1.45;flex:1;color:#526959}
+.resources-phone-dial .ic{width:18px;height:18px;flex:none;color:#39784d}
+@media(min-width:650px){.resources-phone-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
