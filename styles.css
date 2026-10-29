@@ -251,3 +251,15 @@
 
 .resources-phone-source{display:inline-flex;align-items:center;gap:7px;margin-top:13px;color:#285b3e;font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
 .resources-phone-source .ic{width:14px;height:14px}
+
+/* Equipment library entry points */
+.equipment-plan-link{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;background:#eaf1e5;border:1px solid #d8e5d2;border-radius:17px;padding:20px 23px;margin:25px 0 20px}
+.equipment-plan-link strong{font-size:19px;color:#28563d}
+.equipment-plan-link p{margin:6px 0 0;font-size:13px;line-height:1.6;color:#57715e;max-width:510px}
+.equipment-resource-card{background:#e8efe5;border-radius:22px;padding:27px;display:flex;gap:20px;align-items:flex-start}
+.equipment-resource-icon{display:grid;place-items:center;width:60px;height:60px;flex:none;border-radius:15px;background:#d9e5d3;color:#28553a}
+.equipment-resource-icon .ic{width:30px;height:30px}
+.equipment-resource-card h2{margin:10px 0 10px}
+.equipment-resource-card p{font-size:14px;line-height:1.7;color:#577161;margin:0 0 17px;max-width:620px}
+.equipment-resource-card .btn-outline{display:inline-flex;align-items:center;gap:8px}
+@media(max-width:580px){.equipment-resource-card{padding:22px;flex-direction:column}.equipment-plan-link .btn-outline{width:100%;justify-content:center}}
