@@ -14,7 +14,7 @@
 <div class="tip-banner"><span aria-hidden="true">🌿</span><div id="tip"></div></div>
 <div class="filters"><label><span id="search-label"></span><input type="search" id="search" autocomplete="off" placeholder=""></label><label><span id="tier-label"></span><select id="tier"></select></label><div class="filter-categories"><div class="pills" id="categories" role="group" aria-label="Kategorier"></div></div><div class="filter-summary" id="filter-summary"></div></div>
 <div class="status-summary" id="summary"></div><div class="result-title"><h2 id="results-title"></h2><small id="result-count"></small></div><h2 class="print-header" id="print-header"></h2><div class="grid" id="items"></div>
-<div class="kit-actions"><button class="action" id="print" type="button"></button><button class="action secondary" id="show-needs" type="button"></button><p id="print-help"></p></div>
+<div class="kit-actions"><button class="action" id="print" type="button"></button><button class="action secondary" id="show-needs" type="button"></button><a class="action secondary" style="text-decoration:none" href="./#shopping" id="global-shopping">Visa gemensam inköpslista</a><p id="print-help"></p></div>
 <div class="sources" id="sources"></div>
 </main><footer class="site-footer"><span>© HemmaRedo · Oberoende initiativ</span><a href="./#guides" id="guides-link"></a><a href="./#privacy" id="privacy-link"></a></footer>
 <script>
@@ -72,7 +72,7 @@ function setStatic(){const t=dictionary();document.documentElement.lang=lang;doc
  const key={'search-label':'search','tier-label':'level','results-title':'results','guides-link':'guides','privacy-link':'privacyLink','back-link':'back','print-help':'printHelp','show-needs':onlyNeeds?'showAll':'showNeeds'}[id]||id;$(id).textContent=t[key];
 });$('tip').innerHTML=t.tip+' <span class="privacy-note">'+t.privacy+'</span>';$('search').placeholder=t.placeholder;$('print-header').textContent=t.listTitle;
 const opts=[['all',t.allLevels],['1',t.levels[0]],['2',t.levels[1]],['3',t.levels[2]]];$('tier').replaceChildren(...opts.map(([value,label])=>{const el=document.createElement('option');el.value=value;el.textContent=label;return el;}));$('tier').value=tier;
-$('categories').replaceChildren(...[['all','',t.all,t.all],...catalogs].map(row=>{const b=document.createElement('button');b.type='button';b.className='pill';b.dataset.category=row[0];b.textContent=row[1]?row[1]+' '+(lang==='sv'?row[2]:row[3]):row[2];b.setAttribute('aria-pressed',String(row[0]===category));return b;}));$('sources').textContent=t.source;
+$('categories').replaceChildren(...[['all','',t.all,t.all],...catalogs].map(row=>{const b=document.createElement('button');b.type='button';b.className='pill';b.dataset.category=row[0];b.textContent=row[1]?row[1]+' '+(lang==='sv'?row[2]:row[3]):row[2];b.setAttribute('aria-pressed',String(row[0]===category));return b;}));$('global-shopping').textContent=lang==='sv'?'Visa gemensam inköpslista':'View combined shopping list';$('sources').textContent=t.source;
 }
 function render(){
  const t=dictionary();const filtered=raw.filter(row=>{
