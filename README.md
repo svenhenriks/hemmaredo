@@ -61,3 +61,7 @@ python3 -m http.server 8080
 ```
 
 Besök `http://localhost:8080`. Service worker fungerar när sidan serveras med HTTPS eller på localhost.
+
+## Version 0.4 – Så fungerar det
+
+En separat mobilanpassad introduktionssida finns på `#how`, med tre steg, en illustration av hur checklistan fungerar och vanliga frågor på svenska och engelska. Ändringarna utvecklas först i en separat gren och publiceras efter granskning.
