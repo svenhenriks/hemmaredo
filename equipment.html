@@ -116,7 +116,7 @@ $('print').addEventListener('click',()=>{
  const restore=()=>{category=old.category;tier=old.tier;term=old.term;onlyNeeds=old.onlyNeeds;render();window.removeEventListener('afterprint',restore);};
  window.addEventListener('afterprint',restore,{once:true});
  window.print();
- setTimeout(restore,1500);
+
 });
 setStatic();render();
 })();
