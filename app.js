@@ -293,7 +293,7 @@
   const needsOptions = [['smallKids','users'],['pets','dog'],['medical','cross'],['mobility','heart'],['electric','battery'],['other','info']];
   const housing = [['apartment','home'],['house','home'],['townhouse','home'],['other','home']];
 
-  function fresh() { return {version:3,adults:2,children:0,pets:0,home:'house',equipment:[],needs:[],waterLiters:0,foodDays:0,overrides:{},finished:false,maxStep:0}; }
+  function fresh() { return {version:3,adults:0,children:0,pets:0,home:'house',equipment:[],needs:[],waterLiters:0,foodDays:0,overrides:{},finished:false,maxStep:0}; }
   function storageGet(key) {try{return localStorage.getItem(key);}catch{return null;}}
   function storagePut(key, val) {try{localStorage.setItem(key,val);}catch{}}
   function loadProfile(type) {
