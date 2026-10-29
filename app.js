@@ -109,6 +109,40 @@
     }
   };
 
+
+  const howCopy = {
+    sv: {
+      kicker:'ENKELT ATT KOMMA IGÅNG',heading:'Lite förberedelse. Mer trygghet.',lead:'Du behöver inte vara expert på krisberedskap. HemmaRedo hjälper dig att komma igång med det viktigaste, ett litet steg i taget.',
+      topButton:'Skapa min plan',small:'Gratis · Cirka 3 minuter · Inget konto',
+      howTitle:'Så enkelt fungerar det',howLead:'Tre steg från första frågan till en plan som passar just ditt hem.',
+      s1:'Berätta lite om ditt hem',d1:'Hur många bor hos er? Bor ni i lägenhet eller hus? Har ni husdjur? Du svarar bara på det som är relevant.',
+      s2:'Se vad ni redan har',d2:'Ficklampor, vatten, radio, värme och mat. Kryssa i det som finns hemma. Du behöver inte köpa allt på en gång.',
+      s3:'Få er egen plan',d3:'Vi sammanställer en personlig checklista. Bocka av, skriv ut och kom tillbaka när du vill.',
+      previewLabel:'ETT EXEMPEL',previewTitle:'Din plan tar form.',previewLead:'Här ser du ungefär hur en färdig plan kan se ut. Det riktiga resultatet anpassas efter dina svar.',
+      previewItem1:'Vatten för hushållet',previewItem2:'Mat utan el',previewItem3:'Viktig information via P4',previewNote:'Framstegsmätaren visar hur många punkter du markerat som klara. Den är ingen garanti för säkerhet.',
+      faqTitle:'Bra att veta',q1:'Kostar det något?',a1:'Nej. HemmaRedo är gratis att använda, utan konto.',q2:'Vad händer med mina svar?',a2:'De sparas lokalt i din webbläsare på den enhet du använder. De synkroniseras inte mellan enheter och kan försvinna om du rensar webbläsardata.',
+      q3:'Är HemmaRedo en myndighetstjänst?',a3:'Nej. Det är ett oberoende planeringsstöd. För officiella rekommendationer och information vid en kris hänvisar vi till Krisinformation.se.',
+      q4:'Måste jag göra allt direkt?',a4:'Nej. Börja med det viktigaste för ditt hushåll. Du kan återkomma till checklistan när som helst på samma enhet.',
+      closingTitle:'Redo att ta första steget?',closingLead:'Det behöver inte vara svårt att vara lite mer förberedd.',closingButton:'Kom igång',
+      official:'Läs officiella råd på Krisinformation.se'
+    },
+    en: {
+      kicker:'AN EASY PLACE TO START',heading:'A little preparation. More peace of mind.',lead:'You do not need to be an emergency preparedness expert. HemmaRedo helps you start with what matters, one small step at a time.',
+      topButton:'Create my plan',small:'Free · About 3 minutes · No account',
+      howTitle:'How it works',howLead:'Three simple steps from the first question to a plan that fits your home.',
+      s1:'Tell us about your home',d1:'How many people live there? A flat or a house? Any pets? Answer only what is relevant to you.',
+      s2:'See what you already have',d2:'Flashlights, water, a radio, heating and food. Tick what you have. You do not need to buy everything at once.',
+      s3:'Get your own plan',d3:'We put together a personal checklist. Tick items off, print it and return whenever you want.',
+      previewLabel:'AN EXAMPLE',previewTitle:'Your plan comes together.',previewLead:'Here is an example of a finished plan. Your real plan will be based on your answers.',
+      previewItem1:'Water for the household',previewItem2:'Food without electricity',previewItem3:'Important information via P4',previewNote:'The progress meter shows how many items you have marked complete. It is not a measure of safety.',
+      faqTitle:'Good to know',q1:'Does it cost anything?',a1:'No. HemmaRedo is free to use, without an account.',q2:'What happens to my answers?',a2:'They are stored locally in your browser on this device. They do not sync between devices and may disappear if you clear your browser data.',
+      q3:'Is HemmaRedo a government service?',a3:'No. It is an independent planning tool. For official guidance and emergency updates, refer to Krisinformation.se.',
+      q4:'Do I need to do everything right away?',a4:'No. Start with what matters most for your household. You can return to your checklist on the same device.',
+      closingTitle:'Ready to take the first step?',closingLead:'Being a little more prepared does not have to be difficult.',closingButton:'Get started',
+      official:'Read official advice at Krisinformation.se'
+    }
+  };
+
   const groupMeta = [
     {id:'water',icon:'droplet',color:'',name:{sv:'Vatten',en:'Water'}},
     {id:'food',icon:'utensils',color:'green',name:{sv:'Mat & tillagning',en:'Food & cooking'}},
@@ -188,9 +222,9 @@
   function navMarkup(home=false){
     const tr=L();return `<header class="site-header">
       <a href="#home" class="brand" aria-label="HemmaRedo – ${tr.start}">${icon('home')}<span>HemmaRedo.</span></a>
-      <nav class="desktop-links" aria-label="${tr.menu}"><a href="#quiz/0">${tr.how}</a><a href="#plan">${tr.yourPlan}</a><a href="#guides">${tr.guides}</a><a href="#help">${tr.help}</a></nav>
+      <nav class="desktop-links" aria-label="${tr.menu}"><a href="#how">${tr.how}</a><a href="#plan">${tr.yourPlan}</a><a href="#guides">${tr.guides}</a><a href="#help">${tr.help}</a></nav>
       <div class="top-actions"><label class="visually-hidden" for="lang-select">${tr.chooseLang}</label><select id="lang-select" class="lang-select" aria-label="${tr.chooseLang}"><option value="sv" ${lang==='sv'?'selected':''}>SV</option><option value="en" ${lang==='en'?'selected':''}>EN</option></select><button type="button" class="menu-button" data-action="menu" aria-label="${tr.menu}" aria-expanded="${menuOpen?'true':'false'}">${icon(menuOpen?'x':'menu')}</button></div>
-      ${menuOpen?`<nav class="menu-panel" aria-label="${tr.menu}"><button data-route="home">${icon('home')}${tr.start}</button><button data-route="quiz/0">${icon('clipboard')}${tr.how}</button><button data-route="plan">${icon('check')}${tr.yourPlan}</button><button data-route="guides">${icon('info')}${tr.guides}</button><button data-route="help">${icon('heart')}${tr.help}</button></nav>`:''}
+      ${menuOpen?`<nav class="menu-panel" aria-label="${tr.menu}"><button data-route="home">${icon('home')}${tr.start}</button><button data-route="how">${icon('clipboard')}${tr.how}</button><button data-route="plan">${icon('check')}${tr.yourPlan}</button><button data-route="guides">${icon('info')}${tr.guides}</button><button data-route="help">${icon('heart')}${tr.help}</button></nav>`:''}
     </header>`;
   }
   function banner(){return active==='friend'?`<div class="friend-banner">${icon('users','ic-sm')} ${L().friendMode} <button type="button" data-action="own">${L().backToMine}</button></div>`:'';}
@@ -219,14 +253,53 @@
   function taskRow(task){return `<div class="task-row ${done(task)?'done':''}"><input type="checkbox" id="task-${task.id}" data-task="${task.id}" ${done(task)?'checked':''}><label for="task-${task.id}" class="task-copy"><strong>${task.title}</strong><p>${task.desc}</p><a href="${task.href}" target="_blank" rel="noopener noreferrer">${L().source} ↗</a></label></div>`;}
   function plan(){const tr=L(),c=calc(),pr=p();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('check','ic-sm')}${tr.personal}</div><h1>${tr.personal}</h1><p class="lede">${tr.planDesc}</p><div class="card" style="margin-top:23px"><div class="plan-overview"><div><h3>${tr.little}</h3><p>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</p><button type="button" class="btn-quiet" style="padding-left:0;font-size:12px" data-action="edit">${tr.editAnswers}${icon('arrow','ic-sm')}</button></div>${progressRing(c.pct)}</div><div class="full-progress"><span style="width:${c.pct}%"></span></div><p class="source-note" style="margin-bottom:0">${tr.progressDisclaimer}</p></div><div class="plan-list">${groupMeta.map(g=>{const ts=c.all.filter(task=>task.group===g.id);const finished=ts.filter(done).length;const isOpen=expanded.has(g.id);return `<section class="plan-group" id="group-${g.id}"><button type="button" class="group-head" data-group="${g.id}" aria-expanded="${isOpen}"><span class="icon-badge ${g.color}">${icon(g.icon)}</span><span class="group-label"><strong>${name(g.name)}</strong><small>${finished} ${tr.outOf} ${ts.length} ${tr.stepsDone}</small></span>${icon('chevron','ic-sm')}</button><div class="group-content" ${isOpen?'':'hidden'}>${ts.map(taskRow).join('')}</div></section>`}).join('')}</div><div class="plan-actions">${action(tr.print,'primary','print','printer')}${action(tr.share,'outline','share','share')}${action(tr.newPlan,'outline','reset','back')}</div><div class="safe-note">${icon('info')}<span><strong>${tr.important}.</strong> ${tr.importantDesc}</span></div><div class="safe-note">${icon('printer')}<span>${tr.printHint}</span></div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.helpLead}</p>${action(tr.helpStart,'outline','friend','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p><div class="print-note">${tr.printDate}: ${new Date().toLocaleDateString(lang==='sv'?'sv-SE':'en-GB')} · HemmaRedo · ${pr.adults} ${tr.adultsCount}, ${pr.children} ${tr.childrenCount}, ${pr.pets} ${tr.petsCount}</div></main>${footer()}`;}
   function help(){const tr=L();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('users','ic-sm')}${tr.helpEyebrow}</div><h1>${tr.helpTitle}</h1><p class="lede">${tr.helpLead}</p><div class="help-hero"><div class="help-visual"></div><div class="help-body"><h2>${tr.help}</h2><p>${tr.helpSeparate}</p>${action(tr.helpStart,'primary','friend','arrow')}</div></div><div class="guide-grid"><article class="guide-card">${icon('heart')}<h3>${tr.helpCard1}</h3><p>${tr.helpText1}</p></article><article class="guide-card">${icon('droplet')}<h3>${tr.helpCard2}</h3><p>${tr.helpText2}</p></article><article class="guide-card">${icon('users')}<h3>${tr.helpCard3}</h3><p>${tr.helpText3}</p></article></div></main>${footer()}`;}
+
+  function howItWorks(){
+    const tr=howCopy[lang];
+    const cards=[
+      {number:'01',iconName:'home',title:tr.s1,desc:tr.d1},
+      {number:'02',iconName:'clipboard',title:tr.s2,desc:tr.d2},
+      {number:'03',iconName:'check',title:tr.s3,desc:tr.d3}
+    ];
+    return `${navMarkup()}${banner()}<main class="how-page">
+      <section class="how-hero">
+        <div class="how-hero-copy"><div class="eyebrow">${icon('leaf','ic-sm')}${tr.kicker}</div>
+          <h1>${tr.heading}</h1><p>${tr.lead}</p>
+          ${action(tr.topButton,'primary','begin','arrow','how-main-action')}
+          <span class="how-footnote">${tr.small}</span>
+        </div>
+        <div class="how-hero-art" role="img" aria-label="${lang==='sv'?'Illustrerad stuga vid en stilla sjö':'Illustrated cottage beside a peaceful lake'}"></div>
+      </section>
+      <section class="how-section how-steps">
+        <div class="how-section-heading"><div class="eyebrow">${icon('sun','ic-sm')}01 — 03</div><h2>${tr.howTitle}</h2><p>${tr.howLead}</p></div>
+        <div class="how-steps-grid">${cards.map(card=>`<article class="how-step"><div class="how-step-top"><span class="how-number">${card.number}</span><span class="how-step-icon">${icon(card.iconName)}</span></div><h3>${card.title}</h3><p>${card.desc}</p></article>`).join('')}</div>
+      </section>
+      <section class="how-section how-preview">
+        <div class="how-preview-copy"><div class="eyebrow">${icon('leaf','ic-sm')}${tr.previewLabel}</div><h2>${tr.previewTitle}</h2><p>${tr.previewLead}</p><p class="how-preview-note">${icon('info','ic-sm')}${tr.previewNote}</p></div>
+        <div class="how-mock-plan" aria-label="${tr.previewLabel}">
+          <div class="how-mock-header"><span>HemmaRedo.</span><span class="how-mock-dots">● ● ●</span></div>
+          <div class="how-mock-content"><div class="how-mock-ring"><span>2/3<small>${lang==='sv'?'exempel':'example'}</small></span></div><div class="how-mock-tasks">
+            <div><span class="how-check-done">${icon('check','ic-sm')}</span>${tr.previewItem1}</div>
+            <div><span class="how-check-done">${icon('check','ic-sm')}</span>${tr.previewItem2}</div>
+            <div><span class="how-check-empty"></span>${tr.previewItem3}</div>
+          </div></div>
+        </div>
+      </section>
+      <section class="how-section how-faq"><div class="how-section-heading"><div class="eyebrow">${icon('heart','ic-sm')}FAQ</div><h2>${tr.faqTitle}</h2></div>
+      ${[1,2,3,4].map(i=>`<details class="how-faq-item"><summary>${tr['q'+i]}${icon('chevron','ic-sm')}</summary><p>${tr['a'+i]}</p></details>`).join('')}
+      <a class="how-source-link" href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">${tr.official}${icon('external','ic-sm')}</a></section>
+      <section class="how-closing"><div class="how-closing-content"><div class="eyebrow">${icon('heart','ic-sm')}HemmaRedo</div><h2>${tr.closingTitle}</h2><p>${tr.closingLead}</p>${action(tr.closingButton,'primary','begin','arrow')}</div></section>
+    </main>${footer()}`;
+  }
+
   function guides(){const tr=L();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('shield','ic-sm')}${tr.madeFor}</div><h1>${tr.useful}</h1><p class="lede">${tr.usefulDesc}</p><div class="guide-grid"><article class="guide-card">${icon('shield')}<h3>${tr.officialTitle}</h3><p>${tr.officialDesc}</p><a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article><article class="guide-card">${icon('phone')}<h3>${tr.numberTitle}</h3><p>${tr.numberDesc}</p><a href="${NUMBERS}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article><article class="guide-card">${icon('radio')}<h3>${tr.radioTitle}</h3><p>${tr.radioDesc}</p><a href="${RADIO}" target="_blank" rel="noopener noreferrer">${tr.openLink} ↗</a></article></div><div class="privacy-box">${icon('lock')}<div><h3>${tr.privacy}</h3><p>${tr.privacyText}</p><p style="margin-top:8px">${tr.noAccount}</p></div></div><div class="safe-note">${icon('info')}<span>${tr.importantDesc}</span></div><div class="safe-note">${icon('download')}<span>${tr.saveToHome} ${tr.offline}</span></div></main>${footer()}`;}
   function render(){document.documentElement.lang=lang;document.title='HemmaRedo – '+(lang==='sv'?'Ett tryggare hem börjar här':'A safer home starts here');
-    root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():guides();
+    root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():route==='how'?howItWorks():guides();
     if(toastText)root.insertAdjacentHTML('beforeend',`<div role="status" class="toast">${escapeHTML(toastText)}</div>`);
   }
   function showHash(){menuOpen=false;const hash=decodeURIComponent(location.hash.replace(/^#\/?/,''));const match=/^quiz(?:\/(\d))?$/.exec(hash);
     if(match){route='quiz';step=Math.max(0,Math.min(4,Number(match[1]||0)));}
-    else route=['home','result','plan','help','guides'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
+    else route=['home','result','plan','help','how','guides'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
   }
   function navigate(to){const hash='#'+to;if(location.hash===hash)showHash();else location.hash=hash;}
   function toast(msg){toastText=msg;clearTimeout(toastTimer);render();toastTimer=setTimeout(()=>{toastText='';render();},2700);}
