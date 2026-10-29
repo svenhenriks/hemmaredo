@@ -159,8 +159,8 @@
       details:{
         'water-store':{
           intro:'Vatten behövs för att dricka, laga mat och sköta viss hygien. Börja med dricksvattnet och planera för hela hushållet.',
-          examples:['Rena, livsmedelsgodkända dunkar med tappkran','Flaskvatten som förvaras svalt och mörkt','Extra kärl för att hämta vatten vid en nödvattenplats'],
-          check:'Skriv gärna datum på vattnet, följ råd om lagring och kontrollera att du kan bära och hälla ur behållarna.',
+          examples:['Rena, livsmedelsgodkända dunkar med lock och gärna tappkran','Förvara mörkt och så svalt som möjligt. En ogenomskinlig dunk hjälper till att stänga ute ljus, men materialet och renligheten är viktigast.','Flaskvatten och extra kärl för att hämta nödvatten'],
+          check:'Midsommar och jul kan vara enkla påminnelser: kontrollera vatten, lukt, smak och dunkarnas skick. Byt vattnet vid behov – inte automatiskt efter ett visst antal månader. Märk gärna dunkarna med påfyllningsdatum.',
           caution:'Vatten från naturen kan innehålla mikroorganismer eller kemiska föroreningar. Vanlig filtrering eller kokning löser inte alla risker.'
         },
         'food-week':{
@@ -259,7 +259,7 @@
       open:'Read more and see examples',close:'Hide details',examples:'Examples of solutions',check:'Worth checking',caution:'Keep in mind',read:'Read official guidance',
       intro:'Open an item for practical examples and guidance. Mark it complete when you have a working solution – you do not need to buy every example.',
       details:{
-        'water-store':{intro:'Plan for drinking water and other essential uses for everyone in the household.',examples:['Clean food-grade water containers','Stored bottled drinking water','Extra containers to collect emergency water'],check:'Label, inspect and rotate supplies according to official advice.',caution:'Boiling and filtering do not remove every type of contamination.'},
+        'water-store':{intro:'Plan for drinking water and other essential uses for everyone in the household.',examples:['Clean, sealed food-grade water containers','Store water in a cool, dark place. Opaque containers can reduce light exposure, but cleanliness and food-safe materials matter most.','Bottled water and extra containers for collecting emergency water'],check:'Midsummer and Christmas can be useful reminders to inspect the water and containers. Check appearance, smell and taste and replace water if needed, rather than automatically on a fixed date. Label containers with the filling date.',caution:'Boiling and filtering do not remove every type of contamination.'},
         'food-week':{intro:'Start with foods your household actually eats, including options that need little water or cooking.',examples:['Canned beans, fish, vegetables and ready meals','Crispbread, oats, nuts and nut butter','Rice, pasta and other dry foods','Foods for children, allergies or special diets','Manual can opener'],check:'Check dates and rotate supplies regularly.',caution:'Plan for food safety when refrigeration stops.'},
         'cook-power':{intro:'Plan an alternative way to prepare food when electricity is unavailable.',examples:['Camping stove and suitable fuel','Outdoor grill where permitted','Thermos for hot water','Meals needing minimal cooking'],check:'Test equipment and inspect fuel before an emergency.',caution:'Never use grills or fuel-burning camping stoves indoors. Carbon monoxide and fire risk.'},
         warmth:{intro:'Have a safe plan for staying warm during a power outage.',examples:['Warm layers, hats, socks and sleeping bags','Blankets and extra duvets','One room to gather in','Approved wood-burning stove and dry wood if available'],check:'Identify which heating systems work without electricity.',caution:'Never use grills or unsuitable burners for indoor heating.'},
@@ -364,7 +364,7 @@
     </header>`;
   }
   function banner(){return active==='friend'?`<div class="friend-banner">${icon('users','ic-sm')} ${L().friendMode} <button type="button" data-action="own">${L().backToMine}</button></div>`:'';}
-  function footer(){return `<footer class="footer"><div class="footer-inner"><a class="brand" href="#home">${icon('home')}<span>HemmaRedo.</span></a><div class="footer-links"><a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a><a href="#guides">${L().guides}</a><a href="#help">${L().help}</a></div><p>${L().footer} ${L().offline}</p></div></footer>`;}
+  function footer(){return `<footer class="footer"><div class="footer-inner"><a class="brand" href="#home">${icon('home')}<span>HemmaRedo.</span></a><div class="footer-links"><a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a><a href="#guides">${L().guides}</a><a href="#help">${L().help}</a><a href="#privacy">${lang==='sv'?'Integritet & lagring':'Privacy & storage'}</a></div><p>${L().footer} ${L().offline}</p></div></footer>`;}
   function home(){
     const tr=L(),has=p().finished;return `<div class="home-surface">${navMarkup(true)}${banner()}<main class="home-main"><h1>${tr.headline}</h1><p class="hero-intro">${tr.intro}</p><div class="hero-btn-wrap">${action(has?tr.resume:tr.getStarted,'primary',has?'resume':'begin','arrow','hero-button')}<p class="hero-note">${tr.noLogin}</p></div></main></div>
     <section class="home-after"><div class="trust-strip"><div class="trust-item">${icon('leaf')}<span>${tr.simple}</span></div><div class="trust-item">${icon('shield')}<span>${tr.authorities}</span></div><div class="trust-item">${icon('home')}<span>${tr.tailored}</span></div><div class="trust-item">${icon('users')}<span>${tr.neighbors}</span></div></div>
@@ -469,13 +469,42 @@
       <section class="resources-bottom"><h2>${tr.ctaTitle}</h2><p>${tr.ctaText}</p>${action(tr.ctaButton,'primary','begin','arrow')}</section>
     </main>${footer()}`;
   }
+
+  const privacyCopy = {
+    sv:{
+      title:'Integritet & lagring',lead:'HemmaRedo ska vara enkelt att använda utan konto – och utan onödig spårning.',sub:'Så fungerar informationen i den här prototypen.',
+      section1:'Vad sparas i din webbläsare?',body1:'Vi använder webbläsarens lokala lagring (localStorage) för dina svar om hushållet, checklistans markeringar, språkval och en separat plan om du hjälper en vän. Uppgifterna stannar normalt i den här webbläsaren och skickas inte till vår egen server för att lagra en profil. Om du använder en annan enhet finns inte dina sparade svar där.',
+      section2:'Behöver du godkänna cookies?',body2:'Vi använder inte egna analys- eller annonscookies i prototypen. Lagringen används för att de funktioner du valt ska fungera, till exempel för att din plan ska finnas kvar när du återkommer. Därför visar vi ingen samtyckesbanner för icke-nödvändiga cookies. Om vi lägger till statistik eller annan icke-nödvändig lagring behöver vi ompröva detta och vid behov be om samtycke innan den aktiveras.',
+      section3:'Externa tjänster',body3:'Webbplatsen laddar typsnitt från Google Fonts. Sidan Tips & länkar kan ladda omslagsbilder från externa bildservrar och en videominiatyr från YouTube. När sådana resurser laddas kan din webbläsare kontakta dessa leverantörer och dela tekniska anslutningsuppgifter, till exempel IP-adress. När du väljer en extern länk gäller den webbplatsens egen integritetspolicy.',
+      section4:'Radera dina sparade uppgifter',body4:'Du kan radera HemmaRedos lokalt sparade hushållsplan, vänplan och språkval här. Detta kan inte ångras. Om du rensar webbläsarens webbplatsdata kan uppgifterna också försvinna.',
+      clear:'Radera mina sparade uppgifter',confirm:'Vill du radera din plan, vänplan och språkval från den här webbläsaren? Det går inte att ångra.',section5:'Vem ansvarar?',body5:'HemmaRedo är en oberoende prototyp och inte en myndighetstjänst. Den här texten beskriver den nuvarande tekniska lösningen, men är inte en komplett juridisk integritetspolicy inför offentlig lansering.',
+      close:'Till startsidan'
+    },
+    en:{
+      title:'Privacy & local storage',lead:'HemmaRedo should work without an account or unnecessary tracking.',sub:'How this prototype handles information.',
+      section1:'What is stored in your browser?',body1:'We use localStorage to remember household answers, checked tasks, language preference and a separate plan if you help a friend. These details normally remain in this browser and are not sent to our server to create a profile. They do not automatically appear on other devices.',
+      section2:'Do you need to accept cookies?',body2:'The prototype does not use its own advertising or analytics cookies. Local storage supports features you request, such as keeping your plan between visits. Therefore we do not show a non-essential cookie consent banner. If we add analytics or other non-essential storage, we must reassess this and ask for consent when required before activation.',
+      section3:'Third-party services',body3:'The site loads fonts from Google Fonts. The Advice & links page can load podcast artwork from external image servers and a video thumbnail from YouTube. Loading these resources can send technical connection information such as your IP address to their providers. External websites have their own privacy policies.',
+      section4:'Delete locally saved details',body4:'You can remove your saved household plan, friend plan and language preference from this browser. This cannot be undone. Clearing browser site data can also remove them.',
+      clear:'Delete my saved details',confirm:'Delete your household plan, friend plan and language preference from this browser? This cannot be undone.',section5:'Who is responsible?',body5:'HemmaRedo is an independent prototype, not a government service. This page describes the current technical implementation but is not a complete legal privacy policy for a public launch.',
+      close:'Back to home'
+    }
+  };
+  function privacyPage(){
+    const t=privacyCopy[lang];
+    const blocks=[[t.section1,t.body1],[t.section2,t.body2],[t.section3,t.body3],[t.section4,t.body4],[t.section5,t.body5]];
+    return `${navMarkup()}${banner()}<main class="content-shell privacy-page"><div class="eyebrow">${icon('lock','ic-sm')}HemmaRedo</div><h1>${t.title}</h1><p class="lede">${t.lead}</p><p class="privacy-sub">${t.sub}</p>
+      <div class="privacy-sections">${blocks.map((b,i)=>`<section class="privacy-section"><h2>${b[0]}</h2><p>${b[1]}</p>${i===3?'<button type="button" class="btn-outline privacy-delete" data-action="clear-storage">'+t.clear+'</button>':''}</section>`).join('')}</div>
+      ${action(t.close,'quiet','home','back')}</main>${footer()}`;
+  }
+
   function render(){document.documentElement.lang=lang;document.title='HemmaRedo – '+(lang==='sv'?'Ett tryggare hem börjar här':'A safer home starts here');
-    root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():route==='how'?howItWorks():guides();
+    root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():route==='how'?howItWorks():route==='privacy'?privacyPage():guides();
     if(toastText)root.insertAdjacentHTML('beforeend',`<div role="status" class="toast">${escapeHTML(toastText)}</div>`);
   }
   function showHash(){menuOpen=false;const hash=decodeURIComponent(location.hash.replace(/^#\/?/,''));const match=/^quiz(?:\/(\d))?$/.exec(hash);
     if(match){route='quiz';step=Math.max(0,Math.min(4,Number(match[1]||0)));}
-    else route=['home','result','plan','help','how','guides'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
+    else route=['home','result','plan','help','how','guides','privacy'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
   }
   function navigate(to){const hash='#'+to;if(location.hash===hash)showHash();else location.hash=hash;}
   function toast(msg){toastText=msg;clearTimeout(toastTimer);render();toastTimer=setTimeout(()=>{toastText='';render();},2700);}
@@ -516,6 +545,13 @@
       case 'own':ownMode();break;
       case 'reset':reset();break;
       case 'print':for(const g of groupMeta)expanded.add(g.id);render();requestAnimationFrame(()=>window.print());break;
+      case 'clear-storage':
+        if(confirm(privacyCopy[lang].confirm)){
+          Object.values(STORAGE).forEach(key=>{try{localStorage.removeItem(key);}catch{}});
+          own=fresh();friend=fresh();active='own';lang='sv';menuOpen=false;expanded.clear();expanded.add('water');expanded.add('food');navigate('home');render();
+        }
+        break;
+      case 'home':navigate('home');break;
       case 'share':share();break;
     }
   });
