@@ -293,7 +293,7 @@
   const needsOptions = [['smallKids','users'],['pets','dog'],['medical','cross'],['mobility','heart'],['electric','battery'],['other','info']];
   const housing = [['apartment','home'],['house','home'],['townhouse','home'],['other','home']];
 
-  function fresh() { return {version:3,adults:2,children:0,pets:0,home:'house',equipment:[],needs:[],waterLiters:0,foodDays:0,overrides:{},finished:false}; }
+  function fresh() { return {version:3,adults:2,children:0,pets:0,home:'house',equipment:[],needs:[],waterLiters:0,foodDays:0,overrides:{},finished:false,maxStep:0}; }
   function storageGet(key) {try{return localStorage.getItem(key);}catch{return null;}}
   function storagePut(key, val) {try{localStorage.setItem(key,val);}catch{}}
   function loadProfile(type) {
@@ -307,6 +307,7 @@
       blank.needs=Array.isArray(parsed.needs)?parsed.needs.filter(x=>needsOptions.some(y=>y[0]===x)):[];
       blank.overrides=typeof parsed.overrides==='object'&&parsed.overrides?Object.fromEntries(Object.entries(parsed.overrides).filter(([k,v])=>/^[-a-z]+$/.test(k)&&typeof v==='boolean')):{};
       blank.finished=!!parsed.finished;
+      blank.maxStep=blank.finished?4:(Number.isInteger(parsed.maxStep)?Math.max(0,Math.min(4,parsed.maxStep)):0);
       return blank;
     }catch{return fresh();}
   }
@@ -508,14 +509,15 @@
     if(toastText)root.insertAdjacentHTML('beforeend',`<div role="status" class="toast">${escapeHTML(toastText)}</div>`);
   }
   function showHash(){menuOpen=false;const hash=decodeURIComponent(location.hash.replace(/^#\/?/,''));const match=/^quiz(?:\/(\d))?$/.exec(hash);
-    if(match){route='quiz';step=Math.max(0,Math.min(4,Number(match[1]||0)));}
-    else route=['home','result','plan','help','how','guides','privacy'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
+    if(match){route='quiz';step=Math.max(0,Math.min(p().finished?4:p().maxStep,Number(match[1]||0)));}
+    else route=['home','result','plan','help','how','guides','privacy'].includes(hash)?hash:'home';if(!p().finished&&(route==='plan'||route==='result')){route='quiz';step=0;if(location.hash!=='#quiz/0')history.replaceState(null,'','#quiz/0');}
+    render();window.scrollTo({top:0,behavior:'instant'});
   }
   function navigate(to){const hash='#'+to;if(location.hash===hash)showHash();else location.hash=hash;}
   function toast(msg){toastText=msg;clearTimeout(toastTimer);render();toastTimer=setTimeout(()=>{toastText='';render();},2700);}
   function next(){if(step===0 && p().adults+p().children<1){toast(L().validation);return;}
-    if(step===4){p().finished=true;save();navigate('result');}
-    else navigate('quiz/'+(step+1));
+    if(step===4){if(p().maxStep<4){navigate('quiz/0');return;}p().finished=true;save();navigate('result');}
+    else {p().maxStep=Math.max(p().maxStep,step+1);save();navigate('quiz/'+(step+1));}
   }
   function reset(){if(!confirm(L().resetConfirm))return;if(active==='own')own=fresh();else friend=fresh();save();navigate('quiz/0');}
   function friendStart(){active='friend';storagePut(STORAGE.active,active);friend=fresh();save();navigate('quiz/0');}
