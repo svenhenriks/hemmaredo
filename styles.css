@@ -191,3 +191,27 @@
   .resources-hero-copy{width:61%;padding-left:36px}
   .resources-hero h1{font-size:clamp(46px,5vw,64px)}
 }
+
+/* HemmaRedo Checklista 2.0 */
+.checklist-intro{background:#e8eee5;border-radius:14px;padding:13px 15px;display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.65;color:#355d46;max-width:810px;margin:17px 0 0}
+.checklist-intro .ic{flex:none;margin-top:2px}
+.task-row{align-items:flex-start}
+.task-copy label{cursor:pointer}
+.task-detail{margin-top:11px;border-radius:11px;border:1px solid #e2e6db;background:#f7f8f1;overflow:hidden}
+.task-detail summary{display:flex;align-items:center;gap:8px;padding:11px 12px;cursor:pointer;list-style:none;font-size:12px;font-weight:800;color:#28593e}
+.task-detail summary::-webkit-details-marker{display:none}
+.task-detail summary .ic:last-child{margin-left:auto;transition:transform .15s}
+.task-detail[open] summary .ic:last-child{transform:rotate(180deg)}
+.task-detail-body{border-top:1px solid #e0e6db;padding:15px 14px 17px}
+.task-detail-body>p{font-size:13px;line-height:1.65;margin:0 0 14px;color:#4b6555}
+.task-detail-body h4{font-size:13px;margin:0 0 9px;font-weight:800;color:#294d39}
+.task-detail-body ul{padding-left:20px;margin:0 0 16px;display:grid;gap:7px}
+.task-detail-body li{font-size:12px;line-height:1.55;color:#405a49}
+.task-tip,.task-warning{display:flex;align-items:flex-start;gap:8px;border-radius:10px;padding:11px;margin-bottom:9px}
+.task-tip{background:#e5f0e5}.task-warning{background:#fbf0de}
+.task-tip .ic,.task-warning .ic{width:17px;height:17px;flex:none;margin-top:2px}
+.task-tip p,.task-warning p{font-size:12px;line-height:1.6;margin:0;color:#385c45}
+.task-warning p{color:#79583e}
+.task-detail-body>a{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;font-weight:800}
+.task-detail-body>a .ic{width:14px;height:14px}
+@media print{.task-detail{border:none;background:transparent}.task-detail summary{display:none}.task-detail-body{display:block;border:none;padding:7px 0}.task-detail-body ul{margin-bottom:8px}}
