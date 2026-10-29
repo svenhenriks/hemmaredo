@@ -396,7 +396,95 @@
       <a href="${task.href}" target="_blank" rel="noopener noreferrer">${info.read} ${icon('external','ic-sm')}</a>${task.id==='contacts'?'<a href="contacts.html" class="task-phone-link">'+(lang==='sv'?'Skapa utskrivbar telefonlista':'Create printable contact list')+' ↗</a>':''}</div></details>`:`<a href="${task.href}" target="_blank" rel="noopener noreferrer">${L().source} ↗</a>`;
     return `<div class="task-row ${done(task)?'done':''}"><input type="checkbox" aria-label="${escapeHTML(task.title)}" id="task-${task.id}" data-task="${task.id}" ${done(task)?'checked':''}><div class="task-copy"><label for="task-${task.id}"><strong>${task.title}</strong></label><p>${task.desc}</p>${expl}</div></div>`;
   }
-  function plan(){const tr=L(),c=calc(),pr=p();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('check','ic-sm')}${tr.personal}</div><h1>${tr.personal}</h1><p class="lede">${tr.planDesc}</p><p class="checklist-intro">${icon('lightbulb','ic-sm')}${checklistDetails[lang].intro}</p><div class="card" style="margin-top:23px"><div class="plan-overview"><div><h3>${tr.little}</h3><p>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</p><button type="button" class="btn-quiet" style="padding-left:0;font-size:12px" data-action="edit">${tr.editAnswers}${icon('arrow','ic-sm')}</button></div>${progressRing(c.pct)}</div><div class="full-progress"><span style="width:${c.pct}%"></span></div><p class="source-note" style="margin-bottom:0">${tr.progressDisclaimer}</p></div><div class="plan-list">${groupMeta.map(g=>{const ts=c.all.filter(task=>task.group===g.id);const finished=ts.filter(done).length;const isOpen=expanded.has(g.id);return `<section class="plan-group" id="group-${g.id}"><button type="button" class="group-head" data-group="${g.id}" aria-expanded="${isOpen}"><span class="icon-badge ${g.color}">${icon(g.icon)}</span><span class="group-label"><strong>${name(g.name)}</strong><small>${finished} ${tr.outOf} ${ts.length} ${tr.stepsDone}</small></span>${icon('chevron','ic-sm')}</button><div class="group-content" ${isOpen?'':'hidden'}>${ts.map(taskRow).join('')}</div></section>`}).join('')}</div><div class="equipment-plan-link"><div><strong>${lang==='sv'?'Vad behöver du ha hemma?':'What equipment might you need?'}</strong><p>${lang==='sv'?'Utforska vårt utrustningsbibliotek, markera vad du redan har och skapa en egen inköpslista.':'Explore equipment, mark what you have and build your own shopping list.'}</p></div><a href="equipment.html" class="btn-outline">${icon('arrow','ic-sm')}${lang==='sv'?'Öppna utrustningsbiblioteket':'Explore equipment'}</a></div><div class="plan-actions">${action(tr.print,'primary','print','printer')}${action(tr.share,'outline','share','share')}${action(tr.newPlan,'outline','reset','back')}</div><div class="safe-note">${icon('info')}<span><strong>${tr.important}.</strong> ${tr.importantDesc}</span></div><div class="safe-note">${icon('printer')}<span>${tr.printHint}</span></div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.helpLead}</p>${action(tr.helpStart,'outline','friend','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p><div class="print-note">${tr.printDate}: ${new Date().toLocaleDateString(lang==='sv'?'sv-SE':'en-GB')} · HemmaRedo · ${pr.adults} ${tr.adultsCount}, ${pr.children} ${tr.childrenCount}, ${pr.pets} ${tr.petsCount}</div></main>${footer()}`;}
+
+  // Shared equipment identifiers and storage also power equipment.html.
+  const sharedEquipment=[
+['water-jug','water',1,'💧','Dricksvattendunk','Drinking water containers','Livsmedelsgodkända dunkar för lagrat dricksvatten.','Food-safe containers for stored drinking water.','Förvara svalt och mörkt. HemmaRedos minnesregel: byt vatten vid midsommar och jul.','Keep cool and dark. HemmaRedo reminder: replace stored water at Midsummer and Christmas.'],
+['water-bottled','water',1,'🫙','Flaskvatten','Bottled water','Extra vatten som redan är förpackat.','Extra water in sealed packaging.','Kontrollera förvaring, bäst före-datum och mängd för hela hushållet.','Check storage, dates and quantity for everyone.'],
+['water-carry','water',2,'🪣','Extra kärl för vattenhämtning','Extra water carrying containers','Hjälper om kommunen ordnar nödvatten.','Useful when the municipality provides emergency water.','Välj kärl du kan bära när de är fyllda.','Choose containers you can carry when filled.'],
+['water-filter','water',3,'🧪','Vattenreningsutrustning','Water treatment equipment','Ett möjligt komplement vid vissa typer av vattenproblem.','A possible complement for certain water issues.','Filter och kokning avlägsnar inte alla kemiska föroreningar. Följ myndighetsråd.','Filters and boiling do not remove every chemical contaminant. Follow official advice.'],
+['food-cans','food',1,'🥫','Konserver och färdiga rätter','Canned and ready-to-eat food','Exempelvis bönor, tomater, fisk och färdiga rätter.','Beans, tomatoes, fish and ready-made meals.','Välj sådant ni gillar och kan äta även utan uppvärmning.','Choose meals your household enjoys, including no-cook options.'],
+['food-dry','food',1,'🌾','Torrvaror','Dry goods','Havregryn, knäckebröd, nötter, ris och couscous.','Oats, crispbread, nuts, rice and couscous.','Tänk på att vissa torrvaror kräver vatten och kokning.','Some dry goods require water and cooking.'],
+['food-opener','food',1,'🗝️','Manuell konservöppnare','Manual can opener','Kan användas även när elen är borta.','Works without electricity.','Kontrollera att den fungerar på era konservburkar.','Check that it works with your cans.'],
+['food-stove','food',2,'🍲','Stormkök och bränsle','Camping stove and fuel','Alternativ för att värma mat och vatten utan el.','Alternative for heating food and water without electricity.','Använd friluftskök utomhus enligt tillverkarens instruktioner. Aldrig grill inomhus.','Use outdoor stoves outside as directed. Never use a grill indoors.'],
+['food-thermos','food',2,'☕','Termos','Thermos flask','Håller dryck eller uppvärmt vatten varmt längre.','Keeps drinks and heated water warm longer.','Kan minska behovet av att värma vatten upprepade gånger.','May reduce the need to heat water repeatedly.'],
+['light-torch','light',1,'🔦','Ficklampa','Flashlight','Bärbar belysning vid strömavbrott.','Portable lighting during a power outage.','Testa då och då och ha den nära till hands.','Test it regularly and keep it accessible.'],
+['light-headlamp','light',2,'💡','Pannlampa','Headlamp','Ger ljus samtidigt som händerna är fria.','Hands-free lighting.','Praktisk vid matlagning, reparationer och nattliga avbrott.','Useful when cooking, repairing or moving at night.'],
+['light-batteries','light',1,'🔋','Reservbatterier','Spare batteries','Batterier till radio och lampor.','Batteries for radios and lights.','Kontrollera storlek, hållbarhet och förvaring.','Check sizes, dates and storage.'],
+['light-radio','light',1,'📻','FM-radio utan elnät','Off-grid FM radio','Batteri-, vev- eller solcellsradio som kan ta emot P4.','Battery, crank or solar FM radio for receiving P4.','Testa mottagningen av din lokala P4-kanal.','Test reception of your local P4 station.'],
+['light-bank','light',1,'🔌','Laddad powerbank','Charged power bank','Reservladdning för mobil och små enheter.','Backup power for phones and small devices.','Lägg med rätt kabel och se över laddningen regelbundet.','Keep the correct cable with it and recharge regularly.'],
+['warm-blankets','warm',1,'🧣','Filtar och varma kläder','Blankets and warm clothing','Hjälper till att behålla kroppsvärmen.','Help retain body warmth.','Samla gärna familjen i ett rum vid längre värmeavbrott.','Consider gathering everyone in one room during long heating outages.'],
+['warm-bag','warm',2,'🛏️','Sovsäck eller extra täcke','Sleeping bag or extra duvet','Extra isolering om bostaden blir kall.','Extra insulation if the home gets cold.','Välj utifrån årstid och hushållets behov.','Choose for the season and household needs.'],
+['warm-seal','warm',2,'🪟','Tätningsmaterial','Draft-proofing supplies','Kan minska drag kring fönster och dörrar.','Can reduce drafts around windows and doors.','Blockera inte nödvändig ventilation eller utrymningsvägar.','Do not obstruct ventilation or escape routes.'],
+['warm-fireplace','warm',3,'🪵','Godkänd alternativ värmekälla','Approved alternative heater','Kan vara värdefullt i bostäder med rätt installation.','Can help in homes with suitable installations.','Använd endast godkänd utrustning enligt instruktion. Brand- och kolmonoxidrisk.','Use approved equipment as directed. Fire and carbon monoxide risks.'],
+['health-firstaid','health',1,'🩹','Första hjälpen-kit','First-aid kit','Förband, kompresser, plåster och enklare vårdmaterial.','Bandages, dressings, plasters and basic care supplies.','Lär dig använda innehållet och se över bäst före.','Learn to use the contents and check expiry dates.'],
+['health-hygiene','health',1,'🧼','Hygienartiklar','Hygiene supplies','Tvål, handsprit, våtservetter och toalettpapper.','Soap, hand sanitiser, wipes and toilet paper.','Planera även för mensskydd, blöjor och individuella behov.','Include menstrual products, nappies and individual needs.'],
+['health-bags','health',1,'🗑️','Avfallspåsar och robusta säckar','Rubbish bags and strong sacks','Praktiskt vid störningar i avlopp eller sophämtning.','Useful during sewage or waste collection disruptions.','Följ kommunens instruktioner för hygien och hantering.','Follow municipal hygiene and disposal instructions.'],
+['health-medicine','health',1,'💊','Nödvändiga läkemedel','Essential medicines','Planering för personliga läkemedelsbehov.','Plan for essential personal medicines.','Följ råd från vård och apotek. Ingen behöver registrera medicinska uppgifter här.','Follow medical and pharmacy advice. No medical details need to be entered here.'],
+['tools-contacts','tools',1,'📞','Viktiga nummer på papper','Important contacts on paper','En utskriven lista fungerar även utan mobil.','A printed list works without a mobile phone.','Skapa en telefonlista i HemmaRedo och förvara på ett känt ställe.','Print a HemmaRedo contact sheet and keep it accessible.'],
+['tools-cash','tools',1,'💶','Kontanter i mindre valörer','Cash in small denominations','Ett alternativ om kortbetalning eller digitala tjänster slutar fungera.','An option if card payments or online services fail.','Utgå från hushållets behov och förvara säkert.','Base the amount on household needs and store securely.'],
+['tools-multitool','tools',2,'🛠️','Multiverktyg','Multi-tool','Kan hjälpa vid enkla praktiska problem.','Useful for straightforward repairs and tasks.','En vanlig verktygslåda kan ofta fylla samma funktion.','A basic toolbox may serve the same purpose.'],
+['tools-map','tools',2,'🗺️','Papperskarta','Paper map','Hjälper vid bortfall av GPS och internet.','Useful if GPS or internet is unavailable.','Markera mötesplatser och viktiga lokala adresser.','Mark meeting points and key local addresses.'],
+['tools-firesteel','tools',3,'✨','Tändstål','Fire steel','Friluftsutrustning för att göra upp eld utomhus där det är tillåtet.','Outdoor gear for lighting fires where permitted.','Inte nödvändigt för de flesta hushåll. Eldningsförbud och brandsäkerhet gäller.','Not essential for most homes. Observe fire bans and safety rules.'],
+['tools-axe','tools',3,'🪓','Yxa','Axe','Kan vara användbar vid vedhantering för den som har behov och vana.','Can be useful for experienced users handling firewood.','Inte grundutrustning för alla. Förvara barnsäkert och använd skydd.','Not essential for everyone. Store safely away from children and use protection.'],
+['pets-food','pets',1,'🐾','Foder och vatten till djur','Pet food and water','Lager som passar djurets art, mängd och behov.','Supplies suited to each pet species and needs.','Räkna med extra vatten och eventuella läkemedel enligt veterinärens råd.','Account for extra water and any medicines according to veterinary advice.'],
+['pets-transport','pets',2,'🧳','Transportbur, sele eller koppel','Carrier, harness or lead','Hjälper om djur snabbt måste flyttas.','Useful if pets need to be moved quickly.','Anpassa till art, storlek och temperament.','Choose according to species, size and temperament.']
+];
+  const EQUIPMENT_STORAGE='hemmaredo_equipment_v1';
+  function getEquipmentChoices(){
+    try{const data=JSON.parse(localStorage.getItem(EQUIPMENT_STORAGE)||'{}');return data&&typeof data==='object'?data:{};}catch{return {};}
+  }
+  let equipmentChoices=getEquipmentChoices();
+  const equipmentLabels={
+    sv:{title:'Utrustningsbibliotek',intro:'Förslag som hjälper dig lösa behoven ovan. Du behöver inte köpa allt.',have:'Har redan',add:'Lägg i inköpslistan',skip:'Inte relevant',see:'Se hela utrustningsbiblioteket',shopping:'Min inköpslista',overview:'saker att skaffa inom',empty:'Inget på inköpslistan ännu.',print:'Skriv ut / spara som PDF',printHelp:'Välj Spara som PDF i webbläsarens utskriftsruta.',back:'Till min plan',hint:'Utrustningsvalen påverkar inte checklistans procent.',remove:'Ta bort',listLead:'Här samlas allt du markerat för inköp i checklistan eller utrustningsbiblioteket.',basic:'Grundläggande',extra:'Bra komplement',advanced:'Fördjupad'},
+    en:{title:'Equipment library',intro:'Suggestions that can help you meet the needs above. You do not need everything.',have:'Already have',add:'Add to shopping list',skip:'Not relevant',see:'Explore all equipment',shopping:'My shopping list',overview:'items to get in',empty:'Nothing on your shopping list yet.',print:'Print / save as PDF',printHelp:'Choose Save as PDF in your browser print dialog.',back:'Back to my plan',hint:'Equipment choices do not affect checklist progress.',remove:'Remove',listLead:'Everything you added from your checklist or equipment library, in one place.',basic:'Essential',extra:'Useful extra',advanced:'Advanced'}
+  };
+  const equipmentGroupNames={water:'water',food:'food',heat:'warm',comms:'light',health:'health',home:'tools'};
+  const equipmentCategoryNames={
+    water:{sv:'Vatten',en:'Water'},food:{sv:'Mat & tillagning',en:'Food & cooking'},
+    light:{sv:'Ljus & information',en:'Light & information'},warm:{sv:'Värme',en:'Warmth'},
+    health:{sv:'Hygien & hälsa',en:'Hygiene & health'},tools:{sv:'Hem & verktyg',en:'Home & tools'},
+    pets:{sv:'Djur',en:'Pets'}
+  };
+  function equipmentForGroup(id){
+    const cats=id==='health'?['health',...(p().pets>0||p().needs.includes('pets')?['pets']:[])]:[equipmentGroupNames[id]];
+    return sharedEquipment.filter(e=>cats.includes(e[1]));
+  }
+  function equipmentName(e){return lang==='sv'?e[4]:e[5];}
+  function equipmentDesc(e){return lang==='sv'?e[6]:e[7];}
+  function equipmentTip(e){return lang==='sv'?e[8]:e[9];}
+  function equipmentCount(group){return equipmentForGroup(group).filter(e=>equipmentChoices[e[0]]==='need').length;}
+  function equipmentSummary(group){const count=equipmentCount(group);const txt=equipmentLabels[lang];return count+' '+txt.overview+' '+name(groupMeta.find(g=>g.id===group).name).toLocaleLowerCase();}
+  function equipmentCard(e){
+    const t=equipmentLabels[lang],status=equipmentChoices[e[0]];
+    const choices=[['have',t.have],['need',t.add],['skip',t.skip]];
+    return `<article class="inline-equipment-card">
+      <div class="inline-equipment-main"><span class="inline-equipment-emoji" aria-hidden="true">${e[3]}</span><div><strong>${escapeHTML(equipmentName(e))}</strong><p>${escapeHTML(equipmentDesc(e))}</p></div></div>
+      <details class="inline-equipment-tip"><summary>${lang==='sv'?'Läs tips':'Read tips'}</summary><p>${escapeHTML(equipmentTip(e))}</p></details>
+      <div class="inline-equipment-choices">${choices.map(([key,label])=>`<button type="button" data-equip-id="${e[0]}" data-equip-status="${key}" aria-pressed="${status===key}" class="${status===key?'selected '+key:''}">${label}</button>`).join('')}</div>
+    </article>`;
+  }
+  function equipmentForChecklist(group){
+    const t=equipmentLabels[lang],list=equipmentForGroup(group);
+    return `<div class="inline-equipment"><details class="inline-equipment-section">
+      <summary>${icon('clipboard','ic-sm')}<span>${t.title}</span><small>${equipmentSummary(group)}</small>${icon('chevron','ic-sm')}</summary>
+      <div class="inline-equipment-panel"><p>${t.intro}</p><div class="inline-equipment-grid">${list.map(equipmentCard).join('')}</div><div class="inline-equipment-bottom"><span>${t.hint}</span><a href="equipment.html">${t.see} ↗</a></div></div>
+    </details></div>`;
+  }
+  function shoppingList(){
+    const t=equipmentLabels[lang],needed=sharedEquipment.filter(e=>equipmentChoices[e[0]]==='need');
+    const cats=['water','food','light','warm','health','tools','pets'];
+    const rows=cats.map(cat=>{
+      const things=needed.filter(e=>e[1]===cat);if(!things.length)return '';
+      return `<section class="shopping-group"><h2>${name(equipmentCategoryNames[cat])}</h2>${things.map(e=>`<div class="shopping-item"><span class="shopping-check" aria-hidden="true">□</span><div><strong>${escapeHTML(equipmentName(e))}</strong><p>${escapeHTML(equipmentDesc(e))}</p></div><button type="button" class="shopping-remove" data-equip-id="${e[0]}" data-equip-status="clear">${t.remove}</button></div>`).join('')}</section>`;
+    }).join('');
+    return `${navMarkup()}${banner()}<main class="content-shell shopping-page"><div class="eyebrow">${icon('clipboard','ic-sm')}HemmaRedo</div><h1>${t.shopping}</h1><p class="lede">${t.listLead}</p><div class="shopping-print-header">HemmaRedo · ${t.shopping}</div>
+      <div class="shopping-paper">${needed.length?rows:`<div class="empty-state">${t.empty}</div>`}</div>
+      <div class="shopping-actions"><button class="btn-primary" type="button" data-action="print-shopping" ${needed.length?'':'disabled'}>${icon('printer','ic-sm')}${t.print}</button><a class="btn-outline" href="equipment.html">${t.see} ↗</a><button type="button" class="btn-quiet" data-action="shopping-back">${t.back}</button></div>
+      <p class="source-note">${t.printHelp}</p></main>${footer()}`;
+  }
+
+  function plan(){const tr=L(),c=calc(),pr=p();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('check','ic-sm')}${tr.personal}</div><h1>${tr.personal}</h1><p class="lede">${tr.planDesc}</p><p class="checklist-intro">${icon('lightbulb','ic-sm')}${checklistDetails[lang].intro}</p><div class="card" style="margin-top:23px"><div class="plan-overview"><div><h3>${tr.little}</h3><p>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</p><button type="button" class="btn-quiet" style="padding-left:0;font-size:12px" data-action="edit">${tr.editAnswers}${icon('arrow','ic-sm')}</button></div>${progressRing(c.pct)}</div><div class="full-progress"><span style="width:${c.pct}%"></span></div><p class="source-note" style="margin-bottom:0">${tr.progressDisclaimer}</p></div><div class="plan-list">${groupMeta.map(g=>{const ts=c.all.filter(task=>task.group===g.id);const finished=ts.filter(done).length;const isOpen=expanded.has(g.id);return `<section class="plan-group" id="group-${g.id}"><button type="button" class="group-head" data-group="${g.id}" aria-expanded="${isOpen}"><span class="icon-badge ${g.color}">${icon(g.icon)}</span><span class="group-label"><strong>${name(g.name)}</strong><small>${finished} ${tr.outOf} ${ts.length} ${tr.stepsDone}</small></span>${icon('chevron','ic-sm')}</button><div class="group-content" ${isOpen?'':'hidden'}>${ts.map(taskRow).join('')}${equipmentForChecklist(g.id)}</div></section>`}).join('')}</div><div class="shopping-summary"><strong>${equipmentLabels[lang].shopping}</strong><p>${sharedEquipment.filter(e=>equipmentChoices[e[0]]==='need').length} ${lang==='sv'?'saker på inköpslistan':'items on your shopping list'}</p><button type="button" class="btn-outline" data-action="shopping">${icon('printer','ic-sm')}${lang==='sv'?'Visa och skriv ut':'View and print'}</button></div><div class="equipment-plan-link"><div><strong>${lang==='sv'?'Vad behöver du ha hemma?':'What equipment might you need?'}</strong><p>${lang==='sv'?'Utforska vårt utrustningsbibliotek, markera vad du redan har och skapa en egen inköpslista.':'Explore equipment, mark what you have and build your own shopping list.'}</p></div><a href="equipment.html" class="btn-outline">${icon('arrow','ic-sm')}${lang==='sv'?'Öppna utrustningsbiblioteket':'Explore equipment'}</a></div><div class="plan-actions">${action(tr.print,'primary','print','printer')}${action(tr.share,'outline','share','share')}${action(tr.newPlan,'outline','reset','back')}</div><div class="safe-note">${icon('info')}<span><strong>${tr.important}.</strong> ${tr.importantDesc}</span></div><div class="safe-note">${icon('printer')}<span>${tr.printHint}</span></div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.helpLead}</p>${action(tr.helpStart,'outline','friend','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p><div class="print-note">${tr.printDate}: ${new Date().toLocaleDateString(lang==='sv'?'sv-SE':'en-GB')} · HemmaRedo · ${pr.adults} ${tr.adultsCount}, ${pr.children} ${tr.childrenCount}, ${pr.pets} ${tr.petsCount}</div></main>${footer()}`;}
   function help(){const tr=L();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('users','ic-sm')}${tr.helpEyebrow}</div><h1>${tr.helpTitle}</h1><p class="lede">${tr.helpLead}</p><div class="help-hero"><div class="help-visual"></div><div class="help-body"><h2>${tr.help}</h2><p>${tr.helpSeparate}</p>${action(tr.helpStart,'primary','friend','arrow')}</div></div><div class="guide-grid"><article class="guide-card">${icon('heart')}<h3>${tr.helpCard1}</h3><p>${tr.helpText1}</p></article><article class="guide-card">${icon('droplet')}<h3>${tr.helpCard2}</h3><p>${tr.helpText2}</p></article><article class="guide-card">${icon('users')}<h3>${tr.helpCard3}</h3><p>${tr.helpText3}</p></article></div></main>${footer()}`;}
 
   function howItWorks(){
@@ -505,12 +593,13 @@
   }
 
   function render(){document.documentElement.lang=lang;document.title='HemmaRedo – '+(lang==='sv'?'Ett tryggare hem börjar här':'A safer home starts here');
-    root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():route==='how'?howItWorks():route==='privacy'?privacyPage():guides();
+    root.innerHTML=route==='home'?home():route==='quiz'?quiz():route==='result'?result():route==='plan'?plan():route==='help'?help():route==='how'?howItWorks():route==='privacy'?privacyPage():route==='shopping'?shoppingList():guides();
     if(toastText)root.insertAdjacentHTML('beforeend',`<div role="status" class="toast">${escapeHTML(toastText)}</div>`);
   }
   function showHash(){menuOpen=false;const hash=decodeURIComponent(location.hash.replace(/^#\/?/,''));const match=/^quiz(?:\/(\d))?$/.exec(hash);
+    if(hash==='plan'||hash==='shopping')equipmentChoices=getEquipmentChoices();
     if(match){route='quiz';step=Math.max(0,Math.min(4,Number(match[1]||0)));}
-    else route=['home','result','plan','help','how','guides','privacy'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
+    else route=['home','result','plan','help','how','guides','privacy','shopping'].includes(hash)?hash:'home';render();window.scrollTo({top:0,behavior:'instant'});
   }
   function navigate(to){const hash='#'+to;if(location.hash===hash)showHash();else location.hash=hash;}
   function toast(msg){toastText=msg;clearTimeout(toastTimer);render();toastTimer=setTimeout(()=>{toastText='';render();},2700);}
@@ -528,6 +617,19 @@
   }
   root.addEventListener('click',ev=>{
     const target=ev.target.closest('button');if(!target)return;
+    if(target.dataset.equipId){
+      const id=target.dataset.equipId, status=target.dataset.equipStatus;
+      if(sharedEquipment.some(item=>item[0]===id)){
+        if(status==='clear'||equipmentChoices[id]===status)delete equipmentChoices[id];
+        else if(['have','need','skip'].includes(status))equipmentChoices[id]=status;
+        try{localStorage.setItem(EQUIPMENT_STORAGE,JSON.stringify(equipmentChoices));}catch{}
+        // Restore the open equipment accordion after rendering.
+        const opened=[...root.querySelectorAll('.inline-equipment-section[open]')].map(el=>el.closest('.plan-group')?.id);
+        render();
+        opened.forEach(id=>{const el=document.querySelector('#'+id+' .inline-equipment-section');if(el)el.open=true;});
+      }
+      return;
+    }
     if(target.dataset.route){navigate(target.dataset.route);return;}
     if(target.dataset.step!==undefined){navigate('quiz/'+target.dataset.step);return;}
     if(target.dataset.count){const key=target.dataset.count;const min=0;const val=Math.min(20,Math.max(min,p()[key]+Number(target.dataset.delta)));set(key,val);return;}
@@ -539,6 +641,9 @@
     if(target.dataset.group){const id=target.dataset.group;if(expanded.has(id))expanded.delete(id);else expanded.add(id);render();return;}
     if(target.dataset.priority){expanded.add(target.dataset.priority);navigate('plan');return;}
     switch(target.dataset.action){
+      case 'shopping':equipmentChoices=getEquipmentChoices();navigate('shopping');break;
+      case 'shopping-back':navigate('plan');break;
+      case 'print-shopping':window.print();break;
       case 'menu':menuOpen=!menuOpen;render();break;
       case 'begin':navigate('quiz/0');break;
       case 'resume':navigate(p().finished?'plan':'quiz/0');break;
