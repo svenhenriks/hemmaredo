@@ -65,3 +65,7 @@ Besök `http://localhost:8080`. Service worker fungerar när sidan serveras med 
 ## Version 0.4 – Så fungerar det
 
 En separat mobilanpassad introduktionssida finns på `#how`, med tre steg, en illustration av hur checklistan fungerar och vanliga frågor på svenska och engelska. Ändringarna utvecklas först i en separat gren och publiceras efter granskning.
+
+## Printable emergency contacts
+
+The `contacts.html` page creates a printable A4 contact sheet with Swedish emergency numbers and optional personal contacts. The personal entries are used in memory for the print preview and are not stored in localStorage or sent to a backend. Use the browser Print dialog to save a PDF.
