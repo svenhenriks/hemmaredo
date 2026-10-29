@@ -215,3 +215,13 @@
 .task-detail-body>a{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;font-weight:800}
 .task-detail-body>a .ic{width:14px;height:14px}
 @media print{.task-detail{border:none;background:transparent}.task-detail summary{display:none}.task-detail-body{display:block;border:none;padding:7px 0}.task-detail-body ul{margin-bottom:8px}}
+
+/* Transparent privacy information, without unnecessary consent banners */
+.privacy-page{max-width:880px}
+.privacy-sub{font-size:13px;color:#657468;margin:10px 0 29px}
+.privacy-sections{display:grid;gap:14px;margin:24px 0 20px}
+.privacy-section{background:#fffdf7;border:1px solid #e5e4d9;border-radius:16px;padding:23px}
+.privacy-section h2{font-size:clamp(21px,5.5vw,26px);letter-spacing:-.025em;margin:0 0 10px}
+.privacy-section p{font-size:14px;line-height:1.75;color:#586c5f;margin:0}
+.privacy-delete{margin-top:18px;border-color:#c6b3a5;color:#7c4033}
+@media(min-width:720px){.privacy-sections{gap:17px}.privacy-section{padding:30px 33px}}
