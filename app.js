@@ -308,9 +308,9 @@
       {iconName:'radio',title:tr.radioTitle,desc:tr.radioDesc,url:RADIO}
     ];
     const podcasts=[
-      {num:'01',name:tr.pod1,desc:tr.pod1Desc,url:'https://shows.acast.com/katastrofen'},
-      {num:'02',name:tr.pod2,desc:tr.pod2Desc,url:'https://podcasts.apple.com/se/podcast/vardagsprepping/id1511607040'},
-      {num:'03',name:tr.pod3,desc:tr.pod3Desc,url:'https://www.hemberedskap.se/'}
+      {num:'01',name:tr.pod1,desc:tr.pod1Desc,url:'https://shows.acast.com/katastrofen',cover:'https://i.scdn.co/image/ab6765630000ba8af8fe4e13ef3d42f5036e5016'},
+      {num:'02',name:tr.pod2,desc:tr.pod2Desc,url:'https://podcasts.apple.com/se/podcast/vardagsprepping/id1511607040',cover:'https://i.scdn.co/image/ab6765630000ba8a7def9e9af809133e4318352a'},
+      {num:'03',name:tr.pod3,desc:tr.pod3Desc,url:'https://www.hemberedskap.se/',cover:'https://images.podfollow.com/1292484355.jpg'}
     ];
     return `${navMarkup()}${banner()}<main class="resources-page">
       <section class="resources-hero"><div class="resources-hero-copy"><div class="eyebrow">${icon('leaf','ic-sm')}${tr.eyebrow}</div><h1>${tr.title}</h1><p>${tr.intro}</p></div><div class="resources-hero-art" aria-hidden="true"></div></section>
@@ -319,12 +319,12 @@
       </div></section>
       <section class="resources-section resources-podcast-section"><div class="resources-section-head"><div class="eyebrow">${icon('radio','ic-sm')}${tr.typePodcast}</div><h2>${tr.listen}</h2><p>${tr.listenLead}</p></div>
        <div class="resources-podcasts">
-        ${podcasts.map(card=>`<article class="resources-podcast"><div class="resources-podcast-label"><span>${card.num}</span><span>${tr.typePodcast}</span></div><div class="resources-podcast-copy"><h3>${card.name}</h3><p>${card.desc}</p>${link(card.url,tr.listenAction)}</div></article>`).join('')}
+        ${podcasts.map(card=>`<article class="resources-podcast"><div class="resources-podcast-cover"><img src="${card.cover}" alt="${lang==='sv'?'Omslag för':'Cover for'} ${escapeHTML(card.name)}" loading="lazy" decoding="async" onerror="this.hidden=true"><span class="resources-cover-fallback">${escapeHTML(card.name)}</span></div><div class="resources-podcast-copy"><div class="resources-podcast-label"><span>${card.num}</span><span>${tr.typePodcast}</span></div><h3>${card.name}</h3><p>${card.desc}</p>${link(card.url,tr.listenAction)}</div></article>`).join('')}
        </div>
        <aside class="resource-featured"><span class="eyebrow">${icon('sun','ic-sm')}${tr.featured}</span><h3>${tr.featuredTitle}</h3><p>${tr.featuredText}</p>${link('https://shows.acast.com/katastrofen/episodes/126-hemberedskap-1a',tr.episode)}</aside>
       </section>
       <section class="resources-section"><div class="resources-section-head"><div class="eyebrow">${icon('sun','ic-sm')}${tr.typeVideo}</div><h2>${tr.watch}</h2><p>${tr.watchLead}</p></div>
-      <article class="resource-video"><div class="resource-video-art">${icon('radio')}</div><div class="resource-video-copy"><span class="eyebrow">${tr.typeVideo}</span><h3>${tr.videoTitle}</h3><p>${tr.videoDesc}</p>${link('https://www.youtube.com/watch?v=6DfsNGTqJlw',tr.watchAction)}</div></article>
+      <article class="resource-video"><a class="resource-video-art" href="https://www.youtube.com/watch?v=6DfsNGTqJlw" target="_blank" rel="noopener noreferrer" aria-label="${tr.watchAction}: ${tr.videoTitle}"><img src="https://i.ytimg.com/vi/6DfsNGTqJlw/hqdefault.jpg" alt="${tr.videoTitle}" loading="lazy" decoding="async"><span class="resource-play" aria-hidden="true">▶</span></a><div class="resource-video-copy"><span class="eyebrow">${tr.typeVideo}</span><h3>${tr.videoTitle}</h3><p>${tr.videoDesc}</p>${link('https://www.youtube.com/watch?v=6DfsNGTqJlw',tr.watchAction)}</div></article>
       <div class="resources-caveat"><div class="resource-icon">${icon('info')}</div><div><strong>${tr.independent}</strong><p>${tr.disclaimer}</p></div></div>
       </section>
       <section class="resources-bottom"><h2>${tr.ctaTitle}</h2><p>${tr.ctaText}</p>${action(tr.ctaButton,'primary','begin','arrow')}</section>
