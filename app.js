@@ -737,7 +737,14 @@
     }
     if(target.dataset.count){const key=target.dataset.count;const min=0;const val=Math.min(20,Math.max(min,p()[key]+Number(target.dataset.delta)));set(key,val);return;}
     if(target.dataset.field){const field=target.dataset.field,choice=target.dataset.choice;
-      if(Array.isArray(p()[field]))set(field,p()[field].includes(choice)?p()[field].filter(x=>x!==choice):[...p()[field],choice]);
+      if(Array.isArray(p()[field])){
+        const values=p()[field].includes(choice)?p()[field].filter(x=>x!==choice):[...p()[field],choice];
+        if(field==='needs'&&choice==='pets'&&!values.includes('pets')){
+          p().petTypes=Object.fromEntries(petKinds.map(([kind])=>[kind,0]));
+          p().pets=0;p().petDailyLiters=0;p().petWaterEstimated=false;p().petFoodDays=0;
+        }
+        set(field,values);
+      }
       else set(field,choice);return;
     }
     if(target.dataset.days!==undefined){set('foodDays',Number(target.dataset.days));return;}
