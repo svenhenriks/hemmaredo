@@ -324,7 +324,9 @@
       blank.needs=Array.isArray(parsed.needs)?parsed.needs.filter(x=>needsOptions.some(y=>y[0]===x)):[];
       blank.overrides=typeof parsed.overrides==='object'&&parsed.overrides?Object.fromEntries(Object.entries(parsed.overrides).filter(([k,v])=>/^[-a-z]+$/.test(k)&&typeof v==='boolean')):{};
       blank.finished=!!parsed.finished;
-      blank.maxStep=blank.finished?4:(Number.isInteger(parsed.maxStep)?Math.max(0,Math.min(4,parsed.maxStep)):0);
+      blank.maxStep=blank.finished?5:Math.max(0,Math.min(5,Number(parsed.maxStep)||0));
+      if(blank.maxStep===4)blank.maxStep=5;
+      if(blank.pets>0&&!blank.needs.includes('pets'))blank.needs.push('pets');
       return blank;
     }catch{return fresh();}
   }
@@ -687,7 +689,7 @@
   }
   function showHash(){menuOpen=false;const hash=decodeURIComponent(location.hash.replace(/^#\/?/,''));const match=/^quiz(?:\/(\d))?$/.exec(hash);
     if(hash==='plan'||hash==='shopping')equipmentChoices=getEquipmentChoices();
-    if(match){route='quiz';step=Math.max(0,Math.min(p().finished?4:p().maxStep,Number(match[1]||0)));}
+    if(match){route='quiz';const requested=Number(match[1]||0),steps=flowSteps();step=steps.includes(requested)&&requested<=(p().finished?5:p().maxStep)?requested:(steps.filter(id=>id<=(p().finished?5:p().maxStep)).at(-1)??0);}
     else route=['home','result','plan','help','how','guides','privacy','shopping'].includes(hash)?hash:'home';if(!p().finished&&(route==='plan'||route==='result')){route='quiz';step=0;if(location.hash!=='#quiz/0')history.replaceState(null,'','#quiz/0');}
     render();window.scrollTo({top:0,behavior:'instant'});
   }
@@ -695,8 +697,9 @@
   function toast(msg){toastText=msg;clearTimeout(toastTimer);render();toastTimer=setTimeout(()=>{toastText='';render();},2700);}
   function next(){if(step===0 && p().adults+p().children<1){toast(L().validation);return;}
     if(step===1 && !housing.some(x=>x[0]===p().home)){toast(lang==='sv'?'Välj boendetyp innan du fortsätter.':'Choose your home type before continuing.');return;}
-    if(step===4){if(p().maxStep<4){navigate('quiz/0');return;}p().finished=true;save();navigate('result');}
-    else {p().maxStep=Math.max(p().maxStep,step+1);save();navigate('quiz/'+(step+1));}
+    if(step===4&&petTotal()<1){toast(lang==='sv'?'Ange minst ett djur, eller avmarkera Husdjur i föregående steg.':'Add a pet, or deselect Pets in the previous step.');return;}
+    if(step===5){if(p().maxStep<5){navigate('quiz/0');return;}p().finished=true;save();navigate('result');}
+    else {const steps=flowSteps(),nextStep=steps[steps.indexOf(step)+1];p().maxStep=Math.max(p().maxStep,nextStep);save();navigate('quiz/'+nextStep);}
   }
   function reset(){if(!confirm(L().resetConfirm))return;if(active==='own')own=fresh();else friend=fresh();save();navigate('quiz/0');}
   function friendStart(){active='friend';storagePut(STORAGE.active,active);friend=fresh();save();navigate('quiz/0');}
@@ -748,7 +751,7 @@
       case 'begin':navigate('quiz/0');break;
       case 'resume':navigate(p().finished?'plan':'quiz/0');break;
       case 'next':next();break;
-      case 'back':navigate(step>0?'quiz/'+(step-1):'home');break;
+      case 'back':{const steps=flowSteps(),i=steps.indexOf(step);navigate(i>0?'quiz/'+steps[i-1]:'home');break;}
       case 'view-plan':navigate('plan');break;
       case 'edit':navigate('quiz/0');break;
       case 'help':navigate('help');break;
