@@ -1,0 +1,817 @@
+HEMMAREDO – LINA BÖRJAR HÄR
+Prioriterad copyreview: de texter som sätter tonen för besökarens första upplevelse.
+Fullständig fil: LINA_COPYREVIEW_ALLA_TEXTER.txt
+Skriv ny formulering i NY TEXT; behåll numret/ID:t så kan vi hitta den i koden.
+Vill du stryka något, skriv TA BORT.
+
+[0002] HemmaRedo > Gemensam copy > yourPlan
+SPRÅK: SV
+ORIGINAL:
+Min plan
+
+NY TEXT:
+________________________________________
+
+
+[0003] HemmaRedo > Gemensam copy > how
+SPRÅK: SV
+ORIGINAL:
+Så fungerar det
+
+NY TEXT:
+________________________________________
+
+
+[0004] HemmaRedo > Gemensam copy > help
+SPRÅK: SV
+ORIGINAL:
+Hjälp en vän
+
+NY TEXT:
+________________________________________
+
+
+[0005] HemmaRedo > Gemensam copy > guides
+SPRÅK: SV
+ORIGINAL:
+Tips & länkar
+
+NY TEXT:
+________________________________________
+
+
+[0007] HemmaRedo > Gemensam copy > headline
+SPRÅK: SV
+ORIGINAL:
+Ett tryggare hem börjar här.
+
+NY TEXT:
+________________________________________
+
+
+[0008] HemmaRedo > Gemensam copy > intro
+SPRÅK: SV
+ORIGINAL:
+Ta reda på hur förberett ditt hushåll är och få en enkel plan.
+
+NY TEXT:
+________________________________________
+
+
+[0009] HemmaRedo > Gemensam copy > getStarted
+SPRÅK: SV
+ORIGINAL:
+Kom igång
+
+NY TEXT:
+________________________________________
+
+
+[0010] HemmaRedo > Gemensam copy > noLogin
+SPRÅK: SV
+ORIGINAL:
+Det tar cirka 3 minuter. Gratis.
+Ingen inloggning.
+
+NY TEXT:
+________________________________________
+
+
+[0011] HemmaRedo > Gemensam copy > simple
+SPRÅK: SV
+ORIGINAL:
+Enkelt och tydligt
+
+NY TEXT:
+________________________________________
+
+
+[0012] HemmaRedo > Gemensam copy > authorities
+SPRÅK: SV
+ORIGINAL:
+Bygger på svenska myndigheters råd
+
+NY TEXT:
+________________________________________
+
+
+[0013] HemmaRedo > Gemensam copy > tailored
+SPRÅK: SV
+ORIGINAL:
+Anpassat för ditt hushåll
+
+NY TEXT:
+________________________________________
+
+
+[0014] HemmaRedo > Gemensam copy > neighbors
+SPRÅK: SV
+ORIGINAL:
+Hjälp en vän eller granne
+
+NY TEXT:
+________________________________________
+
+
+[0015] HemmaRedo > Gemensam copy > little
+SPRÅK: SV
+ORIGINAL:
+Små steg gör stor skillnad.
+
+NY TEXT:
+________________________________________
+
+
+[0016] HemmaRedo > Gemensam copy > littleDesc
+SPRÅK: SV
+ORIGINAL:
+Du behöver inte göra allt på en gång. Ta ett steg i taget och bygg vidare när det passar dig.
+
+NY TEXT:
+________________________________________
+
+
+[0017] HemmaRedo > Gemensam copy > stronger
+SPRÅK: SV
+ORIGINAL:
+Starkare tillsammans.
+
+NY TEXT:
+________________________________________
+
+
+[0018] HemmaRedo > Gemensam copy > strongerDesc
+SPRÅK: SV
+ORIGINAL:
+Beredskap handlar inte bara om att ta hand om sig själv, utan också om att hjälpa andra.
+
+NY TEXT:
+________________________________________
+
+
+[0026] HemmaRedo > Gemensam copy > stepNames > 1
+SPRÅK: SV
+ORIGINAL:
+Hushållet
+
+NY TEXT:
+________________________________________
+
+
+[0027] HemmaRedo > Gemensam copy > stepNames > 2
+SPRÅK: SV
+ORIGINAL:
+Bostad
+
+NY TEXT:
+________________________________________
+
+
+[0028] HemmaRedo > Gemensam copy > stepNames > 3
+SPRÅK: SV
+ORIGINAL:
+Utrustning
+
+NY TEXT:
+________________________________________
+
+
+[0029] HemmaRedo > Gemensam copy > stepNames > 4
+SPRÅK: SV
+ORIGINAL:
+Särskilda behov
+
+NY TEXT:
+________________________________________
+
+
+[0030] HemmaRedo > Gemensam copy > stepNames > 5
+SPRÅK: SV
+ORIGINAL:
+Vardagen
+
+NY TEXT:
+________________________________________
+
+
+[0031] HemmaRedo > Gemensam copy > stepNames > 6
+SPRÅK: SV
+ORIGINAL:
+Din plan
+
+NY TEXT:
+________________________________________
+
+
+[0032] HemmaRedo > Gemensam copy > stepDescriptions > 1
+SPRÅK: SV
+ORIGINAL:
+Vilka bor hos er?
+
+NY TEXT:
+________________________________________
+
+
+[0033] HemmaRedo > Gemensam copy > stepDescriptions > 2
+SPRÅK: SV
+ORIGINAL:
+Vilken typ av boende?
+
+NY TEXT:
+________________________________________
+
+
+[0034] HemmaRedo > Gemensam copy > stepDescriptions > 3
+SPRÅK: SV
+ORIGINAL:
+Vad har ni redan?
+
+NY TEXT:
+________________________________________
+
+
+[0035] HemmaRedo > Gemensam copy > stepDescriptions > 4
+SPRÅK: SV
+ORIGINAL:
+Något att ta hänsyn till?
+
+NY TEXT:
+________________________________________
+
+
+[0036] HemmaRedo > Gemensam copy > stepDescriptions > 5
+SPRÅK: SV
+ORIGINAL:
+Vatten och mat
+
+NY TEXT:
+________________________________________
+
+
+[0037] HemmaRedo > Gemensam copy > stepDescriptions > 6
+SPRÅK: SV
+ORIGINAL:
+Era nästa steg
+
+NY TEXT:
+________________________________________
+
+
+[0038] HemmaRedo > Gemensam copy > stepQuestions > 1
+SPRÅK: SV
+ORIGINAL:
+Hur många bor i hushållet?
+
+NY TEXT:
+________________________________________
+
+
+[0039] HemmaRedo > Gemensam copy > stepQuestions > 2
+SPRÅK: SV
+ORIGINAL:
+Vilken typ av bostad bor ni i?
+
+NY TEXT:
+________________________________________
+
+
+[0040] HemmaRedo > Gemensam copy > stepQuestions > 3
+SPRÅK: SV
+ORIGINAL:
+Vad har ni redan hemma?
+
+NY TEXT:
+________________________________________
+
+
+[0041] HemmaRedo > Gemensam copy > stepQuestions > 4
+SPRÅK: SV
+ORIGINAL:
+Finns det särskilda behov?
+
+NY TEXT:
+________________________________________
+
+
+[0042] HemmaRedo > Gemensam copy > stepQuestions > 5
+SPRÅK: SV
+ORIGINAL:
+Hur ser det ut med vatten och mat?
+
+NY TEXT:
+________________________________________
+
+
+[0043] HemmaRedo > Gemensam copy > stepSubtitles > 1
+SPRÅK: SV
+ORIGINAL:
+Inkludera alla som regelbundet bor här.
+
+NY TEXT:
+________________________________________
+
+
+[0044] HemmaRedo > Gemensam copy > stepSubtitles > 2
+SPRÅK: SV
+ORIGINAL:
+Det hjälper oss att ge mer relevanta rekommendationer.
+
+NY TEXT:
+________________________________________
+
+
+[0045] HemmaRedo > Gemensam copy > stepSubtitles > 3
+SPRÅK: SV
+ORIGINAL:
+Välj det som finns. Det är helt okej att hoppa över.
+
+NY TEXT:
+________________________________________
+
+
+[0046] HemmaRedo > Gemensam copy > stepSubtitles > 4
+SPRÅK: SV
+ORIGINAL:
+Välj det som stämmer för er. Du kan hoppa över frågan.
+
+NY TEXT:
+________________________________________
+
+
+[0047] HemmaRedo > Gemensam copy > stepSubtitles > 5
+SPRÅK: SV
+ORIGINAL:
+Ungefär räcker. Det går bra att svara noll eller hoppa över.
+
+NY TEXT:
+________________________________________
+
+
+[0081] HemmaRedo > Gemensam copy > waterHint
+SPRÅK: SV
+ORIGINAL:
+Utgå från 3–5 liter per person och dygn. Husdjur och särskilda behov tillkommer.
+
+NY TEXT:
+________________________________________
+
+
+[0083] HemmaRedo > Gemensam copy > resultsHeading
+SPRÅK: SV
+ORIGINAL:
+Ni är på god väg!
+
+NY TEXT:
+________________________________________
+
+
+[0085] HemmaRedo > Gemensam copy > resultText
+SPRÅK: SV
+ORIGINAL:
+Ni har en bra början. Här ser ni vad som redan är ordnat och vad som kan stärkas inför en vecka då vardagen inte fungerar som vanligt.
+
+NY TEXT:
+________________________________________
+
+
+[0087] HemmaRedo > Gemensam copy > progressDisclaimer
+SPRÅK: SV
+ORIGINAL:
+Procenten visar avklarade punkter i just den här planen – inte hur säker du är i en kris.
+
+NY TEXT:
+________________________________________
+
+
+[0088] HemmaRedo > Gemensam copy > tailoredFor
+SPRÅK: SV
+ORIGINAL:
+Anpassad för ert hushåll
+
+NY TEXT:
+________________________________________
+
+
+[0095] HemmaRedo > Gemensam copy > waterExtra
+SPRÅK: SV
+ORIGINAL:
+Plus vatten för husdjur och särskilda behov.
+
+NY TEXT:
+________________________________________
+
+
+[0097] HemmaRedo > Gemensam copy > planDesc
+SPRÅK: SV
+ORIGINAL:
+Här är rekommendationer anpassade efter era svar. Markera det ni har ordnat – ändra gärna när något förändras.
+
+NY TEXT:
+________________________________________
+
+
+[0098] HemmaRedo > Gemensam copy > editAnswers
+SPRÅK: SV
+ORIGINAL:
+Ändra mina svar
+
+NY TEXT:
+________________________________________
+
+
+[0119] HemmaRedo > Gemensam copy > helpEyebrow
+SPRÅK: SV
+ORIGINAL:
+Hjälp en vän
+
+NY TEXT:
+________________________________________
+
+
+[0120] HemmaRedo > Gemensam copy > helpTitle
+SPRÅK: SV
+ORIGINAL:
+Starkare tillsammans.
+
+NY TEXT:
+________________________________________
+
+
+[0121] HemmaRedo > Gemensam copy > helpLead
+SPRÅK: SV
+ORIGINAL:
+Det är lättare att förbereda sig när man gör det ihop. Hjälp någon annan att skapa en enkel plan – i deras egen takt.
+
+NY TEXT:
+________________________________________
+
+
+[0122] HemmaRedo > Gemensam copy > helpStart
+SPRÅK: SV
+ORIGINAL:
+Gör en plan tillsammans
+
+NY TEXT:
+________________________________________
+
+
+[0123] HemmaRedo > Gemensam copy > helpSeparate
+SPRÅK: SV
+ORIGINAL:
+Din egen plan finns kvar. Vännens svar sparas separat på just den här enheten.
+
+NY TEXT:
+________________________________________
+
+
+[0124] HemmaRedo > Gemensam copy > helpCard1
+SPRÅK: SV
+ORIGINAL:
+Börja med ett samtal
+
+NY TEXT:
+________________________________________
+
+
+[0125] HemmaRedo > Gemensam copy > helpText1
+SPRÅK: SV
+ORIGINAL:
+Fråga vad personen redan har och vad som skulle underlätta mest.
+
+NY TEXT:
+________________________________________
+
+
+[0126] HemmaRedo > Gemensam copy > helpCard2
+SPRÅK: SV
+ORIGINAL:
+Gör små saker ihop
+
+NY TEXT:
+________________________________________
+
+
+[0127] HemmaRedo > Gemensam copy > helpText2
+SPRÅK: SV
+ORIGINAL:
+En vattendunk, en ficklampa eller en telefonlista kan vara en bra början.
+
+NY TEXT:
+________________________________________
+
+
+[0128] HemmaRedo > Gemensam copy > helpCard3
+SPRÅK: SV
+ORIGINAL:
+Håll kontakten
+
+NY TEXT:
+________________________________________
+
+
+[0129] HemmaRedo > Gemensam copy > helpText3
+SPRÅK: SV
+ORIGINAL:
+Kom överens om hur ni kan hjälpa varandra om det blir strömavbrott.
+
+NY TEXT:
+________________________________________
+
+
+[0143] HemmaRedo > Gemensam copy > helpBtn
+SPRÅK: SV
+ORIGINAL:
+Hjälp en vän
+
+NY TEXT:
+________________________________________
+
+
+[0152] Så fungerar det > heading
+SPRÅK: SV
+ORIGINAL:
+Lite förberedelse. Mer trygghet.
+
+NY TEXT:
+________________________________________
+
+
+[0153] Så fungerar det > lead
+SPRÅK: SV
+ORIGINAL:
+Du behöver inte vara expert på krisberedskap. HemmaRedo hjälper dig att komma igång med det viktigaste, ett litet steg i taget.
+
+NY TEXT:
+________________________________________
+
+
+[0154] Så fungerar det > topButton
+SPRÅK: SV
+ORIGINAL:
+Skapa min plan
+
+NY TEXT:
+________________________________________
+
+
+[0156] Så fungerar det > howTitle
+SPRÅK: SV
+ORIGINAL:
+Så enkelt fungerar det
+
+NY TEXT:
+________________________________________
+
+
+[0157] Så fungerar det > howLead
+SPRÅK: SV
+ORIGINAL:
+Tre steg från första frågan till en plan som passar just ditt hem.
+
+NY TEXT:
+________________________________________
+
+
+[0158] Så fungerar det > s1
+SPRÅK: SV
+ORIGINAL:
+Berätta lite om ditt hem
+
+NY TEXT:
+________________________________________
+
+
+[0159] Så fungerar det > d1
+SPRÅK: SV
+ORIGINAL:
+Hur många bor hos er? Bor ni i lägenhet eller hus? Har ni husdjur? Du svarar bara på det som är relevant.
+
+NY TEXT:
+________________________________________
+
+
+[0160] Så fungerar det > s2
+SPRÅK: SV
+ORIGINAL:
+Se vad ni redan har
+
+NY TEXT:
+________________________________________
+
+
+[0161] Så fungerar det > d2
+SPRÅK: SV
+ORIGINAL:
+Ficklampor, vatten, radio, värme och mat. Kryssa i det som finns hemma. Du behöver inte köpa allt på en gång.
+
+NY TEXT:
+________________________________________
+
+
+[0162] Så fungerar det > s3
+SPRÅK: SV
+ORIGINAL:
+Få er egen plan
+
+NY TEXT:
+________________________________________
+
+
+[0163] Så fungerar det > d3
+SPRÅK: SV
+ORIGINAL:
+Vi sammanställer en personlig checklista. Bocka av, skriv ut och kom tillbaka när du vill.
+
+NY TEXT:
+________________________________________
+
+
+[0185] Tips & länkar > title
+SPRÅK: SV
+ORIGINAL:
+Tips, kunskap & inspiration.
+
+NY TEXT:
+________________________________________
+
+
+[0186] Tips & länkar > intro
+SPRÅK: SV
+ORIGINAL:
+Nyfiken på hur du kan bli bättre förberedd? Här hittar du officiella råd, poddar och filmer som gör det enklare att börja. Ta det i din egen takt.
+
+NY TEXT:
+________________________________________
+
+
+[0188] Tips & länkar > officialLead
+SPRÅK: SV
+ORIGINAL:
+När något händer är det myndigheternas aktuella information du ska följa.
+
+NY TEXT:
+________________________________________
+
+
+[0190] Tips & länkar > listenLead
+SPRÅK: SV
+ORIGINAL:
+Olika perspektiv på hemberedskap, vardagslösningar och att ta hand om varandra.
+
+NY TEXT:
+________________________________________
+
+
+[0192] Tips & länkar > watchLead
+SPRÅK: SV
+ORIGINAL:
+En utvald föreläsning att börja med. Vi fyller på med fler granskade filmer framöver.
+
+NY TEXT:
+________________________________________
+
+
+[1114] Min plan > water-store > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Säkra dricksvatten
+
+NY TEXT:
+________________________________________
+
+[1115] Min plan > water-store > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Planera för minst 63–105 liter för 3 personer under sju dygn. Djur och särskilda behov tillkommer.
+
+NY TEXT:
+________________________________________
+
+[1116] Min plan > food-week > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Mat som räcker i en vecka
+
+NY TEXT:
+________________________________________
+
+[1117] Min plan > food-week > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Satsa på hållbar mat som går att äta direkt eller tillaga med lite vatten.
+
+NY TEXT:
+________________________________________
+
+[1120] Min plan > warmth > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Håll värmen vid strömavbrott
+
+NY TEXT:
+________________________________________
+
+[1121] Min plan > warmth > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Ha varma plagg och filtar samt en säker plan om uppvärmningen stannar. En kamin kräver bränsle och säker hantering.
+
+NY TEXT:
+________________________________________
+
+[1124] Min plan > radio > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Ta emot information via P4
+
+NY TEXT:
+________________________________________
+
+[1125] Min plan > radio > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Sveriges Radio P4 är beredskapskanal. Ha gärna en radio som fungerar utan elnät.
+
+NY TEXT:
+________________________________________
+
+[1128] Min plan > aid > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Första hjälpen och läkemedel
+
+NY TEXT:
+________________________________________
+
+[1129] Min plan > aid > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Se över förbandsmaterial och nödvändiga läkemedel enligt dina egna behov.
+
+NY TEXT:
+________________________________________
+
+[1130] Min plan > hygiene > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Hygien när vattnet saknas
+
+NY TEXT:
+________________________________________
+
+[1131] Min plan > hygiene > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Planera för toalett, handhygien, våtservetter och avfall om vatten eller avlopp slutar fungera.
+
+NY TEXT:
+________________________________________
+
+[1132] Min plan > contacts > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Viktiga telefonnummer på papper
+
+NY TEXT:
+________________________________________
+
+[1133] Min plan > contacts > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Skriv ner kontakter samt 112 (akut), 113 13 (krisinformation) och 1177 (sjukvårdsråd).
+
+NY TEXT:
+________________________________________
+
+[1136] Min plan > pet-supplies > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Mat och vatten till husdjuren
+
+NY TEXT:
+________________________________________
+
+[1137] Min plan > pet-supplies > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Planera foder och dricksvatten för minst sju dygn: 1 hund, 1 katt. Foder: undefined dygn. Vattenbehovet för djuren behöver uppskattas separat. Hund och katt behöver foder och en transportplan.
+
+NY TEXT:
+________________________________________
+
+[1138] Min plan > pet-transport > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Planera transport och omsorg för djuren
+
+NY TEXT:
+________________________________________
+
+[1139] Min plan > pet-transport > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Ha transportbur, koppel eller annan lämplig utrustning och en plan för var djuren kan vara vid utrymning.
+
+NY TEXT:
+________________________________________
+
