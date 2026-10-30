@@ -1,0 +1,10148 @@
+HEMMAREDO – SAMTLIGA WEBBTEXTER FÖR COPYREVIEW
+Version: Production 2026-10-30
+Mottagare: Lina – redaktionell genomgång
+
+SÅ HÄR GÖR DU
+- Varje text har ett eget ID och en plats (sida/funktion).
+- Läs ORIGINAL och skriv en ersättning under NY TEXT. Lämna NY TEXT tom om du vill behålla originalet.
+- Behåll variabler som {antal}, {liter} eller ${...} om de förekommer; de fylls i automatiskt på webbplatsen.
+- Du behöver inte ändra allt. Stryk gärna eller skriv 'TA BORT' om texten inte behövs.
+- Svenska kommer först. Engelska finns som referens längst ned; vi kan översätta om engelskan efter att svenskan godkänts.
+- Detta är innehållet i koden, inklusive förklaringar som visas först när man fäller ut en sektion. Vissa poster är inte synliga samtidigt.
+
+
+==========================================================================
+DEL A – SVENSK TEXT
+==========================================================================
+
+
+==========================================================================
+A1. STARTSIDA, NAVIGATION, FORMULÄR, RESULTAT, MIN PLAN OCH HJÄLP EN VÄN
+==========================================================================
+Fältens engelska nycklar fungerar som exakta identifierare när vi ska föra tillbaka korrekturen.
+
+
+[0001] HemmaRedo > Gemensam copy > start
+SPRÅK: SV
+ORIGINAL:
+Start
+
+NY TEXT:
+________________________________________
+
+
+[0002] HemmaRedo > Gemensam copy > yourPlan
+SPRÅK: SV
+ORIGINAL:
+Min plan
+
+NY TEXT:
+________________________________________
+
+
+[0003] HemmaRedo > Gemensam copy > how
+SPRÅK: SV
+ORIGINAL:
+Så fungerar det
+
+NY TEXT:
+________________________________________
+
+
+[0004] HemmaRedo > Gemensam copy > help
+SPRÅK: SV
+ORIGINAL:
+Hjälp en vän
+
+NY TEXT:
+________________________________________
+
+
+[0005] HemmaRedo > Gemensam copy > guides
+SPRÅK: SV
+ORIGINAL:
+Tips & länkar
+
+NY TEXT:
+________________________________________
+
+
+[0006] HemmaRedo > Gemensam copy > menu
+SPRÅK: SV
+ORIGINAL:
+Öppna menyn
+
+NY TEXT:
+________________________________________
+
+
+[0007] HemmaRedo > Gemensam copy > headline
+SPRÅK: SV
+ORIGINAL:
+Ett tryggare hem börjar här.
+
+NY TEXT:
+________________________________________
+
+
+[0008] HemmaRedo > Gemensam copy > intro
+SPRÅK: SV
+ORIGINAL:
+Ta reda på hur förberett ditt hushåll är och få en enkel plan.
+
+NY TEXT:
+________________________________________
+
+
+[0009] HemmaRedo > Gemensam copy > getStarted
+SPRÅK: SV
+ORIGINAL:
+Kom igång
+
+NY TEXT:
+________________________________________
+
+
+[0010] HemmaRedo > Gemensam copy > noLogin
+SPRÅK: SV
+ORIGINAL:
+Det tar cirka 3 minuter. Gratis.
+Ingen inloggning.
+
+NY TEXT:
+________________________________________
+
+
+[0011] HemmaRedo > Gemensam copy > simple
+SPRÅK: SV
+ORIGINAL:
+Enkelt och tydligt
+
+NY TEXT:
+________________________________________
+
+
+[0012] HemmaRedo > Gemensam copy > authorities
+SPRÅK: SV
+ORIGINAL:
+Bygger på svenska myndigheters råd
+
+NY TEXT:
+________________________________________
+
+
+[0013] HemmaRedo > Gemensam copy > tailored
+SPRÅK: SV
+ORIGINAL:
+Anpassat för ditt hushåll
+
+NY TEXT:
+________________________________________
+
+
+[0014] HemmaRedo > Gemensam copy > neighbors
+SPRÅK: SV
+ORIGINAL:
+Hjälp en vän eller granne
+
+NY TEXT:
+________________________________________
+
+
+[0015] HemmaRedo > Gemensam copy > little
+SPRÅK: SV
+ORIGINAL:
+Små steg gör stor skillnad.
+
+NY TEXT:
+________________________________________
+
+
+[0016] HemmaRedo > Gemensam copy > littleDesc
+SPRÅK: SV
+ORIGINAL:
+Du behöver inte göra allt på en gång. Ta ett steg i taget och bygg vidare när det passar dig.
+
+NY TEXT:
+________________________________________
+
+
+[0017] HemmaRedo > Gemensam copy > stronger
+SPRÅK: SV
+ORIGINAL:
+Starkare tillsammans.
+
+NY TEXT:
+________________________________________
+
+
+[0018] HemmaRedo > Gemensam copy > strongerDesc
+SPRÅK: SV
+ORIGINAL:
+Beredskap handlar inte bara om att ta hand om sig själv, utan också om att hjälpa andra.
+
+NY TEXT:
+________________________________________
+
+
+[0019] HemmaRedo > Gemensam copy > discover
+SPRÅK: SV
+ORIGINAL:
+Upptäck mer
+
+NY TEXT:
+________________________________________
+
+
+[0020] HemmaRedo > Gemensam copy > personal
+SPRÅK: SV
+ORIGINAL:
+Din personliga plan
+
+NY TEXT:
+________________________________________
+
+
+[0021] HemmaRedo > Gemensam copy > step
+SPRÅK: SV
+ORIGINAL:
+Steg
+
+NY TEXT:
+________________________________________
+
+
+[0022] HemmaRedo > Gemensam copy > of
+SPRÅK: SV
+ORIGINAL:
+av
+
+NY TEXT:
+________________________________________
+
+
+[0023] HemmaRedo > Gemensam copy > back
+SPRÅK: SV
+ORIGINAL:
+Tillbaka
+
+NY TEXT:
+________________________________________
+
+
+[0024] HemmaRedo > Gemensam copy > next
+SPRÅK: SV
+ORIGINAL:
+Nästa steg
+
+NY TEXT:
+________________________________________
+
+
+[0025] HemmaRedo > Gemensam copy > seePlan
+SPRÅK: SV
+ORIGINAL:
+Se min plan
+
+NY TEXT:
+________________________________________
+
+
+[0026] HemmaRedo > Gemensam copy > stepNames > 1
+SPRÅK: SV
+ORIGINAL:
+Hushållet
+
+NY TEXT:
+________________________________________
+
+
+[0027] HemmaRedo > Gemensam copy > stepNames > 2
+SPRÅK: SV
+ORIGINAL:
+Bostad
+
+NY TEXT:
+________________________________________
+
+
+[0028] HemmaRedo > Gemensam copy > stepNames > 3
+SPRÅK: SV
+ORIGINAL:
+Utrustning
+
+NY TEXT:
+________________________________________
+
+
+[0029] HemmaRedo > Gemensam copy > stepNames > 4
+SPRÅK: SV
+ORIGINAL:
+Särskilda behov
+
+NY TEXT:
+________________________________________
+
+
+[0030] HemmaRedo > Gemensam copy > stepNames > 5
+SPRÅK: SV
+ORIGINAL:
+Vardagen
+
+NY TEXT:
+________________________________________
+
+
+[0031] HemmaRedo > Gemensam copy > stepNames > 6
+SPRÅK: SV
+ORIGINAL:
+Din plan
+
+NY TEXT:
+________________________________________
+
+
+[0032] HemmaRedo > Gemensam copy > stepDescriptions > 1
+SPRÅK: SV
+ORIGINAL:
+Vilka bor hos er?
+
+NY TEXT:
+________________________________________
+
+
+[0033] HemmaRedo > Gemensam copy > stepDescriptions > 2
+SPRÅK: SV
+ORIGINAL:
+Vilken typ av boende?
+
+NY TEXT:
+________________________________________
+
+
+[0034] HemmaRedo > Gemensam copy > stepDescriptions > 3
+SPRÅK: SV
+ORIGINAL:
+Vad har ni redan?
+
+NY TEXT:
+________________________________________
+
+
+[0035] HemmaRedo > Gemensam copy > stepDescriptions > 4
+SPRÅK: SV
+ORIGINAL:
+Något att ta hänsyn till?
+
+NY TEXT:
+________________________________________
+
+
+[0036] HemmaRedo > Gemensam copy > stepDescriptions > 5
+SPRÅK: SV
+ORIGINAL:
+Vatten och mat
+
+NY TEXT:
+________________________________________
+
+
+[0037] HemmaRedo > Gemensam copy > stepDescriptions > 6
+SPRÅK: SV
+ORIGINAL:
+Era nästa steg
+
+NY TEXT:
+________________________________________
+
+
+[0038] HemmaRedo > Gemensam copy > stepQuestions > 1
+SPRÅK: SV
+ORIGINAL:
+Hur många bor i hushållet?
+
+NY TEXT:
+________________________________________
+
+
+[0039] HemmaRedo > Gemensam copy > stepQuestions > 2
+SPRÅK: SV
+ORIGINAL:
+Vilken typ av bostad bor ni i?
+
+NY TEXT:
+________________________________________
+
+
+[0040] HemmaRedo > Gemensam copy > stepQuestions > 3
+SPRÅK: SV
+ORIGINAL:
+Vad har ni redan hemma?
+
+NY TEXT:
+________________________________________
+
+
+[0041] HemmaRedo > Gemensam copy > stepQuestions > 4
+SPRÅK: SV
+ORIGINAL:
+Finns det särskilda behov?
+
+NY TEXT:
+________________________________________
+
+
+[0042] HemmaRedo > Gemensam copy > stepQuestions > 5
+SPRÅK: SV
+ORIGINAL:
+Hur ser det ut med vatten och mat?
+
+NY TEXT:
+________________________________________
+
+
+[0043] HemmaRedo > Gemensam copy > stepSubtitles > 1
+SPRÅK: SV
+ORIGINAL:
+Inkludera alla som regelbundet bor här.
+
+NY TEXT:
+________________________________________
+
+
+[0044] HemmaRedo > Gemensam copy > stepSubtitles > 2
+SPRÅK: SV
+ORIGINAL:
+Det hjälper oss att ge mer relevanta rekommendationer.
+
+NY TEXT:
+________________________________________
+
+
+[0045] HemmaRedo > Gemensam copy > stepSubtitles > 3
+SPRÅK: SV
+ORIGINAL:
+Välj det som finns. Det är helt okej att hoppa över.
+
+NY TEXT:
+________________________________________
+
+
+[0046] HemmaRedo > Gemensam copy > stepSubtitles > 4
+SPRÅK: SV
+ORIGINAL:
+Välj det som stämmer för er. Du kan hoppa över frågan.
+
+NY TEXT:
+________________________________________
+
+
+[0047] HemmaRedo > Gemensam copy > stepSubtitles > 5
+SPRÅK: SV
+ORIGINAL:
+Ungefär räcker. Det går bra att svara noll eller hoppa över.
+
+NY TEXT:
+________________________________________
+
+
+[0048] HemmaRedo > Gemensam copy > adults
+SPRÅK: SV
+ORIGINAL:
+Vuxna
+
+NY TEXT:
+________________________________________
+
+
+[0049] HemmaRedo > Gemensam copy > adultInfo
+SPRÅK: SV
+ORIGINAL:
+18 år och äldre
+
+NY TEXT:
+________________________________________
+
+
+[0050] HemmaRedo > Gemensam copy > children
+SPRÅK: SV
+ORIGINAL:
+Barn
+
+NY TEXT:
+________________________________________
+
+
+[0051] HemmaRedo > Gemensam copy > childInfo
+SPRÅK: SV
+ORIGINAL:
+0–17 år
+
+NY TEXT:
+________________________________________
+
+
+[0052] HemmaRedo > Gemensam copy > pets
+SPRÅK: SV
+ORIGINAL:
+Husdjur
+
+NY TEXT:
+________________________________________
+
+
+[0053] HemmaRedo > Gemensam copy > petInfo
+SPRÅK: SV
+ORIGINAL:
+Som bor hos er
+
+NY TEXT:
+________________________________________
+
+
+[0054] HemmaRedo > Gemensam copy > apartment
+SPRÅK: SV
+ORIGINAL:
+Lägenhet
+
+NY TEXT:
+________________________________________
+
+
+[0055] HemmaRedo > Gemensam copy > house
+SPRÅK: SV
+ORIGINAL:
+Villa
+
+NY TEXT:
+________________________________________
+
+
+[0056] HemmaRedo > Gemensam copy > townhouse
+SPRÅK: SV
+ORIGINAL:
+Radhus / parhus
+
+NY TEXT:
+________________________________________
+
+
+[0057] HemmaRedo > Gemensam copy > otherHome
+SPRÅK: SV
+ORIGINAL:
+Annat
+
+NY TEXT:
+________________________________________
+
+
+[0058] HemmaRedo > Gemensam copy > equipmentNames > torch
+SPRÅK: SV
+ORIGINAL:
+Ficklampor
+
+NY TEXT:
+________________________________________
+
+
+[0059] HemmaRedo > Gemensam copy > equipmentNames > radio
+SPRÅK: SV
+ORIGINAL:
+Batteriradio
+
+NY TEXT:
+________________________________________
+
+
+[0060] HemmaRedo > Gemensam copy > equipmentNames > stove
+SPRÅK: SV
+ORIGINAL:
+Stormkök
+
+NY TEXT:
+________________________________________
+
+
+[0061] HemmaRedo > Gemensam copy > equipmentNames > powerbank
+SPRÅK: SV
+ORIGINAL:
+Powerbank
+
+NY TEXT:
+________________________________________
+
+
+[0062] HemmaRedo > Gemensam copy > equipmentNames > fireplace
+SPRÅK: SV
+ORIGINAL:
+Vedkamin
+
+NY TEXT:
+________________________________________
+
+
+[0063] HemmaRedo > Gemensam copy > equipmentNames > containers
+SPRÅK: SV
+ORIGINAL:
+Vattendunkar
+
+NY TEXT:
+________________________________________
+
+
+[0064] HemmaRedo > Gemensam copy > equipmentNames > cans
+SPRÅK: SV
+ORIGINAL:
+Reservmat
+
+NY TEXT:
+________________________________________
+
+
+[0065] HemmaRedo > Gemensam copy > equipmentNames > firstaid
+SPRÅK: SV
+ORIGINAL:
+Första hjälpen
+
+NY TEXT:
+________________________________________
+
+
+[0066] HemmaRedo > Gemensam copy > equipmentNames > hygiene
+SPRÅK: SV
+ORIGINAL:
+Hygienartiklar
+
+NY TEXT:
+________________________________________
+
+
+[0067] HemmaRedo > Gemensam copy > equipmentNames > blankets
+SPRÅK: SV
+ORIGINAL:
+Varma filtar
+
+NY TEXT:
+________________________________________
+
+
+[0068] HemmaRedo > Gemensam copy > needNames > smallKids
+SPRÅK: SV
+ORIGINAL:
+Små barn
+
+NY TEXT:
+________________________________________
+
+
+[0069] HemmaRedo > Gemensam copy > needNames > pets
+SPRÅK: SV
+ORIGINAL:
+Husdjur
+
+NY TEXT:
+________________________________________
+
+
+[0070] HemmaRedo > Gemensam copy > needNames > medical
+SPRÅK: SV
+ORIGINAL:
+Medicinska behov
+
+NY TEXT:
+________________________________________
+
+
+[0071] HemmaRedo > Gemensam copy > needNames > mobility
+SPRÅK: SV
+ORIGINAL:
+Nedsatt rörlighet
+
+NY TEXT:
+________________________________________
+
+
+[0072] HemmaRedo > Gemensam copy > needNames > electric
+SPRÅK: SV
+ORIGINAL:
+Elberoende utrustning
+
+NY TEXT:
+________________________________________
+
+
+[0073] HemmaRedo > Gemensam copy > needNames > other
+SPRÅK: SV
+ORIGINAL:
+Annat
+
+NY TEXT:
+________________________________________
+
+
+[0074] HemmaRedo > Gemensam copy > needFoot
+SPRÅK: SV
+ORIGINAL:
+Ange inga medicinska detaljer här. Det räcker att markera om extra planering behövs.
+
+NY TEXT:
+________________________________________
+
+
+[0075] HemmaRedo > Gemensam copy > waterStored
+SPRÅK: SV
+ORIGINAL:
+Vatten i lager
+
+NY TEXT:
+________________________________________
+
+
+[0076] HemmaRedo > Gemensam copy > waterStoredHint
+SPRÅK: SV
+ORIGINAL:
+Ungefär hur många liter dricksvatten har ni hemma?
+
+NY TEXT:
+________________________________________
+
+
+[0077] HemmaRedo > Gemensam copy > liters
+SPRÅK: SV
+ORIGINAL:
+liter
+
+NY TEXT:
+________________________________________
+
+
+[0078] HemmaRedo > Gemensam copy > foodDays
+SPRÅK: SV
+ORIGINAL:
+Mat i lager
+
+NY TEXT:
+________________________________________
+
+
+[0079] HemmaRedo > Gemensam copy > foodDaysHint
+SPRÅK: SV
+ORIGINAL:
+Ungefär hur många dagar skulle maten räcka?
+
+NY TEXT:
+________________________________________
+
+
+[0080] HemmaRedo > Gemensam copy > days
+SPRÅK: SV
+ORIGINAL:
+dagar
+
+NY TEXT:
+________________________________________
+
+
+[0081] HemmaRedo > Gemensam copy > waterHint
+SPRÅK: SV
+ORIGINAL:
+Utgå från 3–5 liter per person och dygn. Husdjur och särskilda behov tillkommer.
+
+NY TEXT:
+________________________________________
+
+
+[0082] HemmaRedo > Gemensam copy > resultsLabel
+SPRÅK: SV
+ORIGINAL:
+Ditt resultat
+
+NY TEXT:
+________________________________________
+
+
+[0083] HemmaRedo > Gemensam copy > resultsHeading
+SPRÅK: SV
+ORIGINAL:
+Ni är på god väg!
+
+NY TEXT:
+________________________________________
+
+
+[0084] HemmaRedo > Gemensam copy > allDoneHeading
+SPRÅK: SV
+ORIGINAL:
+Många bra steg är redan gjorda!
+
+NY TEXT:
+________________________________________
+
+
+[0085] HemmaRedo > Gemensam copy > resultText
+SPRÅK: SV
+ORIGINAL:
+Ni har en bra början. Här ser ni vad som redan är ordnat och vad som kan stärkas inför en vecka då vardagen inte fungerar som vanligt.
+
+NY TEXT:
+________________________________________
+
+
+[0086] HemmaRedo > Gemensam copy > completed
+SPRÅK: SV
+ORIGINAL:
+avklarade
+
+NY TEXT:
+________________________________________
+
+
+[0087] HemmaRedo > Gemensam copy > progressDisclaimer
+SPRÅK: SV
+ORIGINAL:
+Procenten visar avklarade punkter i just den här planen – inte hur säker du är i en kris.
+
+NY TEXT:
+________________________________________
+
+
+[0088] HemmaRedo > Gemensam copy > tailoredFor
+SPRÅK: SV
+ORIGINAL:
+Anpassad för ert hushåll
+
+NY TEXT:
+________________________________________
+
+
+[0089] HemmaRedo > Gemensam copy > adultsCount
+SPRÅK: SV
+ORIGINAL:
+vuxna
+
+NY TEXT:
+________________________________________
+
+
+[0090] HemmaRedo > Gemensam copy > childrenCount
+SPRÅK: SV
+ORIGINAL:
+barn
+
+NY TEXT:
+________________________________________
+
+
+[0091] HemmaRedo > Gemensam copy > petsCount
+SPRÅK: SV
+ORIGINAL:
+husdjur
+
+NY TEXT:
+________________________________________
+
+
+[0092] HemmaRedo > Gemensam copy > prioritized
+SPRÅK: SV
+ORIGINAL:
+Bra nästa steg för er
+
+NY TEXT:
+________________________________________
+
+
+[0093] HemmaRedo > Gemensam copy > allSet
+SPRÅK: SV
+ORIGINAL:
+Alla föreslagna steg är markerade. Gå gärna igenom dem regelbundet.
+
+NY TEXT:
+________________________________________
+
+
+[0094] HemmaRedo > Gemensam copy > waterVolume
+SPRÅK: SV
+ORIGINAL:
+Grundnivå för sju dagar
+
+NY TEXT:
+________________________________________
+
+
+[0095] HemmaRedo > Gemensam copy > waterExtra
+SPRÅK: SV
+ORIGINAL:
+Plus vatten för husdjur och särskilda behov.
+
+NY TEXT:
+________________________________________
+
+
+[0096] HemmaRedo > Gemensam copy > viewPersonal
+SPRÅK: SV
+ORIGINAL:
+Visa din personliga plan
+
+NY TEXT:
+________________________________________
+
+
+[0097] HemmaRedo > Gemensam copy > planDesc
+SPRÅK: SV
+ORIGINAL:
+Här är rekommendationer anpassade efter era svar. Markera det ni har ordnat – ändra gärna när något förändras.
+
+NY TEXT:
+________________________________________
+
+
+[0098] HemmaRedo > Gemensam copy > editAnswers
+SPRÅK: SV
+ORIGINAL:
+Ändra mina svar
+
+NY TEXT:
+________________________________________
+
+
+[0099] HemmaRedo > Gemensam copy > outOf
+SPRÅK: SV
+ORIGINAL:
+av
+
+NY TEXT:
+________________________________________
+
+
+[0100] HemmaRedo > Gemensam copy > stepsDone
+SPRÅK: SV
+ORIGINAL:
+steg avklarade
+
+NY TEXT:
+________________________________________
+
+
+[0101] HemmaRedo > Gemensam copy > source
+SPRÅK: SV
+ORIGINAL:
+Läs myndigheternas råd
+
+NY TEXT:
+________________________________________
+
+
+[0102] HemmaRedo > Gemensam copy > fromSources
+SPRÅK: SV
+ORIGINAL:
+Baserat på allmänna råd från svenska myndigheter
+
+NY TEXT:
+________________________________________
+
+
+[0103] HemmaRedo > Gemensam copy > print
+SPRÅK: SV
+ORIGINAL:
+Skriv ut / spara PDF
+
+NY TEXT:
+________________________________________
+
+
+[0104] HemmaRedo > Gemensam copy > share
+SPRÅK: SV
+ORIGINAL:
+Dela HemmaRedo
+
+NY TEXT:
+________________________________________
+
+
+[0105] HemmaRedo > Gemensam copy > newPlan
+SPRÅK: SV
+ORIGINAL:
+Ny plan
+
+NY TEXT:
+________________________________________
+
+
+[0106] HemmaRedo > Gemensam copy > printHint
+SPRÅK: SV
+ORIGINAL:
+Skriv ut din plan och förvara den där du lätt hittar den även om internet inte fungerar.
+
+NY TEXT:
+________________________________________
+
+
+[0107] HemmaRedo > Gemensam copy > noAccount
+SPRÅK: SV
+ORIGINAL:
+Din plan sparas bara i den här webbläsaren. Inget konto behövs och inga hushållsuppgifter skickas till oss.
+
+NY TEXT:
+________________________________________
+
+
+[0108] HemmaRedo > Gemensam copy > important
+SPRÅK: SV
+ORIGINAL:
+Viktigt att veta
+
+NY TEXT:
+________________________________________
+
+
+[0109] HemmaRedo > Gemensam copy > importantDesc
+SPRÅK: SV
+ORIGINAL:
+Det här är ett förenklat planeringsstöd, inte en fullständig riskbedömning. Råden behöver anpassas efter hälsa, boende och lokala förhållanden. Följ alltid officiell information vid en kris.
+
+NY TEXT:
+________________________________________
+
+
+[0110] HemmaRedo > Gemensam copy > useful
+SPRÅK: SV
+ORIGINAL:
+Viktiga länkar och nummer
+
+NY TEXT:
+________________________________________
+
+
+[0111] HemmaRedo > Gemensam copy > usefulDesc
+SPRÅK: SV
+ORIGINAL:
+Officiella källor att ha nära till hands.
+
+NY TEXT:
+________________________________________
+
+
+[0112] HemmaRedo > Gemensam copy > officialTitle
+SPRÅK: SV
+ORIGINAL:
+Krisinformation.se
+
+NY TEXT:
+________________________________________
+
+
+[0113] HemmaRedo > Gemensam copy > officialDesc
+SPRÅK: SV
+ORIGINAL:
+Svenska myndigheters information och råd vid kriser.
+
+NY TEXT:
+________________________________________
+
+
+[0114] HemmaRedo > Gemensam copy > numberTitle
+SPRÅK: SV
+ORIGINAL:
+112 · 113 13 · 1177
+
+NY TEXT:
+________________________________________
+
+
+[0115] HemmaRedo > Gemensam copy > numberDesc
+SPRÅK: SV
+ORIGINAL:
+112 vid akut fara. 113 13 för krisinformation. 1177 för sjukvårdsråd.
+
+NY TEXT:
+________________________________________
+
+
+[0116] HemmaRedo > Gemensam copy > radioTitle
+SPRÅK: SV
+ORIGINAL:
+Sveriges Radio P4
+
+NY TEXT:
+________________________________________
+
+
+[0117] HemmaRedo > Gemensam copy > radioDesc
+SPRÅK: SV
+ORIGINAL:
+Sveriges beredskapskanal. Ha en radio som fungerar utan elnät.
+
+NY TEXT:
+________________________________________
+
+
+[0118] HemmaRedo > Gemensam copy > openLink
+SPRÅK: SV
+ORIGINAL:
+Öppna källan
+
+NY TEXT:
+________________________________________
+
+
+[0119] HemmaRedo > Gemensam copy > helpEyebrow
+SPRÅK: SV
+ORIGINAL:
+Hjälp en vän
+
+NY TEXT:
+________________________________________
+
+
+[0120] HemmaRedo > Gemensam copy > helpTitle
+SPRÅK: SV
+ORIGINAL:
+Starkare tillsammans.
+
+NY TEXT:
+________________________________________
+
+
+[0121] HemmaRedo > Gemensam copy > helpLead
+SPRÅK: SV
+ORIGINAL:
+Det är lättare att förbereda sig när man gör det ihop. Hjälp någon annan att skapa en enkel plan – i deras egen takt.
+
+NY TEXT:
+________________________________________
+
+
+[0122] HemmaRedo > Gemensam copy > helpStart
+SPRÅK: SV
+ORIGINAL:
+Gör en plan tillsammans
+
+NY TEXT:
+________________________________________
+
+
+[0123] HemmaRedo > Gemensam copy > helpSeparate
+SPRÅK: SV
+ORIGINAL:
+Din egen plan finns kvar. Vännens svar sparas separat på just den här enheten.
+
+NY TEXT:
+________________________________________
+
+
+[0124] HemmaRedo > Gemensam copy > helpCard1
+SPRÅK: SV
+ORIGINAL:
+Börja med ett samtal
+
+NY TEXT:
+________________________________________
+
+
+[0125] HemmaRedo > Gemensam copy > helpText1
+SPRÅK: SV
+ORIGINAL:
+Fråga vad personen redan har och vad som skulle underlätta mest.
+
+NY TEXT:
+________________________________________
+
+
+[0126] HemmaRedo > Gemensam copy > helpCard2
+SPRÅK: SV
+ORIGINAL:
+Gör små saker ihop
+
+NY TEXT:
+________________________________________
+
+
+[0127] HemmaRedo > Gemensam copy > helpText2
+SPRÅK: SV
+ORIGINAL:
+En vattendunk, en ficklampa eller en telefonlista kan vara en bra början.
+
+NY TEXT:
+________________________________________
+
+
+[0128] HemmaRedo > Gemensam copy > helpCard3
+SPRÅK: SV
+ORIGINAL:
+Håll kontakten
+
+NY TEXT:
+________________________________________
+
+
+[0129] HemmaRedo > Gemensam copy > helpText3
+SPRÅK: SV
+ORIGINAL:
+Kom överens om hur ni kan hjälpa varandra om det blir strömavbrott.
+
+NY TEXT:
+________________________________________
+
+
+[0130] HemmaRedo > Gemensam copy > friendMode
+SPRÅK: SV
+ORIGINAL:
+Du hjälper en vän
+
+NY TEXT:
+________________________________________
+
+
+[0131] HemmaRedo > Gemensam copy > backToMine
+SPRÅK: SV
+ORIGINAL:
+Till min plan
+
+NY TEXT:
+________________________________________
+
+
+[0132] HemmaRedo > Gemensam copy > friendName
+SPRÅK: SV
+ORIGINAL:
+Vännens plan
+
+NY TEXT:
+________________________________________
+
+
+[0133] HemmaRedo > Gemensam copy > chooseLang
+SPRÅK: SV
+ORIGINAL:
+Välj språk
+
+NY TEXT:
+________________________________________
+
+
+[0134] HemmaRedo > Gemensam copy > noProfile
+SPRÅK: SV
+ORIGINAL:
+Börja med några frågor för att få din personliga plan.
+
+NY TEXT:
+________________________________________
+
+
+[0135] HemmaRedo > Gemensam copy > saveToHome
+SPRÅK: SV
+ORIGINAL:
+Tips: lägg gärna HemmaRedo på hemskärmen. Då känns den mer som en app.
+
+NY TEXT:
+________________________________________
+
+
+[0136] HemmaRedo > Gemensam copy > offline
+SPRÅK: SV
+ORIGINAL:
+Appen kan användas offline efter att den har öppnats och sparats på enheten. Externa länkar kräver internet.
+
+NY TEXT:
+________________________________________
+
+
+[0137] HemmaRedo > Gemensam copy > privacy
+SPRÅK: SV
+ORIGINAL:
+Integritet
+
+NY TEXT:
+________________________________________
+
+
+[0138] HemmaRedo > Gemensam copy > privacyText
+SPRÅK: SV
+ORIGINAL:
+Uppgifterna ligger i din webbläsares lokala lagring. Rensas webbläsardata kan planen försvinna. Ingen synk mellan enheter finns ännu.
+
+NY TEXT:
+________________________________________
+
+
+[0139] HemmaRedo > Gemensam copy > resetConfirm
+SPRÅK: SV
+ORIGINAL:
+Vill du verkligen börja om? Den här planens sparade svar och markeringar försvinner.
+
+NY TEXT:
+________________________________________
+
+
+[0140] HemmaRedo > Gemensam copy > copied
+SPRÅK: SV
+ORIGINAL:
+Länken har kopierats!
+
+NY TEXT:
+________________________________________
+
+
+[0141] HemmaRedo > Gemensam copy > shared
+SPRÅK: SV
+ORIGINAL:
+Dela länken för att bjuda in någon att skapa sin egen plan.
+
+NY TEXT:
+________________________________________
+
+
+[0142] HemmaRedo > Gemensam copy > validation
+SPRÅK: SV
+ORIGINAL:
+Ange minst en person i hushållet för att fortsätta.
+
+NY TEXT:
+________________________________________
+
+
+[0143] HemmaRedo > Gemensam copy > helpBtn
+SPRÅK: SV
+ORIGINAL:
+Hjälp en vän
+
+NY TEXT:
+________________________________________
+
+
+[0144] HemmaRedo > Gemensam copy > resume
+SPRÅK: SV
+ORIGINAL:
+Fortsätt med min plan
+
+NY TEXT:
+________________________________________
+
+
+[0145] HemmaRedo > Gemensam copy > madeFor
+SPRÅK: SV
+ORIGINAL:
+För svenska hushåll
+
+NY TEXT:
+________________________________________
+
+
+[0146] HemmaRedo > Gemensam copy > resetNote
+SPRÅK: SV
+ORIGINAL:
+En ny plan ersätter den här planens tidigare svar.
+
+NY TEXT:
+________________________________________
+
+
+[0147] HemmaRedo > Gemensam copy > footer
+SPRÅK: SV
+ORIGINAL:
+En oberoende prototyp som använder svenska myndigheters offentliga råd. Inte en officiell myndighetstjänst.
+
+NY TEXT:
+________________________________________
+
+
+[0148] HemmaRedo > Gemensam copy > medicalNote
+SPRÅK: SV
+ORIGINAL:
+Ange aldrig känsliga medicinska uppgifter i prototypen.
+
+NY TEXT:
+________________________________________
+
+
+[0149] HemmaRedo > Gemensam copy > printDate
+SPRÅK: SV
+ORIGINAL:
+Utskriven
+
+NY TEXT:
+________________________________________
+
+
+[0150] HemmaRedo > Gemensam copy > useAgain
+SPRÅK: SV
+ORIGINAL:
+Fortsätt när du vill – dina val sparas automatiskt i den här webbläsaren.
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A2. SÅ FUNGERAR DET
+==========================================================================
+
+
+[0151] Så fungerar det > kicker
+SPRÅK: SV
+ORIGINAL:
+ENKELT ATT KOMMA IGÅNG
+
+NY TEXT:
+________________________________________
+
+
+[0152] Så fungerar det > heading
+SPRÅK: SV
+ORIGINAL:
+Lite förberedelse. Mer trygghet.
+
+NY TEXT:
+________________________________________
+
+
+[0153] Så fungerar det > lead
+SPRÅK: SV
+ORIGINAL:
+Du behöver inte vara expert på krisberedskap. HemmaRedo hjälper dig att komma igång med det viktigaste, ett litet steg i taget.
+
+NY TEXT:
+________________________________________
+
+
+[0154] Så fungerar det > topButton
+SPRÅK: SV
+ORIGINAL:
+Skapa min plan
+
+NY TEXT:
+________________________________________
+
+
+[0155] Så fungerar det > small
+SPRÅK: SV
+ORIGINAL:
+Gratis · Cirka 3 minuter · Inget konto
+
+NY TEXT:
+________________________________________
+
+
+[0156] Så fungerar det > howTitle
+SPRÅK: SV
+ORIGINAL:
+Så enkelt fungerar det
+
+NY TEXT:
+________________________________________
+
+
+[0157] Så fungerar det > howLead
+SPRÅK: SV
+ORIGINAL:
+Tre steg från första frågan till en plan som passar just ditt hem.
+
+NY TEXT:
+________________________________________
+
+
+[0158] Så fungerar det > s1
+SPRÅK: SV
+ORIGINAL:
+Berätta lite om ditt hem
+
+NY TEXT:
+________________________________________
+
+
+[0159] Så fungerar det > d1
+SPRÅK: SV
+ORIGINAL:
+Hur många bor hos er? Bor ni i lägenhet eller hus? Har ni husdjur? Du svarar bara på det som är relevant.
+
+NY TEXT:
+________________________________________
+
+
+[0160] Så fungerar det > s2
+SPRÅK: SV
+ORIGINAL:
+Se vad ni redan har
+
+NY TEXT:
+________________________________________
+
+
+[0161] Så fungerar det > d2
+SPRÅK: SV
+ORIGINAL:
+Ficklampor, vatten, radio, värme och mat. Kryssa i det som finns hemma. Du behöver inte köpa allt på en gång.
+
+NY TEXT:
+________________________________________
+
+
+[0162] Så fungerar det > s3
+SPRÅK: SV
+ORIGINAL:
+Få er egen plan
+
+NY TEXT:
+________________________________________
+
+
+[0163] Så fungerar det > d3
+SPRÅK: SV
+ORIGINAL:
+Vi sammanställer en personlig checklista. Bocka av, skriv ut och kom tillbaka när du vill.
+
+NY TEXT:
+________________________________________
+
+
+[0164] Så fungerar det > previewLabel
+SPRÅK: SV
+ORIGINAL:
+ETT EXEMPEL
+
+NY TEXT:
+________________________________________
+
+
+[0165] Så fungerar det > previewTitle
+SPRÅK: SV
+ORIGINAL:
+Din plan tar form.
+
+NY TEXT:
+________________________________________
+
+
+[0166] Så fungerar det > previewLead
+SPRÅK: SV
+ORIGINAL:
+Här ser du ungefär hur en färdig plan kan se ut. Det riktiga resultatet anpassas efter dina svar.
+
+NY TEXT:
+________________________________________
+
+
+[0167] Så fungerar det > previewItem1
+SPRÅK: SV
+ORIGINAL:
+Vatten för hushållet
+
+NY TEXT:
+________________________________________
+
+
+[0168] Så fungerar det > previewItem2
+SPRÅK: SV
+ORIGINAL:
+Mat utan el
+
+NY TEXT:
+________________________________________
+
+
+[0169] Så fungerar det > previewItem3
+SPRÅK: SV
+ORIGINAL:
+Viktig information via P4
+
+NY TEXT:
+________________________________________
+
+
+[0170] Så fungerar det > previewNote
+SPRÅK: SV
+ORIGINAL:
+Framstegsmätaren visar hur många punkter du markerat som klara. Den är ingen garanti för säkerhet.
+
+NY TEXT:
+________________________________________
+
+
+[0171] Så fungerar det > faqTitle
+SPRÅK: SV
+ORIGINAL:
+Bra att veta
+
+NY TEXT:
+________________________________________
+
+
+[0172] Så fungerar det > q1
+SPRÅK: SV
+ORIGINAL:
+Kostar det något?
+
+NY TEXT:
+________________________________________
+
+
+[0173] Så fungerar det > a1
+SPRÅK: SV
+ORIGINAL:
+Nej. HemmaRedo är gratis att använda, utan konto.
+
+NY TEXT:
+________________________________________
+
+
+[0174] Så fungerar det > q2
+SPRÅK: SV
+ORIGINAL:
+Vad händer med mina svar?
+
+NY TEXT:
+________________________________________
+
+
+[0175] Så fungerar det > a2
+SPRÅK: SV
+ORIGINAL:
+De sparas lokalt i din webbläsare på den enhet du använder. De synkroniseras inte mellan enheter och kan försvinna om du rensar webbläsardata.
+
+NY TEXT:
+________________________________________
+
+
+[0176] Så fungerar det > q3
+SPRÅK: SV
+ORIGINAL:
+Är HemmaRedo en myndighetstjänst?
+
+NY TEXT:
+________________________________________
+
+
+[0177] Så fungerar det > a3
+SPRÅK: SV
+ORIGINAL:
+Nej. Det är ett oberoende planeringsstöd. För officiella rekommendationer och information vid en kris hänvisar vi till Krisinformation.se.
+
+NY TEXT:
+________________________________________
+
+
+[0178] Så fungerar det > q4
+SPRÅK: SV
+ORIGINAL:
+Måste jag göra allt direkt?
+
+NY TEXT:
+________________________________________
+
+
+[0179] Så fungerar det > a4
+SPRÅK: SV
+ORIGINAL:
+Nej. Börja med det viktigaste för ditt hushåll. Du kan återkomma till checklistan när som helst på samma enhet.
+
+NY TEXT:
+________________________________________
+
+
+[0180] Så fungerar det > closingTitle
+SPRÅK: SV
+ORIGINAL:
+Redo att ta första steget?
+
+NY TEXT:
+________________________________________
+
+
+[0181] Så fungerar det > closingLead
+SPRÅK: SV
+ORIGINAL:
+Det behöver inte vara svårt att vara lite mer förberedd.
+
+NY TEXT:
+________________________________________
+
+
+[0182] Så fungerar det > closingButton
+SPRÅK: SV
+ORIGINAL:
+Kom igång
+
+NY TEXT:
+________________________________________
+
+
+[0183] Så fungerar det > official
+SPRÅK: SV
+ORIGINAL:
+Läs officiella råd på Krisinformation.se
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A3. TIPS & LÄNKAR
+==========================================================================
+
+
+[0184] Tips & länkar > eyebrow
+SPRÅK: SV
+ORIGINAL:
+UTVALDA RESURSER
+
+NY TEXT:
+________________________________________
+
+
+[0185] Tips & länkar > title
+SPRÅK: SV
+ORIGINAL:
+Tips, kunskap & inspiration.
+
+NY TEXT:
+________________________________________
+
+
+[0186] Tips & länkar > intro
+SPRÅK: SV
+ORIGINAL:
+Nyfiken på hur du kan bli bättre förberedd? Här hittar du officiella råd, poddar och filmer som gör det enklare att börja. Ta det i din egen takt.
+
+NY TEXT:
+________________________________________
+
+
+[0187] Tips & länkar > official
+SPRÅK: SV
+ORIGINAL:
+Börja med säkra källor
+
+NY TEXT:
+________________________________________
+
+
+[0188] Tips & länkar > officialLead
+SPRÅK: SV
+ORIGINAL:
+När något händer är det myndigheternas aktuella information du ska följa.
+
+NY TEXT:
+________________________________________
+
+
+[0189] Tips & länkar > listen
+SPRÅK: SV
+ORIGINAL:
+För dig som gillar att lyssna
+
+NY TEXT:
+________________________________________
+
+
+[0190] Tips & länkar > listenLead
+SPRÅK: SV
+ORIGINAL:
+Olika perspektiv på hemberedskap, vardagslösningar och att ta hand om varandra.
+
+NY TEXT:
+________________________________________
+
+
+[0191] Tips & länkar > watch
+SPRÅK: SV
+ORIGINAL:
+Se & lär
+
+NY TEXT:
+________________________________________
+
+
+[0192] Tips & länkar > watchLead
+SPRÅK: SV
+ORIGINAL:
+En utvald föreläsning att börja med. Vi fyller på med fler granskade filmer framöver.
+
+NY TEXT:
+________________________________________
+
+
+[0193] Tips & länkar > featured
+SPRÅK: SV
+ORIGINAL:
+BRA STÄLLE ATT BÖRJA
+
+NY TEXT:
+________________________________________
+
+
+[0194] Tips & länkar > featuredTitle
+SPRÅK: SV
+ORIGINAL:
+Ett avsnitt om grunderna
+
+NY TEXT:
+________________________________________
+
+
+[0195] Tips & länkar > featuredText
+SPRÅK: SV
+ORIGINAL:
+Avsnitt 126, Hemberedskap 1a, går igenom bland annat värme, vatten, mat och hur man kommer igång.
+
+NY TEXT:
+________________________________________
+
+
+[0196] Tips & länkar > sourceTitle
+SPRÅK: SV
+ORIGINAL:
+Krisinformation.se
+
+NY TEXT:
+________________________________________
+
+
+[0197] Tips & länkar > sourceDesc
+SPRÅK: SV
+ORIGINAL:
+Officiell krisinformation och råd om hemberedskap.
+
+NY TEXT:
+________________________________________
+
+
+[0198] Tips & länkar > numbersTitle
+SPRÅK: SV
+ORIGINAL:
+Viktiga telefonnummer
+
+NY TEXT:
+________________________________________
+
+
+[0199] Tips & länkar > numbersDesc
+SPRÅK: SV
+ORIGINAL:
+När ska du ringa 112, 113 13 eller 1177?
+
+NY TEXT:
+________________________________________
+
+
+[0200] Tips & länkar > radioTitle
+SPRÅK: SV
+ORIGINAL:
+Sveriges Radio P4
+
+NY TEXT:
+________________________________________
+
+
+[0201] Tips & länkar > radioDesc
+SPRÅK: SV
+ORIGINAL:
+Beredskapskanal för viktig information.
+
+NY TEXT:
+________________________________________
+
+
+[0202] Tips & länkar > pod1
+SPRÅK: SV
+ORIGINAL:
+I väntan på katastrofen
+
+NY TEXT:
+________________________________________
+
+
+[0203] Tips & länkar > pod1Desc
+SPRÅK: SV
+ORIGINAL:
+Kalle Zackari Wahlström och Patrick Sellman samtalar om praktisk beredskap, småbruk och vardagsliv – med humor och nyfikenhet.
+
+NY TEXT:
+________________________________________
+
+
+[0204] Tips & länkar > pod2
+SPRÅK: SV
+ORIGINAL:
+Vardagsprepping
+
+NY TEXT:
+________________________________________
+
+
+[0205] Tips & länkar > pod2Desc
+SPRÅK: SV
+ORIGINAL:
+Intervjuer och vardagsnära råd för att bygga upp sin hemberedskap stegvis.
+
+NY TEXT:
+________________________________________
+
+
+[0206] Tips & länkar > pod3
+SPRÅK: SV
+ORIGINAL:
+Hemberedskap
+
+NY TEXT:
+________________________________________
+
+
+[0207] Tips & länkar > pod3Desc
+SPRÅK: SV
+ORIGINAL:
+Anette Staaf och Niklas Larsson diskuterar beredskap, säkerhet och erfarenheter från verkliga händelser.
+
+NY TEXT:
+________________________________________
+
+
+[0208] Tips & länkar > videoTitle
+SPRÅK: SV
+ORIGINAL:
+MSB Live: Hemberedskap
+
+NY TEXT:
+________________________________________
+
+
+[0209] Tips & länkar > videoDesc
+SPRÅK: SV
+ORIGINAL:
+En frågestund där myndighetens kriskommunikatörer svarar på vanliga frågor om hemberedskap.
+
+NY TEXT:
+________________________________________
+
+
+[0210] Tips & länkar > read
+SPRÅK: SV
+ORIGINAL:
+Besök webbplatsen
+
+NY TEXT:
+________________________________________
+
+
+[0211] Tips & länkar > listenAction
+SPRÅK: SV
+ORIGINAL:
+Lyssna på podden
+
+NY TEXT:
+________________________________________
+
+
+[0212] Tips & länkar > episode
+SPRÅK: SV
+ORIGINAL:
+Lyssna på avsnittet
+
+NY TEXT:
+________________________________________
+
+
+[0213] Tips & länkar > watchAction
+SPRÅK: SV
+ORIGINAL:
+Se filmen
+
+NY TEXT:
+________________________________________
+
+
+[0214] Tips & länkar > independent
+SPRÅK: SV
+ORIGINAL:
+Om innehållet
+
+NY TEXT:
+________________________________________
+
+
+[0215] Tips & länkar > disclaimer
+SPRÅK: SV
+ORIGINAL:
+Poddar och videor är tips för vidare lärande, inte officiella råd från HemmaRedo. Uppgifter och rekommendationer från externa skapare kan skilja sig från myndigheternas. Vid en pågående kris: följ officiell information.
+
+NY TEXT:
+________________________________________
+
+
+[0216] Tips & länkar > ctaTitle
+SPRÅK: SV
+ORIGINAL:
+Från inspiration till handling.
+
+NY TEXT:
+________________________________________
+
+
+[0217] Tips & länkar > ctaText
+SPRÅK: SV
+ORIGINAL:
+När du känner dig redo kan du skapa din egen lilla plan – helt gratis.
+
+NY TEXT:
+________________________________________
+
+
+[0218] Tips & länkar > ctaButton
+SPRÅK: SV
+ORIGINAL:
+Skapa min plan
+
+NY TEXT:
+________________________________________
+
+
+[0219] Tips & länkar > typePodcast
+SPRÅK: SV
+ORIGINAL:
+PODD
+
+NY TEXT:
+________________________________________
+
+
+[0220] Tips & länkar > typeVideo
+SPRÅK: SV
+ORIGINAL:
+VIDEO
+
+NY TEXT:
+________________________________________
+
+
+[0221] Tips & länkar > typeOfficial
+SPRÅK: SV
+ORIGINAL:
+OFFICIELL KÄLLA
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A4. CHECKLISTAN – RUBRIKER, FÖRKLARINGAR, EXEMPEL OCH VARNINGAR
+==========================================================================
+Utskrivna ID som water-store och pet-supplies är tekniska nycklar som hjälper oss hitta exakt punkt.
+
+
+[0222] Min plan > Checklista > open
+SPRÅK: SV
+ORIGINAL:
+Läs mer och se exempel
+
+NY TEXT:
+________________________________________
+
+
+[0223] Min plan > Checklista > close
+SPRÅK: SV
+ORIGINAL:
+Dölj detaljer
+
+NY TEXT:
+________________________________________
+
+
+[0224] Min plan > Checklista > examples
+SPRÅK: SV
+ORIGINAL:
+Exempel på lösningar
+
+NY TEXT:
+________________________________________
+
+
+[0225] Min plan > Checklista > check
+SPRÅK: SV
+ORIGINAL:
+Bra att kontrollera
+
+NY TEXT:
+________________________________________
+
+
+[0226] Min plan > Checklista > caution
+SPRÅK: SV
+ORIGINAL:
+Tänk på
+
+NY TEXT:
+________________________________________
+
+
+[0227] Min plan > Checklista > read
+SPRÅK: SV
+ORIGINAL:
+Fördjupa dig hos Krisinformation.se
+
+NY TEXT:
+________________________________________
+
+
+[0228] Min plan > Checklista > intro
+SPRÅK: SV
+ORIGINAL:
+Öppna en punkt för konkreta exempel och tips. Bocka av när du har en fungerande lösning – du behöver inte köpa allt som nämns.
+
+NY TEXT:
+________________________________________
+
+
+[0229] Min plan > Checklista > details > water-store > intro
+SPRÅK: SV
+ORIGINAL:
+Vatten behövs för att dricka, laga mat och sköta viss hygien. Börja med dricksvattnet och planera för hela hushållet.
+
+NY TEXT:
+________________________________________
+
+
+[0230] Min plan > Checklista > details > water-store > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Rena, livsmedelsgodkända dunkar med lock och gärna tappkran
+
+NY TEXT:
+________________________________________
+
+
+[0231] Min plan > Checklista > details > water-store > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Förvara mörkt och så svalt som möjligt. En ogenomskinlig dunk hjälper till att stänga ute ljus, men materialet och renligheten är viktigast.
+
+NY TEXT:
+________________________________________
+
+
+[0232] Min plan > Checklista > details > water-store > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Flaskvatten och extra kärl för att hämta nödvatten
+
+NY TEXT:
+________________________________________
+
+
+[0233] Min plan > Checklista > details > water-store > check
+SPRÅK: SV
+ORIGINAL:
+Ett enkelt HemmaRedo-tips: byt vattnet vid midsommar och jul. Använd gärna det gamla vattnet till växterna, rengör dunkarna vid behov och fyll på med nytt dricksvatten. Märk dunken med påfyllningsdatum. Två byten per år är vår minnesregel, inte ett myndighetskrav.
+
+NY TEXT:
+________________________________________
+
+
+[0234] Min plan > Checklista > details > water-store > caution
+SPRÅK: SV
+ORIGINAL:
+Vatten från naturen kan innehålla mikroorganismer eller kemiska föroreningar. Vanlig filtrering eller kokning löser inte alla risker.
+
+NY TEXT:
+________________________________________
+
+
+[0235] Min plan > Checklista > details > food-week > intro
+SPRÅK: SV
+ORIGINAL:
+Utgå från sådant ni faktiskt äter. Välj mat som håller länge och som går att äta direkt eller tillaga med lite vatten.
+
+NY TEXT:
+________________________________________
+
+
+[0236] Min plan > Checklista > details > food-week > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Konserver: bönor, linser, tomater, fisk eller färdiga maträtter
+
+NY TEXT:
+________________________________________
+
+
+[0237] Min plan > Checklista > details > food-week > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Knäckebröd, havregryn, nötter och jordnötssmör
+
+NY TEXT:
+________________________________________
+
+
+[0238] Min plan > Checklista > details > food-week > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Ris, pasta, couscous och andra torrvaror
+
+NY TEXT:
+________________________________________
+
+
+[0239] Min plan > Checklista > details > food-week > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Mat för små barn, allergier och särskilda kostbehov
+
+NY TEXT:
+________________________________________
+
+
+[0240] Min plan > Checklista > details > food-week > examples > 5
+SPRÅK: SV
+ORIGINAL:
+Manuell konservöppnare
+
+NY TEXT:
+________________________________________
+
+
+[0241] Min plan > Checklista > details > food-week > check
+SPRÅK: SV
+ORIGINAL:
+Kontrollera hållbarhet och rotera förrådet: använd det äldsta först och fyll på.
+
+NY TEXT:
+________________________________________
+
+
+[0242] Min plan > Checklista > details > food-week > caution
+SPRÅK: SV
+ORIGINAL:
+Planera också för mat utan kyl och frys. Följ livsmedelssäkerhetsråd vid strömavbrott.
+
+NY TEXT:
+________________________________________
+
+
+[0243] Min plan > Checklista > details > cook-power > intro
+SPRÅK: SV
+ORIGINAL:
+Det går att äta mycket utan uppvärmning, men ett säkert alternativ för matlagning ger flexibilitet.
+
+NY TEXT:
+________________________________________
+
+
+[0244] Min plan > Checklista > details > cook-power > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Stormkök eller campingkök med lämpligt bränsle
+
+NY TEXT:
+________________________________________
+
+
+[0245] Min plan > Checklista > details > cook-power > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Grill utomhus där det är tillåtet
+
+NY TEXT:
+________________________________________
+
+
+[0246] Min plan > Checklista > details > cook-power > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Termos för att behålla varmt vatten
+
+NY TEXT:
+________________________________________
+
+
+[0247] Min plan > Checklista > details > cook-power > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Enkla rätter som kräver kort tillagning
+
+NY TEXT:
+________________________________________
+
+
+[0248] Min plan > Checklista > details > cook-power > check
+SPRÅK: SV
+ORIGINAL:
+Prova utrustningen i lugn och ro och se över bränsle och tillbehör.
+
+NY TEXT:
+________________________________________
+
+
+[0249] Min plan > Checklista > details > cook-power > caution
+SPRÅK: SV
+ORIGINAL:
+Använd aldrig grill eller bränsledrivna friluftskök inomhus. Brand- och kolmonoxidfara. Följ alltid utrustningens instruktioner.
+
+NY TEXT:
+________________________________________
+
+
+[0250] Min plan > Checklista > details > warmth > intro
+SPRÅK: SV
+ORIGINAL:
+Vid strömavbrott kan inomhustemperaturen sjunka. Förbered ett säkert sätt att hålla värmen.
+
+NY TEXT:
+________________________________________
+
+
+[0251] Min plan > Checklista > details > warmth > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Varma underställ, mössor, sockor och sovsäckar
+
+NY TEXT:
+________________________________________
+
+
+[0252] Min plan > Checklista > details > warmth > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Fleecefiltar och extra täcken
+
+NY TEXT:
+________________________________________
+
+
+[0253] Min plan > Checklista > details > warmth > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Ett rum där familjen kan samlas
+
+NY TEXT:
+________________________________________
+
+
+[0254] Min plan > Checklista > details > warmth > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Vedkamin med torr ved, om bostaden har en godkänd sådan
+
+NY TEXT:
+________________________________________
+
+
+[0255] Min plan > Checklista > details > warmth > check
+SPRÅK: SV
+ORIGINAL:
+Undersök hur just din bostad värms och vad som fungerar utan el.
+
+NY TEXT:
+________________________________________
+
+
+[0256] Min plan > Checklista > details > warmth > caution
+SPRÅK: SV
+ORIGINAL:
+Försök inte värma bostaden med grill eller olämpliga brännare. Tänk på ventilation, brandvarnare och kolmonoxidrisk.
+
+NY TEXT:
+________________________________________
+
+
+[0257] Min plan > Checklista > details > torch > intro
+SPRÅK: SV
+ORIGINAL:
+När det blir mörkt behöver du kunna orientera dig, laga mat och hjälpa andra utan takbelysning.
+
+NY TEXT:
+________________________________________
+
+
+[0258] Min plan > Checklista > details > torch > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Ficklampa för allmän användning
+
+NY TEXT:
+________________________________________
+
+
+[0259] Min plan > Checklista > details > torch > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Pannlampa som lämnar händerna fria
+
+NY TEXT:
+________________________________________
+
+
+[0260] Min plan > Checklista > details > torch > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Batteridriven lykta för ett rum
+
+NY TEXT:
+________________________________________
+
+
+[0261] Min plan > Checklista > details > torch > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Reservbatterier eller en plan för laddning
+
+NY TEXT:
+________________________________________
+
+
+[0262] Min plan > Checklista > details > torch > check
+SPRÅK: SV
+ORIGINAL:
+Testa lamporna, placera dem lättåtkomligt och se att alla vet var de finns.
+
+NY TEXT:
+________________________________________
+
+
+[0263] Min plan > Checklista > details > torch > caution
+SPRÅK: SV
+ORIGINAL:
+Levande ljus ökar brandrisken. Batteridriven belysning är ofta ett tryggare förstahandsval.
+
+NY TEXT:
+________________________________________
+
+
+[0264] Min plan > Checklista > details > radio > intro
+SPRÅK: SV
+ORIGINAL:
+P4 är Sveriges beredskapskanal. En radio som fungerar utan elnät och internet är ett viktigt komplement till mobilen.
+
+NY TEXT:
+________________________________________
+
+
+[0265] Min plan > Checklista > details > radio > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Batteridriven FM-radio
+
+NY TEXT:
+________________________________________
+
+
+[0266] Min plan > Checklista > details > radio > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Vev- eller solcellsradio med FM-mottagning
+
+NY TEXT:
+________________________________________
+
+
+[0267] Min plan > Checklista > details > radio > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Reservbatterier till radion
+
+NY TEXT:
+________________________________________
+
+
+[0268] Min plan > Checklista > details > radio > examples > 4
+SPRÅK: SV
+ORIGINAL:
+En anteckning om vilken P4-frekvens som gäller lokalt
+
+NY TEXT:
+________________________________________
+
+
+[0269] Min plan > Checklista > details > radio > check
+SPRÅK: SV
+ORIGINAL:
+Prova att du faktiskt får in P4 där du bor.
+
+NY TEXT:
+________________________________________
+
+
+[0270] Min plan > Checklista > details > radio > caution
+SPRÅK: SV
+ORIGINAL:
+En mobilapp som strömmar radio kräver fungerande uppkoppling och är inte samma reservlösning.
+
+NY TEXT:
+________________________________________
+
+
+[0271] Min plan > Checklista > details > power > intro
+SPRÅK: SV
+ORIGINAL:
+En laddad telefon kan underlätta kontakten med andra, även om mobilnätet inte alltid fungerar.
+
+NY TEXT:
+________________________________________
+
+
+[0272] Min plan > Checklista > details > power > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Powerbank med tillhörande kabel
+
+NY TEXT:
+________________________________________
+
+
+[0273] Min plan > Checklista > details > power > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Extra laddkablar som passar familjens enheter
+
+NY TEXT:
+________________________________________
+
+
+[0274] Min plan > Checklista > details > power > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Billaddare om du har bil och kan använda den säkert
+
+NY TEXT:
+________________________________________
+
+
+[0275] Min plan > Checklista > details > power > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Laddningsbara lampor med passande anslutning
+
+NY TEXT:
+________________________________________
+
+
+[0276] Min plan > Checklista > details > power > check
+SPRÅK: SV
+ORIGINAL:
+Ladda och funktionstesta powerbanks regelbundet. Förvara kablarna tillsammans.
+
+NY TEXT:
+________________________________________
+
+
+[0277] Min plan > Checklista > details > power > caution
+SPRÅK: SV
+ORIGINAL:
+Följ batteriernas säkerhetsanvisningar och låt dem inte ligga i extrem värme.
+
+NY TEXT:
+________________________________________
+
+
+[0278] Min plan > Checklista > details > aid > intro
+SPRÅK: SV
+ORIGINAL:
+Första hjälpen kan behövas även när vård och transporter är ansträngda.
+
+NY TEXT:
+________________________________________
+
+
+[0279] Min plan > Checklista > details > aid > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Plåster, kompresser, elastisk binda och sårtvätt
+
+NY TEXT:
+________________________________________
+
+
+[0280] Min plan > Checklista > details > aid > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Engångshandskar och enklare förbandsmaterial
+
+NY TEXT:
+________________________________________
+
+
+[0281] Min plan > Checklista > details > aid > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Nödvändiga receptfria produkter som passar hushållet
+
+NY TEXT:
+________________________________________
+
+
+[0282] Min plan > Checklista > details > aid > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Personliga läkemedel enligt ordination
+
+NY TEXT:
+________________________________________
+
+
+[0283] Min plan > Checklista > details > aid > check
+SPRÅK: SV
+ORIGINAL:
+Kontrollera utgångsdatum och lär dig använda förbandsmaterialet.
+
+NY TEXT:
+________________________________________
+
+
+[0284] Min plan > Checklista > details > aid > caution
+SPRÅK: SV
+ORIGINAL:
+Ändra inte medicinering eller lagerhållning av receptläkemedel utan att följa vårdens och apotekets råd.
+
+NY TEXT:
+________________________________________
+
+
+[0285] Min plan > Checklista > details > hygiene > intro
+SPRÅK: SV
+ORIGINAL:
+Om vatten eller avlopp inte fungerar behöver ni en enkel plan för toalett, händer och avfall.
+
+NY TEXT:
+________________________________________
+
+
+[0286] Min plan > Checklista > details > hygiene > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Handsprit, tvål och våtservetter
+
+NY TEXT:
+________________________________________
+
+
+[0287] Min plan > Checklista > details > hygiene > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Toalettpapper, mensskydd och blöjor vid behov
+
+NY TEXT:
+________________________________________
+
+
+[0288] Min plan > Checklista > details > hygiene > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Kraftiga avfallspåsar och förslutningsbara kärl
+
+NY TEXT:
+________________________________________
+
+
+[0289] Min plan > Checklista > details > hygiene > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Engångshandskar och rengöringsmedel
+
+NY TEXT:
+________________________________________
+
+
+[0290] Min plan > Checklista > details > hygiene > check
+SPRÅK: SV
+ORIGINAL:
+Tänk igenom var sakerna förvaras och hur avfall ska hanteras hygieniskt.
+
+NY TEXT:
+________________________________________
+
+
+[0291] Min plan > Checklista > details > hygiene > caution
+SPRÅK: SV
+ORIGINAL:
+Följ kommunens anvisningar vid avloppsstörningar. Använd inte toaletten om det kan orsaka översvämning.
+
+NY TEXT:
+________________________________________
+
+
+[0292] Min plan > Checklista > details > contacts > intro
+SPRÅK: SV
+ORIGINAL:
+När telefonen är urladdad eller internet ligger nere är en papperslista användbar.
+
+NY TEXT:
+________________________________________
+
+
+[0293] Min plan > Checklista > details > contacts > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Familj och nära anhöriga
+
+NY TEXT:
+________________________________________
+
+
+[0294] Min plan > Checklista > details > contacts > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Grannar och personer som behöver extra stöd
+
+NY TEXT:
+________________________________________
+
+
+[0295] Min plan > Checklista > details > contacts > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Försäkringsbolag och viktiga servicekontakter
+
+NY TEXT:
+________________________________________
+
+
+[0296] Min plan > Checklista > details > contacts > examples > 4
+SPRÅK: SV
+ORIGINAL:
+112 för nödsituationer, 113 13 för krisinformation och 1177 för sjukvårdsrådgivning
+
+NY TEXT:
+________________________________________
+
+
+[0297] Min plan > Checklista > details > contacts > check
+SPRÅK: SV
+ORIGINAL:
+Lägg en kopia i krislådan och uppdatera när nummer ändras.
+
+NY TEXT:
+________________________________________
+
+
+[0298] Min plan > Checklista > details > contacts > caution
+SPRÅK: SV
+ORIGINAL:
+Förvara personliga kontaktuppgifter så att obehöriga inte kommer åt dem.
+
+NY TEXT:
+________________________________________
+
+
+[0299] Min plan > Checklista > details > meetup > intro
+SPRÅK: SV
+ORIGINAL:
+Bestäm i förväg hur hushållet hittar varandra när vanliga kontaktvägar inte fungerar.
+
+NY TEXT:
+________________________________________
+
+
+[0300] Min plan > Checklista > details > meetup > examples > 1
+SPRÅK: SV
+ORIGINAL:
+En överenskommen mötesplats nära hemmet
+
+NY TEXT:
+________________________________________
+
+
+[0301] Min plan > Checklista > details > meetup > examples > 2
+SPRÅK: SV
+ORIGINAL:
+En alternativ mötesplats längre bort
+
+NY TEXT:
+________________________________________
+
+
+[0302] Min plan > Checklista > details > meetup > examples > 3
+SPRÅK: SV
+ORIGINAL:
+En kontaktperson utanför närområdet
+
+NY TEXT:
+________________________________________
+
+
+[0303] Min plan > Checklista > details > meetup > examples > 4
+SPRÅK: SV
+ORIGINAL:
+En enkel papperskarta och nödvändiga adresser
+
+NY TEXT:
+________________________________________
+
+
+[0304] Min plan > Checklista > details > meetup > check
+SPRÅK: SV
+ORIGINAL:
+Prata igenom planen med barn och andra i hushållet.
+
+NY TEXT:
+________________________________________
+
+
+[0305] Min plan > Checklista > details > meetup > caution
+SPRÅK: SV
+ORIGINAL:
+Följ alltid myndigheternas instruktioner vid utrymning eller annan akut händelse.
+
+NY TEXT:
+________________________________________
+
+
+[0306] Min plan > Checklista > details > pet-transport > intro
+SPRÅK: SV
+ORIGINAL:
+Djur behöver kunna transporteras säkert om hushållet behöver lämna hemmet. Planera också vem som kan hjälpa om du själv inte kan.
+
+NY TEXT:
+________________________________________
+
+
+[0307] Min plan > Checklista > details > pet-transport > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Transportbur eller annan lämplig transportlösning för varje djur
+
+NY TEXT:
+________________________________________
+
+
+[0308] Min plan > Checklista > details > pet-transport > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Koppel eller sele där det är relevant
+
+NY TEXT:
+________________________________________
+
+
+[0309] Min plan > Checklista > details > pet-transport > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Veterinärkontakt, djurets ID och försäkringsuppgifter på papper
+
+NY TEXT:
+________________________________________
+
+
+[0310] Min plan > Checklista > details > pet-transport > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Tillfällig trygg plats där djuret kan vistas
+
+NY TEXT:
+________________________________________
+
+
+[0311] Min plan > Checklista > details > pet-transport > check
+SPRÅK: SV
+ORIGINAL:
+Testa att djuren går att transportera och se över behov vid strömavbrott och kyla.
+
+NY TEXT:
+________________________________________
+
+
+[0312] Min plan > Checklista > details > pet-transport > caution
+SPRÅK: SV
+ORIGINAL:
+Sällskapsdjur får inte tas med in i skyddsrum. Planera en alternativ säker plats och följ myndigheternas anvisningar.
+
+NY TEXT:
+________________________________________
+
+
+[0313] Min plan > Checklista > details > pet-supplies > intro
+SPRÅK: SV
+ORIGINAL:
+Djur behöver också mat, vatten, trygghet och ibland särskilda temperaturförhållanden.
+
+NY TEXT:
+________________________________________
+
+
+[0314] Min plan > Checklista > details > pet-supplies > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Foder som djuret redan är vant vid
+
+NY TEXT:
+________________________________________
+
+
+[0315] Min plan > Checklista > details > pet-supplies > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Extra dricksvatten och matskålar
+
+NY TEXT:
+________________________________________
+
+
+[0316] Min plan > Checklista > details > pet-supplies > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Koppel, sele, transportbur eller annan säker transportlösning
+
+NY TEXT:
+________________________________________
+
+
+[0317] Min plan > Checklista > details > pet-supplies > examples > 4
+SPRÅK: SV
+ORIGINAL:
+Eventuella mediciner och kontaktuppgifter till veterinär
+
+NY TEXT:
+________________________________________
+
+
+[0318] Min plan > Checklista > details > pet-supplies > check
+SPRÅK: SV
+ORIGINAL:
+Fundera på hur djuren får mat, värme och tillsyn vid strömavbrott eller utrymning.
+
+NY TEXT:
+________________________________________
+
+
+[0319] Min plan > Checklista > details > pet-supplies > caution
+SPRÅK: SV
+ORIGINAL:
+Behoven skiljer sig mellan arter. Exempelvis kan akvarier vara beroende av el och smådjur vara temperaturkänsliga.
+
+NY TEXT:
+________________________________________
+
+
+[0320] Min plan > Checklista > details > medical-extra > intro
+SPRÅK: SV
+ORIGINAL:
+Kartlägg i förväg vilka hjälpmedel eller läkemedel som är viktiga för vardagen.
+
+NY TEXT:
+________________________________________
+
+
+[0321] Min plan > Checklista > details > medical-extra > examples > 1
+SPRÅK: SV
+ORIGINAL:
+En enkel, privat lista över viktiga behov
+
+NY TEXT:
+________________________________________
+
+
+[0322] Min plan > Checklista > details > medical-extra > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Reservrutiner för utrustning
+
+NY TEXT:
+________________________________________
+
+
+[0323] Min plan > Checklista > details > medical-extra > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Kontaktvägar till vård och apotek
+
+NY TEXT:
+________________________________________
+
+
+[0324] Min plan > Checklista > details > medical-extra > check
+SPRÅK: SV
+ORIGINAL:
+Prata med vården om personligt lämplig beredskap.
+
+NY TEXT:
+________________________________________
+
+
+[0325] Min plan > Checklista > details > medical-extra > caution
+SPRÅK: SV
+ORIGINAL:
+HemmaRedo ger inte individuella medicinska råd. Skriv inte känsliga medicinska uppgifter i tjänsten.
+
+NY TEXT:
+________________________________________
+
+
+[0326] Min plan > Checklista > details > electric-extra > intro
+SPRÅK: SV
+ORIGINAL:
+Vissa hjälpmedel måste fungera även om strömmen går. En reservplan behöver utgå från utrustningens krav.
+
+NY TEXT:
+________________________________________
+
+
+[0327] Min plan > Checklista > details > electric-extra > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Dokumenterade el- och batteribehov
+
+NY TEXT:
+________________________________________
+
+
+[0328] Min plan > Checklista > details > electric-extra > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Kontakt med leverantör och vård om reservlösningar
+
+NY TEXT:
+________________________________________
+
+
+[0329] Min plan > Checklista > details > electric-extra > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Plan för säker plats att vistas på om reservkraft saknas
+
+NY TEXT:
+________________________________________
+
+
+[0330] Min plan > Checklista > details > electric-extra > check
+SPRÅK: SV
+ORIGINAL:
+Ta reda på hur länge utrustningen fungerar utan el.
+
+NY TEXT:
+________________________________________
+
+
+[0331] Min plan > Checklista > details > electric-extra > caution
+SPRÅK: SV
+ORIGINAL:
+Anslut aldrig livsviktig utrustning till en oprövad eller olämplig strömkälla.
+
+NY TEXT:
+________________________________________
+
+
+[0332] Min plan > Checklista > details > mobility-extra > intro
+SPRÅK: SV
+ORIGINAL:
+En krisplan bör fungera även om hiss, transport eller andra hjälpmedel inte finns tillgängliga.
+
+NY TEXT:
+________________________________________
+
+
+[0333] Min plan > Checklista > details > mobility-extra > examples > 1
+SPRÅK: SV
+ORIGINAL:
+En överenskommelse med personer som kan hjälpa
+
+NY TEXT:
+________________________________________
+
+
+[0334] Min plan > Checklista > details > mobility-extra > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Tillgängliga vägar och alternativa mötesplatser
+
+NY TEXT:
+________________________________________
+
+
+[0335] Min plan > Checklista > details > mobility-extra > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Lättåtkomliga viktiga hjälpmedel
+
+NY TEXT:
+________________________________________
+
+
+[0336] Min plan > Checklista > details > mobility-extra > check
+SPRÅK: SV
+ORIGINAL:
+Gå igenom planen i din egen miljö och med dem som ska hjälpa till.
+
+NY TEXT:
+________________________________________
+
+
+[0337] Min plan > Checklista > details > mobility-extra > caution
+SPRÅK: SV
+ORIGINAL:
+Anpassa alltid planen till individuella förutsättningar.
+
+NY TEXT:
+________________________________________
+
+
+[0338] Min plan > Checklista > details > kids-extra > intro
+SPRÅK: SV
+ORIGINAL:
+Barn kan behöva både praktiska saker och extra tydlighet för att känna sig trygga.
+
+NY TEXT:
+________________________________________
+
+
+[0339] Min plan > Checklista > details > kids-extra > examples > 1
+SPRÅK: SV
+ORIGINAL:
+Barnmat, blöjor och hygienartiklar där det behövs
+
+NY TEXT:
+________________________________________
+
+
+[0340] Min plan > Checklista > details > kids-extra > examples > 2
+SPRÅK: SV
+ORIGINAL:
+Varma kläder och extra filtar
+
+NY TEXT:
+________________________________________
+
+
+[0341] Min plan > Checklista > details > kids-extra > examples > 3
+SPRÅK: SV
+ORIGINAL:
+Favoritbok, gosedjur eller enkel aktivitet utan el
+
+NY TEXT:
+________________________________________
+
+
+[0342] Min plan > Checklista > details > kids-extra > examples > 4
+SPRÅK: SV
+ORIGINAL:
+En tydlig och lugn plan för hur familjen håller ihop
+
+NY TEXT:
+________________________________________
+
+
+[0343] Min plan > Checklista > details > kids-extra > check
+SPRÅK: SV
+ORIGINAL:
+Låt barnen vara delaktiga på ett sätt som passar deras ålder.
+
+NY TEXT:
+________________________________________
+
+
+[0344] Min plan > Checklista > details > kids-extra > caution
+SPRÅK: SV
+ORIGINAL:
+Välj information som lugnar och förklarar utan att skrämma.
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A5. CHECKLISTAN – SJÄLVA PUNKTERNA OCH KORTBESKRIVNINGAR
+==========================================================================
+Dynamiska siffror baseras här på ett exempel: 2 vuxna, 1 barn och 2 husdjur.
+
+
+==========================================================================
+A6. UTRUSTNINGSBIBLIOTEKET – KNAPPAR OCH MIKROCOPY
+==========================================================================
+
+
+[0345] Checklistan > Utrustningsbibliotek > title
+SPRÅK: SV
+ORIGINAL:
+Utrustningsbibliotek
+
+NY TEXT:
+________________________________________
+
+
+[0346] Checklistan > Utrustningsbibliotek > intro
+SPRÅK: SV
+ORIGINAL:
+Förslag som hjälper dig lösa behoven ovan. Du behöver inte köpa allt.
+
+NY TEXT:
+________________________________________
+
+
+[0347] Checklistan > Utrustningsbibliotek > have
+SPRÅK: SV
+ORIGINAL:
+Har redan
+
+NY TEXT:
+________________________________________
+
+
+[0348] Checklistan > Utrustningsbibliotek > add
+SPRÅK: SV
+ORIGINAL:
+Lägg i inköpslistan
+
+NY TEXT:
+________________________________________
+
+
+[0349] Checklistan > Utrustningsbibliotek > skip
+SPRÅK: SV
+ORIGINAL:
+Inte relevant
+
+NY TEXT:
+________________________________________
+
+
+[0350] Checklistan > Utrustningsbibliotek > see
+SPRÅK: SV
+ORIGINAL:
+Se hela utrustningsbiblioteket
+
+NY TEXT:
+________________________________________
+
+
+[0351] Checklistan > Utrustningsbibliotek > shopping
+SPRÅK: SV
+ORIGINAL:
+Min inköpslista
+
+NY TEXT:
+________________________________________
+
+
+[0352] Checklistan > Utrustningsbibliotek > overview
+SPRÅK: SV
+ORIGINAL:
+saker att skaffa inom
+
+NY TEXT:
+________________________________________
+
+
+[0353] Checklistan > Utrustningsbibliotek > empty
+SPRÅK: SV
+ORIGINAL:
+Inget på inköpslistan ännu.
+
+NY TEXT:
+________________________________________
+
+
+[0354] Checklistan > Utrustningsbibliotek > print
+SPRÅK: SV
+ORIGINAL:
+Skriv ut / spara som PDF
+
+NY TEXT:
+________________________________________
+
+
+[0355] Checklistan > Utrustningsbibliotek > printHelp
+SPRÅK: SV
+ORIGINAL:
+Välj Spara som PDF i webbläsarens utskriftsruta.
+
+NY TEXT:
+________________________________________
+
+
+[0356] Checklistan > Utrustningsbibliotek > back
+SPRÅK: SV
+ORIGINAL:
+Till min plan
+
+NY TEXT:
+________________________________________
+
+
+[0357] Checklistan > Utrustningsbibliotek > hint
+SPRÅK: SV
+ORIGINAL:
+Utrustningsvalen påverkar inte checklistans procent.
+
+NY TEXT:
+________________________________________
+
+
+[0358] Checklistan > Utrustningsbibliotek > remove
+SPRÅK: SV
+ORIGINAL:
+Ta bort
+
+NY TEXT:
+________________________________________
+
+
+[0359] Checklistan > Utrustningsbibliotek > listLead
+SPRÅK: SV
+ORIGINAL:
+Här samlas allt du markerat för inköp i checklistan eller utrustningsbiblioteket.
+
+NY TEXT:
+________________________________________
+
+
+[0360] Checklistan > Utrustningsbibliotek > basic
+SPRÅK: SV
+ORIGINAL:
+Grundläggande
+
+NY TEXT:
+________________________________________
+
+
+[0361] Checklistan > Utrustningsbibliotek > extra
+SPRÅK: SV
+ORIGINAL:
+Bra komplement
+
+NY TEXT:
+________________________________________
+
+
+[0362] Checklistan > Utrustningsbibliotek > advanced
+SPRÅK: SV
+ORIGINAL:
+Fördjupad
+
+NY TEXT:
+________________________________________
+
+
+[0363] Utrustningsbibliotekets egen sida > eyebrow
+SPRÅK: SV
+ORIGINAL:
+UTFORSKA · VÄLJ · FÖRBERED
+
+NY TEXT:
+________________________________________
+
+
+[0364] Utrustningsbibliotekets egen sida > title
+SPRÅK: SV
+ORIGINAL:
+Din beredskap, sak för sak.
+
+NY TEXT:
+________________________________________
+
+
+[0365] Utrustningsbibliotekets egen sida > intro
+SPRÅK: SV
+ORIGINAL:
+Ett lugnt utrustningsbibliotek med förslag för hemmet. Se vad varje sak är bra för, välj det du redan har och bygg din egen inköpslista utan att behöva köpa allt.
+
+NY TEXT:
+________________________________________
+
+
+[0366] Utrustningsbibliotekets egen sida > tip
+SPRÅK: SV
+ORIGINAL:
+Du behöver inte ha allt. Utgå från din bostad och ditt hushåll. Ofta kan saker du redan äger göra jobbet, och en lösning kan ersätta flera prylar.
+
+NY TEXT:
+________________________________________
+
+
+[0367] Utrustningsbibliotekets egen sida > search
+SPRÅK: SV
+ORIGINAL:
+Sök utrustning
+
+NY TEXT:
+________________________________________
+
+
+[0368] Utrustningsbibliotekets egen sida > placeholder
+SPRÅK: SV
+ORIGINAL:
+Sök till exempel ficklampa eller vatten
+
+NY TEXT:
+________________________________________
+
+
+[0369] Utrustningsbibliotekets egen sida > level
+SPRÅK: SV
+ORIGINAL:
+Nivå
+
+NY TEXT:
+________________________________________
+
+
+[0370] Utrustningsbibliotekets egen sida > allLevels
+SPRÅK: SV
+ORIGINAL:
+Alla nivåer
+
+NY TEXT:
+________________________________________
+
+
+[0371] Utrustningsbibliotekets egen sida > all
+SPRÅK: SV
+ORIGINAL:
+Alla
+
+NY TEXT:
+________________________________________
+
+
+[0372] Utrustningsbibliotekets egen sida > levels > 1
+SPRÅK: SV
+ORIGINAL:
+Grundläggande
+
+NY TEXT:
+________________________________________
+
+
+[0373] Utrustningsbibliotekets egen sida > levels > 2
+SPRÅK: SV
+ORIGINAL:
+Bra komplement
+
+NY TEXT:
+________________________________________
+
+
+[0374] Utrustningsbibliotekets egen sida > levels > 3
+SPRÅK: SV
+ORIGINAL:
+Fördjupad
+
+NY TEXT:
+________________________________________
+
+
+[0375] Utrustningsbibliotekets egen sida > categories
+SPRÅK: SV
+ORIGINAL:
+Kategorier
+
+NY TEXT:
+________________________________________
+
+
+[0376] Utrustningsbibliotekets egen sida > have
+SPRÅK: SV
+ORIGINAL:
+Har redan
+
+NY TEXT:
+________________________________________
+
+
+[0377] Utrustningsbibliotekets egen sida > need
+SPRÅK: SV
+ORIGINAL:
+Lägg i inköpslistan
+
+NY TEXT:
+________________________________________
+
+
+[0378] Utrustningsbibliotekets egen sida > skip
+SPRÅK: SV
+ORIGINAL:
+Inte relevant
+
+NY TEXT:
+________________________________________
+
+
+[0379] Utrustningsbibliotekets egen sida > more
+SPRÅK: SV
+ORIGINAL:
+Läs mer och få tips
+
+NY TEXT:
+________________________________________
+
+
+[0380] Utrustningsbibliotekets egen sida > tipLabel
+SPRÅK: SV
+ORIGINAL:
+Tips
+
+NY TEXT:
+________________________________________
+
+
+[0381] Utrustningsbibliotekets egen sida > shown
+SPRÅK: SV
+ORIGINAL:
+produkter visas
+
+NY TEXT:
+________________________________________
+
+
+[0382] Utrustningsbibliotekets egen sida > results
+SPRÅK: SV
+ORIGINAL:
+Utrustning
+
+NY TEXT:
+________________________________________
+
+
+[0383] Utrustningsbibliotekets egen sida > summary > 1
+SPRÅK: SV
+ORIGINAL:
+Har redan
+
+NY TEXT:
+________________________________________
+
+
+[0384] Utrustningsbibliotekets egen sida > summary > 2
+SPRÅK: SV
+ORIGINAL:
+Behöver skaffa
+
+NY TEXT:
+________________________________________
+
+
+[0385] Utrustningsbibliotekets egen sida > summary > 3
+SPRÅK: SV
+ORIGINAL:
+Inte relevant
+
+NY TEXT:
+________________________________________
+
+
+[0386] Utrustningsbibliotekets egen sida > print
+SPRÅK: SV
+ORIGINAL:
+Skriv ut min inköpslista
+
+NY TEXT:
+________________________________________
+
+
+[0387] Utrustningsbibliotekets egen sida > showNeeds
+SPRÅK: SV
+ORIGINAL:
+Visa min inköpslista
+
+NY TEXT:
+________________________________________
+
+
+[0388] Utrustningsbibliotekets egen sida > showAll
+SPRÅK: SV
+ORIGINAL:
+Visa alla saker
+
+NY TEXT:
+________________________________________
+
+
+[0389] Utrustningsbibliotekets egen sida > printHelp
+SPRÅK: SV
+ORIGINAL:
+Utskriften innehåller enbart saker du markerat som ”Behöver skaffa”. I utskriftsrutan kan du även spara som PDF.
+
+NY TEXT:
+________________________________________
+
+
+[0390] Utrustningsbibliotekets egen sida > source
+SPRÅK: SV
+ORIGINAL:
+Inspiration till grundutrustningen kommer från Krisinformation.se och Myndigheten för civilt försvar. Prioriteringsnivåerna är HemmaRedos praktiska vägledning – inte myndighetskrav.
+
+NY TEXT:
+________________________________________
+
+
+[0391] Utrustningsbibliotekets egen sida > privacy
+SPRÅK: SV
+ORIGINAL:
+Dina val sparas bara i den här webbläsaren, separat från checklistans procentmätare.
+
+NY TEXT:
+________________________________________
+
+
+[0392] Utrustningsbibliotekets egen sida > none
+SPRÅK: SV
+ORIGINAL:
+Inga saker matchar filtret. Testa ett annat sökord eller ändra filtren.
+
+NY TEXT:
+________________________________________
+
+
+[0393] Utrustningsbibliotekets egen sida > listTitle
+SPRÅK: SV
+ORIGINAL:
+Min inköpslista · HemmaRedo
+
+NY TEXT:
+________________________________________
+
+
+[0394] Utrustningsbibliotekets egen sida > listDesc
+SPRÅK: SV
+ORIGINAL:
+Saker jag markerat som behöver skaffas
+
+NY TEXT:
+________________________________________
+
+
+[0395] Utrustningsbibliotekets egen sida > guides
+SPRÅK: SV
+ORIGINAL:
+Tips & länkar
+
+NY TEXT:
+________________________________________
+
+
+[0396] Utrustningsbibliotekets egen sida > privacyLink
+SPRÅK: SV
+ORIGINAL:
+Integritet & lagring
+
+NY TEXT:
+________________________________________
+
+
+[0397] Utrustningsbibliotekets egen sida > back
+SPRÅK: SV
+ORIGINAL:
+Till min plan
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A7. UTRUSTNINGSBIBLIOTEKET – ALLA PRODUKTKORT
+==========================================================================
+
+
+[0398] Utrustningsbibliotek > water > water-jug > Namn
+SPRÅK: SV
+ORIGINAL:
+Dricksvattendunk
+
+NY TEXT:
+________________________________________
+
+
+[0399] Utrustningsbibliotek > water > water-jug > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Livsmedelsgodkända dunkar för lagrat dricksvatten.
+
+NY TEXT:
+________________________________________
+
+
+[0400] Utrustningsbibliotek > water > water-jug > Tips
+SPRÅK: SV
+ORIGINAL:
+Förvara svalt och mörkt. HemmaRedos minnesregel: byt vatten vid midsommar och jul.
+
+NY TEXT:
+________________________________________
+
+
+[0401] Utrustningsbibliotek > water > water-bottled > Namn
+SPRÅK: SV
+ORIGINAL:
+Flaskvatten
+
+NY TEXT:
+________________________________________
+
+
+[0402] Utrustningsbibliotek > water > water-bottled > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Extra vatten som redan är förpackat.
+
+NY TEXT:
+________________________________________
+
+
+[0403] Utrustningsbibliotek > water > water-bottled > Tips
+SPRÅK: SV
+ORIGINAL:
+Kontrollera förvaring, bäst före-datum och mängd för hela hushållet.
+
+NY TEXT:
+________________________________________
+
+
+[0404] Utrustningsbibliotek > water > water-carry > Namn
+SPRÅK: SV
+ORIGINAL:
+Extra kärl för vattenhämtning
+
+NY TEXT:
+________________________________________
+
+
+[0405] Utrustningsbibliotek > water > water-carry > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Hjälper om kommunen ordnar nödvatten.
+
+NY TEXT:
+________________________________________
+
+
+[0406] Utrustningsbibliotek > water > water-carry > Tips
+SPRÅK: SV
+ORIGINAL:
+Välj kärl du kan bära när de är fyllda.
+
+NY TEXT:
+________________________________________
+
+
+[0407] Utrustningsbibliotek > water > water-filter > Namn
+SPRÅK: SV
+ORIGINAL:
+Vattenreningsutrustning
+
+NY TEXT:
+________________________________________
+
+
+[0408] Utrustningsbibliotek > water > water-filter > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Ett möjligt komplement vid vissa typer av vattenproblem.
+
+NY TEXT:
+________________________________________
+
+
+[0409] Utrustningsbibliotek > water > water-filter > Tips
+SPRÅK: SV
+ORIGINAL:
+Filter och kokning avlägsnar inte alla kemiska föroreningar. Följ myndighetsråd.
+
+NY TEXT:
+________________________________________
+
+
+[0410] Utrustningsbibliotek > food > food-cans > Namn
+SPRÅK: SV
+ORIGINAL:
+Konserver och färdiga rätter
+
+NY TEXT:
+________________________________________
+
+
+[0411] Utrustningsbibliotek > food > food-cans > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Exempelvis bönor, tomater, fisk och färdiga rätter.
+
+NY TEXT:
+________________________________________
+
+
+[0412] Utrustningsbibliotek > food > food-cans > Tips
+SPRÅK: SV
+ORIGINAL:
+Välj sådant ni gillar och kan äta även utan uppvärmning.
+
+NY TEXT:
+________________________________________
+
+
+[0413] Utrustningsbibliotek > food > food-dry > Namn
+SPRÅK: SV
+ORIGINAL:
+Torrvaror
+
+NY TEXT:
+________________________________________
+
+
+[0414] Utrustningsbibliotek > food > food-dry > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Havregryn, knäckebröd, nötter, ris och couscous.
+
+NY TEXT:
+________________________________________
+
+
+[0415] Utrustningsbibliotek > food > food-dry > Tips
+SPRÅK: SV
+ORIGINAL:
+Tänk på att vissa torrvaror kräver vatten och kokning.
+
+NY TEXT:
+________________________________________
+
+
+[0416] Utrustningsbibliotek > food > food-opener > Namn
+SPRÅK: SV
+ORIGINAL:
+Manuell konservöppnare
+
+NY TEXT:
+________________________________________
+
+
+[0417] Utrustningsbibliotek > food > food-opener > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Kan användas även när elen är borta.
+
+NY TEXT:
+________________________________________
+
+
+[0418] Utrustningsbibliotek > food > food-opener > Tips
+SPRÅK: SV
+ORIGINAL:
+Kontrollera att den fungerar på era konservburkar.
+
+NY TEXT:
+________________________________________
+
+
+[0419] Utrustningsbibliotek > food > food-stove > Namn
+SPRÅK: SV
+ORIGINAL:
+Stormkök och bränsle
+
+NY TEXT:
+________________________________________
+
+
+[0420] Utrustningsbibliotek > food > food-stove > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Alternativ för att värma mat och vatten utan el.
+
+NY TEXT:
+________________________________________
+
+
+[0421] Utrustningsbibliotek > food > food-stove > Tips
+SPRÅK: SV
+ORIGINAL:
+Använd friluftskök utomhus enligt tillverkarens instruktioner. Aldrig grill inomhus.
+
+NY TEXT:
+________________________________________
+
+
+[0422] Utrustningsbibliotek > food > food-thermos > Namn
+SPRÅK: SV
+ORIGINAL:
+Termos
+
+NY TEXT:
+________________________________________
+
+
+[0423] Utrustningsbibliotek > food > food-thermos > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Håller dryck eller uppvärmt vatten varmt längre.
+
+NY TEXT:
+________________________________________
+
+
+[0424] Utrustningsbibliotek > food > food-thermos > Tips
+SPRÅK: SV
+ORIGINAL:
+Kan minska behovet av att värma vatten upprepade gånger.
+
+NY TEXT:
+________________________________________
+
+
+[0425] Utrustningsbibliotek > light > light-torch > Namn
+SPRÅK: SV
+ORIGINAL:
+Ficklampa
+
+NY TEXT:
+________________________________________
+
+
+[0426] Utrustningsbibliotek > light > light-torch > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Bärbar belysning vid strömavbrott.
+
+NY TEXT:
+________________________________________
+
+
+[0427] Utrustningsbibliotek > light > light-torch > Tips
+SPRÅK: SV
+ORIGINAL:
+Testa då och då och ha den nära till hands.
+
+NY TEXT:
+________________________________________
+
+
+[0428] Utrustningsbibliotek > light > light-headlamp > Namn
+SPRÅK: SV
+ORIGINAL:
+Pannlampa
+
+NY TEXT:
+________________________________________
+
+
+[0429] Utrustningsbibliotek > light > light-headlamp > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Ger ljus samtidigt som händerna är fria.
+
+NY TEXT:
+________________________________________
+
+
+[0430] Utrustningsbibliotek > light > light-headlamp > Tips
+SPRÅK: SV
+ORIGINAL:
+Praktisk vid matlagning, reparationer och nattliga avbrott.
+
+NY TEXT:
+________________________________________
+
+
+[0431] Utrustningsbibliotek > light > light-batteries > Namn
+SPRÅK: SV
+ORIGINAL:
+Reservbatterier
+
+NY TEXT:
+________________________________________
+
+
+[0432] Utrustningsbibliotek > light > light-batteries > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Batterier till radio och lampor.
+
+NY TEXT:
+________________________________________
+
+
+[0433] Utrustningsbibliotek > light > light-batteries > Tips
+SPRÅK: SV
+ORIGINAL:
+Kontrollera storlek, hållbarhet och förvaring.
+
+NY TEXT:
+________________________________________
+
+
+[0434] Utrustningsbibliotek > light > light-radio > Namn
+SPRÅK: SV
+ORIGINAL:
+FM-radio utan elnät
+
+NY TEXT:
+________________________________________
+
+
+[0435] Utrustningsbibliotek > light > light-radio > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Batteri-, vev- eller solcellsradio som kan ta emot P4.
+
+NY TEXT:
+________________________________________
+
+
+[0436] Utrustningsbibliotek > light > light-radio > Tips
+SPRÅK: SV
+ORIGINAL:
+Testa mottagningen av din lokala P4-kanal.
+
+NY TEXT:
+________________________________________
+
+
+[0437] Utrustningsbibliotek > light > light-bank > Namn
+SPRÅK: SV
+ORIGINAL:
+Laddad powerbank
+
+NY TEXT:
+________________________________________
+
+
+[0438] Utrustningsbibliotek > light > light-bank > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Reservladdning för mobil och små enheter.
+
+NY TEXT:
+________________________________________
+
+
+[0439] Utrustningsbibliotek > light > light-bank > Tips
+SPRÅK: SV
+ORIGINAL:
+Lägg med rätt kabel och se över laddningen regelbundet.
+
+NY TEXT:
+________________________________________
+
+
+[0440] Utrustningsbibliotek > warm > warm-blankets > Namn
+SPRÅK: SV
+ORIGINAL:
+Filtar och varma kläder
+
+NY TEXT:
+________________________________________
+
+
+[0441] Utrustningsbibliotek > warm > warm-blankets > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Hjälper till att behålla kroppsvärmen.
+
+NY TEXT:
+________________________________________
+
+
+[0442] Utrustningsbibliotek > warm > warm-blankets > Tips
+SPRÅK: SV
+ORIGINAL:
+Samla gärna familjen i ett rum vid längre värmeavbrott.
+
+NY TEXT:
+________________________________________
+
+
+[0443] Utrustningsbibliotek > warm > warm-bag > Namn
+SPRÅK: SV
+ORIGINAL:
+Sovsäck eller extra täcke
+
+NY TEXT:
+________________________________________
+
+
+[0444] Utrustningsbibliotek > warm > warm-bag > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Extra isolering om bostaden blir kall.
+
+NY TEXT:
+________________________________________
+
+
+[0445] Utrustningsbibliotek > warm > warm-bag > Tips
+SPRÅK: SV
+ORIGINAL:
+Välj utifrån årstid och hushållets behov.
+
+NY TEXT:
+________________________________________
+
+
+[0446] Utrustningsbibliotek > warm > warm-seal > Namn
+SPRÅK: SV
+ORIGINAL:
+Tätningsmaterial
+
+NY TEXT:
+________________________________________
+
+
+[0447] Utrustningsbibliotek > warm > warm-seal > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Kan minska drag kring fönster och dörrar.
+
+NY TEXT:
+________________________________________
+
+
+[0448] Utrustningsbibliotek > warm > warm-seal > Tips
+SPRÅK: SV
+ORIGINAL:
+Blockera inte nödvändig ventilation eller utrymningsvägar.
+
+NY TEXT:
+________________________________________
+
+
+[0449] Utrustningsbibliotek > warm > warm-fireplace > Namn
+SPRÅK: SV
+ORIGINAL:
+Godkänd alternativ värmekälla
+
+NY TEXT:
+________________________________________
+
+
+[0450] Utrustningsbibliotek > warm > warm-fireplace > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Kan vara värdefullt i bostäder med rätt installation.
+
+NY TEXT:
+________________________________________
+
+
+[0451] Utrustningsbibliotek > warm > warm-fireplace > Tips
+SPRÅK: SV
+ORIGINAL:
+Använd endast godkänd utrustning enligt instruktion. Brand- och kolmonoxidrisk.
+
+NY TEXT:
+________________________________________
+
+
+[0452] Utrustningsbibliotek > health > health-firstaid > Namn
+SPRÅK: SV
+ORIGINAL:
+Första hjälpen-kit
+
+NY TEXT:
+________________________________________
+
+
+[0453] Utrustningsbibliotek > health > health-firstaid > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Förband, kompresser, plåster och enklare vårdmaterial.
+
+NY TEXT:
+________________________________________
+
+
+[0454] Utrustningsbibliotek > health > health-firstaid > Tips
+SPRÅK: SV
+ORIGINAL:
+Lär dig använda innehållet och se över bäst före.
+
+NY TEXT:
+________________________________________
+
+
+[0455] Utrustningsbibliotek > health > health-hygiene > Namn
+SPRÅK: SV
+ORIGINAL:
+Hygienartiklar
+
+NY TEXT:
+________________________________________
+
+
+[0456] Utrustningsbibliotek > health > health-hygiene > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Tvål, handsprit, våtservetter och toalettpapper.
+
+NY TEXT:
+________________________________________
+
+
+[0457] Utrustningsbibliotek > health > health-hygiene > Tips
+SPRÅK: SV
+ORIGINAL:
+Planera även för mensskydd, blöjor och individuella behov.
+
+NY TEXT:
+________________________________________
+
+
+[0458] Utrustningsbibliotek > health > health-bags > Namn
+SPRÅK: SV
+ORIGINAL:
+Avfallspåsar och robusta säckar
+
+NY TEXT:
+________________________________________
+
+
+[0459] Utrustningsbibliotek > health > health-bags > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Praktiskt vid störningar i avlopp eller sophämtning.
+
+NY TEXT:
+________________________________________
+
+
+[0460] Utrustningsbibliotek > health > health-bags > Tips
+SPRÅK: SV
+ORIGINAL:
+Följ kommunens instruktioner för hygien och hantering.
+
+NY TEXT:
+________________________________________
+
+
+[0461] Utrustningsbibliotek > health > health-medicine > Namn
+SPRÅK: SV
+ORIGINAL:
+Nödvändiga läkemedel
+
+NY TEXT:
+________________________________________
+
+
+[0462] Utrustningsbibliotek > health > health-medicine > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Planering för personliga läkemedelsbehov.
+
+NY TEXT:
+________________________________________
+
+
+[0463] Utrustningsbibliotek > health > health-medicine > Tips
+SPRÅK: SV
+ORIGINAL:
+Följ råd från vård och apotek. Ingen behöver registrera medicinska uppgifter här.
+
+NY TEXT:
+________________________________________
+
+
+[0464] Utrustningsbibliotek > tools > tools-contacts > Namn
+SPRÅK: SV
+ORIGINAL:
+Viktiga nummer på papper
+
+NY TEXT:
+________________________________________
+
+
+[0465] Utrustningsbibliotek > tools > tools-contacts > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+En utskriven lista fungerar även utan mobil.
+
+NY TEXT:
+________________________________________
+
+
+[0466] Utrustningsbibliotek > tools > tools-contacts > Tips
+SPRÅK: SV
+ORIGINAL:
+Skapa en telefonlista i HemmaRedo och förvara på ett känt ställe.
+
+NY TEXT:
+________________________________________
+
+
+[0467] Utrustningsbibliotek > tools > tools-cash > Namn
+SPRÅK: SV
+ORIGINAL:
+Kontanter i mindre valörer
+
+NY TEXT:
+________________________________________
+
+
+[0468] Utrustningsbibliotek > tools > tools-cash > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Ett alternativ om kortbetalning eller digitala tjänster slutar fungera.
+
+NY TEXT:
+________________________________________
+
+
+[0469] Utrustningsbibliotek > tools > tools-cash > Tips
+SPRÅK: SV
+ORIGINAL:
+Utgå från hushållets behov och förvara säkert.
+
+NY TEXT:
+________________________________________
+
+
+[0470] Utrustningsbibliotek > tools > tools-multitool > Namn
+SPRÅK: SV
+ORIGINAL:
+Multiverktyg
+
+NY TEXT:
+________________________________________
+
+
+[0471] Utrustningsbibliotek > tools > tools-multitool > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Kan hjälpa vid enkla praktiska problem.
+
+NY TEXT:
+________________________________________
+
+
+[0472] Utrustningsbibliotek > tools > tools-multitool > Tips
+SPRÅK: SV
+ORIGINAL:
+En vanlig verktygslåda kan ofta fylla samma funktion.
+
+NY TEXT:
+________________________________________
+
+
+[0473] Utrustningsbibliotek > tools > tools-map > Namn
+SPRÅK: SV
+ORIGINAL:
+Papperskarta
+
+NY TEXT:
+________________________________________
+
+
+[0474] Utrustningsbibliotek > tools > tools-map > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Hjälper vid bortfall av GPS och internet.
+
+NY TEXT:
+________________________________________
+
+
+[0475] Utrustningsbibliotek > tools > tools-map > Tips
+SPRÅK: SV
+ORIGINAL:
+Markera mötesplatser och viktiga lokala adresser.
+
+NY TEXT:
+________________________________________
+
+
+[0476] Utrustningsbibliotek > tools > tools-firesteel > Namn
+SPRÅK: SV
+ORIGINAL:
+Tändstål
+
+NY TEXT:
+________________________________________
+
+
+[0477] Utrustningsbibliotek > tools > tools-firesteel > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Friluftsutrustning för att göra upp eld utomhus där det är tillåtet.
+
+NY TEXT:
+________________________________________
+
+
+[0478] Utrustningsbibliotek > tools > tools-firesteel > Tips
+SPRÅK: SV
+ORIGINAL:
+Inte nödvändigt för de flesta hushåll. Eldningsförbud och brandsäkerhet gäller.
+
+NY TEXT:
+________________________________________
+
+
+[0479] Utrustningsbibliotek > tools > tools-axe > Namn
+SPRÅK: SV
+ORIGINAL:
+Yxa
+
+NY TEXT:
+________________________________________
+
+
+[0480] Utrustningsbibliotek > tools > tools-axe > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Kan vara användbar vid vedhantering för den som har behov och vana.
+
+NY TEXT:
+________________________________________
+
+
+[0481] Utrustningsbibliotek > tools > tools-axe > Tips
+SPRÅK: SV
+ORIGINAL:
+Inte grundutrustning för alla. Förvara barnsäkert och använd skydd.
+
+NY TEXT:
+________________________________________
+
+
+[0482] Utrustningsbibliotek > pets > pets-food > Namn
+SPRÅK: SV
+ORIGINAL:
+Foder och vatten till djur
+
+NY TEXT:
+________________________________________
+
+
+[0483] Utrustningsbibliotek > pets > pets-food > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Lager som passar djurets art, mängd och behov.
+
+NY TEXT:
+________________________________________
+
+
+[0484] Utrustningsbibliotek > pets > pets-food > Tips
+SPRÅK: SV
+ORIGINAL:
+Räkna med extra vatten och eventuella läkemedel enligt veterinärens råd.
+
+NY TEXT:
+________________________________________
+
+
+[0485] Utrustningsbibliotek > pets > pets-transport > Namn
+SPRÅK: SV
+ORIGINAL:
+Transportbur, sele eller koppel
+
+NY TEXT:
+________________________________________
+
+
+[0486] Utrustningsbibliotek > pets > pets-transport > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Hjälper om djur snabbt måste flyttas.
+
+NY TEXT:
+________________________________________
+
+
+[0487] Utrustningsbibliotek > pets > pets-transport > Tips
+SPRÅK: SV
+ORIGINAL:
+Anpassa till art, storlek och temperament.
+
+NY TEXT:
+________________________________________
+
+
+[0488] Utrustningsbibliotek > Kategori water > Namn
+SPRÅK: SV
+ORIGINAL:
+Vatten
+
+NY TEXT:
+________________________________________
+
+
+[0489] Utrustningsbibliotek > Kategori food > Namn
+SPRÅK: SV
+ORIGINAL:
+Mat & tillagning
+
+NY TEXT:
+________________________________________
+
+
+[0490] Utrustningsbibliotek > Kategori light > Namn
+SPRÅK: SV
+ORIGINAL:
+Ljus & information
+
+NY TEXT:
+________________________________________
+
+
+[0491] Utrustningsbibliotek > Kategori warm > Namn
+SPRÅK: SV
+ORIGINAL:
+Värme & skydd
+
+NY TEXT:
+________________________________________
+
+
+[0492] Utrustningsbibliotek > Kategori health > Namn
+SPRÅK: SV
+ORIGINAL:
+Hygien & hälsa
+
+NY TEXT:
+________________________________________
+
+
+[0493] Utrustningsbibliotek > Kategori tools > Namn
+SPRÅK: SV
+ORIGINAL:
+Verktyg & reservlösningar
+
+NY TEXT:
+________________________________________
+
+
+[0494] Utrustningsbibliotek > Kategori pets > Namn
+SPRÅK: SV
+ORIGINAL:
+Djur
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A8. RESERVPLANER PER KATEGORI
+==========================================================================
+
+
+[0495] Min plan > Reservplan > water > Exempel 1
+SPRÅK: SV
+ORIGINAL:
+Vattendunkar med lagrat dricksvatten
+
+NY TEXT:
+________________________________________
+
+
+[0496] Min plan > Reservplan > water > Exempel 2
+SPRÅK: SV
+ORIGINAL:
+Extra kärl och information om kommunens nödvatten
+
+NY TEXT:
+________________________________________
+
+
+[0497] Min plan > Reservplan > water > Exempel 3
+SPRÅK: SV
+ORIGINAL:
+Reservplan för att hämta vatten om transport eller vattenförsörjning påverkas
+
+NY TEXT:
+________________________________________
+
+
+[0498] Min plan > Reservplan > food > Exempel 1
+SPRÅK: SV
+ORIGINAL:
+Mat som går att äta utan uppvärmning
+
+NY TEXT:
+________________________________________
+
+
+[0499] Min plan > Reservplan > food > Exempel 2
+SPRÅK: SV
+ORIGINAL:
+Säker matlagning utan el, exempelvis friluftskök utomhus
+
+NY TEXT:
+________________________________________
+
+
+[0500] Min plan > Reservplan > food > Exempel 3
+SPRÅK: SV
+ORIGINAL:
+Enkla alternativ som kräver lite vatten och bränsle
+
+NY TEXT:
+________________________________________
+
+
+[0501] Min plan > Reservplan > heat > Exempel 1
+SPRÅK: SV
+ORIGINAL:
+Varma kläder, filtar och sovsäckar
+
+NY TEXT:
+________________________________________
+
+
+[0502] Min plan > Reservplan > heat > Exempel 2
+SPRÅK: SV
+ORIGINAL:
+Samla hushållet i ett lämpligt rum och minska drag utan att blockera ventilation
+
+NY TEXT:
+________________________________________
+
+
+[0503] Min plan > Reservplan > heat > Exempel 3
+SPRÅK: SV
+ORIGINAL:
+Planera var ni kan få hjälp eller tillfälligt vistas om bostaden blir för kall
+
+NY TEXT:
+________________________________________
+
+
+[0504] Min plan > Reservplan > comms > Exempel 1
+SPRÅK: SV
+ORIGINAL:
+Batteri- eller vevradio för P4
+
+NY TEXT:
+________________________________________
+
+
+[0505] Min plan > Reservplan > comms > Exempel 2
+SPRÅK: SV
+ORIGINAL:
+Viktiga telefonnummer och mötesplatser på papper
+
+NY TEXT:
+________________________________________
+
+
+[0506] Min plan > Reservplan > comms > Exempel 3
+SPRÅK: SV
+ORIGINAL:
+Extra laddning när den kan användas säkert
+
+NY TEXT:
+________________________________________
+
+
+[0507] Min plan > Reservplan > health > Exempel 1
+SPRÅK: SV
+ORIGINAL:
+Första hjälpen och viktiga hygienartiklar
+
+NY TEXT:
+________________________________________
+
+
+[0508] Min plan > Reservplan > health > Exempel 2
+SPRÅK: SV
+ORIGINAL:
+Reservplan för nödvändiga läkemedel och individuella behov
+
+NY TEXT:
+________________________________________
+
+
+[0509] Min plan > Reservplan > health > Exempel 3
+SPRÅK: SV
+ORIGINAL:
+Alternativ toalett- och avfallshantering enligt kommunens anvisningar
+
+NY TEXT:
+________________________________________
+
+
+[0510] Min plan > Reservplan > home > Exempel 1
+SPRÅK: SV
+ORIGINAL:
+En bestämd mötesplats
+
+NY TEXT:
+________________________________________
+
+
+[0511] Min plan > Reservplan > home > Exempel 2
+SPRÅK: SV
+ORIGINAL:
+Papperslista med kontakter och adresser
+
+NY TEXT:
+________________________________________
+
+
+[0512] Min plan > Reservplan > home > Exempel 3
+SPRÅK: SV
+ORIGINAL:
+En överenskommen person att kontakta eller få hjälp av
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A9. INTEGRITET & LAGRING
+==========================================================================
+
+
+[0513] Integritet & lagring > title
+SPRÅK: SV
+ORIGINAL:
+Integritet & lagring
+
+NY TEXT:
+________________________________________
+
+
+[0514] Integritet & lagring > lead
+SPRÅK: SV
+ORIGINAL:
+HemmaRedo ska vara enkelt att använda utan konto – och utan onödig spårning.
+
+NY TEXT:
+________________________________________
+
+
+[0515] Integritet & lagring > sub
+SPRÅK: SV
+ORIGINAL:
+Så fungerar informationen i den här prototypen.
+
+NY TEXT:
+________________________________________
+
+
+[0516] Integritet & lagring > section1
+SPRÅK: SV
+ORIGINAL:
+Vad sparas i din webbläsare?
+
+NY TEXT:
+________________________________________
+
+
+[0517] Integritet & lagring > body1
+SPRÅK: SV
+ORIGINAL:
+Vi använder webbläsarens lokala lagring (localStorage) för dina svar om hushållet, checklistans markeringar, utrustningsval och inköpslista, språkval och en separat plan om du hjälper en vän. Uppgifterna stannar normalt i den här webbläsaren och skickas inte till vår egen server för att lagra en profil. Om du använder en annan enhet finns inte dina sparade svar där.
+
+NY TEXT:
+________________________________________
+
+
+[0518] Integritet & lagring > section2
+SPRÅK: SV
+ORIGINAL:
+Behöver du godkänna cookies?
+
+NY TEXT:
+________________________________________
+
+
+[0519] Integritet & lagring > body2
+SPRÅK: SV
+ORIGINAL:
+Vi använder inte egna analys- eller annonscookies i prototypen. Lagringen används för att de funktioner du valt ska fungera, till exempel för att din plan ska finnas kvar när du återkommer. Därför visar vi ingen samtyckesbanner för icke-nödvändiga cookies. Om vi lägger till statistik eller annan icke-nödvändig lagring behöver vi ompröva detta och vid behov be om samtycke innan den aktiveras.
+
+NY TEXT:
+________________________________________
+
+
+[0520] Integritet & lagring > section3
+SPRÅK: SV
+ORIGINAL:
+Externa tjänster
+
+NY TEXT:
+________________________________________
+
+
+[0521] Integritet & lagring > body3
+SPRÅK: SV
+ORIGINAL:
+Webbplatsen laddar typsnitt från Google Fonts. Sidan Tips & länkar kan ladda omslagsbilder från externa bildservrar och en videominiatyr från YouTube. När sådana resurser laddas kan din webbläsare kontakta dessa leverantörer och dela tekniska anslutningsuppgifter, till exempel IP-adress. När du väljer en extern länk gäller den webbplatsens egen integritetspolicy.
+
+NY TEXT:
+________________________________________
+
+
+[0522] Integritet & lagring > section4
+SPRÅK: SV
+ORIGINAL:
+Radera dina sparade uppgifter
+
+NY TEXT:
+________________________________________
+
+
+[0523] Integritet & lagring > body4
+SPRÅK: SV
+ORIGINAL:
+Du kan radera HemmaRedos lokalt sparade hushållsplan, vänplan och språkval och utrustningsval här. Detta kan inte ångras. Om du rensar webbläsarens webbplatsdata kan uppgifterna också försvinna.
+
+NY TEXT:
+________________________________________
+
+
+[0524] Integritet & lagring > clear
+SPRÅK: SV
+ORIGINAL:
+Radera mina sparade uppgifter
+
+NY TEXT:
+________________________________________
+
+
+[0525] Integritet & lagring > confirm
+SPRÅK: SV
+ORIGINAL:
+Vill du radera din plan, vänplan, språkval och inköpslista från den här webbläsaren? Det går inte att ångra.
+
+NY TEXT:
+________________________________________
+
+
+[0526] Integritet & lagring > section5
+SPRÅK: SV
+ORIGINAL:
+Vem ansvarar?
+
+NY TEXT:
+________________________________________
+
+
+[0527] Integritet & lagring > body5
+SPRÅK: SV
+ORIGINAL:
+HemmaRedo är en oberoende prototyp och inte en myndighetstjänst. Den här texten beskriver den nuvarande tekniska lösningen, men är inte en komplett juridisk integritetspolicy inför offentlig lansering.
+
+NY TEXT:
+________________________________________
+
+
+[0528] Integritet & lagring > close
+SPRÅK: SV
+ORIGINAL:
+Till startsidan
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A10. TELEFONLISTAN – ALLA SYNLIGA STATISKA TEXTER
+==========================================================================
+
+
+[0529] Telefonlista > Synligt element 1
+SPRÅK: SV
+ORIGINAL:
+Viktiga nummer – HemmaRedo
+
+NY TEXT:
+________________________________________
+
+
+[0530] Telefonlista > Synligt element 2
+SPRÅK: SV
+ORIGINAL:
+⌂ HemmaRedo.
+
+NY TEXT:
+________________________________________
+
+
+[0531] Telefonlista > Synligt element 3
+SPRÅK: SV
+ORIGINAL:
+← Till Tips & länkar
+
+NY TEXT:
+________________________________________
+
+
+[0532] Telefonlista > Synligt element 4
+SPRÅK: SV
+ORIGINAL:
+DIN UTSKRIVBARA TELEFONLISTA
+
+NY TEXT:
+________________________________________
+
+
+[0533] Telefonlista > Synligt element 5
+SPRÅK: SV
+ORIGINAL:
+Viktiga nummer. Alltid nära.
+
+NY TEXT:
+________________________________________
+
+
+[0534] Telefonlista > Synligt element 6
+SPRÅK: SV
+ORIGINAL:
+När mobilen är urladdad eller nätet inte fungerar är det skönt att ha viktiga nummer på papper. Fyll i dina egna kontakter och skriv ut ett blad att lägga i krislådan.
+
+NY TEXT:
+________________________________________
+
+
+[0535] Telefonlista > Synligt element 7
+SPRÅK: SV
+ORIGINAL:
+Viktiga samhällsnummer
+
+NY TEXT:
+________________________________________
+
+
+[0536] Telefonlista > Synligt element 8
+SPRÅK: SV
+ORIGINAL:
+112
+
+NY TEXT:
+________________________________________
+
+
+[0537] Telefonlista > Synligt element 9
+SPRÅK: SV
+ORIGINAL:
+Akut nödsituation – ambulans, polis eller räddningstjänst
+
+NY TEXT:
+________________________________________
+
+
+[0538] Telefonlista > Synligt element 10
+SPRÅK: SV
+ORIGINAL:
+113 13
+
+NY TEXT:
+________________________________________
+
+
+[0539] Telefonlista > Synligt element 11
+SPRÅK: SV
+ORIGINAL:
+Information om allvarliga olyckor och kriser
+
+NY TEXT:
+________________________________________
+
+
+[0540] Telefonlista > Synligt element 12
+SPRÅK: SV
+ORIGINAL:
+114 14
+
+NY TEXT:
+________________________________________
+
+
+[0541] Telefonlista > Synligt element 13
+SPRÅK: SV
+ORIGINAL:
+Polisen – ärenden som inte är akuta
+
+NY TEXT:
+________________________________________
+
+
+[0542] Telefonlista > Synligt element 14
+SPRÅK: SV
+ORIGINAL:
+1177
+
+NY TEXT:
+________________________________________
+
+
+[0543] Telefonlista > Synligt element 15
+SPRÅK: SV
+ORIGINAL:
+Sjukvårdsrådgivning när det inte är akut
+
+NY TEXT:
+________________________________________
+
+
+[0544] Telefonlista > Synligt element 16
+SPRÅK: SV
+ORIGINAL:
+Ring endast 112 vid akuta nödsituationer. Källa:
+
+NY TEXT:
+________________________________________
+
+
+[0545] Telefonlista > Synligt element 17
+SPRÅK: SV
+ORIGINAL:
+Krisinformation.se
+
+NY TEXT:
+________________________________________
+
+
+[0546] Telefonlista > Synligt element 18
+SPRÅK: SV
+ORIGINAL:
+Dina egna kontakter
+
+NY TEXT:
+________________________________________
+
+
+[0547] Telefonlista > Synligt element 19
+SPRÅK: SV
+ORIGINAL:
+Lägg till exempelvis mormor, grannen eller familjens kontaktperson. Du kan också lämna rader tomma och fylla i för hand.
+
+NY TEXT:
+________________________________________
+
+
+[0548] Telefonlista > Synligt element 20
+SPRÅK: SV
+ORIGINAL:
+Din lista just nu
+
+NY TEXT:
+________________________________________
+
+
+[0549] Telefonlista > Synligt element 21
+SPRÅK: SV
+ORIGINAL:
+Uppdateras direkt
+
+NY TEXT:
+________________________________________
+
+
+[0550] Telefonlista > Synligt element 22
+SPRÅK: SV
+ORIGINAL:
+Fyll i ett namn eller nummer ovan så syns det här direkt.
+
+NY TEXT:
+________________________________________
+
+
+[0551] Telefonlista > Synligt element 23
+SPRÅK: SV
+ORIGINAL:
++ Lägg till kontakt
+
+NY TEXT:
+________________________________________
+
+
+[0552] Telefonlista > Synligt element 24
+SPRÅK: SV
+ORIGINAL:
+Hushåll eller familjenamn (frivilligt)
+
+NY TEXT:
+________________________________________
+
+
+[0553] Telefonlista > Synligt element 25
+SPRÅK: SV
+ORIGINAL:
+Mötesplats eller viktig adress (frivilligt)
+
+NY TEXT:
+________________________________________
+
+
+[0554] Telefonlista > Synligt element 26
+SPRÅK: SV
+ORIGINAL:
+▤ Skriv ut / spara som PDF
+
+NY TEXT:
+________________________________________
+
+
+[0555] Telefonlista > Synligt element 27
+SPRÅK: SV
+ORIGINAL:
+Välj ”Spara som PDF” i webbläsarens utskriftsruta om du vill skapa en PDF-fil.
+
+NY TEXT:
+________________________________________
+
+
+[0556] Telefonlista > Synligt element 28
+SPRÅK: SV
+ORIGINAL:
+🔒 Dina egna nummer skickas inte till HemmaRedo och sparas inte i webbplatsens lagring. De finns endast i formuläret medan sidan är öppen.
+
+NY TEXT:
+________________________________________
+
+
+[0557] Telefonlista > Synligt element 29
+SPRÅK: SV
+ORIGINAL:
+Så här kommer utskriften att se ut
+
+NY TEXT:
+________________________________________
+
+
+[0558] Telefonlista > Synligt element 31
+SPRÅK: SV
+ORIGINAL:
+Skriv ut och sätt upp hemma
+
+NY TEXT:
+________________________________________
+
+
+[0559] Telefonlista > Synligt element 32
+SPRÅK: SV
+ORIGINAL:
+Viktiga nummer
+
+NY TEXT:
+________________________________________
+
+
+[0560] Telefonlista > Synligt element 33
+SPRÅK: SV
+ORIGINAL:
+En lista för när mobilen eller internet inte fungerar
+
+NY TEXT:
+________________________________________
+
+
+[0561] Telefonlista > Synligt element 36
+SPRÅK: SV
+ORIGINAL:
+Akuta nödsituationer
+
+NY TEXT:
+________________________________________
+
+
+[0562] Telefonlista > Synligt element 38
+SPRÅK: SV
+ORIGINAL:
+Information vid kris
+
+NY TEXT:
+________________________________________
+
+
+[0563] Telefonlista > Synligt element 40
+SPRÅK: SV
+ORIGINAL:
+Polisen, inte akut
+
+NY TEXT:
+________________________________________
+
+
+[0564] Telefonlista > Synligt element 42
+SPRÅK: SV
+ORIGINAL:
+Sjukvårdsrådgivning
+
+NY TEXT:
+________________________________________
+
+
+[0565] Telefonlista > Synligt element 43
+SPRÅK: SV
+ORIGINAL:
+112 – endast vid akut fara.
+
+NY TEXT:
+________________________________________
+
+
+[0566] Telefonlista > Synligt element 44
+SPRÅK: SV
+ORIGINAL:
+Familj, vänner och viktiga kontakter
+
+NY TEXT:
+________________________________________
+
+
+[0567] Telefonlista > Synligt element 45
+SPRÅK: SV
+ORIGINAL:
+Mötesplats eller viktig adress
+
+NY TEXT:
+________________________________________
+
+
+[0568] Telefonlista > Synligt element 46
+SPRÅK: SV
+ORIGINAL:
+Förvara listan där den är lätt att hitta, exempelvis på kylskåpet eller i krislådan. Kontrollera numren regelbundet.
+
+NY TEXT:
+________________________________________
+
+
+[0569] Telefonlista > Synligt element 47
+SPRÅK: SV
+ORIGINAL:
+Källa: Krisinformation.se · HemmaRedo
+
+NY TEXT:
+________________________________________
+
+
+[0570] Telefonlista > Fält-/knapptext i formulär
+SPRÅK: SV
+ORIGINAL:
+Namn eller relation
+
+NY TEXT:
+________________________________________
+
+
+[0571] Telefonlista > Fält-/knapptext i formulär
+SPRÅK: SV
+ORIGINAL:
+Telefonnummer
+
+NY TEXT:
+________________________________________
+
+
+[0572] Telefonlista > Fält-/knapptext i formulär
+SPRÅK: SV
+ORIGINAL:
+Ta bort kontakt
+
+NY TEXT:
+________________________________________
+
+
+[0573] Telefonlista > Fält-/knapptext i formulär
+SPRÅK: SV
+ORIGINAL:
+En lista för när mobilen eller internet inte fungerar
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A11. META OCH WEBBLÄSARTEXTER
+==========================================================================
+
+
+[0574] Startsida > Flikens titel
+SPRÅK: SV
+ORIGINAL:
+HemmaRedo – Ett tryggare hem börjar här
+
+NY TEXT:
+________________________________________
+
+
+[0575] Startsida > Sökmotor-/delningsbeskrivning
+SPRÅK: SV
+ORIGINAL:
+Ett tryggare hem börjar här. Gör en enkel genomgång av ditt hushåll och få en personlig plan för hemberedskap. Gratis och utan konto.
+
+NY TEXT:
+________________________________________
+
+
+[0576] Telefonlista > Flikens titel
+SPRÅK: SV
+ORIGINAL:
+Viktiga nummer – HemmaRedo
+
+NY TEXT:
+________________________________________
+
+
+[0577] Telefonlista > Sökmotor-/delningsbeskrivning
+SPRÅK: SV
+ORIGINAL:
+Skapa och skriv ut din egen telefonlista med viktiga svenska nummer och familjens egna kontakter.
+
+NY TEXT:
+________________________________________
+
+
+[0578] Utrustningsbibliotek > Flikens titel
+SPRÅK: SV
+ORIGINAL:
+Utrustningsbibliotek – HemmaRedo
+
+NY TEXT:
+________________________________________
+
+
+[0579] Utrustningsbibliotek > Sökmotor-/delningsbeskrivning
+SPRÅK: SV
+ORIGINAL:
+Utforska utrustning för hemberedskap. Se exempel, alternativ och skapa en egen prioriteringslista.
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+A12. EXTRA SVENSKA TEXTER I DJURFLÖDET OCH FUNKTIONER
+==========================================================================
+Dessa strängar är inbyggda i appens logik och inte i huvudordlistan.
+
+
+[0580] Formulär > Djursteget > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Vilka djur har ni?
+
+NY TEXT:
+________________________________________
+
+
+[0581] Formulär > Djursteget > Hjälptext
+SPRÅK: SV
+ORIGINAL:
+Välj art och antal så anpassas din krisplan. Om du tidigare angav ett antal djur hittar du dem under Övriga djur.
+
+NY TEXT:
+________________________________________
+
+
+[0582] Formulär > Djursteget > Validering
+SPRÅK: SV
+ORIGINAL:
+Ange minst ett djur, eller avmarkera Husdjur i föregående steg.
+
+NY TEXT:
+________________________________________
+
+
+[0583] Formulär > Steg > Djur
+SPRÅK: SV
+ORIGINAL:
+Dina djur
+
+NY TEXT:
+________________________________________
+
+
+[0584] Formulär > Steg > Djur > Beskrivning
+SPRÅK: SV
+ORIGINAL:
+Djurart och antal
+
+NY TEXT:
+________________________________________
+
+
+[0585] Formulär > Extra vatten > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Extra vatten till djuren
+
+NY TEXT:
+________________________________________
+
+
+[0586] Formulär > Extra vatten > Fråga
+SPRÅK: SV
+ORIGINAL:
+Hur många liter dricksvatten behöver alla era djur tillsammans per dygn? Uppskatta utifrån deras vanliga förbrukning eller rådgör med veterinär. Om du inte vet: lämna tomt.
+
+NY TEXT:
+________________________________________
+
+
+[0587] Formulär > Extra vatten > Etikett
+SPRÅK: SV
+ORIGINAL:
+Liter per dygn (frivilligt)
+
+NY TEXT:
+________________________________________
+
+
+[0588] Formulär > Extra vatten > Not
+SPRÅK: SV
+ORIGINAL:
+Mängden läggs ovanpå hushållets vattenplanering för sju dygn. Den är inte ett medicinskt eller veterinärt riktvärde.
+
+NY TEXT:
+________________________________________
+
+
+[0589] Formulär > Djurfoder > Etikett
+SPRÅK: SV
+ORIGINAL:
+Hur många dygn räcker djurens foder?
+
+NY TEXT:
+________________________________________
+
+
+[0590] Formulär > Djurfoder > Hjälptext
+SPRÅK: SV
+ORIGINAL:
+Räkna för alla era djur. Sträva efter minst sju dygn.
+
+NY TEXT:
+________________________________________
+
+
+[0591] Formulär > Bostad > Feltext
+SPRÅK: SV
+ORIGINAL:
+Välj boendetyp innan du fortsätter.
+
+NY TEXT:
+________________________________________
+
+
+[0592] Min plan > Reservplaner > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Tänk en reservplan
+
+NY TEXT:
+________________________________________
+
+
+[0593] Min plan > Reservplaner > Förklarande text
+SPRÅK: SV
+ORIGINAL:
+Exempel på olika lösningar – välj det som passar er. Tre lösningar är ett tankesätt, inte ett krav.
+
+NY TEXT:
+________________________________________
+
+
+[0594] Min plan > Inköpslista > Knapp
+SPRÅK: SV
+ORIGINAL:
+Visa och skriv ut
+
+NY TEXT:
+________________________________________
+
+
+[0595] Min plan > Inköpslista > Hjälp
+SPRÅK: SV
+ORIGINAL:
+Saker som finns på inköpslistan
+
+NY TEXT:
+________________________________________
+
+
+[0596] Min plan > Djur > Vattenberäkning
+SPRÅK: SV
+ORIGINAL:
+Djurens extra vatten: inte beräknat (din uppskattning för sju dygn)
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+DEL B – ENGELSKA TEXTER (REFERENS)
+==========================================================================
+
+
+==========================================================================
+B1. GEMENSAMMA TEXTER
+==========================================================================
+
+
+[0597] HemmaRedo > Shared copy > start
+SPRÅK: EN
+ORIGINAL:
+Home
+
+NY TEXT:
+________________________________________
+
+
+[0598] HemmaRedo > Shared copy > yourPlan
+SPRÅK: EN
+ORIGINAL:
+My plan
+
+NY TEXT:
+________________________________________
+
+
+[0599] HemmaRedo > Shared copy > how
+SPRÅK: EN
+ORIGINAL:
+How it works
+
+NY TEXT:
+________________________________________
+
+
+[0600] HemmaRedo > Shared copy > help
+SPRÅK: EN
+ORIGINAL:
+Help a friend
+
+NY TEXT:
+________________________________________
+
+
+[0601] HemmaRedo > Shared copy > guides
+SPRÅK: EN
+ORIGINAL:
+Advice & links
+
+NY TEXT:
+________________________________________
+
+
+[0602] HemmaRedo > Shared copy > menu
+SPRÅK: EN
+ORIGINAL:
+Open menu
+
+NY TEXT:
+________________________________________
+
+
+[0603] HemmaRedo > Shared copy > headline
+SPRÅK: EN
+ORIGINAL:
+A safer home starts here.
+
+NY TEXT:
+________________________________________
+
+
+[0604] HemmaRedo > Shared copy > intro
+SPRÅK: EN
+ORIGINAL:
+See how prepared your household is and get a simple plan.
+
+NY TEXT:
+________________________________________
+
+
+[0605] HemmaRedo > Shared copy > getStarted
+SPRÅK: EN
+ORIGINAL:
+Get started
+
+NY TEXT:
+________________________________________
+
+
+[0606] HemmaRedo > Shared copy > noLogin
+SPRÅK: EN
+ORIGINAL:
+About 3 minutes. Free.
+No account needed.
+
+NY TEXT:
+________________________________________
+
+
+[0607] HemmaRedo > Shared copy > simple
+SPRÅK: EN
+ORIGINAL:
+Simple and clear
+
+NY TEXT:
+________________________________________
+
+
+[0608] HemmaRedo > Shared copy > authorities
+SPRÅK: EN
+ORIGINAL:
+Based on Swedish public guidance
+
+NY TEXT:
+________________________________________
+
+
+[0609] HemmaRedo > Shared copy > tailored
+SPRÅK: EN
+ORIGINAL:
+Tailored to your household
+
+NY TEXT:
+________________________________________
+
+
+[0610] HemmaRedo > Shared copy > neighbors
+SPRÅK: EN
+ORIGINAL:
+Help a friend or neighbour
+
+NY TEXT:
+________________________________________
+
+
+[0611] HemmaRedo > Shared copy > little
+SPRÅK: EN
+ORIGINAL:
+Small steps make a difference.
+
+NY TEXT:
+________________________________________
+
+
+[0612] HemmaRedo > Shared copy > littleDesc
+SPRÅK: EN
+ORIGINAL:
+You don’t need to do everything at once. Take it one step at a time.
+
+NY TEXT:
+________________________________________
+
+
+[0613] HemmaRedo > Shared copy > stronger
+SPRÅK: EN
+ORIGINAL:
+Stronger together.
+
+NY TEXT:
+________________________________________
+
+
+[0614] HemmaRedo > Shared copy > strongerDesc
+SPRÅK: EN
+ORIGINAL:
+Preparedness is about caring for ourselves and each other.
+
+NY TEXT:
+________________________________________
+
+
+[0615] HemmaRedo > Shared copy > discover
+SPRÅK: EN
+ORIGINAL:
+Discover more
+
+NY TEXT:
+________________________________________
+
+
+[0616] HemmaRedo > Shared copy > personal
+SPRÅK: EN
+ORIGINAL:
+Your personal plan
+
+NY TEXT:
+________________________________________
+
+
+[0617] HemmaRedo > Shared copy > step
+SPRÅK: EN
+ORIGINAL:
+Step
+
+NY TEXT:
+________________________________________
+
+
+[0618] HemmaRedo > Shared copy > of
+SPRÅK: EN
+ORIGINAL:
+of
+
+NY TEXT:
+________________________________________
+
+
+[0619] HemmaRedo > Shared copy > back
+SPRÅK: EN
+ORIGINAL:
+Back
+
+NY TEXT:
+________________________________________
+
+
+[0620] HemmaRedo > Shared copy > next
+SPRÅK: EN
+ORIGINAL:
+Next step
+
+NY TEXT:
+________________________________________
+
+
+[0621] HemmaRedo > Shared copy > seePlan
+SPRÅK: EN
+ORIGINAL:
+See my plan
+
+NY TEXT:
+________________________________________
+
+
+[0622] HemmaRedo > Shared copy > stepNames > 1
+SPRÅK: EN
+ORIGINAL:
+Household
+
+NY TEXT:
+________________________________________
+
+
+[0623] HemmaRedo > Shared copy > stepNames > 2
+SPRÅK: EN
+ORIGINAL:
+Home
+
+NY TEXT:
+________________________________________
+
+
+[0624] HemmaRedo > Shared copy > stepNames > 3
+SPRÅK: EN
+ORIGINAL:
+Equipment
+
+NY TEXT:
+________________________________________
+
+
+[0625] HemmaRedo > Shared copy > stepNames > 4
+SPRÅK: EN
+ORIGINAL:
+Special needs
+
+NY TEXT:
+________________________________________
+
+
+[0626] HemmaRedo > Shared copy > stepNames > 5
+SPRÅK: EN
+ORIGINAL:
+Everyday life
+
+NY TEXT:
+________________________________________
+
+
+[0627] HemmaRedo > Shared copy > stepNames > 6
+SPRÅK: EN
+ORIGINAL:
+Your plan
+
+NY TEXT:
+________________________________________
+
+
+[0628] HemmaRedo > Shared copy > stepDescriptions > 1
+SPRÅK: EN
+ORIGINAL:
+Who lives here?
+
+NY TEXT:
+________________________________________
+
+
+[0629] HemmaRedo > Shared copy > stepDescriptions > 2
+SPRÅK: EN
+ORIGINAL:
+What kind of home?
+
+NY TEXT:
+________________________________________
+
+
+[0630] HemmaRedo > Shared copy > stepDescriptions > 3
+SPRÅK: EN
+ORIGINAL:
+What do you have?
+
+NY TEXT:
+________________________________________
+
+
+[0631] HemmaRedo > Shared copy > stepDescriptions > 4
+SPRÅK: EN
+ORIGINAL:
+Anything to consider?
+
+NY TEXT:
+________________________________________
+
+
+[0632] HemmaRedo > Shared copy > stepDescriptions > 5
+SPRÅK: EN
+ORIGINAL:
+Water and food
+
+NY TEXT:
+________________________________________
+
+
+[0633] HemmaRedo > Shared copy > stepDescriptions > 6
+SPRÅK: EN
+ORIGINAL:
+Your next steps
+
+NY TEXT:
+________________________________________
+
+
+[0634] HemmaRedo > Shared copy > stepQuestions > 1
+SPRÅK: EN
+ORIGINAL:
+Who lives in your household?
+
+NY TEXT:
+________________________________________
+
+
+[0635] HemmaRedo > Shared copy > stepQuestions > 2
+SPRÅK: EN
+ORIGINAL:
+What type of home do you live in?
+
+NY TEXT:
+________________________________________
+
+
+[0636] HemmaRedo > Shared copy > stepQuestions > 3
+SPRÅK: EN
+ORIGINAL:
+What do you already have?
+
+NY TEXT:
+________________________________________
+
+
+[0637] HemmaRedo > Shared copy > stepQuestions > 4
+SPRÅK: EN
+ORIGINAL:
+Are there any special needs?
+
+NY TEXT:
+________________________________________
+
+
+[0638] HemmaRedo > Shared copy > stepQuestions > 5
+SPRÅK: EN
+ORIGINAL:
+How much water and food do you have?
+
+NY TEXT:
+________________________________________
+
+
+[0639] HemmaRedo > Shared copy > stepSubtitles > 1
+SPRÅK: EN
+ORIGINAL:
+Include everyone who regularly lives here.
+
+NY TEXT:
+________________________________________
+
+
+[0640] HemmaRedo > Shared copy > stepSubtitles > 2
+SPRÅK: EN
+ORIGINAL:
+This helps us tailor your advice.
+
+NY TEXT:
+________________________________________
+
+
+[0641] HemmaRedo > Shared copy > stepSubtitles > 3
+SPRÅK: EN
+ORIGINAL:
+Select what you have. It is fine to skip this step.
+
+NY TEXT:
+________________________________________
+
+
+[0642] HemmaRedo > Shared copy > stepSubtitles > 4
+SPRÅK: EN
+ORIGINAL:
+Choose what applies. You can skip this question.
+
+NY TEXT:
+________________________________________
+
+
+[0643] HemmaRedo > Shared copy > stepSubtitles > 5
+SPRÅK: EN
+ORIGINAL:
+An estimate is fine. Zero is also a valid answer.
+
+NY TEXT:
+________________________________________
+
+
+[0644] HemmaRedo > Shared copy > adults
+SPRÅK: EN
+ORIGINAL:
+Adults
+
+NY TEXT:
+________________________________________
+
+
+[0645] HemmaRedo > Shared copy > adultInfo
+SPRÅK: EN
+ORIGINAL:
+18 years and older
+
+NY TEXT:
+________________________________________
+
+
+[0646] HemmaRedo > Shared copy > children
+SPRÅK: EN
+ORIGINAL:
+Children
+
+NY TEXT:
+________________________________________
+
+
+[0647] HemmaRedo > Shared copy > childInfo
+SPRÅK: EN
+ORIGINAL:
+0–17 years
+
+NY TEXT:
+________________________________________
+
+
+[0648] HemmaRedo > Shared copy > pets
+SPRÅK: EN
+ORIGINAL:
+Pets
+
+NY TEXT:
+________________________________________
+
+
+[0649] HemmaRedo > Shared copy > petInfo
+SPRÅK: EN
+ORIGINAL:
+Living with you
+
+NY TEXT:
+________________________________________
+
+
+[0650] HemmaRedo > Shared copy > apartment
+SPRÅK: EN
+ORIGINAL:
+Apartment
+
+NY TEXT:
+________________________________________
+
+
+[0651] HemmaRedo > Shared copy > house
+SPRÅK: EN
+ORIGINAL:
+Detached house
+
+NY TEXT:
+________________________________________
+
+
+[0652] HemmaRedo > Shared copy > townhouse
+SPRÅK: EN
+ORIGINAL:
+Townhouse / semi-detached
+
+NY TEXT:
+________________________________________
+
+
+[0653] HemmaRedo > Shared copy > otherHome
+SPRÅK: EN
+ORIGINAL:
+Other
+
+NY TEXT:
+________________________________________
+
+
+[0654] HemmaRedo > Shared copy > equipmentNames > torch
+SPRÅK: EN
+ORIGINAL:
+Flashlights
+
+NY TEXT:
+________________________________________
+
+
+[0655] HemmaRedo > Shared copy > equipmentNames > radio
+SPRÅK: EN
+ORIGINAL:
+Battery radio
+
+NY TEXT:
+________________________________________
+
+
+[0656] HemmaRedo > Shared copy > equipmentNames > stove
+SPRÅK: EN
+ORIGINAL:
+Camping stove
+
+NY TEXT:
+________________________________________
+
+
+[0657] HemmaRedo > Shared copy > equipmentNames > powerbank
+SPRÅK: EN
+ORIGINAL:
+Power bank
+
+NY TEXT:
+________________________________________
+
+
+[0658] HemmaRedo > Shared copy > equipmentNames > fireplace
+SPRÅK: EN
+ORIGINAL:
+Wood stove
+
+NY TEXT:
+________________________________________
+
+
+[0659] HemmaRedo > Shared copy > equipmentNames > containers
+SPRÅK: EN
+ORIGINAL:
+Water containers
+
+NY TEXT:
+________________________________________
+
+
+[0660] HemmaRedo > Shared copy > equipmentNames > cans
+SPRÅK: EN
+ORIGINAL:
+Emergency food
+
+NY TEXT:
+________________________________________
+
+
+[0661] HemmaRedo > Shared copy > equipmentNames > firstaid
+SPRÅK: EN
+ORIGINAL:
+First-aid kit
+
+NY TEXT:
+________________________________________
+
+
+[0662] HemmaRedo > Shared copy > equipmentNames > hygiene
+SPRÅK: EN
+ORIGINAL:
+Hygiene supplies
+
+NY TEXT:
+________________________________________
+
+
+[0663] HemmaRedo > Shared copy > equipmentNames > blankets
+SPRÅK: EN
+ORIGINAL:
+Warm blankets
+
+NY TEXT:
+________________________________________
+
+
+[0664] HemmaRedo > Shared copy > needNames > smallKids
+SPRÅK: EN
+ORIGINAL:
+Young children
+
+NY TEXT:
+________________________________________
+
+
+[0665] HemmaRedo > Shared copy > needNames > pets
+SPRÅK: EN
+ORIGINAL:
+Pets
+
+NY TEXT:
+________________________________________
+
+
+[0666] HemmaRedo > Shared copy > needNames > medical
+SPRÅK: EN
+ORIGINAL:
+Medical needs
+
+NY TEXT:
+________________________________________
+
+
+[0667] HemmaRedo > Shared copy > needNames > mobility
+SPRÅK: EN
+ORIGINAL:
+Reduced mobility
+
+NY TEXT:
+________________________________________
+
+
+[0668] HemmaRedo > Shared copy > needNames > electric
+SPRÅK: EN
+ORIGINAL:
+Electrical equipment
+
+NY TEXT:
+________________________________________
+
+
+[0669] HemmaRedo > Shared copy > needNames > other
+SPRÅK: EN
+ORIGINAL:
+Other
+
+NY TEXT:
+________________________________________
+
+
+[0670] HemmaRedo > Shared copy > needFoot
+SPRÅK: EN
+ORIGINAL:
+Do not enter medical details. Just indicate whether extra planning is required.
+
+NY TEXT:
+________________________________________
+
+
+[0671] HemmaRedo > Shared copy > waterStored
+SPRÅK: EN
+ORIGINAL:
+Water in storage
+
+NY TEXT:
+________________________________________
+
+
+[0672] HemmaRedo > Shared copy > waterStoredHint
+SPRÅK: EN
+ORIGINAL:
+How many litres of drinking water do you have?
+
+NY TEXT:
+________________________________________
+
+
+[0673] HemmaRedo > Shared copy > liters
+SPRÅK: EN
+ORIGINAL:
+litres
+
+NY TEXT:
+________________________________________
+
+
+[0674] HemmaRedo > Shared copy > foodDays
+SPRÅK: EN
+ORIGINAL:
+Food in storage
+
+NY TEXT:
+________________________________________
+
+
+[0675] HemmaRedo > Shared copy > foodDaysHint
+SPRÅK: EN
+ORIGINAL:
+For roughly how many days would your food last?
+
+NY TEXT:
+________________________________________
+
+
+[0676] HemmaRedo > Shared copy > days
+SPRÅK: EN
+ORIGINAL:
+days
+
+NY TEXT:
+________________________________________
+
+
+[0677] HemmaRedo > Shared copy > waterHint
+SPRÅK: EN
+ORIGINAL:
+Allow 3–5 litres per person per day. Pets and special needs require additional water.
+
+NY TEXT:
+________________________________________
+
+
+[0678] HemmaRedo > Shared copy > resultsLabel
+SPRÅK: EN
+ORIGINAL:
+Your result
+
+NY TEXT:
+________________________________________
+
+
+[0679] HemmaRedo > Shared copy > resultsHeading
+SPRÅK: EN
+ORIGINAL:
+You’re on your way!
+
+NY TEXT:
+________________________________________
+
+
+[0680] HemmaRedo > Shared copy > allDoneHeading
+SPRÅK: EN
+ORIGINAL:
+You have made a great start!
+
+NY TEXT:
+________________________________________
+
+
+[0681] HemmaRedo > Shared copy > resultText
+SPRÅK: EN
+ORIGINAL:
+This is a good start. Here is what you have in place and what you can improve for a week when daily life is disrupted.
+
+NY TEXT:
+________________________________________
+
+
+[0682] HemmaRedo > Shared copy > completed
+SPRÅK: EN
+ORIGINAL:
+complete
+
+NY TEXT:
+________________________________________
+
+
+[0683] HemmaRedo > Shared copy > progressDisclaimer
+SPRÅK: EN
+ORIGINAL:
+The percentage counts steps completed in your plan – it is not a measure of safety in an actual emergency.
+
+NY TEXT:
+________________________________________
+
+
+[0684] HemmaRedo > Shared copy > tailoredFor
+SPRÅK: EN
+ORIGINAL:
+Tailored to your household
+
+NY TEXT:
+________________________________________
+
+
+[0685] HemmaRedo > Shared copy > adultsCount
+SPRÅK: EN
+ORIGINAL:
+adults
+
+NY TEXT:
+________________________________________
+
+
+[0686] HemmaRedo > Shared copy > childrenCount
+SPRÅK: EN
+ORIGINAL:
+children
+
+NY TEXT:
+________________________________________
+
+
+[0687] HemmaRedo > Shared copy > petsCount
+SPRÅK: EN
+ORIGINAL:
+pets
+
+NY TEXT:
+________________________________________
+
+
+[0688] HemmaRedo > Shared copy > prioritized
+SPRÅK: EN
+ORIGINAL:
+Your next good steps
+
+NY TEXT:
+________________________________________
+
+
+[0689] HemmaRedo > Shared copy > allSet
+SPRÅK: EN
+ORIGINAL:
+All suggested steps are marked done. Review them regularly.
+
+NY TEXT:
+________________________________________
+
+
+[0690] HemmaRedo > Shared copy > waterVolume
+SPRÅK: EN
+ORIGINAL:
+Basic amount for seven days
+
+NY TEXT:
+________________________________________
+
+
+[0691] HemmaRedo > Shared copy > waterExtra
+SPRÅK: EN
+ORIGINAL:
+Plus additional water for pets and special needs.
+
+NY TEXT:
+________________________________________
+
+
+[0692] HemmaRedo > Shared copy > viewPersonal
+SPRÅK: EN
+ORIGINAL:
+See your personal plan
+
+NY TEXT:
+________________________________________
+
+
+[0693] HemmaRedo > Shared copy > planDesc
+SPRÅK: EN
+ORIGINAL:
+Recommendations based on your answers. Check off what you have prepared and update your plan whenever things change.
+
+NY TEXT:
+________________________________________
+
+
+[0694] HemmaRedo > Shared copy > editAnswers
+SPRÅK: EN
+ORIGINAL:
+Change my answers
+
+NY TEXT:
+________________________________________
+
+
+[0695] HemmaRedo > Shared copy > outOf
+SPRÅK: EN
+ORIGINAL:
+of
+
+NY TEXT:
+________________________________________
+
+
+[0696] HemmaRedo > Shared copy > stepsDone
+SPRÅK: EN
+ORIGINAL:
+steps completed
+
+NY TEXT:
+________________________________________
+
+
+[0697] HemmaRedo > Shared copy > source
+SPRÅK: EN
+ORIGINAL:
+Read official guidance
+
+NY TEXT:
+________________________________________
+
+
+[0698] HemmaRedo > Shared copy > fromSources
+SPRÅK: EN
+ORIGINAL:
+Based on public guidance from Swedish authorities
+
+NY TEXT:
+________________________________________
+
+
+[0699] HemmaRedo > Shared copy > print
+SPRÅK: EN
+ORIGINAL:
+Print / save as PDF
+
+NY TEXT:
+________________________________________
+
+
+[0700] HemmaRedo > Shared copy > share
+SPRÅK: EN
+ORIGINAL:
+Share HemmaRedo
+
+NY TEXT:
+________________________________________
+
+
+[0701] HemmaRedo > Shared copy > newPlan
+SPRÅK: EN
+ORIGINAL:
+New plan
+
+NY TEXT:
+________________________________________
+
+
+[0702] HemmaRedo > Shared copy > printHint
+SPRÅK: EN
+ORIGINAL:
+Print your plan and keep it somewhere accessible even without the internet.
+
+NY TEXT:
+________________________________________
+
+
+[0703] HemmaRedo > Shared copy > noAccount
+SPRÅK: EN
+ORIGINAL:
+Your plan is stored only in this browser. No account is needed and we do not receive your household details.
+
+NY TEXT:
+________________________________________
+
+
+[0704] HemmaRedo > Shared copy > important
+SPRÅK: EN
+ORIGINAL:
+Important to know
+
+NY TEXT:
+________________________________________
+
+
+[0705] HemmaRedo > Shared copy > importantDesc
+SPRÅK: EN
+ORIGINAL:
+This is a simplified planning tool, not a complete risk assessment. Adapt the advice to your health, home and local conditions. Always follow official information during an emergency.
+
+NY TEXT:
+________________________________________
+
+
+[0706] HemmaRedo > Shared copy > useful
+SPRÅK: EN
+ORIGINAL:
+Useful links and numbers
+
+NY TEXT:
+________________________________________
+
+
+[0707] HemmaRedo > Shared copy > usefulDesc
+SPRÅK: EN
+ORIGINAL:
+Official sources worth keeping close.
+
+NY TEXT:
+________________________________________
+
+
+[0708] HemmaRedo > Shared copy > officialTitle
+SPRÅK: EN
+ORIGINAL:
+Krisinformation.se
+
+NY TEXT:
+________________________________________
+
+
+[0709] HemmaRedo > Shared copy > officialDesc
+SPRÅK: EN
+ORIGINAL:
+Official Swedish emergency guidance.
+
+NY TEXT:
+________________________________________
+
+
+[0710] HemmaRedo > Shared copy > numberTitle
+SPRÅK: EN
+ORIGINAL:
+112 · 113 13 · 1177
+
+NY TEXT:
+________________________________________
+
+
+[0711] HemmaRedo > Shared copy > numberDesc
+SPRÅK: EN
+ORIGINAL:
+112 for emergencies. 113 13 for crisis information. 1177 for healthcare advice.
+
+NY TEXT:
+________________________________________
+
+
+[0712] HemmaRedo > Shared copy > radioTitle
+SPRÅK: EN
+ORIGINAL:
+Swedish Radio P4
+
+NY TEXT:
+________________________________________
+
+
+[0713] HemmaRedo > Shared copy > radioDesc
+SPRÅK: EN
+ORIGINAL:
+Sweden’s preparedness channel. Keep a radio that works without mains power.
+
+NY TEXT:
+________________________________________
+
+
+[0714] HemmaRedo > Shared copy > openLink
+SPRÅK: EN
+ORIGINAL:
+Open source
+
+NY TEXT:
+________________________________________
+
+
+[0715] HemmaRedo > Shared copy > helpEyebrow
+SPRÅK: EN
+ORIGINAL:
+Help a friend
+
+NY TEXT:
+________________________________________
+
+
+[0716] HemmaRedo > Shared copy > helpTitle
+SPRÅK: EN
+ORIGINAL:
+Stronger together.
+
+NY TEXT:
+________________________________________
+
+
+[0717] HemmaRedo > Shared copy > helpLead
+SPRÅK: EN
+ORIGINAL:
+Preparedness is easier when you do it together. Help someone make a simple plan at their own pace.
+
+NY TEXT:
+________________________________________
+
+
+[0718] HemmaRedo > Shared copy > helpStart
+SPRÅK: EN
+ORIGINAL:
+Make a plan together
+
+NY TEXT:
+________________________________________
+
+
+[0719] HemmaRedo > Shared copy > helpSeparate
+SPRÅK: EN
+ORIGINAL:
+Your own plan is kept. Your friend’s answers are stored separately on this device.
+
+NY TEXT:
+________________________________________
+
+
+[0720] HemmaRedo > Shared copy > helpCard1
+SPRÅK: EN
+ORIGINAL:
+Start with a conversation
+
+NY TEXT:
+________________________________________
+
+
+[0721] HemmaRedo > Shared copy > helpText1
+SPRÅK: EN
+ORIGINAL:
+Ask what they already have and what would help the most.
+
+NY TEXT:
+________________________________________
+
+
+[0722] HemmaRedo > Shared copy > helpCard2
+SPRÅK: EN
+ORIGINAL:
+Do small things together
+
+NY TEXT:
+________________________________________
+
+
+[0723] HemmaRedo > Shared copy > helpText2
+SPRÅK: EN
+ORIGINAL:
+A water container, flashlight or phone list is a good start.
+
+NY TEXT:
+________________________________________
+
+
+[0724] HemmaRedo > Shared copy > helpCard3
+SPRÅK: EN
+ORIGINAL:
+Keep in touch
+
+NY TEXT:
+________________________________________
+
+
+[0725] HemmaRedo > Shared copy > helpText3
+SPRÅK: EN
+ORIGINAL:
+Agree on ways to support each other during a power outage.
+
+NY TEXT:
+________________________________________
+
+
+[0726] HemmaRedo > Shared copy > friendMode
+SPRÅK: EN
+ORIGINAL:
+You are helping a friend
+
+NY TEXT:
+________________________________________
+
+
+[0727] HemmaRedo > Shared copy > backToMine
+SPRÅK: EN
+ORIGINAL:
+Back to my plan
+
+NY TEXT:
+________________________________________
+
+
+[0728] HemmaRedo > Shared copy > friendName
+SPRÅK: EN
+ORIGINAL:
+Friend’s plan
+
+NY TEXT:
+________________________________________
+
+
+[0729] HemmaRedo > Shared copy > chooseLang
+SPRÅK: EN
+ORIGINAL:
+Choose language
+
+NY TEXT:
+________________________________________
+
+
+[0730] HemmaRedo > Shared copy > noProfile
+SPRÅK: EN
+ORIGINAL:
+Answer a few questions to get a personal plan.
+
+NY TEXT:
+________________________________________
+
+
+[0731] HemmaRedo > Shared copy > saveToHome
+SPRÅK: EN
+ORIGINAL:
+Tip: add HemmaRedo to your home screen to use it like an app.
+
+NY TEXT:
+________________________________________
+
+
+[0732] HemmaRedo > Shared copy > offline
+SPRÅK: EN
+ORIGINAL:
+The app can work offline after it has been opened and saved on the device. External links need internet.
+
+NY TEXT:
+________________________________________
+
+
+[0733] HemmaRedo > Shared copy > privacy
+SPRÅK: EN
+ORIGINAL:
+Privacy
+
+NY TEXT:
+________________________________________
+
+
+[0734] HemmaRedo > Shared copy > privacyText
+SPRÅK: EN
+ORIGINAL:
+Your answers are kept in this browser’s local storage. Clearing browser data may erase the plan. There is no syncing between devices yet.
+
+NY TEXT:
+________________________________________
+
+
+[0735] HemmaRedo > Shared copy > resetConfirm
+SPRÅK: EN
+ORIGINAL:
+Start over? Your saved answers and checked steps for this plan will be deleted.
+
+NY TEXT:
+________________________________________
+
+
+[0736] HemmaRedo > Shared copy > copied
+SPRÅK: EN
+ORIGINAL:
+Link copied!
+
+NY TEXT:
+________________________________________
+
+
+[0737] HemmaRedo > Shared copy > shared
+SPRÅK: EN
+ORIGINAL:
+Share the link so someone can make their own plan.
+
+NY TEXT:
+________________________________________
+
+
+[0738] HemmaRedo > Shared copy > validation
+SPRÅK: EN
+ORIGINAL:
+Add at least one person to continue.
+
+NY TEXT:
+________________________________________
+
+
+[0739] HemmaRedo > Shared copy > helpBtn
+SPRÅK: EN
+ORIGINAL:
+Help a friend
+
+NY TEXT:
+________________________________________
+
+
+[0740] HemmaRedo > Shared copy > resume
+SPRÅK: EN
+ORIGINAL:
+Continue my plan
+
+NY TEXT:
+________________________________________
+
+
+[0741] HemmaRedo > Shared copy > madeFor
+SPRÅK: EN
+ORIGINAL:
+For households in Sweden
+
+NY TEXT:
+________________________________________
+
+
+[0742] HemmaRedo > Shared copy > resetNote
+SPRÅK: EN
+ORIGINAL:
+A new plan replaces earlier answers for this profile.
+
+NY TEXT:
+________________________________________
+
+
+[0743] HemmaRedo > Shared copy > footer
+SPRÅK: EN
+ORIGINAL:
+An independent prototype based on public Swedish guidance. Not an official government service.
+
+NY TEXT:
+________________________________________
+
+
+[0744] HemmaRedo > Shared copy > medicalNote
+SPRÅK: EN
+ORIGINAL:
+Never enter sensitive medical information in this prototype.
+
+NY TEXT:
+________________________________________
+
+
+[0745] HemmaRedo > Shared copy > printDate
+SPRÅK: EN
+ORIGINAL:
+Printed
+
+NY TEXT:
+________________________________________
+
+
+[0746] HemmaRedo > Shared copy > useAgain
+SPRÅK: EN
+ORIGINAL:
+Continue whenever you like – your choices save automatically in this browser.
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+B2. HOW IT WORKS
+==========================================================================
+
+
+[0747] How it works > kicker
+SPRÅK: EN
+ORIGINAL:
+AN EASY PLACE TO START
+
+NY TEXT:
+________________________________________
+
+
+[0748] How it works > heading
+SPRÅK: EN
+ORIGINAL:
+A little preparation. More peace of mind.
+
+NY TEXT:
+________________________________________
+
+
+[0749] How it works > lead
+SPRÅK: EN
+ORIGINAL:
+You do not need to be an emergency preparedness expert. HemmaRedo helps you start with what matters, one small step at a time.
+
+NY TEXT:
+________________________________________
+
+
+[0750] How it works > topButton
+SPRÅK: EN
+ORIGINAL:
+Create my plan
+
+NY TEXT:
+________________________________________
+
+
+[0751] How it works > small
+SPRÅK: EN
+ORIGINAL:
+Free · About 3 minutes · No account
+
+NY TEXT:
+________________________________________
+
+
+[0752] How it works > howTitle
+SPRÅK: EN
+ORIGINAL:
+How it works
+
+NY TEXT:
+________________________________________
+
+
+[0753] How it works > howLead
+SPRÅK: EN
+ORIGINAL:
+Three simple steps from the first question to a plan that fits your home.
+
+NY TEXT:
+________________________________________
+
+
+[0754] How it works > s1
+SPRÅK: EN
+ORIGINAL:
+Tell us about your home
+
+NY TEXT:
+________________________________________
+
+
+[0755] How it works > d1
+SPRÅK: EN
+ORIGINAL:
+How many people live there? A flat or a house? Any pets? Answer only what is relevant to you.
+
+NY TEXT:
+________________________________________
+
+
+[0756] How it works > s2
+SPRÅK: EN
+ORIGINAL:
+See what you already have
+
+NY TEXT:
+________________________________________
+
+
+[0757] How it works > d2
+SPRÅK: EN
+ORIGINAL:
+Flashlights, water, a radio, heating and food. Tick what you have. You do not need to buy everything at once.
+
+NY TEXT:
+________________________________________
+
+
+[0758] How it works > s3
+SPRÅK: EN
+ORIGINAL:
+Get your own plan
+
+NY TEXT:
+________________________________________
+
+
+[0759] How it works > d3
+SPRÅK: EN
+ORIGINAL:
+We put together a personal checklist. Tick items off, print it and return whenever you want.
+
+NY TEXT:
+________________________________________
+
+
+[0760] How it works > previewLabel
+SPRÅK: EN
+ORIGINAL:
+AN EXAMPLE
+
+NY TEXT:
+________________________________________
+
+
+[0761] How it works > previewTitle
+SPRÅK: EN
+ORIGINAL:
+Your plan comes together.
+
+NY TEXT:
+________________________________________
+
+
+[0762] How it works > previewLead
+SPRÅK: EN
+ORIGINAL:
+Here is an example of a finished plan. Your real plan will be based on your answers.
+
+NY TEXT:
+________________________________________
+
+
+[0763] How it works > previewItem1
+SPRÅK: EN
+ORIGINAL:
+Water for the household
+
+NY TEXT:
+________________________________________
+
+
+[0764] How it works > previewItem2
+SPRÅK: EN
+ORIGINAL:
+Food without electricity
+
+NY TEXT:
+________________________________________
+
+
+[0765] How it works > previewItem3
+SPRÅK: EN
+ORIGINAL:
+Important information via P4
+
+NY TEXT:
+________________________________________
+
+
+[0766] How it works > previewNote
+SPRÅK: EN
+ORIGINAL:
+The progress meter shows how many items you have marked complete. It is not a measure of safety.
+
+NY TEXT:
+________________________________________
+
+
+[0767] How it works > faqTitle
+SPRÅK: EN
+ORIGINAL:
+Good to know
+
+NY TEXT:
+________________________________________
+
+
+[0768] How it works > q1
+SPRÅK: EN
+ORIGINAL:
+Does it cost anything?
+
+NY TEXT:
+________________________________________
+
+
+[0769] How it works > a1
+SPRÅK: EN
+ORIGINAL:
+No. HemmaRedo is free to use, without an account.
+
+NY TEXT:
+________________________________________
+
+
+[0770] How it works > q2
+SPRÅK: EN
+ORIGINAL:
+What happens to my answers?
+
+NY TEXT:
+________________________________________
+
+
+[0771] How it works > a2
+SPRÅK: EN
+ORIGINAL:
+They are stored locally in your browser on this device. They do not sync between devices and may disappear if you clear your browser data.
+
+NY TEXT:
+________________________________________
+
+
+[0772] How it works > q3
+SPRÅK: EN
+ORIGINAL:
+Is HemmaRedo a government service?
+
+NY TEXT:
+________________________________________
+
+
+[0773] How it works > a3
+SPRÅK: EN
+ORIGINAL:
+No. It is an independent planning tool. For official guidance and emergency updates, refer to Krisinformation.se.
+
+NY TEXT:
+________________________________________
+
+
+[0774] How it works > q4
+SPRÅK: EN
+ORIGINAL:
+Do I need to do everything right away?
+
+NY TEXT:
+________________________________________
+
+
+[0775] How it works > a4
+SPRÅK: EN
+ORIGINAL:
+No. Start with what matters most for your household. You can return to your checklist on the same device.
+
+NY TEXT:
+________________________________________
+
+
+[0776] How it works > closingTitle
+SPRÅK: EN
+ORIGINAL:
+Ready to take the first step?
+
+NY TEXT:
+________________________________________
+
+
+[0777] How it works > closingLead
+SPRÅK: EN
+ORIGINAL:
+Being a little more prepared does not have to be difficult.
+
+NY TEXT:
+________________________________________
+
+
+[0778] How it works > closingButton
+SPRÅK: EN
+ORIGINAL:
+Get started
+
+NY TEXT:
+________________________________________
+
+
+[0779] How it works > official
+SPRÅK: EN
+ORIGINAL:
+Read official advice at Krisinformation.se
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+B3. ADVICE & LINKS
+==========================================================================
+
+
+[0780] Advice & links > eyebrow
+SPRÅK: EN
+ORIGINAL:
+SELECTED RESOURCES
+
+NY TEXT:
+________________________________________
+
+
+[0781] Advice & links > title
+SPRÅK: EN
+ORIGINAL:
+Advice, knowledge & inspiration.
+
+NY TEXT:
+________________________________________
+
+
+[0782] Advice & links > intro
+SPRÅK: EN
+ORIGINAL:
+Want to feel better prepared? Here are official sources, podcasts and videos to help you get started, at your own pace.
+
+NY TEXT:
+________________________________________
+
+
+[0783] Advice & links > official
+SPRÅK: EN
+ORIGINAL:
+Start with trusted sources
+
+NY TEXT:
+________________________________________
+
+
+[0784] Advice & links > officialLead
+SPRÅK: EN
+ORIGINAL:
+During an emergency, follow the authorities’ current guidance.
+
+NY TEXT:
+________________________________________
+
+
+[0785] Advice & links > listen
+SPRÅK: EN
+ORIGINAL:
+For those who like listening
+
+NY TEXT:
+________________________________________
+
+
+[0786] Advice & links > listenLead
+SPRÅK: EN
+ORIGINAL:
+Different perspectives on household preparedness, practical solutions and supporting others.
+
+NY TEXT:
+________________________________________
+
+
+[0787] Advice & links > watch
+SPRÅK: EN
+ORIGINAL:
+Watch & learn
+
+NY TEXT:
+________________________________________
+
+
+[0788] Advice & links > watchLead
+SPRÅK: EN
+ORIGINAL:
+A selected talk to start with. More reviewed videos may be added later.
+
+NY TEXT:
+________________________________________
+
+
+[0789] Advice & links > featured
+SPRÅK: EN
+ORIGINAL:
+A GOOD STARTING POINT
+
+NY TEXT:
+________________________________________
+
+
+[0790] Advice & links > featuredTitle
+SPRÅK: EN
+ORIGINAL:
+An episode about the basics
+
+NY TEXT:
+________________________________________
+
+
+[0791] Advice & links > featuredText
+SPRÅK: EN
+ORIGINAL:
+Episode 126, Hemberedskap 1a, covers warmth, water, food and getting started.
+
+NY TEXT:
+________________________________________
+
+
+[0792] Advice & links > sourceTitle
+SPRÅK: EN
+ORIGINAL:
+Krisinformation.se
+
+NY TEXT:
+________________________________________
+
+
+[0793] Advice & links > sourceDesc
+SPRÅK: EN
+ORIGINAL:
+Official Swedish crisis information and preparedness advice.
+
+NY TEXT:
+________________________________________
+
+
+[0794] Advice & links > numbersTitle
+SPRÅK: EN
+ORIGINAL:
+Important phone numbers
+
+NY TEXT:
+________________________________________
+
+
+[0795] Advice & links > numbersDesc
+SPRÅK: EN
+ORIGINAL:
+When should you call 112, 113 13 or 1177?
+
+NY TEXT:
+________________________________________
+
+
+[0796] Advice & links > radioTitle
+SPRÅK: EN
+ORIGINAL:
+Swedish Radio P4
+
+NY TEXT:
+________________________________________
+
+
+[0797] Advice & links > radioDesc
+SPRÅK: EN
+ORIGINAL:
+Preparedness broadcaster for important public information.
+
+NY TEXT:
+________________________________________
+
+
+[0798] Advice & links > pod1
+SPRÅK: EN
+ORIGINAL:
+I väntan på katastrofen
+
+NY TEXT:
+________________________________________
+
+
+[0799] Advice & links > pod1Desc
+SPRÅK: EN
+ORIGINAL:
+Kalle Zackari Wahlström and Patrick Sellman discuss practical preparedness, small-scale living and everyday life, with humour.
+
+NY TEXT:
+________________________________________
+
+
+[0800] Advice & links > pod2
+SPRÅK: EN
+ORIGINAL:
+Vardagsprepping
+
+NY TEXT:
+________________________________________
+
+
+[0801] Advice & links > pod2Desc
+SPRÅK: EN
+ORIGINAL:
+Interviews and practical advice for building household preparedness step by step.
+
+NY TEXT:
+________________________________________
+
+
+[0802] Advice & links > pod3
+SPRÅK: EN
+ORIGINAL:
+Hemberedskap
+
+NY TEXT:
+________________________________________
+
+
+[0803] Advice & links > pod3Desc
+SPRÅK: EN
+ORIGINAL:
+Anette Staaf and Niklas Larsson discuss preparedness, safety and lessons from real events.
+
+NY TEXT:
+________________________________________
+
+
+[0804] Advice & links > videoTitle
+SPRÅK: EN
+ORIGINAL:
+MSB Live: Hemberedskap
+
+NY TEXT:
+________________________________________
+
+
+[0805] Advice & links > videoDesc
+SPRÅK: EN
+ORIGINAL:
+A Q&A where emergency communicators answer common questions about household preparedness. In Swedish.
+
+NY TEXT:
+________________________________________
+
+
+[0806] Advice & links > read
+SPRÅK: EN
+ORIGINAL:
+Open website
+
+NY TEXT:
+________________________________________
+
+
+[0807] Advice & links > listenAction
+SPRÅK: EN
+ORIGINAL:
+Listen to podcast
+
+NY TEXT:
+________________________________________
+
+
+[0808] Advice & links > episode
+SPRÅK: EN
+ORIGINAL:
+Listen to episode
+
+NY TEXT:
+________________________________________
+
+
+[0809] Advice & links > watchAction
+SPRÅK: EN
+ORIGINAL:
+Watch video
+
+NY TEXT:
+________________________________________
+
+
+[0810] Advice & links > independent
+SPRÅK: EN
+ORIGINAL:
+About these recommendations
+
+NY TEXT:
+________________________________________
+
+
+[0811] Advice & links > disclaimer
+SPRÅK: EN
+ORIGINAL:
+Podcasts and videos are suggestions for further learning, not official HemmaRedo advice. Independent creators may give guidance that differs from public authorities. During an emergency, follow official information.
+
+NY TEXT:
+________________________________________
+
+
+[0812] Advice & links > ctaTitle
+SPRÅK: EN
+ORIGINAL:
+Turn inspiration into action.
+
+NY TEXT:
+________________________________________
+
+
+[0813] Advice & links > ctaText
+SPRÅK: EN
+ORIGINAL:
+When you are ready, create a simple plan for your household – for free.
+
+NY TEXT:
+________________________________________
+
+
+[0814] Advice & links > ctaButton
+SPRÅK: EN
+ORIGINAL:
+Create my plan
+
+NY TEXT:
+________________________________________
+
+
+[0815] Advice & links > typePodcast
+SPRÅK: EN
+ORIGINAL:
+PODCAST
+
+NY TEXT:
+________________________________________
+
+
+[0816] Advice & links > typeVideo
+SPRÅK: EN
+ORIGINAL:
+VIDEO
+
+NY TEXT:
+________________________________________
+
+
+[0817] Advice & links > typeOfficial
+SPRÅK: EN
+ORIGINAL:
+OFFICIAL SOURCE
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+B4. CHECKLIST DETAILS
+==========================================================================
+
+
+[0818] My plan > Checklist > open
+SPRÅK: EN
+ORIGINAL:
+Read more and see examples
+
+NY TEXT:
+________________________________________
+
+
+[0819] My plan > Checklist > close
+SPRÅK: EN
+ORIGINAL:
+Hide details
+
+NY TEXT:
+________________________________________
+
+
+[0820] My plan > Checklist > examples
+SPRÅK: EN
+ORIGINAL:
+Examples of solutions
+
+NY TEXT:
+________________________________________
+
+
+[0821] My plan > Checklist > check
+SPRÅK: EN
+ORIGINAL:
+Worth checking
+
+NY TEXT:
+________________________________________
+
+
+[0822] My plan > Checklist > caution
+SPRÅK: EN
+ORIGINAL:
+Keep in mind
+
+NY TEXT:
+________________________________________
+
+
+[0823] My plan > Checklist > read
+SPRÅK: EN
+ORIGINAL:
+Read official guidance
+
+NY TEXT:
+________________________________________
+
+
+[0824] My plan > Checklist > intro
+SPRÅK: EN
+ORIGINAL:
+Open an item for practical examples and guidance. Mark it complete when you have a working solution – you do not need to buy every example.
+
+NY TEXT:
+________________________________________
+
+
+[0825] My plan > Checklist > details > water-store > intro
+SPRÅK: EN
+ORIGINAL:
+Plan for drinking water and other essential uses for everyone in the household.
+
+NY TEXT:
+________________________________________
+
+
+[0826] My plan > Checklist > details > water-store > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Clean, sealed food-grade water containers
+
+NY TEXT:
+________________________________________
+
+
+[0827] My plan > Checklist > details > water-store > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Store water in a cool, dark place. Opaque containers can reduce light exposure, but cleanliness and food-safe materials matter most.
+
+NY TEXT:
+________________________________________
+
+
+[0828] My plan > Checklist > details > water-store > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Bottled water and extra containers for collecting emergency water
+
+NY TEXT:
+________________________________________
+
+
+[0829] My plan > Checklist > details > water-store > check
+SPRÅK: EN
+ORIGINAL:
+A simple HemmaRedo tip: refresh the water at Midsummer and Christmas. Use the old water for plants, clean containers if needed and refill with fresh drinking water. Label each container with the filling date. Twice a year is our simple reminder, not an official requirement.
+
+NY TEXT:
+________________________________________
+
+
+[0830] My plan > Checklist > details > water-store > caution
+SPRÅK: EN
+ORIGINAL:
+Boiling and filtering do not remove every type of contamination.
+
+NY TEXT:
+________________________________________
+
+
+[0831] My plan > Checklist > details > food-week > intro
+SPRÅK: EN
+ORIGINAL:
+Start with foods your household actually eats, including options that need little water or cooking.
+
+NY TEXT:
+________________________________________
+
+
+[0832] My plan > Checklist > details > food-week > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Canned beans, fish, vegetables and ready meals
+
+NY TEXT:
+________________________________________
+
+
+[0833] My plan > Checklist > details > food-week > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Crispbread, oats, nuts and nut butter
+
+NY TEXT:
+________________________________________
+
+
+[0834] My plan > Checklist > details > food-week > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Rice, pasta and other dry foods
+
+NY TEXT:
+________________________________________
+
+
+[0835] My plan > Checklist > details > food-week > examples > 4
+SPRÅK: EN
+ORIGINAL:
+Foods for children, allergies or special diets
+
+NY TEXT:
+________________________________________
+
+
+[0836] My plan > Checklist > details > food-week > examples > 5
+SPRÅK: EN
+ORIGINAL:
+Manual can opener
+
+NY TEXT:
+________________________________________
+
+
+[0837] My plan > Checklist > details > food-week > check
+SPRÅK: EN
+ORIGINAL:
+Check dates and rotate supplies regularly.
+
+NY TEXT:
+________________________________________
+
+
+[0838] My plan > Checklist > details > food-week > caution
+SPRÅK: EN
+ORIGINAL:
+Plan for food safety when refrigeration stops.
+
+NY TEXT:
+________________________________________
+
+
+[0839] My plan > Checklist > details > cook-power > intro
+SPRÅK: EN
+ORIGINAL:
+Plan an alternative way to prepare food when electricity is unavailable.
+
+NY TEXT:
+________________________________________
+
+
+[0840] My plan > Checklist > details > cook-power > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Camping stove and suitable fuel
+
+NY TEXT:
+________________________________________
+
+
+[0841] My plan > Checklist > details > cook-power > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Outdoor grill where permitted
+
+NY TEXT:
+________________________________________
+
+
+[0842] My plan > Checklist > details > cook-power > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Thermos for hot water
+
+NY TEXT:
+________________________________________
+
+
+[0843] My plan > Checklist > details > cook-power > examples > 4
+SPRÅK: EN
+ORIGINAL:
+Meals needing minimal cooking
+
+NY TEXT:
+________________________________________
+
+
+[0844] My plan > Checklist > details > cook-power > check
+SPRÅK: EN
+ORIGINAL:
+Test equipment and inspect fuel before an emergency.
+
+NY TEXT:
+________________________________________
+
+
+[0845] My plan > Checklist > details > cook-power > caution
+SPRÅK: EN
+ORIGINAL:
+Never use grills or fuel-burning camping stoves indoors. Carbon monoxide and fire risk.
+
+NY TEXT:
+________________________________________
+
+
+[0846] My plan > Checklist > details > warmth > intro
+SPRÅK: EN
+ORIGINAL:
+Have a safe plan for staying warm during a power outage.
+
+NY TEXT:
+________________________________________
+
+
+[0847] My plan > Checklist > details > warmth > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Warm layers, hats, socks and sleeping bags
+
+NY TEXT:
+________________________________________
+
+
+[0848] My plan > Checklist > details > warmth > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Blankets and extra duvets
+
+NY TEXT:
+________________________________________
+
+
+[0849] My plan > Checklist > details > warmth > examples > 3
+SPRÅK: EN
+ORIGINAL:
+One room to gather in
+
+NY TEXT:
+________________________________________
+
+
+[0850] My plan > Checklist > details > warmth > examples > 4
+SPRÅK: EN
+ORIGINAL:
+Approved wood-burning stove and dry wood if available
+
+NY TEXT:
+________________________________________
+
+
+[0851] My plan > Checklist > details > warmth > check
+SPRÅK: EN
+ORIGINAL:
+Identify which heating systems work without electricity.
+
+NY TEXT:
+________________________________________
+
+
+[0852] My plan > Checklist > details > warmth > caution
+SPRÅK: EN
+ORIGINAL:
+Never use grills or unsuitable burners for indoor heating.
+
+NY TEXT:
+________________________________________
+
+
+[0853] My plan > Checklist > details > torch > intro
+SPRÅK: EN
+ORIGINAL:
+Reliable lighting helps you move safely when the power is out.
+
+NY TEXT:
+________________________________________
+
+
+[0854] My plan > Checklist > details > torch > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Flashlight
+
+NY TEXT:
+________________________________________
+
+
+[0855] My plan > Checklist > details > torch > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Headlamp for hands-free work
+
+NY TEXT:
+________________________________________
+
+
+[0856] My plan > Checklist > details > torch > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Battery-powered lantern
+
+NY TEXT:
+________________________________________
+
+
+[0857] My plan > Checklist > details > torch > examples > 4
+SPRÅK: EN
+ORIGINAL:
+Spare batteries or charging plan
+
+NY TEXT:
+________________________________________
+
+
+[0858] My plan > Checklist > details > torch > check
+SPRÅK: EN
+ORIGINAL:
+Test lights and keep them where everyone can find them.
+
+NY TEXT:
+________________________________________
+
+
+[0859] My plan > Checklist > details > torch > caution
+SPRÅK: EN
+ORIGINAL:
+Candles are a fire hazard; battery-powered lighting is often safer.
+
+NY TEXT:
+________________________________________
+
+
+[0860] My plan > Checklist > details > radio > intro
+SPRÅK: EN
+ORIGINAL:
+Swedish Radio P4 is a preparedness broadcaster. Keep a radio independent of mains power and internet.
+
+NY TEXT:
+________________________________________
+
+
+[0861] My plan > Checklist > details > radio > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Battery-powered FM radio
+
+NY TEXT:
+________________________________________
+
+
+[0862] My plan > Checklist > details > radio > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Crank or solar FM radio
+
+NY TEXT:
+________________________________________
+
+
+[0863] My plan > Checklist > details > radio > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Spare batteries
+
+NY TEXT:
+________________________________________
+
+
+[0864] My plan > Checklist > details > radio > examples > 4
+SPRÅK: EN
+ORIGINAL:
+Note your local P4 frequency
+
+NY TEXT:
+________________________________________
+
+
+[0865] My plan > Checklist > details > radio > check
+SPRÅK: EN
+ORIGINAL:
+Test P4 reception at home.
+
+NY TEXT:
+________________________________________
+
+
+[0866] My plan > Checklist > details > radio > caution
+SPRÅK: EN
+ORIGINAL:
+Streaming radio on a phone relies on connectivity.
+
+NY TEXT:
+________________________________________
+
+
+[0867] My plan > Checklist > details > power > intro
+SPRÅK: EN
+ORIGINAL:
+A charged phone can help you stay in touch when networks are available.
+
+NY TEXT:
+________________________________________
+
+
+[0868] My plan > Checklist > details > power > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Charged power bank
+
+NY TEXT:
+________________________________________
+
+
+[0869] My plan > Checklist > details > power > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Compatible charging cables
+
+NY TEXT:
+________________________________________
+
+
+[0870] My plan > Checklist > details > power > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Suitable vehicle charger
+
+NY TEXT:
+________________________________________
+
+
+[0871] My plan > Checklist > details > power > examples > 4
+SPRÅK: EN
+ORIGINAL:
+Rechargeable lights
+
+NY TEXT:
+________________________________________
+
+
+[0872] My plan > Checklist > details > power > check
+SPRÅK: EN
+ORIGINAL:
+Charge and test batteries regularly.
+
+NY TEXT:
+________________________________________
+
+
+[0873] My plan > Checklist > details > power > caution
+SPRÅK: EN
+ORIGINAL:
+Follow battery safety guidance.
+
+NY TEXT:
+________________________________________
+
+
+[0874] My plan > Checklist > details > aid > intro
+SPRÅK: EN
+ORIGINAL:
+Basic first-aid supplies and medicines need planning.
+
+NY TEXT:
+________________________________________
+
+
+[0875] My plan > Checklist > details > aid > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Dressings, plasters, bandages and gloves
+
+NY TEXT:
+________________________________________
+
+
+[0876] My plan > Checklist > details > aid > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Basic first-aid supplies
+
+NY TEXT:
+________________________________________
+
+
+[0877] My plan > Checklist > details > aid > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Necessary medicines according to medical advice
+
+NY TEXT:
+________________________________________
+
+
+[0878] My plan > Checklist > details > aid > check
+SPRÅK: EN
+ORIGINAL:
+Check expiry dates and learn how to use the supplies.
+
+NY TEXT:
+________________________________________
+
+
+[0879] My plan > Checklist > details > aid > caution
+SPRÅK: EN
+ORIGINAL:
+Follow medical and pharmacy guidance for prescription medicines.
+
+NY TEXT:
+________________________________________
+
+
+[0880] My plan > Checklist > details > hygiene > intro
+SPRÅK: EN
+ORIGINAL:
+Plan for hygiene and sanitation if running water or sewage stops working.
+
+NY TEXT:
+________________________________________
+
+
+[0881] My plan > Checklist > details > hygiene > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Soap, hand sanitiser and wipes
+
+NY TEXT:
+________________________________________
+
+
+[0882] My plan > Checklist > details > hygiene > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Toilet paper, menstrual supplies and nappies
+
+NY TEXT:
+________________________________________
+
+
+[0883] My plan > Checklist > details > hygiene > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Waste bags and sealable containers
+
+NY TEXT:
+________________________________________
+
+
+[0884] My plan > Checklist > details > hygiene > check
+SPRÅK: EN
+ORIGINAL:
+Plan safe waste handling.
+
+NY TEXT:
+________________________________________
+
+
+[0885] My plan > Checklist > details > hygiene > caution
+SPRÅK: EN
+ORIGINAL:
+Follow local municipal instructions during sewage disruptions.
+
+NY TEXT:
+________________________________________
+
+
+[0886] My plan > Checklist > details > contacts > intro
+SPRÅK: EN
+ORIGINAL:
+A paper contact list works even when your phone is unavailable.
+
+NY TEXT:
+________________________________________
+
+
+[0887] My plan > Checklist > details > contacts > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Family and neighbours
+
+NY TEXT:
+________________________________________
+
+
+[0888] My plan > Checklist > details > contacts > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Essential service contacts
+
+NY TEXT:
+________________________________________
+
+
+[0889] My plan > Checklist > details > contacts > examples > 3
+SPRÅK: EN
+ORIGINAL:
+112 emergency, 113 13 crisis information and 1177 healthcare advice
+
+NY TEXT:
+________________________________________
+
+
+[0890] My plan > Checklist > details > contacts > check
+SPRÅK: EN
+ORIGINAL:
+Keep a current paper copy.
+
+NY TEXT:
+________________________________________
+
+
+[0891] My plan > Checklist > details > contacts > caution
+SPRÅK: EN
+ORIGINAL:
+Store private contact details securely.
+
+NY TEXT:
+________________________________________
+
+
+[0892] My plan > Checklist > details > meetup > intro
+SPRÅK: EN
+ORIGINAL:
+Agree how everyone will reconnect if mobile or internet networks fail.
+
+NY TEXT:
+________________________________________
+
+
+[0893] My plan > Checklist > details > meetup > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Primary meeting point
+
+NY TEXT:
+________________________________________
+
+
+[0894] My plan > Checklist > details > meetup > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Alternative meeting point
+
+NY TEXT:
+________________________________________
+
+
+[0895] My plan > Checklist > details > meetup > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Contact outside your local area
+
+NY TEXT:
+________________________________________
+
+
+[0896] My plan > Checklist > details > meetup > examples > 4
+SPRÅK: EN
+ORIGINAL:
+Paper map and addresses
+
+NY TEXT:
+________________________________________
+
+
+[0897] My plan > Checklist > details > meetup > check
+SPRÅK: EN
+ORIGINAL:
+Discuss the plan with everyone in the household.
+
+NY TEXT:
+________________________________________
+
+
+[0898] My plan > Checklist > details > meetup > caution
+SPRÅK: EN
+ORIGINAL:
+Follow official evacuation instructions.
+
+NY TEXT:
+________________________________________
+
+
+[0899] My plan > Checklist > details > pet-transport > intro
+SPRÅK: EN
+ORIGINAL:
+Plan safe transport and a suitable place for pets if you must leave home.
+
+NY TEXT:
+________________________________________
+
+
+[0900] My plan > Checklist > details > pet-transport > examples > 1
+SPRÅK: EN
+ORIGINAL:
+A suitable carrier or transport solution
+
+NY TEXT:
+________________________________________
+
+
+[0901] My plan > Checklist > details > pet-transport > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Leads or harnesses as appropriate
+
+NY TEXT:
+________________________________________
+
+
+[0902] My plan > Checklist > details > pet-transport > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Vet, identification and insurance information on paper
+
+NY TEXT:
+________________________________________
+
+
+[0903] My plan > Checklist > details > pet-transport > examples > 4
+SPRÅK: EN
+ORIGINAL:
+A safe alternative place to stay
+
+NY TEXT:
+________________________________________
+
+
+[0904] My plan > Checklist > details > pet-transport > check
+SPRÅK: EN
+ORIGINAL:
+Practise transport and plan for cold weather or outages.
+
+NY TEXT:
+________________________________________
+
+
+[0905] My plan > Checklist > details > pet-transport > caution
+SPRÅK: EN
+ORIGINAL:
+Pets are not permitted in Swedish civil defence shelters; arrange another safe option.
+
+NY TEXT:
+________________________________________
+
+
+[0906] My plan > Checklist > details > pet-supplies > intro
+SPRÅK: EN
+ORIGINAL:
+Pets need their own food, water, shelter and transport plan.
+
+NY TEXT:
+________________________________________
+
+
+[0907] My plan > Checklist > details > pet-supplies > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Familiar pet food and extra water
+
+NY TEXT:
+________________________________________
+
+
+[0908] My plan > Checklist > details > pet-supplies > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Leads, carriers and bowls
+
+NY TEXT:
+________________________________________
+
+
+[0909] My plan > Checklist > details > pet-supplies > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Any veterinary medicines and contacts
+
+NY TEXT:
+________________________________________
+
+
+[0910] My plan > Checklist > details > pet-supplies > check
+SPRÅK: EN
+ORIGINAL:
+Plan for power cuts and evacuation.
+
+NY TEXT:
+________________________________________
+
+
+[0911] My plan > Checklist > details > pet-supplies > caution
+SPRÅK: EN
+ORIGINAL:
+Species have different needs, including temperature and electricity.
+
+NY TEXT:
+________________________________________
+
+
+[0912] My plan > Checklist > details > medical-extra > intro
+SPRÅK: EN
+ORIGINAL:
+Plan for critical medical aids and medicines.
+
+NY TEXT:
+________________________________________
+
+
+[0913] My plan > Checklist > details > medical-extra > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Private list of essential needs
+
+NY TEXT:
+________________________________________
+
+
+[0914] My plan > Checklist > details > medical-extra > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Backup procedures
+
+NY TEXT:
+________________________________________
+
+
+[0915] My plan > Checklist > details > medical-extra > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Medical and pharmacy contacts
+
+NY TEXT:
+________________________________________
+
+
+[0916] My plan > Checklist > details > medical-extra > check
+SPRÅK: EN
+ORIGINAL:
+Discuss appropriate preparations with healthcare professionals.
+
+NY TEXT:
+________________________________________
+
+
+[0917] My plan > Checklist > details > medical-extra > caution
+SPRÅK: EN
+ORIGINAL:
+Do not enter sensitive medical details in HemmaRedo.
+
+NY TEXT:
+________________________________________
+
+
+[0918] My plan > Checklist > details > electric-extra > intro
+SPRÅK: EN
+ORIGINAL:
+Some essential equipment depends on electricity.
+
+NY TEXT:
+________________________________________
+
+
+[0919] My plan > Checklist > details > electric-extra > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Document power requirements
+
+NY TEXT:
+________________________________________
+
+
+[0920] My plan > Checklist > details > electric-extra > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Ask suppliers about backup options
+
+NY TEXT:
+________________________________________
+
+
+[0921] My plan > Checklist > details > electric-extra > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Plan a safe alternative location
+
+NY TEXT:
+________________________________________
+
+
+[0922] My plan > Checklist > details > electric-extra > check
+SPRÅK: EN
+ORIGINAL:
+Find out how long equipment can run without power.
+
+NY TEXT:
+________________________________________
+
+
+[0923] My plan > Checklist > details > electric-extra > caution
+SPRÅK: EN
+ORIGINAL:
+Never connect critical equipment to untested power supplies.
+
+NY TEXT:
+________________________________________
+
+
+[0924] My plan > Checklist > details > mobility-extra > intro
+SPRÅK: EN
+ORIGINAL:
+Plan for situations where lifts or transport are unavailable.
+
+NY TEXT:
+________________________________________
+
+
+[0925] My plan > Checklist > details > mobility-extra > examples > 1
+SPRÅK: EN
+ORIGINAL:
+People who can help
+
+NY TEXT:
+________________________________________
+
+
+[0926] My plan > Checklist > details > mobility-extra > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Accessible routes and meeting places
+
+NY TEXT:
+________________________________________
+
+
+[0927] My plan > Checklist > details > mobility-extra > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Essential mobility aids
+
+NY TEXT:
+________________________________________
+
+
+[0928] My plan > Checklist > details > mobility-extra > check
+SPRÅK: EN
+ORIGINAL:
+Review the plan in your actual environment.
+
+NY TEXT:
+________________________________________
+
+
+[0929] My plan > Checklist > details > mobility-extra > caution
+SPRÅK: EN
+ORIGINAL:
+Adapt to individual needs.
+
+NY TEXT:
+________________________________________
+
+
+[0930] My plan > Checklist > details > kids-extra > intro
+SPRÅK: EN
+ORIGINAL:
+Children may need extra practical supplies and reassurance.
+
+NY TEXT:
+________________________________________
+
+
+[0931] My plan > Checklist > details > kids-extra > examples > 1
+SPRÅK: EN
+ORIGINAL:
+Age-appropriate food and hygiene supplies
+
+NY TEXT:
+________________________________________
+
+
+[0932] My plan > Checklist > details > kids-extra > examples > 2
+SPRÅK: EN
+ORIGINAL:
+Warm clothes and blankets
+
+NY TEXT:
+________________________________________
+
+
+[0933] My plan > Checklist > details > kids-extra > examples > 3
+SPRÅK: EN
+ORIGINAL:
+Comfort objects and offline activities
+
+NY TEXT:
+________________________________________
+
+
+[0934] My plan > Checklist > details > kids-extra > examples > 4
+SPRÅK: EN
+ORIGINAL:
+A simple family plan
+
+NY TEXT:
+________________________________________
+
+
+[0935] My plan > Checklist > details > kids-extra > check
+SPRÅK: EN
+ORIGINAL:
+Involve children in an age-appropriate way.
+
+NY TEXT:
+________________________________________
+
+
+[0936] My plan > Checklist > details > kids-extra > caution
+SPRÅK: EN
+ORIGINAL:
+Use calm, clear explanations.
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+B5. EQUIPMENT LIBRARY UI
+==========================================================================
+
+
+[0937] Checklist equipment > title
+SPRÅK: EN
+ORIGINAL:
+Equipment library
+
+NY TEXT:
+________________________________________
+
+
+[0938] Checklist equipment > intro
+SPRÅK: EN
+ORIGINAL:
+Suggestions that can help you meet the needs above. You do not need everything.
+
+NY TEXT:
+________________________________________
+
+
+[0939] Checklist equipment > have
+SPRÅK: EN
+ORIGINAL:
+Already have
+
+NY TEXT:
+________________________________________
+
+
+[0940] Checklist equipment > add
+SPRÅK: EN
+ORIGINAL:
+Add to shopping list
+
+NY TEXT:
+________________________________________
+
+
+[0941] Checklist equipment > skip
+SPRÅK: EN
+ORIGINAL:
+Not relevant
+
+NY TEXT:
+________________________________________
+
+
+[0942] Checklist equipment > see
+SPRÅK: EN
+ORIGINAL:
+Explore all equipment
+
+NY TEXT:
+________________________________________
+
+
+[0943] Checklist equipment > shopping
+SPRÅK: EN
+ORIGINAL:
+My shopping list
+
+NY TEXT:
+________________________________________
+
+
+[0944] Checklist equipment > overview
+SPRÅK: EN
+ORIGINAL:
+items to get in
+
+NY TEXT:
+________________________________________
+
+
+[0945] Checklist equipment > empty
+SPRÅK: EN
+ORIGINAL:
+Nothing on your shopping list yet.
+
+NY TEXT:
+________________________________________
+
+
+[0946] Checklist equipment > print
+SPRÅK: EN
+ORIGINAL:
+Print / save as PDF
+
+NY TEXT:
+________________________________________
+
+
+[0947] Checklist equipment > printHelp
+SPRÅK: EN
+ORIGINAL:
+Choose Save as PDF in your browser print dialog.
+
+NY TEXT:
+________________________________________
+
+
+[0948] Checklist equipment > back
+SPRÅK: EN
+ORIGINAL:
+Back to my plan
+
+NY TEXT:
+________________________________________
+
+
+[0949] Checklist equipment > hint
+SPRÅK: EN
+ORIGINAL:
+Equipment choices do not affect checklist progress.
+
+NY TEXT:
+________________________________________
+
+
+[0950] Checklist equipment > remove
+SPRÅK: EN
+ORIGINAL:
+Remove
+
+NY TEXT:
+________________________________________
+
+
+[0951] Checklist equipment > listLead
+SPRÅK: EN
+ORIGINAL:
+Everything you added from your checklist or equipment library, in one place.
+
+NY TEXT:
+________________________________________
+
+
+[0952] Checklist equipment > basic
+SPRÅK: EN
+ORIGINAL:
+Essential
+
+NY TEXT:
+________________________________________
+
+
+[0953] Checklist equipment > extra
+SPRÅK: EN
+ORIGINAL:
+Useful extra
+
+NY TEXT:
+________________________________________
+
+
+[0954] Checklist equipment > advanced
+SPRÅK: EN
+ORIGINAL:
+Advanced
+
+NY TEXT:
+________________________________________
+
+
+[0955] Equipment library page > eyebrow
+SPRÅK: EN
+ORIGINAL:
+EXPLORE · CHOOSE · PREPARE
+
+NY TEXT:
+________________________________________
+
+
+[0956] Equipment library page > title
+SPRÅK: EN
+ORIGINAL:
+Prepare, one item at a time.
+
+NY TEXT:
+________________________________________
+
+
+[0957] Equipment library page > intro
+SPRÅK: EN
+ORIGINAL:
+A calm equipment library with practical examples. See what each item does, mark what you already have and build a shopping list without having to buy everything.
+
+NY TEXT:
+________________________________________
+
+
+[0958] Equipment library page > tip
+SPRÅK: EN
+ORIGINAL:
+You do not need everything. Start with your household and living situation. Things you already own can often do the job, and one solution can replace several products.
+
+NY TEXT:
+________________________________________
+
+
+[0959] Equipment library page > search
+SPRÅK: EN
+ORIGINAL:
+Search equipment
+
+NY TEXT:
+________________________________________
+
+
+[0960] Equipment library page > placeholder
+SPRÅK: EN
+ORIGINAL:
+Search for a flashlight or water
+
+NY TEXT:
+________________________________________
+
+
+[0961] Equipment library page > level
+SPRÅK: EN
+ORIGINAL:
+Level
+
+NY TEXT:
+________________________________________
+
+
+[0962] Equipment library page > allLevels
+SPRÅK: EN
+ORIGINAL:
+All levels
+
+NY TEXT:
+________________________________________
+
+
+[0963] Equipment library page > all
+SPRÅK: EN
+ORIGINAL:
+All
+
+NY TEXT:
+________________________________________
+
+
+[0964] Equipment library page > levels > 1
+SPRÅK: EN
+ORIGINAL:
+Essential
+
+NY TEXT:
+________________________________________
+
+
+[0965] Equipment library page > levels > 2
+SPRÅK: EN
+ORIGINAL:
+Useful extra
+
+NY TEXT:
+________________________________________
+
+
+[0966] Equipment library page > levels > 3
+SPRÅK: EN
+ORIGINAL:
+Advanced
+
+NY TEXT:
+________________________________________
+
+
+[0967] Equipment library page > categories
+SPRÅK: EN
+ORIGINAL:
+Categories
+
+NY TEXT:
+________________________________________
+
+
+[0968] Equipment library page > have
+SPRÅK: EN
+ORIGINAL:
+Already have
+
+NY TEXT:
+________________________________________
+
+
+[0969] Equipment library page > need
+SPRÅK: EN
+ORIGINAL:
+Add to shopping list
+
+NY TEXT:
+________________________________________
+
+
+[0970] Equipment library page > skip
+SPRÅK: EN
+ORIGINAL:
+Not relevant
+
+NY TEXT:
+________________________________________
+
+
+[0971] Equipment library page > more
+SPRÅK: EN
+ORIGINAL:
+Read more and get tips
+
+NY TEXT:
+________________________________________
+
+
+[0972] Equipment library page > tipLabel
+SPRÅK: EN
+ORIGINAL:
+Tip
+
+NY TEXT:
+________________________________________
+
+
+[0973] Equipment library page > shown
+SPRÅK: EN
+ORIGINAL:
+items shown
+
+NY TEXT:
+________________________________________
+
+
+[0974] Equipment library page > results
+SPRÅK: EN
+ORIGINAL:
+Equipment
+
+NY TEXT:
+________________________________________
+
+
+[0975] Equipment library page > summary > 1
+SPRÅK: EN
+ORIGINAL:
+Already have
+
+NY TEXT:
+________________________________________
+
+
+[0976] Equipment library page > summary > 2
+SPRÅK: EN
+ORIGINAL:
+Need to get
+
+NY TEXT:
+________________________________________
+
+
+[0977] Equipment library page > summary > 3
+SPRÅK: EN
+ORIGINAL:
+Not relevant
+
+NY TEXT:
+________________________________________
+
+
+[0978] Equipment library page > print
+SPRÅK: EN
+ORIGINAL:
+Print my shopping list
+
+NY TEXT:
+________________________________________
+
+
+[0979] Equipment library page > showNeeds
+SPRÅK: EN
+ORIGINAL:
+Show my shopping list
+
+NY TEXT:
+________________________________________
+
+
+[0980] Equipment library page > showAll
+SPRÅK: EN
+ORIGINAL:
+Show all items
+
+NY TEXT:
+________________________________________
+
+
+[0981] Equipment library page > printHelp
+SPRÅK: EN
+ORIGINAL:
+Print includes only items marked “Need to get”. You can also save as PDF from the print dialog.
+
+NY TEXT:
+________________________________________
+
+
+[0982] Equipment library page > source
+SPRÅK: EN
+ORIGINAL:
+The basics are inspired by advice from Krisinformation.se and the Swedish Civil Contingencies Agency. The levels are HemmaRedo guidance, not official requirements.
+
+NY TEXT:
+________________________________________
+
+
+[0983] Equipment library page > privacy
+SPRÅK: EN
+ORIGINAL:
+Your choices are stored only in this browser, separately from your checklist progress.
+
+NY TEXT:
+________________________________________
+
+
+[0984] Equipment library page > none
+SPRÅK: EN
+ORIGINAL:
+No items match. Try another search or filter.
+
+NY TEXT:
+________________________________________
+
+
+[0985] Equipment library page > listTitle
+SPRÅK: EN
+ORIGINAL:
+My shopping list · HemmaRedo
+
+NY TEXT:
+________________________________________
+
+
+[0986] Equipment library page > listDesc
+SPRÅK: EN
+ORIGINAL:
+Items I marked as needed
+
+NY TEXT:
+________________________________________
+
+
+[0987] Equipment library page > guides
+SPRÅK: EN
+ORIGINAL:
+Advice & links
+
+NY TEXT:
+________________________________________
+
+
+[0988] Equipment library page > privacyLink
+SPRÅK: EN
+ORIGINAL:
+Privacy & storage
+
+NY TEXT:
+________________________________________
+
+
+[0989] Equipment library page > back
+SPRÅK: EN
+ORIGINAL:
+Back to my plan
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+B6. EQUIPMENT CARDS
+==========================================================================
+
+
+[0990] Equipment > water-jug > Name
+SPRÅK: EN
+ORIGINAL:
+Drinking water containers
+
+NY TEXT:
+________________________________________
+
+
+[0991] Equipment > water-jug > Description
+SPRÅK: EN
+ORIGINAL:
+Food-safe containers for stored drinking water.
+
+NY TEXT:
+________________________________________
+
+
+[0992] Equipment > water-jug > Tip
+SPRÅK: EN
+ORIGINAL:
+Keep cool and dark. HemmaRedo reminder: replace stored water at Midsummer and Christmas.
+
+NY TEXT:
+________________________________________
+
+
+[0993] Equipment > water-bottled > Name
+SPRÅK: EN
+ORIGINAL:
+Bottled water
+
+NY TEXT:
+________________________________________
+
+
+[0994] Equipment > water-bottled > Description
+SPRÅK: EN
+ORIGINAL:
+Extra water in sealed packaging.
+
+NY TEXT:
+________________________________________
+
+
+[0995] Equipment > water-bottled > Tip
+SPRÅK: EN
+ORIGINAL:
+Check storage, dates and quantity for everyone.
+
+NY TEXT:
+________________________________________
+
+
+[0996] Equipment > water-carry > Name
+SPRÅK: EN
+ORIGINAL:
+Extra water carrying containers
+
+NY TEXT:
+________________________________________
+
+
+[0997] Equipment > water-carry > Description
+SPRÅK: EN
+ORIGINAL:
+Useful when the municipality provides emergency water.
+
+NY TEXT:
+________________________________________
+
+
+[0998] Equipment > water-carry > Tip
+SPRÅK: EN
+ORIGINAL:
+Choose containers you can carry when filled.
+
+NY TEXT:
+________________________________________
+
+
+[0999] Equipment > water-filter > Name
+SPRÅK: EN
+ORIGINAL:
+Water treatment equipment
+
+NY TEXT:
+________________________________________
+
+
+[1000] Equipment > water-filter > Description
+SPRÅK: EN
+ORIGINAL:
+A possible complement for certain water issues.
+
+NY TEXT:
+________________________________________
+
+
+[1001] Equipment > water-filter > Tip
+SPRÅK: EN
+ORIGINAL:
+Filters and boiling do not remove every chemical contaminant. Follow official advice.
+
+NY TEXT:
+________________________________________
+
+
+[1002] Equipment > food-cans > Name
+SPRÅK: EN
+ORIGINAL:
+Canned and ready-to-eat food
+
+NY TEXT:
+________________________________________
+
+
+[1003] Equipment > food-cans > Description
+SPRÅK: EN
+ORIGINAL:
+Beans, tomatoes, fish and ready-made meals.
+
+NY TEXT:
+________________________________________
+
+
+[1004] Equipment > food-cans > Tip
+SPRÅK: EN
+ORIGINAL:
+Choose meals your household enjoys, including no-cook options.
+
+NY TEXT:
+________________________________________
+
+
+[1005] Equipment > food-dry > Name
+SPRÅK: EN
+ORIGINAL:
+Dry goods
+
+NY TEXT:
+________________________________________
+
+
+[1006] Equipment > food-dry > Description
+SPRÅK: EN
+ORIGINAL:
+Oats, crispbread, nuts, rice and couscous.
+
+NY TEXT:
+________________________________________
+
+
+[1007] Equipment > food-dry > Tip
+SPRÅK: EN
+ORIGINAL:
+Some dry goods require water and cooking.
+
+NY TEXT:
+________________________________________
+
+
+[1008] Equipment > food-opener > Name
+SPRÅK: EN
+ORIGINAL:
+Manual can opener
+
+NY TEXT:
+________________________________________
+
+
+[1009] Equipment > food-opener > Description
+SPRÅK: EN
+ORIGINAL:
+Works without electricity.
+
+NY TEXT:
+________________________________________
+
+
+[1010] Equipment > food-opener > Tip
+SPRÅK: EN
+ORIGINAL:
+Check that it works with your cans.
+
+NY TEXT:
+________________________________________
+
+
+[1011] Equipment > food-stove > Name
+SPRÅK: EN
+ORIGINAL:
+Camping stove and fuel
+
+NY TEXT:
+________________________________________
+
+
+[1012] Equipment > food-stove > Description
+SPRÅK: EN
+ORIGINAL:
+Alternative for heating food and water without electricity.
+
+NY TEXT:
+________________________________________
+
+
+[1013] Equipment > food-stove > Tip
+SPRÅK: EN
+ORIGINAL:
+Use outdoor stoves outside as directed. Never use a grill indoors.
+
+NY TEXT:
+________________________________________
+
+
+[1014] Equipment > food-thermos > Name
+SPRÅK: EN
+ORIGINAL:
+Thermos flask
+
+NY TEXT:
+________________________________________
+
+
+[1015] Equipment > food-thermos > Description
+SPRÅK: EN
+ORIGINAL:
+Keeps drinks and heated water warm longer.
+
+NY TEXT:
+________________________________________
+
+
+[1016] Equipment > food-thermos > Tip
+SPRÅK: EN
+ORIGINAL:
+May reduce the need to heat water repeatedly.
+
+NY TEXT:
+________________________________________
+
+
+[1017] Equipment > light-torch > Name
+SPRÅK: EN
+ORIGINAL:
+Flashlight
+
+NY TEXT:
+________________________________________
+
+
+[1018] Equipment > light-torch > Description
+SPRÅK: EN
+ORIGINAL:
+Portable lighting during a power outage.
+
+NY TEXT:
+________________________________________
+
+
+[1019] Equipment > light-torch > Tip
+SPRÅK: EN
+ORIGINAL:
+Test it regularly and keep it accessible.
+
+NY TEXT:
+________________________________________
+
+
+[1020] Equipment > light-headlamp > Name
+SPRÅK: EN
+ORIGINAL:
+Headlamp
+
+NY TEXT:
+________________________________________
+
+
+[1021] Equipment > light-headlamp > Description
+SPRÅK: EN
+ORIGINAL:
+Hands-free lighting.
+
+NY TEXT:
+________________________________________
+
+
+[1022] Equipment > light-headlamp > Tip
+SPRÅK: EN
+ORIGINAL:
+Useful when cooking, repairing or moving at night.
+
+NY TEXT:
+________________________________________
+
+
+[1023] Equipment > light-batteries > Name
+SPRÅK: EN
+ORIGINAL:
+Spare batteries
+
+NY TEXT:
+________________________________________
+
+
+[1024] Equipment > light-batteries > Description
+SPRÅK: EN
+ORIGINAL:
+Batteries for radios and lights.
+
+NY TEXT:
+________________________________________
+
+
+[1025] Equipment > light-batteries > Tip
+SPRÅK: EN
+ORIGINAL:
+Check sizes, dates and storage.
+
+NY TEXT:
+________________________________________
+
+
+[1026] Equipment > light-radio > Name
+SPRÅK: EN
+ORIGINAL:
+Off-grid FM radio
+
+NY TEXT:
+________________________________________
+
+
+[1027] Equipment > light-radio > Description
+SPRÅK: EN
+ORIGINAL:
+Battery, crank or solar FM radio for receiving P4.
+
+NY TEXT:
+________________________________________
+
+
+[1028] Equipment > light-radio > Tip
+SPRÅK: EN
+ORIGINAL:
+Test reception of your local P4 station.
+
+NY TEXT:
+________________________________________
+
+
+[1029] Equipment > light-bank > Name
+SPRÅK: EN
+ORIGINAL:
+Charged power bank
+
+NY TEXT:
+________________________________________
+
+
+[1030] Equipment > light-bank > Description
+SPRÅK: EN
+ORIGINAL:
+Backup power for phones and small devices.
+
+NY TEXT:
+________________________________________
+
+
+[1031] Equipment > light-bank > Tip
+SPRÅK: EN
+ORIGINAL:
+Keep the correct cable with it and recharge regularly.
+
+NY TEXT:
+________________________________________
+
+
+[1032] Equipment > warm-blankets > Name
+SPRÅK: EN
+ORIGINAL:
+Blankets and warm clothing
+
+NY TEXT:
+________________________________________
+
+
+[1033] Equipment > warm-blankets > Description
+SPRÅK: EN
+ORIGINAL:
+Help retain body warmth.
+
+NY TEXT:
+________________________________________
+
+
+[1034] Equipment > warm-blankets > Tip
+SPRÅK: EN
+ORIGINAL:
+Consider gathering everyone in one room during long heating outages.
+
+NY TEXT:
+________________________________________
+
+
+[1035] Equipment > warm-bag > Name
+SPRÅK: EN
+ORIGINAL:
+Sleeping bag or extra duvet
+
+NY TEXT:
+________________________________________
+
+
+[1036] Equipment > warm-bag > Description
+SPRÅK: EN
+ORIGINAL:
+Extra insulation if the home gets cold.
+
+NY TEXT:
+________________________________________
+
+
+[1037] Equipment > warm-bag > Tip
+SPRÅK: EN
+ORIGINAL:
+Choose for the season and household needs.
+
+NY TEXT:
+________________________________________
+
+
+[1038] Equipment > warm-seal > Name
+SPRÅK: EN
+ORIGINAL:
+Draft-proofing supplies
+
+NY TEXT:
+________________________________________
+
+
+[1039] Equipment > warm-seal > Description
+SPRÅK: EN
+ORIGINAL:
+Can reduce drafts around windows and doors.
+
+NY TEXT:
+________________________________________
+
+
+[1040] Equipment > warm-seal > Tip
+SPRÅK: EN
+ORIGINAL:
+Do not obstruct ventilation or escape routes.
+
+NY TEXT:
+________________________________________
+
+
+[1041] Equipment > warm-fireplace > Name
+SPRÅK: EN
+ORIGINAL:
+Approved alternative heater
+
+NY TEXT:
+________________________________________
+
+
+[1042] Equipment > warm-fireplace > Description
+SPRÅK: EN
+ORIGINAL:
+Can help in homes with suitable installations.
+
+NY TEXT:
+________________________________________
+
+
+[1043] Equipment > warm-fireplace > Tip
+SPRÅK: EN
+ORIGINAL:
+Use approved equipment as directed. Fire and carbon monoxide risks.
+
+NY TEXT:
+________________________________________
+
+
+[1044] Equipment > health-firstaid > Name
+SPRÅK: EN
+ORIGINAL:
+First-aid kit
+
+NY TEXT:
+________________________________________
+
+
+[1045] Equipment > health-firstaid > Description
+SPRÅK: EN
+ORIGINAL:
+Bandages, dressings, plasters and basic care supplies.
+
+NY TEXT:
+________________________________________
+
+
+[1046] Equipment > health-firstaid > Tip
+SPRÅK: EN
+ORIGINAL:
+Learn to use the contents and check expiry dates.
+
+NY TEXT:
+________________________________________
+
+
+[1047] Equipment > health-hygiene > Name
+SPRÅK: EN
+ORIGINAL:
+Hygiene supplies
+
+NY TEXT:
+________________________________________
+
+
+[1048] Equipment > health-hygiene > Description
+SPRÅK: EN
+ORIGINAL:
+Soap, hand sanitiser, wipes and toilet paper.
+
+NY TEXT:
+________________________________________
+
+
+[1049] Equipment > health-hygiene > Tip
+SPRÅK: EN
+ORIGINAL:
+Include menstrual products, nappies and individual needs.
+
+NY TEXT:
+________________________________________
+
+
+[1050] Equipment > health-bags > Name
+SPRÅK: EN
+ORIGINAL:
+Rubbish bags and strong sacks
+
+NY TEXT:
+________________________________________
+
+
+[1051] Equipment > health-bags > Description
+SPRÅK: EN
+ORIGINAL:
+Useful during sewage or waste collection disruptions.
+
+NY TEXT:
+________________________________________
+
+
+[1052] Equipment > health-bags > Tip
+SPRÅK: EN
+ORIGINAL:
+Follow municipal hygiene and disposal instructions.
+
+NY TEXT:
+________________________________________
+
+
+[1053] Equipment > health-medicine > Name
+SPRÅK: EN
+ORIGINAL:
+Essential medicines
+
+NY TEXT:
+________________________________________
+
+
+[1054] Equipment > health-medicine > Description
+SPRÅK: EN
+ORIGINAL:
+Plan for essential personal medicines.
+
+NY TEXT:
+________________________________________
+
+
+[1055] Equipment > health-medicine > Tip
+SPRÅK: EN
+ORIGINAL:
+Follow medical and pharmacy advice. No medical details need to be entered here.
+
+NY TEXT:
+________________________________________
+
+
+[1056] Equipment > tools-contacts > Name
+SPRÅK: EN
+ORIGINAL:
+Important contacts on paper
+
+NY TEXT:
+________________________________________
+
+
+[1057] Equipment > tools-contacts > Description
+SPRÅK: EN
+ORIGINAL:
+A printed list works without a mobile phone.
+
+NY TEXT:
+________________________________________
+
+
+[1058] Equipment > tools-contacts > Tip
+SPRÅK: EN
+ORIGINAL:
+Print a HemmaRedo contact sheet and keep it accessible.
+
+NY TEXT:
+________________________________________
+
+
+[1059] Equipment > tools-cash > Name
+SPRÅK: EN
+ORIGINAL:
+Cash in small denominations
+
+NY TEXT:
+________________________________________
+
+
+[1060] Equipment > tools-cash > Description
+SPRÅK: EN
+ORIGINAL:
+An option if card payments or online services fail.
+
+NY TEXT:
+________________________________________
+
+
+[1061] Equipment > tools-cash > Tip
+SPRÅK: EN
+ORIGINAL:
+Base the amount on household needs and store securely.
+
+NY TEXT:
+________________________________________
+
+
+[1062] Equipment > tools-multitool > Name
+SPRÅK: EN
+ORIGINAL:
+Multi-tool
+
+NY TEXT:
+________________________________________
+
+
+[1063] Equipment > tools-multitool > Description
+SPRÅK: EN
+ORIGINAL:
+Useful for straightforward repairs and tasks.
+
+NY TEXT:
+________________________________________
+
+
+[1064] Equipment > tools-multitool > Tip
+SPRÅK: EN
+ORIGINAL:
+A basic toolbox may serve the same purpose.
+
+NY TEXT:
+________________________________________
+
+
+[1065] Equipment > tools-map > Name
+SPRÅK: EN
+ORIGINAL:
+Paper map
+
+NY TEXT:
+________________________________________
+
+
+[1066] Equipment > tools-map > Description
+SPRÅK: EN
+ORIGINAL:
+Useful if GPS or internet is unavailable.
+
+NY TEXT:
+________________________________________
+
+
+[1067] Equipment > tools-map > Tip
+SPRÅK: EN
+ORIGINAL:
+Mark meeting points and key local addresses.
+
+NY TEXT:
+________________________________________
+
+
+[1068] Equipment > tools-firesteel > Name
+SPRÅK: EN
+ORIGINAL:
+Fire steel
+
+NY TEXT:
+________________________________________
+
+
+[1069] Equipment > tools-firesteel > Description
+SPRÅK: EN
+ORIGINAL:
+Outdoor gear for lighting fires where permitted.
+
+NY TEXT:
+________________________________________
+
+
+[1070] Equipment > tools-firesteel > Tip
+SPRÅK: EN
+ORIGINAL:
+Not essential for most homes. Observe fire bans and safety rules.
+
+NY TEXT:
+________________________________________
+
+
+[1071] Equipment > tools-axe > Name
+SPRÅK: EN
+ORIGINAL:
+Axe
+
+NY TEXT:
+________________________________________
+
+
+[1072] Equipment > tools-axe > Description
+SPRÅK: EN
+ORIGINAL:
+Can be useful for experienced users handling firewood.
+
+NY TEXT:
+________________________________________
+
+
+[1073] Equipment > tools-axe > Tip
+SPRÅK: EN
+ORIGINAL:
+Not essential for everyone. Store safely away from children and use protection.
+
+NY TEXT:
+________________________________________
+
+
+[1074] Equipment > pets-food > Name
+SPRÅK: EN
+ORIGINAL:
+Pet food and water
+
+NY TEXT:
+________________________________________
+
+
+[1075] Equipment > pets-food > Description
+SPRÅK: EN
+ORIGINAL:
+Supplies suited to each pet species and needs.
+
+NY TEXT:
+________________________________________
+
+
+[1076] Equipment > pets-food > Tip
+SPRÅK: EN
+ORIGINAL:
+Account for extra water and any medicines according to veterinary advice.
+
+NY TEXT:
+________________________________________
+
+
+[1077] Equipment > pets-transport > Name
+SPRÅK: EN
+ORIGINAL:
+Carrier, harness or lead
+
+NY TEXT:
+________________________________________
+
+
+[1078] Equipment > pets-transport > Description
+SPRÅK: EN
+ORIGINAL:
+Useful if pets need to be moved quickly.
+
+NY TEXT:
+________________________________________
+
+
+[1079] Equipment > pets-transport > Tip
+SPRÅK: EN
+ORIGINAL:
+Choose according to species, size and temperament.
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+B7. BACKUP PLANNING
+==========================================================================
+
+
+[1080] Backup > water > 1
+SPRÅK: EN
+ORIGINAL:
+Stored drinking water
+
+NY TEXT:
+________________________________________
+
+
+[1081] Backup > water > 2
+SPRÅK: EN
+ORIGINAL:
+Extra containers and local emergency water information
+
+NY TEXT:
+________________________________________
+
+
+[1082] Backup > water > 3
+SPRÅK: EN
+ORIGINAL:
+A backup plan for collecting water if your usual route fails
+
+NY TEXT:
+________________________________________
+
+
+[1083] Backup > food > 1
+SPRÅK: EN
+ORIGINAL:
+Food that needs no heating
+
+NY TEXT:
+________________________________________
+
+
+[1084] Backup > food > 2
+SPRÅK: EN
+ORIGINAL:
+Safe alternative cooking outdoors
+
+NY TEXT:
+________________________________________
+
+
+[1085] Backup > food > 3
+SPRÅK: EN
+ORIGINAL:
+Options requiring little water or fuel
+
+NY TEXT:
+________________________________________
+
+
+[1086] Backup > heat > 1
+SPRÅK: EN
+ORIGINAL:
+Warm clothing, blankets and sleeping bags
+
+NY TEXT:
+________________________________________
+
+
+[1087] Backup > heat > 2
+SPRÅK: EN
+ORIGINAL:
+Gather in a suitable room and reduce drafts without blocking ventilation
+
+NY TEXT:
+________________________________________
+
+
+[1088] Backup > heat > 3
+SPRÅK: EN
+ORIGINAL:
+A safe alternative place to stay if your home gets too cold
+
+NY TEXT:
+________________________________________
+
+
+[1089] Backup > comms > 1
+SPRÅK: EN
+ORIGINAL:
+Battery or crank FM radio for P4
+
+NY TEXT:
+________________________________________
+
+
+[1090] Backup > comms > 2
+SPRÅK: EN
+ORIGINAL:
+Printed phone numbers and meeting points
+
+NY TEXT:
+________________________________________
+
+
+[1091] Backup > comms > 3
+SPRÅK: EN
+ORIGINAL:
+Backup charging where it can be used safely
+
+NY TEXT:
+________________________________________
+
+
+[1092] Backup > health > 1
+SPRÅK: EN
+ORIGINAL:
+First aid and essential hygiene
+
+NY TEXT:
+________________________________________
+
+
+[1093] Backup > health > 2
+SPRÅK: EN
+ORIGINAL:
+Plan for medicines and individual needs
+
+NY TEXT:
+________________________________________
+
+
+[1094] Backup > health > 3
+SPRÅK: EN
+ORIGINAL:
+Alternative sanitation following local guidance
+
+NY TEXT:
+________________________________________
+
+
+[1095] Backup > home > 1
+SPRÅK: EN
+ORIGINAL:
+Agreed meeting point
+
+NY TEXT:
+________________________________________
+
+
+[1096] Backup > home > 2
+SPRÅK: EN
+ORIGINAL:
+Printed contacts and key addresses
+
+NY TEXT:
+________________________________________
+
+
+[1097] Backup > home > 3
+SPRÅK: EN
+ORIGINAL:
+Someone you have agreed to contact for support
+
+NY TEXT:
+________________________________________
+
+
+==========================================================================
+B8. PRIVACY
+==========================================================================
+
+
+[1098] Privacy > title
+SPRÅK: EN
+ORIGINAL:
+Privacy & local storage
+
+NY TEXT:
+________________________________________
+
+
+[1099] Privacy > lead
+SPRÅK: EN
+ORIGINAL:
+HemmaRedo should work without an account or unnecessary tracking.
+
+NY TEXT:
+________________________________________
+
+
+[1100] Privacy > sub
+SPRÅK: EN
+ORIGINAL:
+How this prototype handles information.
+
+NY TEXT:
+________________________________________
+
+
+[1101] Privacy > section1
+SPRÅK: EN
+ORIGINAL:
+What is stored in your browser?
+
+NY TEXT:
+________________________________________
+
+
+[1102] Privacy > body1
+SPRÅK: EN
+ORIGINAL:
+We use localStorage to remember household answers, checked tasks, equipment choices and your shopping list, language preference and a separate plan if you help a friend. These details normally remain in this browser and are not sent to our server to create a profile. They do not automatically appear on other devices.
+
+NY TEXT:
+________________________________________
+
+
+[1103] Privacy > section2
+SPRÅK: EN
+ORIGINAL:
+Do you need to accept cookies?
+
+NY TEXT:
+________________________________________
+
+
+[1104] Privacy > body2
+SPRÅK: EN
+ORIGINAL:
+The prototype does not use its own advertising or analytics cookies. Local storage supports features you request, such as keeping your plan between visits. Therefore we do not show a non-essential cookie consent banner. If we add analytics or other non-essential storage, we must reassess this and ask for consent when required before activation.
+
+NY TEXT:
+________________________________________
+
+
+[1105] Privacy > section3
+SPRÅK: EN
+ORIGINAL:
+Third-party services
+
+NY TEXT:
+________________________________________
+
+
+[1106] Privacy > body3
+SPRÅK: EN
+ORIGINAL:
+The site loads fonts from Google Fonts. The Advice & links page can load podcast artwork from external image servers and a video thumbnail from YouTube. Loading these resources can send technical connection information such as your IP address to their providers. External websites have their own privacy policies.
+
+NY TEXT:
+________________________________________
+
+
+[1107] Privacy > section4
+SPRÅK: EN
+ORIGINAL:
+Delete locally saved details
+
+NY TEXT:
+________________________________________
+
+
+[1108] Privacy > body4
+SPRÅK: EN
+ORIGINAL:
+You can remove your saved household plan, friend plan and language preference and equipment choices from this browser. This cannot be undone. Clearing browser site data can also remove them.
+
+NY TEXT:
+________________________________________
+
+
+[1109] Privacy > clear
+SPRÅK: EN
+ORIGINAL:
+Delete my saved details
+
+NY TEXT:
+________________________________________
+
+
+[1110] Privacy > confirm
+SPRÅK: EN
+ORIGINAL:
+Delete your household plan, friend plan, language preference and shopping list from this browser? This cannot be undone.
+
+NY TEXT:
+________________________________________
+
+
+[1111] Privacy > section5
+SPRÅK: EN
+ORIGINAL:
+Who is responsible?
+
+NY TEXT:
+________________________________________
+
+
+[1112] Privacy > body5
+SPRÅK: EN
+ORIGINAL:
+HemmaRedo is an independent prototype, not a government service. This page describes the current technical implementation but is not a complete legal privacy policy for a public launch.
+
+NY TEXT:
+________________________________________
+
+
+[1113] Privacy > close
+SPRÅK: EN
+ORIGINAL:
+Back to home
+
+NY TEXT:
+________________________________________
+
+
+SLUT PÅ TEXTUNDERLAGET.
+Om något saknas: skriv var på sidan det syns eller klistra in texten så hittar vi rätt källa.
