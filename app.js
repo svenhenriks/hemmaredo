@@ -300,7 +300,7 @@
   const needsOptions = [['smallKids','users'],['pets','dog'],['medical','cross'],['mobility','heart'],['electric','battery'],['other','info']];
   const housing = [['apartment','home'],['house','home'],['townhouse','home'],['other','home']];
 
-  function fresh() { return {version:3,adults:0,children:0,pets:0,petTypes:{dog:0,cat:0,rabbit:0,small:0,bird:0,fish:0,other:0},petDailyLiters:0,petWaterEstimated:false,home:'',equipment:[],needs:[],waterLiters:0,foodDays:0,overrides:{},finished:false,maxStep:0}; }
+  function fresh() { return {version:3,adults:0,children:0,pets:0,petTypes:{dog:0,cat:0,rabbit:0,small:0,bird:0,fish:0,other:0},petDailyLiters:0,petWaterEstimated:false,petFoodDays:0,home:'',equipment:[],needs:[],waterLiters:0,foodDays:0,overrides:{},finished:false,maxStep:0}; }
   function storageGet(key) {try{return localStorage.getItem(key);}catch{return null;}}
   function storagePut(key, val) {try{localStorage.setItem(key,val);}catch{}}
   function loadProfile(type) {
@@ -319,6 +319,7 @@
         blank.petDailyLiters=Math.max(0,Math.min(999,Number(parsed.petDailyLiters)));
         blank.petWaterEstimated=true;
       }
+      if(Number.isFinite(Number(parsed.petFoodDays)))blank.petFoodDays=Math.max(0,Math.min(30,Math.round(Number(parsed.petFoodDays))));
       blank.equipment=Array.isArray(parsed.equipment)?parsed.equipment.filter(x=>equipment.some(y=>y[0]===x)):[];
       blank.needs=Array.isArray(parsed.needs)?parsed.needs.filter(x=>needsOptions.some(y=>y[0]===x)):[];
       blank.overrides=typeof parsed.overrides==='object'&&parsed.overrides?Object.fromEntries(Object.entries(parsed.overrides).filter(([k,v])=>/^[-a-z]+$/.test(k)&&typeof v==='boolean')):{};
@@ -365,6 +366,15 @@
     return `<div class="pet-type-section"><h2>${tr.head}</h2><p>${tr.sub}</p>
       <div class="pet-type-grid">${petKinds.map(([id,emoji,sv,en])=>`<div class="pet-type-row"><span aria-hidden="true">${emoji}</span><strong>${lang==='sv'?sv:en}</strong><div class="pet-type-control"><button type="button" data-pet-kind="${id}" data-pet-change="-1" aria-label="${lang==='sv'?'Minska':'Decrease'} ${lang==='sv'?sv:en}" ${p().petTypes[id]===0?'disabled':''}>−</button><output>${p().petTypes[id]}</output><button type="button" data-pet-kind="${id}" data-pet-change="1" aria-label="${lang==='sv'?'Öka':'Increase'} ${lang==='sv'?sv:en}" ${p().petTypes[id]>=30?'disabled':''}>+</button></div></div>`).join('')}</div></div>`;
   }
+  function petSpeciesNeeds(pr=p()){
+    const types=pr.petTypes||{},tips=[];
+    if(types.dog||types.cat)tips.push(lang==='sv'?'Hund och katt: tänk på foder, mediciner, koppel eller transportbur.':'Dogs and cats: plan food, medicines, leads and carriers.');
+    if(types.rabbit||types.small)tips.push(lang==='sv'?'Kaniner och smådjur: planera hö/foder, strö, bur och skydd mot värme och kyla.':'Rabbits and small pets: plan hay/feed, bedding, carriers and temperature needs.');
+    if(types.bird)tips.push(lang==='sv'?'Fåglar: se över rätt foder, vatten och en trygg transportbur.':'Birds: plan suitable food, water and a safe carrier.');
+    if(types.fish)tips.push(lang==='sv'?'Akvarium: planera för strömavbrott, syresättning, temperatur och vattenkvalitet.':'Aquariums: plan for power outages, oxygenation, temperature and water quality.');
+    if(types.other)tips.push(lang==='sv'?'Övriga djur: anpassa planen efter artens faktiska behov.':'Other animals: tailor the plan to species-specific needs.');
+    return tips.join(' ');
+  }
   function petWaterField(){
     if(!petTotal())return '';
     const known=p().petWaterEstimated;
@@ -372,7 +382,10 @@
       <p>${lang==='sv'?'Hur många liter dricksvatten behöver alla era djur tillsammans per dygn? Uppskatta utifrån deras vanliga förbrukning eller rådgör med veterinär. Om du inte vet: lämna tomt.':'How many litres of drinking water do your pets together need each day? Estimate based on their usual intake or ask a vet. If unsure, leave blank.'}</p></div>
       <label for="pet-water-daily">${lang==='sv'?'Liter per dygn (frivilligt)':'Litres per day (optional)'}</label>
       <input id="pet-water-daily" data-pet-water="daily" type="number" inputmode="decimal" step="0.1" min="0" max="999" placeholder="${lang==='sv'?'Ej angivet':'Not specified'}" value="${known?p().petDailyLiters:''}">
-      <small>${lang==='sv'?'Mängden läggs ovanpå hushållets vattenplanering för sju dygn. Den är inte ett medicinskt eller veterinärt riktvärde.':'Added to the seven-day household water plan. This is not a veterinary guideline.'}</small></div>`;
+      <small>${lang==='sv'?'Mängden läggs ovanpå hushållets vattenplanering för sju dygn. Den är inte ett medicinskt eller veterinärt riktvärde.':'Added to the seven-day household water plan. This is not a veterinary guideline.'}</small>
+      <label for="pet-food-days">${lang==='sv'?'Hur många dygn räcker djurens foder?':'How many days will the pet food last?'}</label>
+      <input id="pet-food-days" data-pet-food="days" type="number" min="0" max="30" step="1" inputmode="numeric" value="${p().petFoodDays}">
+      <small>${lang==='sv'?'Räkna för alla era djur. Sträva efter minst sju dygn.':'Count supplies for all pets. Aim for at least seven days.'}</small></div>`;
   }
 
   function taskDefinitions() {
@@ -394,8 +407,8 @@
     ];
     if(petTotal(pr)>0){
       all.push(e('pet-supplies','health','dog','Mat och vatten till husdjuren','Food and water for pets',
-        `Planera foder och dricksvatten för minst sju dygn: ${petDetails(pr)}. ${pr.petWaterEstimated?'Din uppskattning är '+n(petWeekWater(pr))+' liter vatten för sju dygn.':'Vattenbehovet för djuren behöver uppskattas separat.'}`,
-        `Plan at least seven days of pet food and water for: ${petDetails(pr)}. ${pr.petWaterEstimated?'Your seven-day estimate is '+n(petWeekWater(pr))+' litres of water.':'Estimate pet water needs separately.'}`,false,'https://jordbruksverket.se/beredskap/beredskap-for-dig-som-har-djur'));
+        `Planera foder och dricksvatten för minst sju dygn: ${petDetails(pr)}. Foder: ${pr.petFoodDays} dygn. ${pr.petWaterEstimated?'Din uppskattning är '+n(petWeekWater(pr))+' liter vatten för sju dygn.':'Vattenbehovet för djuren behöver uppskattas separat.'} ${petSpeciesNeeds(pr)}`,
+        `Plan at least seven days of pet food and water for: ${petDetails(pr)}. Food: ${pr.petFoodDays} days. ${pr.petWaterEstimated?'Your seven-day estimate is '+n(petWeekWater(pr))+' litres of water.':'Estimate pet water needs separately.'} ${petSpeciesNeeds(pr)}`,false,'https://jordbruksverket.se/beredskap/beredskap-for-dig-som-har-djur'));
       all.push(e('pet-transport','health','dog','Planera transport och omsorg för djuren','Plan pet transport and care',
         'Ha transportbur, koppel eller annan lämplig utrustning och en plan för var djuren kan vara vid utrymning.',
         'Prepare carriers, leads or other suitable equipment and a safe plan for evacuation.',false,'https://jordbruksverket.se/beredskap/beredskap-for-dig-som-har-djur'));
@@ -697,7 +710,7 @@
       const old=p().petTypes[kind];
       p().petTypes[kind]=Math.max(0,Math.min(30,old+Number(target.dataset.petChange)));
       p().pets=petTotal();
-      if(!p().pets){p().petWaterEstimated=false;p().petDailyLiters=0;}
+      if(!p().pets){p().petWaterEstimated=false;p().petDailyLiters=0;p().petFoodDays=0;}
       save();render();return;
     }
     if(target.dataset.count){const key=target.dataset.count;const min=0;const val=Math.min(20,Math.max(min,p()[key]+Number(target.dataset.delta)));set(key,val);return;}
@@ -735,6 +748,11 @@
     }
   });
   root.addEventListener('change',ev=>{
+    if(ev.target.dataset.petFood==='days'){
+      const amount=Number(ev.target.value);
+      p().petFoodDays=Number.isFinite(amount)?Math.max(0,Math.min(30,Math.round(amount))):0;
+      save();render();return;
+    }
     if(ev.target.dataset.petWater==='daily'){
       const raw=ev.target.value.trim().replace(',','.');
       const amount=Number(raw);
