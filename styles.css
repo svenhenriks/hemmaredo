@@ -322,3 +322,14 @@
 .pet-water-box strong{font-size:16px}.pet-water-box p,.pet-water-box small{font-size:12px;line-height:1.6;color:#5c7363;margin:7px 0}
 .pet-water-box label{font-size:12px;font-weight:800}.pet-water-box input{padding:11px 14px;border:1px solid #bfd1bb;border-radius:9px;background:#fff;max-width:200px}
 @media(min-width:700px){.pet-type-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Optional backup-plan prompts; informational, no percentage effect */
+.backup-ideas{margin:10px 12px 14px;border:1px solid #dfe9df;border-radius:12px;background:#f1f6ee;overflow:hidden}
+.backup-ideas summary{list-style:none;display:flex;gap:8px;align-items:center;padding:12px 13px;font-size:12px;font-weight:800;color:#2e6144;cursor:pointer}
+.backup-ideas summary::-webkit-details-marker{display:none}.backup-ideas summary .ic:last-child{margin-left:auto;transition:transform .16s}
+.backup-ideas[open] summary .ic:last-child{transform:rotate(180deg)}
+.backup-ideas-inner{padding:2px 16px 16px;border-top:1px solid #dce7db}
+.backup-ideas-inner p{font-size:12px;color:#536c59;line-height:1.6}
+.backup-ideas-inner ol{font-size:12px;line-height:1.7;color:#375a40;padding-left:22px;margin:10px 0 0}
+.backup-ideas-inner li{margin:7px 0}
+@media print{.backup-ideas{display:none!important}}
