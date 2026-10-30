@@ -223,6 +223,12 @@
           check:'Prata igenom planen med barn och andra i hushållet.',
           caution:'Följ alltid myndigheternas instruktioner vid utrymning eller annan akut händelse.'
         },
+        'pet-transport':{
+          intro:'Djur behöver kunna transporteras säkert om hushållet behöver lämna hemmet. Planera också vem som kan hjälpa om du själv inte kan.',
+          examples:['Transportbur eller annan lämplig transportlösning för varje djur','Koppel eller sele där det är relevant','Veterinärkontakt, djurets ID och försäkringsuppgifter på papper','Tillfällig trygg plats där djuret kan vistas'],
+          check:'Testa att djuren går att transportera och se över behov vid strömavbrott och kyla.',
+          caution:'Sällskapsdjur får inte tas med in i skyddsrum. Planera en alternativ säker plats och följ myndigheternas anvisningar.'
+        },
         'pet-supplies':{
           intro:'Djur behöver också mat, vatten, trygghet och ibland särskilda temperaturförhållanden.',
           examples:['Foder som djuret redan är vant vid','Extra dricksvatten och matskålar','Koppel, sele, transportbur eller annan säker transportlösning','Eventuella mediciner och kontaktuppgifter till veterinär'],
@@ -270,6 +276,7 @@
         hygiene:{intro:'Plan for hygiene and sanitation if running water or sewage stops working.',examples:['Soap, hand sanitiser and wipes','Toilet paper, menstrual supplies and nappies','Waste bags and sealable containers'],check:'Plan safe waste handling.',caution:'Follow local municipal instructions during sewage disruptions.'},
         contacts:{intro:'A paper contact list works even when your phone is unavailable.',examples:['Family and neighbours','Essential service contacts','112 emergency, 113 13 crisis information and 1177 healthcare advice'],check:'Keep a current paper copy.',caution:'Store private contact details securely.'},
         meetup:{intro:'Agree how everyone will reconnect if mobile or internet networks fail.',examples:['Primary meeting point','Alternative meeting point','Contact outside your local area','Paper map and addresses'],check:'Discuss the plan with everyone in the household.',caution:'Follow official evacuation instructions.'},
+        'pet-transport':{intro:'Plan safe transport and a suitable place for pets if you must leave home.',examples:['A suitable carrier or transport solution','Leads or harnesses as appropriate','Vet, identification and insurance information on paper','A safe alternative place to stay'],check:'Practise transport and plan for cold weather or outages.',caution:'Pets are not permitted in Swedish civil defence shelters; arrange another safe option.'},
         'pet-supplies':{intro:'Pets need their own food, water, shelter and transport plan.',examples:['Familiar pet food and extra water','Leads, carriers and bowls','Any veterinary medicines and contacts'],check:'Plan for power cuts and evacuation.',caution:'Species have different needs, including temperature and electricity.'},
         'medical-extra':{intro:'Plan for critical medical aids and medicines.',examples:['Private list of essential needs','Backup procedures','Medical and pharmacy contacts'],check:'Discuss appropriate preparations with healthcare professionals.',caution:'Do not enter sensitive medical details in HemmaRedo.'},
         'electric-extra':{intro:'Some essential equipment depends on electricity.',examples:['Document power requirements','Ask suppliers about backup options','Plan a safe alternative location'],check:'Find out how long equipment can run without power.',caution:'Never connect critical equipment to untested power supplies.'},
@@ -293,7 +300,7 @@
   const needsOptions = [['smallKids','users'],['pets','dog'],['medical','cross'],['mobility','heart'],['electric','battery'],['other','info']];
   const housing = [['apartment','home'],['house','home'],['townhouse','home'],['other','home']];
 
-  function fresh() { return {version:3,adults:0,children:0,pets:0,home:'house',equipment:[],needs:[],waterLiters:0,foodDays:0,overrides:{},finished:false,maxStep:0}; }
+  function fresh() { return {version:3,adults:0,children:0,pets:0,petTypes:{dog:0,cat:0,rabbit:0,small:0,bird:0,fish:0,other:0},petDailyLiters:0,petWaterEstimated:false,home:'',equipment:[],needs:[],waterLiters:0,foodDays:0,overrides:{},finished:false,maxStep:0}; }
   function storageGet(key) {try{return localStorage.getItem(key);}catch{return null;}}
   function storagePut(key, val) {try{localStorage.setItem(key,val);}catch{}}
   function loadProfile(type) {
@@ -302,7 +309,16 @@
       if(!parsed || parsed.version!==3) return fresh();
       const blank=fresh();
       for(const k of ['adults','children','pets','waterLiters','foodDays']) blank[k]=Number.isFinite(Number(parsed[k]))?Math.max(0,Math.min(k==='waterLiters'?5000:30,Math.round(Number(parsed[k])))):blank[k];
-      blank.home=housing.some(x=>x[0]===parsed.home)?parsed.home:'house';
+      blank.home=housing.some(x=>x[0]===parsed.home)?parsed.home:'';
+      const keys=Object.keys(blank.petTypes);
+      if(parsed.petTypes&&typeof parsed.petTypes==='object'){
+        keys.forEach(k=>{const v=Number(parsed.petTypes[k]);blank.petTypes[k]=Number.isFinite(v)?Math.max(0,Math.min(30,Math.round(v))):0;});
+        blank.pets=Object.values(blank.petTypes).reduce((a,b)=>a+b,0);
+      }else if(blank.pets>0){blank.petTypes.other=blank.pets;} // Preserve older profiles without assuming a species.
+      if(parsed.petWaterEstimated===true&&Number.isFinite(Number(parsed.petDailyLiters))){
+        blank.petDailyLiters=Math.max(0,Math.min(999,Number(parsed.petDailyLiters)));
+        blank.petWaterEstimated=true;
+      }
       blank.equipment=Array.isArray(parsed.equipment)?parsed.equipment.filter(x=>equipment.some(y=>y[0]===x)):[];
       blank.needs=Array.isArray(parsed.needs)?parsed.needs.filter(x=>needsOptions.some(y=>y[0]===x)):[];
       blank.overrides=typeof parsed.overrides==='object'&&parsed.overrides?Object.fromEntries(Object.entries(parsed.overrides).filter(([k,v])=>/^[-a-z]+$/.test(k)&&typeof v==='boolean')):{};
@@ -326,6 +342,39 @@
   const n=(x)=>new Intl.NumberFormat(lang==='sv'?'sv-SE':'en-GB').format(x);
   const word=(num,sv,en)=>lang==='sv'?sv:en;
 
+
+  const petKinds=[
+    ['dog','🐕','Hund','Dog'],['cat','🐈','Katt','Cat'],['rabbit','🐇','Kanin','Rabbit'],
+    ['small','🐹','Smådjur','Small animals'],['bird','🐦','Fågel','Bird'],
+    ['fish','🐠','Fisk / akvarium','Fish / aquarium'],['other','🐾','Övriga djur','Other pets']
+  ];
+  function petTotal(pr=p()){return Object.values(pr.petTypes||{}).reduce((sum,val)=>sum+val,0);}
+  function petWeekWater(pr=p()){return pr.petWaterEstimated&&petTotal(pr)>0?Math.round(pr.petDailyLiters*70)/10:null;}
+  function waterNumbers(pr=p()){
+    const people=pr.adults+pr.children;
+    const low=21*people, high=35*people, pet=petWeekWater(pr);
+    return {low,high,pet,minimum:low+(pet||0),maximum:high+(pet||0)};
+  }
+  function petDetails(pr=p()){
+    return petKinds.filter(([id])=>(pr.petTypes?.[id]||0)>0).map(([id,emoji,sv,en])=>`${pr.petTypes[id]} ${lang==='sv'?sv.toLowerCase():en.toLowerCase()}`).join(', ');
+  }
+  function petCounters(){
+    const tr=lang==='sv'
+      ?{head:'Vilka djur har ni?',sub:'Välj art och antal så anpassas din krisplan. Om du tidigare angav ett antal djur hittar du dem under Övriga djur.'}
+      :{head:'Which pets live with you?',sub:'Choose types and quantities for a more relevant plan. Older pet counts are shown under Other pets.'};
+    return `<div class="pet-type-section"><h2>${tr.head}</h2><p>${tr.sub}</p>
+      <div class="pet-type-grid">${petKinds.map(([id,emoji,sv,en])=>`<div class="pet-type-row"><span aria-hidden="true">${emoji}</span><strong>${lang==='sv'?sv:en}</strong><div class="pet-type-control"><button type="button" data-pet-kind="${id}" data-pet-change="-1" aria-label="${lang==='sv'?'Minska':'Decrease'} ${lang==='sv'?sv:en}" ${p().petTypes[id]===0?'disabled':''}>−</button><output>${p().petTypes[id]}</output><button type="button" data-pet-kind="${id}" data-pet-change="1" aria-label="${lang==='sv'?'Öka':'Increase'} ${lang==='sv'?sv:en}" ${p().petTypes[id]>=30?'disabled':''}>+</button></div></div>`).join('')}</div></div>`;
+  }
+  function petWaterField(){
+    if(!petTotal())return '';
+    const known=p().petWaterEstimated;
+    return `<div class="pet-water-box"><div><strong>${lang==='sv'?'Extra vatten till djuren':'Extra water for pets'}</strong>
+      <p>${lang==='sv'?'Hur många liter dricksvatten behöver alla era djur tillsammans per dygn? Uppskatta utifrån deras vanliga förbrukning eller rådgör med veterinär. Om du inte vet: lämna tomt.':'How many litres of drinking water do your pets together need each day? Estimate based on their usual intake or ask a vet. If unsure, leave blank.'}</p></div>
+      <label for="pet-water-daily">${lang==='sv'?'Liter per dygn (frivilligt)':'Litres per day (optional)'}</label>
+      <input id="pet-water-daily" data-pet-water="daily" type="number" inputmode="decimal" step="0.1" min="0" max="999" placeholder="${lang==='sv'?'Ej angivet':'Not specified'}" value="${known?p().petDailyLiters:''}">
+      <small>${lang==='sv'?'Mängden läggs ovanpå hushållets vattenplanering för sju dygn. Den är inte ett medicinskt eller veterinärt riktvärde.':'Added to the seven-day household water plan. This is not a veterinary guideline.'}</small></div>`;
+  }
+
   function taskDefinitions() {
     const pr=p(), people=pr.adults+pr.children, low=21*people, high=35*people;
     const any=(id)=>pr.equipment.includes(id);
@@ -343,7 +392,14 @@
       e('contacts','home','phone','Viktiga telefonnummer på papper','Important phone numbers on paper','Skriv ner kontakter samt 112 (akut), 113 13 (krisinformation) och 1177 (sjukvårdsråd).','Write down contacts and 112 (emergency), 113 13 (crisis information), and 1177 (health advice).',false,NUMBERS),
       e('meetup','home','map','Bestäm var ni möts','Agree where to meet','Prata om hur ni får kontakt med varandra om mobiler eller internet ligger nere.','Discuss how you will find each other if mobile networks or internet are down.',false)
     ];
-    if(pr.pets>0||pr.needs.includes('pets')) all.push(e('pet-supplies','health','dog','Mat och vatten till husdjuren','Food and water for pets','Se över mat, vatten, eventuella mediciner och möjlighet att ta med djuren.','Plan food, water, any medicine and transport for pets.',false));
+    if(petTotal(pr)>0){
+      all.push(e('pet-supplies','health','dog','Mat och vatten till husdjuren','Food and water for pets',
+        `Planera foder och dricksvatten för minst sju dygn: ${petDetails(pr)}. ${pr.petWaterEstimated?'Din uppskattning är '+n(petWeekWater(pr))+' liter vatten för sju dygn.':'Vattenbehovet för djuren behöver uppskattas separat.'}`,
+        `Plan at least seven days of pet food and water for: ${petDetails(pr)}. ${pr.petWaterEstimated?'Your seven-day estimate is '+n(petWeekWater(pr))+' litres of water.':'Estimate pet water needs separately.'}`,false,'https://jordbruksverket.se/beredskap/beredskap-for-dig-som-har-djur'));
+      all.push(e('pet-transport','health','dog','Planera transport och omsorg för djuren','Plan pet transport and care',
+        'Ha transportbur, koppel eller annan lämplig utrustning och en plan för var djuren kan vara vid utrymning.',
+        'Prepare carriers, leads or other suitable equipment and a safe plan for evacuation.',false,'https://jordbruksverket.se/beredskap/beredskap-for-dig-som-har-djur'));
+    }
     if(pr.needs.includes('medical')) all.push(e('medical-extra','health','cross','Reservplan för medicinska behov','Backup plan for medical needs','Gör en personlig plan för kritiska läkemedel och hjälpmedel. Kontakta vården vid behov.','Make a personal plan for critical medicines and aids. Contact healthcare professionals when needed.',false));
     if(pr.needs.includes('electric')) all.push(e('electric-extra','home','battery','Planera för elberoende hjälpmedel','Plan for essential powered equipment','Identifiera sådant som måste fungera och rådgör om en lämplig reservlösning.','Identify what must keep working and seek guidance on a suitable backup.',false));
     if(pr.needs.includes('mobility')) all.push(e('mobility-extra','home','users','Planera för tillgänglighet','Plan for accessibility','Fundera på hur du kan få hjälp att förflytta dig eller ta dig till en trygg plats.','Plan for help with mobility or reaching a safe place.',false));
@@ -376,17 +432,17 @@
   function counter(id,label,hint,ic,min,max=20){return `<div class="count-row"><div class="count-illustration">${icon(ic)}</div><div class="count-label">${label}<small>${hint}</small></div><div class="counter-control"><button type="button" data-count="${id}" data-delta="-1" aria-label="${label}: −" ${p()[id]<=min?'disabled':''}>−</button><strong aria-live="polite">${p()[id]}</strong><button type="button" data-count="${id}" data-delta="1" aria-label="${label}: +" ${p()[id]>=max?'disabled':''}>+</button></div></div>`;}
   function choices(items,field,labels,three=false){const selected=p()[field];return `<div class="option-grid ${three?'three':''}">${items.map(([id,ic])=>`<button type="button" class="option-tile ${three?'compact':''}" aria-pressed="${Array.isArray(selected)?selected.includes(id):selected===id}" data-field="${field}" data-choice="${id}">${icon(ic)}<span>${escapeHTML(labels[id])}</span></button>`).join('')}</div>`;}
   function stepBody(){const tr=L(), pr=p();switch(step){
-    case 0:return `${counter('adults',tr.adults,tr.adultInfo,'users',0)}${counter('children',tr.children,tr.childInfo,'heart',0)}${counter('pets',tr.pets,tr.petInfo,'dog',0)}`;
+    case 0:return `${counter('adults',tr.adults,tr.adultInfo,'users',0)}${counter('children',tr.children,tr.childInfo,'heart',0)}${petCounters()}`;
     case 1:return choices(housing,'home',{'apartment':tr.apartment,'house':tr.house,'townhouse':tr.townhouse,'other':tr.otherHome});
     case 2:return choices(equipment,'equipment',tr.equipmentNames,true);
     case 3:return `${choices(needsOptions,'needs',tr.needNames,true)}<div class="inline-note">${icon('info')}${tr.needFoot}</div>`;
-    case 4:return `<div class="number-field"><div><label for="water-field">${tr.waterStored}</label><small>${tr.waterStoredHint}</small></div><input id="water-field" data-numeric="waterLiters" type="number" min="0" max="5000" step="1" inputmode="numeric" value="${pr.waterLiters}" aria-label="${tr.waterStored}"></div><div class="number-field"><div><label>${tr.foodDays}</label><small>${tr.foodDaysHint}</small></div><strong>${pr.foodDays} ${tr.days}</strong></div><div class="choice-days">${[0,3,5,7].map(day=>`<button type="button" data-days="${day}" aria-pressed="${pr.foodDays===day}">${day===7?'7+':day} ${tr.days}</button>`).join('')}</div><div class="inline-note">${icon('info')}${tr.waterHint}</div>`;
+    case 4:return `<div class="number-field"><div><label for="water-field">${tr.waterStored}</label><small>${tr.waterStoredHint}</small></div><input id="water-field" data-numeric="waterLiters" type="number" min="0" max="5000" step="1" inputmode="numeric" value="${pr.waterLiters}" aria-label="${tr.waterStored}"></div><div class="number-field"><div><label>${tr.foodDays}</label><small>${tr.foodDaysHint}</small></div><strong>${pr.foodDays} ${tr.days}</strong></div><div class="choice-days">${[0,3,5,7].map(day=>`<button type="button" data-days="${day}" aria-pressed="${pr.foodDays===day}">${day===7?'7+':day} ${tr.days}</button>`).join('')}</div><div class="inline-note">${icon('info')}${tr.waterHint}</div>${petWaterField()}`;
     default:return '';
   }}
   function quiz(){const tr=L();return `${navMarkup()}${banner()}<main class="flow-shell">${stepHeader()}<div class="step-layout">${stepSidebar()}<section class="flow-content" aria-live="polite"><div class="step-intro-icon">${icon(['users','home','clipboard','heart','droplet'][step])}</div><div class="eyebrow">${tr.personal}</div><h1>${tr.stepQuestions[step]}</h1><p class="subtitle">${tr.stepSubtitles[step]}</p>${stepBody()}<div class="flow-footer">${action(tr.back,'quiet','back','back')}${action(step===4?tr.seePlan:tr.next,'primary','next','arrow')}</div></section></div><p class="center-small">${tr.useAgain}</p></main>${footer()}`;}
-  function summaryArt(){const tr=L(), pr=p();return `<div class="summary-art"><div class="summary-art-content"><strong>${tr.tailoredFor}</strong><p>${pr.adults} ${tr.adultsCount} · ${pr.children} ${tr.childrenCount} · ${pr.pets} ${tr.petsCount}</p></div></div>`;}
+  function summaryArt(){const tr=L(), pr=p();return `<div class="summary-art"><div class="summary-art-content"><strong>${tr.tailoredFor}</strong><p>${pr.adults} ${tr.adultsCount} · ${pr.children} ${tr.childrenCount} · ${petTotal(pr)} ${tr.petsCount}</p></div></div>`;}
   function badge(task){const group=groupMeta.find(g=>g.id===task.group);return `<span class="icon-badge ${group?.color||''}">${icon(task.ic)}</span>`;}
-  function result(){const tr=L(),c=calc(),pr=p();const priority=c.all.filter(x=>!done(x)).slice(0,3);return `${navMarkup()}${banner()}<main class="content-shell"><span class="eyebrow">${icon('leaf','ic-sm')}${tr.resultsLabel}</span><h1>${c.pct===100?tr.allDoneHeading:tr.resultsHeading}</h1><p class="lede">${tr.resultText}</p><div class="summary-grid"><article class="card summary-card"><div class="meter-flex">${progressRing(c.pct)}<p class="meter-desc"><strong>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</strong><br>${tr.progressDisclaimer}</p></div>${action(tr.viewPersonal,'primary','view-plan','arrow')}</article><article class="card">${summaryArt()}<div class="water-note" style="margin-top:13px"><span class="icon-badge">${icon('droplet')}</span><div><strong>${tr.waterVolume}: ${n((pr.adults+pr.children)*21)}–${n((pr.adults+pr.children)*35)} ${tr.liters}</strong><small>${tr.waterExtra}</small></div></div></article></div><div style="margin-top:29px" class="tiny-head">${icon('clipboard','ic-sm')}${tr.prioritized}</div><div class="priority-grid">${priority.length?priority.map(task=>`<button type="button" class="priority-card" data-priority="${task.group}">${badge(task)}<span><strong>${task.title}</strong><p>${task.desc}</p></span>${icon('arrow','priority-arrow ic-sm')}</button>`).join(''):`<div class="empty-state"><p>${tr.allSet}</p></div>`}</div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.strongerDesc}</p>${action(tr.helpBtn,'outline','help','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p></main>${footer()}`;}
+  function result(){const tr=L(),c=calc(),pr=p();const rank=['water-store','pet-supplies','food-week','aid','warmth','radio','hygiene','cook-power','torch','power','pet-transport','contacts','meetup'];const priority=c.all.filter(x=>!done(x)).sort((a,b)=>(rank.indexOf(a.id)<0?99:rank.indexOf(a.id))-(rank.indexOf(b.id)<0?99:rank.indexOf(b.id))).slice(0,3);return `${navMarkup()}${banner()}<main class="content-shell"><span class="eyebrow">${icon('leaf','ic-sm')}${tr.resultsLabel}</span><h1>${c.pct===100?tr.allDoneHeading:tr.resultsHeading}</h1><p class="lede">${tr.resultText}</p><div class="summary-grid"><article class="card summary-card"><div class="meter-flex">${progressRing(c.pct)}<p class="meter-desc"><strong>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</strong><br>${tr.progressDisclaimer}</p></div>${action(tr.viewPersonal,'primary','view-plan','arrow')}</article><article class="card">${summaryArt()}<div class="water-note" style="margin-top:13px"><span class="icon-badge">${icon('droplet')}</span><div><strong>${tr.waterVolume}: ${n((pr.adults+pr.children)*21)}–${n((pr.adults+pr.children)*35)} ${tr.liters}</strong><small>${tr.waterExtra}${petTotal(pr)?` · ${lang==='sv'?'Djurens extra vatten':'Extra pet water'}: ${petWeekWater(pr)===null?(lang==='sv'?'inte beräknat':'not calculated'):n(petWeekWater(pr))+' '+tr.liters} ${petWeekWater(pr)===null?'':lang==='sv'?'(din uppskattning för sju dygn)':'(your 7-day estimate)'}`:''}</small></div></div></article></div><div style="margin-top:29px" class="tiny-head">${icon('clipboard','ic-sm')}${tr.prioritized}</div><div class="priority-grid">${priority.length?priority.map(task=>`<button type="button" class="priority-card" data-priority="${task.group}">${badge(task)}<span><strong>${task.title}</strong><p>${task.desc}</p></span>${icon('arrow','priority-arrow ic-sm')}</button>`).join(''):`<div class="empty-state"><p>${tr.allSet}</p></div>`}</div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.strongerDesc}</p>${action(tr.helpBtn,'outline','help','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p></main>${footer()}`;}
 
   function taskRow(task){
     const info=checklistDetails[lang],detail=info.details[task.id];
@@ -485,7 +541,7 @@
       <p class="source-note">${t.printHelp}</p></main>${footer()}`;
   }
 
-  function plan(){const tr=L(),c=calc(),pr=p();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('check','ic-sm')}${tr.personal}</div><h1>${tr.personal}</h1><p class="lede">${tr.planDesc}</p><p class="checklist-intro">${icon('lightbulb','ic-sm')}${checklistDetails[lang].intro}</p><div class="card" style="margin-top:23px"><div class="plan-overview"><div><h3>${tr.little}</h3><p>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</p><button type="button" class="btn-quiet" style="padding-left:0;font-size:12px" data-action="edit">${tr.editAnswers}${icon('arrow','ic-sm')}</button></div>${progressRing(c.pct)}</div><div class="full-progress"><span style="width:${c.pct}%"></span></div><p class="source-note" style="margin-bottom:0">${tr.progressDisclaimer}</p></div><div class="plan-list">${groupMeta.map(g=>{const ts=c.all.filter(task=>task.group===g.id);const finished=ts.filter(done).length;const isOpen=expanded.has(g.id);return `<section class="plan-group" id="group-${g.id}"><button type="button" class="group-head" data-group="${g.id}" aria-expanded="${isOpen}"><span class="icon-badge ${g.color}">${icon(g.icon)}</span><span class="group-label"><strong>${name(g.name)}</strong><small>${finished} ${tr.outOf} ${ts.length} ${tr.stepsDone}</small></span>${icon('chevron','ic-sm')}</button><div class="group-content" ${isOpen?'':'hidden'}>${ts.map(taskRow).join('')}${equipmentForChecklist(g.id)}</div></section>`}).join('')}</div><div class="shopping-summary"><strong>${equipmentLabels[lang].shopping}</strong><p>${sharedEquipment.filter(e=>equipmentChoices[e[0]]==='need').length} ${lang==='sv'?'saker på inköpslistan':'items on your shopping list'}</p><button type="button" class="btn-outline" data-action="shopping">${icon('printer','ic-sm')}${lang==='sv'?'Visa och skriv ut':'View and print'}</button></div><div class="equipment-plan-link"><div><strong>${lang==='sv'?'Vad behöver du ha hemma?':'What equipment might you need?'}</strong><p>${lang==='sv'?'Utforska vårt utrustningsbibliotek, markera vad du redan har och skapa en egen inköpslista.':'Explore equipment, mark what you have and build your own shopping list.'}</p></div><a href="equipment.html" class="btn-outline">${icon('arrow','ic-sm')}${lang==='sv'?'Öppna utrustningsbiblioteket':'Explore equipment'}</a></div><div class="plan-actions">${action(tr.print,'primary','print','printer')}${action(tr.share,'outline','share','share')}${action(tr.newPlan,'outline','reset','back')}</div><div class="safe-note">${icon('info')}<span><strong>${tr.important}.</strong> ${tr.importantDesc}</span></div><div class="safe-note">${icon('printer')}<span>${tr.printHint}</span></div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.helpLead}</p>${action(tr.helpStart,'outline','friend','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p><div class="print-note">${tr.printDate}: ${new Date().toLocaleDateString(lang==='sv'?'sv-SE':'en-GB')} · HemmaRedo · ${pr.adults} ${tr.adultsCount}, ${pr.children} ${tr.childrenCount}, ${pr.pets} ${tr.petsCount}</div></main>${footer()}`;}
+  function plan(){const tr=L(),c=calc(),pr=p();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('check','ic-sm')}${tr.personal}</div><h1>${tr.personal}</h1><p class="lede">${tr.planDesc}</p><p class="checklist-intro">${icon('lightbulb','ic-sm')}${checklistDetails[lang].intro}</p><div class="card" style="margin-top:23px"><div class="plan-overview"><div><h3>${tr.little}</h3><p>${c.count} ${tr.outOf} ${c.all.length} ${tr.stepsDone}</p><button type="button" class="btn-quiet" style="padding-left:0;font-size:12px" data-action="edit">${tr.editAnswers}${icon('arrow','ic-sm')}</button></div>${progressRing(c.pct)}</div><div class="full-progress"><span style="width:${c.pct}%"></span></div><p class="source-note" style="margin-bottom:0">${tr.progressDisclaimer}</p></div><div class="plan-list">${groupMeta.map(g=>{const ts=c.all.filter(task=>task.group===g.id);const finished=ts.filter(done).length;const isOpen=expanded.has(g.id);return `<section class="plan-group" id="group-${g.id}"><button type="button" class="group-head" data-group="${g.id}" aria-expanded="${isOpen}"><span class="icon-badge ${g.color}">${icon(g.icon)}</span><span class="group-label"><strong>${name(g.name)}</strong><small>${finished} ${tr.outOf} ${ts.length} ${tr.stepsDone}</small></span>${icon('chevron','ic-sm')}</button><div class="group-content" ${isOpen?'':'hidden'}>${ts.map(taskRow).join('')}${equipmentForChecklist(g.id)}</div></section>`}).join('')}</div><div class="shopping-summary"><strong>${equipmentLabels[lang].shopping}</strong><p>${sharedEquipment.filter(e=>equipmentChoices[e[0]]==='need').length} ${lang==='sv'?'saker på inköpslistan':'items on your shopping list'}</p><button type="button" class="btn-outline" data-action="shopping">${icon('printer','ic-sm')}${lang==='sv'?'Visa och skriv ut':'View and print'}</button></div><div class="equipment-plan-link"><div><strong>${lang==='sv'?'Vad behöver du ha hemma?':'What equipment might you need?'}</strong><p>${lang==='sv'?'Utforska vårt utrustningsbibliotek, markera vad du redan har och skapa en egen inköpslista.':'Explore equipment, mark what you have and build your own shopping list.'}</p></div><a href="equipment.html" class="btn-outline">${icon('arrow','ic-sm')}${lang==='sv'?'Öppna utrustningsbiblioteket':'Explore equipment'}</a></div><div class="plan-actions">${action(tr.print,'primary','print','printer')}${action(tr.share,'outline','share','share')}${action(tr.newPlan,'outline','reset','back')}</div><div class="safe-note">${icon('info')}<span><strong>${tr.important}.</strong> ${tr.importantDesc}</span></div><div class="safe-note">${icon('printer')}<span>${tr.printHint}</span></div><div class="community-cta"><div class="eyebrow">${icon('heart','ic-sm')}${tr.help}</div><h2>${tr.stronger}</h2><p>${tr.helpLead}</p>${action(tr.helpStart,'outline','friend','arrow')}</div><p class="source-note">${tr.fromSources}: <a href="${OFFICIAL}" target="_blank" rel="noopener noreferrer">Krisinformation.se</a>.</p><div class="print-note">${tr.printDate}: ${new Date().toLocaleDateString(lang==='sv'?'sv-SE':'en-GB')} · HemmaRedo · ${pr.adults} ${tr.adultsCount}, ${pr.children} ${tr.childrenCount}, ${petTotal(pr)} ${tr.petsCount}</div></main>${footer()}`;}
   function help(){const tr=L();return `${navMarkup()}${banner()}<main class="content-shell"><div class="eyebrow">${icon('users','ic-sm')}${tr.helpEyebrow}</div><h1>${tr.helpTitle}</h1><p class="lede">${tr.helpLead}</p><div class="help-hero"><div class="help-visual"></div><div class="help-body"><h2>${tr.help}</h2><p>${tr.helpSeparate}</p>${action(tr.helpStart,'primary','friend','arrow')}</div></div><div class="guide-grid"><article class="guide-card">${icon('heart')}<h3>${tr.helpCard1}</h3><p>${tr.helpText1}</p></article><article class="guide-card">${icon('droplet')}<h3>${tr.helpCard2}</h3><p>${tr.helpText2}</p></article><article class="guide-card">${icon('users')}<h3>${tr.helpCard3}</h3><p>${tr.helpText3}</p></article></div></main>${footer()}`;}
 
   function howItWorks(){
@@ -606,6 +662,7 @@
   function navigate(to){const hash='#'+to;if(location.hash===hash)showHash();else location.hash=hash;}
   function toast(msg){toastText=msg;clearTimeout(toastTimer);render();toastTimer=setTimeout(()=>{toastText='';render();},2700);}
   function next(){if(step===0 && p().adults+p().children<1){toast(L().validation);return;}
+    if(step===1 && !housing.some(x=>x[0]===p().home)){toast(lang==='sv'?'Välj boendetyp innan du fortsätter.':'Choose your home type before continuing.');return;}
     if(step===4){if(p().maxStep<4){navigate('quiz/0');return;}p().finished=true;save();navigate('result');}
     else {p().maxStep=Math.max(p().maxStep,step+1);save();navigate('quiz/'+(step+1));}
   }
@@ -634,6 +691,15 @@
     }
     if(target.dataset.route){navigate(target.dataset.route);return;}
     if(target.dataset.step!==undefined){navigate('quiz/'+target.dataset.step);return;}
+    if(target.dataset.petKind){
+      const kind=target.dataset.petKind;
+      if(!petKinds.some(row=>row[0]===kind))return;
+      const old=p().petTypes[kind];
+      p().petTypes[kind]=Math.max(0,Math.min(30,old+Number(target.dataset.petChange)));
+      p().pets=petTotal();
+      if(!p().pets){p().petWaterEstimated=false;p().petDailyLiters=0;}
+      save();render();return;
+    }
     if(target.dataset.count){const key=target.dataset.count;const min=0;const val=Math.min(20,Math.max(min,p()[key]+Number(target.dataset.delta)));set(key,val);return;}
     if(target.dataset.field){const field=target.dataset.field,choice=target.dataset.choice;
       if(Array.isArray(p()[field]))set(field,p()[field].includes(choice)?p()[field].filter(x=>x!==choice):[...p()[field],choice]);
@@ -669,6 +735,13 @@
     }
   });
   root.addEventListener('change',ev=>{
+    if(ev.target.dataset.petWater==='daily'){
+      const raw=ev.target.value.trim().replace(',','.');
+      const amount=Number(raw);
+      p().petWaterEstimated=raw!==''&&Number.isFinite(amount)&&amount>=0&&amount<=999;
+      p().petDailyLiters=p().petWaterEstimated?Math.round(amount*10)/10:0;
+      save();render();return;
+    }
     const el=ev.target;
     if(el.id==='lang-select'){lang=el.value==='en'?'en':'sv';storagePut(STORAGE.lang,lang);render();return;}
     if(el.dataset.numeric){let val=parseInt(el.value,10);if(!Number.isFinite(val))val=0;set(el.dataset.numeric,Math.min(5000,Math.max(0,val)));return;}
