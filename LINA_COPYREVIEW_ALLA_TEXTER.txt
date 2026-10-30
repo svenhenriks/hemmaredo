@@ -10144,5 +10144,281 @@ NY TEXT:
 ________________________________________
 
 
+==========================================================================
+DEL C – CHECKLISTANS KORTA PUNKTER (SVENSKA)
+==========================================================================
+Exempelhushåll: 2 vuxna, 1 barn och 2 husdjur. Antal och mängder ändras dynamiskt på webbplatsen.
+
+[1114] Min plan > water-store > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Säkra dricksvatten
+
+NY TEXT:
+________________________________________
+
+[1115] Min plan > water-store > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Planera för minst 63–105 liter för 3 personer under sju dygn. Djur och särskilda behov tillkommer.
+
+NY TEXT:
+________________________________________
+
+[1116] Min plan > food-week > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Mat som räcker i en vecka
+
+NY TEXT:
+________________________________________
+
+[1117] Min plan > food-week > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Satsa på hållbar mat som går att äta direkt eller tillaga med lite vatten.
+
+NY TEXT:
+________________________________________
+
+[1118] Min plan > cook-power > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Laga mat utan el
+
+NY TEXT:
+________________________________________
+
+[1119] Min plan > cook-power > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Planera för säker matlagning om spis och ugn inte fungerar. Använd endast utrustning enligt säkerhetsanvisningarna.
+
+NY TEXT:
+________________________________________
+
+[1120] Min plan > warmth > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Håll värmen vid strömavbrott
+
+NY TEXT:
+________________________________________
+
+[1121] Min plan > warmth > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Ha varma plagg och filtar samt en säker plan om uppvärmningen stannar. En kamin kräver bränsle och säker hantering.
+
+NY TEXT:
+________________________________________
+
+[1122] Min plan > torch > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Ficklampor som fungerar
+
+NY TEXT:
+________________________________________
+
+[1123] Min plan > torch > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Ha ficklampor och kontrollera batterier eller laddning.
+
+NY TEXT:
+________________________________________
+
+[1124] Min plan > radio > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Ta emot information via P4
+
+NY TEXT:
+________________________________________
+
+[1125] Min plan > radio > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Sveriges Radio P4 är beredskapskanal. Ha gärna en radio som fungerar utan elnät.
+
+NY TEXT:
+________________________________________
+
+[1126] Min plan > power > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Ladda telefon och småprylar
+
+NY TEXT:
+________________________________________
+
+[1127] Min plan > power > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Ha laddad powerbank och eventuella extra batterier.
+
+NY TEXT:
+________________________________________
+
+[1128] Min plan > aid > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Första hjälpen och läkemedel
+
+NY TEXT:
+________________________________________
+
+[1129] Min plan > aid > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Se över förbandsmaterial och nödvändiga läkemedel enligt dina egna behov.
+
+NY TEXT:
+________________________________________
+
+[1130] Min plan > hygiene > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Hygien när vattnet saknas
+
+NY TEXT:
+________________________________________
+
+[1131] Min plan > hygiene > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Planera för toalett, handhygien, våtservetter och avfall om vatten eller avlopp slutar fungera.
+
+NY TEXT:
+________________________________________
+
+[1132] Min plan > contacts > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Viktiga telefonnummer på papper
+
+NY TEXT:
+________________________________________
+
+[1133] Min plan > contacts > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Skriv ner kontakter samt 112 (akut), 113 13 (krisinformation) och 1177 (sjukvårdsråd).
+
+NY TEXT:
+________________________________________
+
+[1134] Min plan > meetup > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Bestäm var ni möts
+
+NY TEXT:
+________________________________________
+
+[1135] Min plan > meetup > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Prata om hur ni får kontakt med varandra om mobiler eller internet ligger nere.
+
+NY TEXT:
+________________________________________
+
+[1136] Min plan > pet-supplies > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Mat och vatten till husdjuren
+
+NY TEXT:
+________________________________________
+
+[1137] Min plan > pet-supplies > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Planera foder och dricksvatten för minst sju dygn: 1 hund, 1 katt. Foder: undefined dygn. Vattenbehovet för djuren behöver uppskattas separat. Hund och katt behöver foder och en transportplan.
+
+NY TEXT:
+________________________________________
+
+[1138] Min plan > pet-transport > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Planera transport och omsorg för djuren
+
+NY TEXT:
+________________________________________
+
+[1139] Min plan > pet-transport > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Ha transportbur, koppel eller annan lämplig utrustning och en plan för var djuren kan vara vid utrymning.
+
+NY TEXT:
+________________________________________
+
+[1140] Min plan > medical-extra > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Reservplan för medicinska behov
+
+NY TEXT:
+________________________________________
+
+[1141] Min plan > medical-extra > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Gör en personlig plan för kritiska läkemedel och hjälpmedel. Kontakta vården vid behov.
+
+NY TEXT:
+________________________________________
+
+[1142] Min plan > electric-extra > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Planera för elberoende hjälpmedel
+
+NY TEXT:
+________________________________________
+
+[1143] Min plan > electric-extra > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Identifiera sådant som måste fungera och rådgör om en lämplig reservlösning.
+
+NY TEXT:
+________________________________________
+
+[1144] Min plan > mobility-extra > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Planera för tillgänglighet
+
+NY TEXT:
+________________________________________
+
+[1145] Min plan > mobility-extra > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Fundera på hur du kan få hjälp att förflytta dig eller ta dig till en trygg plats.
+
+NY TEXT:
+________________________________________
+
+[1146] Min plan > kids-extra > Rubrik
+SPRÅK: SV
+ORIGINAL:
+Barnens behov
+
+NY TEXT:
+________________________________________
+
+[1147] Min plan > kids-extra > Kort förklaring
+SPRÅK: SV
+ORIGINAL:
+Tänk på barnmat, blöjor om det behövs, värme, trygghet och rutiner.
+
+NY TEXT:
+________________________________________
+
 SLUT PÅ TEXTUNDERLAGET.
-Om något saknas: skriv var på sidan det syns eller klistra in texten så hittar vi rätt källa.
