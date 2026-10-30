@@ -1,4 +1,4 @@
-const CACHE = 'hemmaredo-v3';
+const CACHE = 'hemmaredo-v4';
 const FILES = ['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./contacts.html','./equipment.html','./assets/hemmaredo-landskap.webp','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
